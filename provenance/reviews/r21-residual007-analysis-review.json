@@ -1,0 +1,19 @@
+{
+  "schema": "parent-r21-context007-source-review/1",
+  "observed_unix": 1792451617.39404,
+  "archive_bytes": 20424,
+  "archive_sha256": "d9f74fe823ba0dc27c77205fadf7a0bd36bb5385f481ca00f17909acc13818a9",
+  "manifest_sha256": "ca311f9b63f03224d0f970462a4af8a55542e836af8d4e317d1301d50748e109",
+  "payload_entries": 13,
+  "code_candidate": false,
+  "tests_run": 0,
+  "no_native_execution": true,
+  "no_source_modification": true,
+  "parent_source_review": "All13payloadhashes andanalysis/proposals reviewed. Independently read pinned context.cpp andSAPIENengine source: lowercontext reuse lacksdevicecomparison; engine storesrequestedDevice. This is conditional sourcecounterexample, not observedrootcause or exactinstalledsourcecorrespondence. No material/denoiser prevention justified.",
+  "confirmed_layer": "0067 SDKgetter PCIreports4; independentownPIDpmon3G+4C+G. UnderlyingVkPhysicalDevice identity not recorded.",
+  "bounded_readonly_followup": "parent-r21-context007-existing-inputs-2310.json + existing-ELF-2310.json: installedinternalrenderer.pyi22113B hasContextresourcefactories butNOphysicaldevice/PCI/UUIDgetter. NativepackageELFshareddependencies+buildIDs/SHAreadwithoutloading; exactsourcecommit/buildflags unavailable.",
+  "full_task_resource_decision": "Proceedwithreviewablecandidate for prospective explicitGPU3+4allocation, unchangedphysics/acceptance. NOTexclusive4fix. Freshunderlockidle checks + observed ongoingcontext/ownership/leaseguards, knownprojectadvisorylocks only; no claimglobalexclusivity. Stoponlyownedwork onconflict. No actualnative permission untilsource andactual67CPUtests reviewed.",
+  "original_protocols_spent": true,
+  "actual_native_permission": false,
+  "full_goal": false
+}

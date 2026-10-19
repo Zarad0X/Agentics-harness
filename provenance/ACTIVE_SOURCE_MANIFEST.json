@@ -162,9 +162,9 @@
     "experience/LATEST.json": {
       "role": "reviewed-experience-snapshot",
       "source_path": "work/astra-roundtrip/evolution-ledger",
-      "source_sha256": "0ee690a2f5c36d9e89bfe32f8b9f4a7099882383b78b97ce7f818a8daccb50ae",
+      "source_sha256": "319045c13e4b4fcc5d265d5a7ad4f155d0e08060bcecf83d4681c5d882909955",
       "bytes": 242,
-      "sha256": "27d429b8c423cbe618de3cab7833244305ab1c7820744c0f5bbc2f3d0b6ed22f"
+      "sha256": "93c102bad04e847be4f8f3a5b94ebe54fad870aaea685ec132d867866d44f7d3"
     },
     "experience/snapshots/20261019T1345Z.json": {
       "bytes": 35392,
@@ -296,6 +296,13 @@
       "source_sha256": "0ee690a2f5c36d9e89bfe32f8b9f4a7099882383b78b97ce7f818a8daccb50ae",
       "bytes": 96448,
       "sha256": "68c5bae5e6da9576bb2f714d276cbe72055b107845e90afc9519fc4b68b49eee"
+    },
+    "experience/snapshots/20261019T231808Z.json": {
+      "role": "reviewed-experience-snapshot",
+      "source_path": "work/astra-roundtrip/evolution-ledger",
+      "source_sha256": "319045c13e4b4fcc5d265d5a7ad4f155d0e08060bcecf83d4681c5d882909955",
+      "bytes": 96364,
+      "sha256": "26bb459ee049a94c512d37351253ee5a9fc6c8f8f7811b077d6b90b764d2f9d1"
     }
   },
   "archive": "archive/index.json",

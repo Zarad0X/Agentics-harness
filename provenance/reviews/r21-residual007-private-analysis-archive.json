@@ -1,0 +1,14 @@
+{
+  "schema": "reviewed-residual007-analysis-archive/1",
+  "name": "r21-residual007-reviewed-analysis.tar.gz",
+  "bytes": 20424,
+  "sha256": "d9f74fe823ba0dc27c77205fadf7a0bd36bb5385f481ca00f17909acc13818a9",
+  "members": 14,
+  "original_manifest_sha256": "ca311f9b63f03224d0f970462a4af8a55542e836af8d4e317d1301d50748e109",
+  "original_archive_byte_exact": true,
+  "scope": "Parent-reviewed analysis-only007; no runtime source change/synthetic tests/native execution. ExtraGPU3causeunknown; sevenSDKgettersnotVkPhysicalDeviceproof. Sourcecounterexample conditional; installedAPIhasnophysicalgetter, exactbuildsourcecorrespondence unknown. Separateprospective dualGPUfullentry underreview; exclusive4failed andalloldprotocolsspent.",
+  "release": "r21-return-20261020",
+  "release_url": "https://github.com/Zarad0X/robotwin-astra-harness/releases/tag/r21-return-20261020",
+  "github_server_digest_verified": true,
+  "github_asset_id": 657694878
+}

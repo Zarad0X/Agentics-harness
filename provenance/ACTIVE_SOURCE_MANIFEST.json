@@ -161,7 +161,7 @@
     },
     "experience/LATEST.json": {
       "bytes": 242,
-      "sha256": "96c29b399f348c1754ab2cd53f925c9d282d9fdfb69efd12bb4277994576239c",
+      "sha256": "d195f0cdec73449f5c2f6f9f77f7236b18d433b1a669eb587fc6c91f6a608c8a",
       "source_path": "work/astra-roundtrip/evolution-ledger",
       "role": "parent-reviewed-summary; not authoritative portable ledger",
       "transformation": "New immutable timestamped summary or latest pointer; old snapshots preserved"
@@ -226,6 +226,13 @@
       "source_sha256": "ec5580d6bfc7b570ec7b6fcae1344aa36f6920b310e076b69b58df644e20d093",
       "bytes": 67181,
       "sha256": "4dc840c9528a41ffb4a0c38cd1f88b346fcaebeb61f8c2acf0dd8a4a02513480"
+    },
+    "experience/snapshots/20261019T174639Z.json": {
+      "role": "reviewed-experience-snapshot",
+      "source_path": "work/astra-roundtrip/evolution-ledger",
+      "source_sha256": "f7819f5db2b3ae41c85a796831e09cce0881e2fd83ef09bf991a7f34dc974b46",
+      "bytes": 71502,
+      "sha256": "4a3f8446558e56d492636b0a459d886ab3f126f8460d7eaed8d3891d5d783891"
     }
   },
   "archive": "archive/index.json",

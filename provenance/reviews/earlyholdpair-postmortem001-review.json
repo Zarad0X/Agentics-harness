@@ -1,0 +1,43 @@
+{
+  "schema": "parent-earlyholdpair-postmortem-review/1",
+  "observed_unix": 1792431847.936641,
+  "archive_sha256": "e0bd1c3fd64ae8ece4c4a0dfd391166b721f2c8b2b1383847676fd358f3b0110",
+  "archive_bytes": 1016487,
+  "delivery_manifest_files_verified": 137,
+  "explicit_objects_verified": 74,
+  "records_parent_exact_audit_checked": 8,
+  "all10_proposals_reviewed": true,
+  "OFF023": {
+    "OUT": 0,
+    "exact_RETURN": 0,
+    "whole_success": false,
+    "stop": "loaded_slip_insufficient_braking_headroom",
+    "step": 9985
+  },
+  "ON024": {
+    "OUT": 1,
+    "exact_RETURN": 0,
+    "whole_success": false,
+    "stop": "capture_both_contacts_lost",
+    "step": 40048
+  },
+  "CPU_diagnostic_only": true,
+  "single_development_pair_not_success_rate": true,
+  "worker_checks": 28,
+  "parent_tests_reexecuted": false,
+  "report_patch": "source reviewed; adds summaries after original tick/terminal verification and leaves Replay arithmetic unchanged. Remains UNAPPLIED and unqualified for integration. No source seal or native controller change.",
+  "native_first_hold_decline_cleanup": "unresolved; final audit projection omits chronology, original raw streams remain on15",
+  "local_parent_references_available_but_not_delivered_to_worker": [
+    "parent-earlyhold-native001-source-review-001.json",
+    "earlyhold-original10-experiment-001.json"
+  ],
+  "next": "Supply missing exact parent refs and read-only stream inventory to same22 worker to design bounded extractor; parent review before closed-source collection. No duplicate full audit, postmortem, newphysics or retry.",
+  "authority_accounting": "181 completed development usage receipts; runtime model calls0; do not assign shared development tokens to one physics episode",
+  "mainline": "exactr21 baseline002 retained and independent; no strict-return or stable promotion",
+  "local_source_recheck": {
+    "023": 224,
+    "024": 224,
+    "receipt_sha256": "0d3ae678d4b447a70ce8c50bf8576bb29a35eda6cd301d6fd7d9e02180d01f2f"
+  },
+  "source_proposal_publication": "No deployment or full source-qualified candidate; original sealed packet remains server22 physicaldata3 and parent sealed downloads. Reporting proposal remains unapplied, new bounded collector coding pending."
+}

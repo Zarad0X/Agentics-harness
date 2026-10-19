@@ -1,0 +1,22 @@
+{
+  "schema": "historical-r21-contact-order-control/1",
+  "observed_unix": 1792431849.1394234,
+  "current_snapshot_bytes": 3939079,
+  "current_snapshot_sha256": "30d79e3a503e1e21fcc867b7e97c8c26932490250f6b8c6039ef411ac0036eaa",
+  "historical_file_sha256": "79803ea38b8d32d02507b9a3dbbf0f7f0dd54dc6d6592e8b51c37bb0e72568be",
+  "events_compared": 344,
+  "historical_events": 502,
+  "all_noncontact_fields_except_time_equal": true,
+  "noncontact_equal_events": 344,
+  "raw_differing_top_fields": {
+    "contacts": 113
+  },
+  "contact_list_differing_events": 113,
+  "contact_list_differences_exactly_multiset_equal": 113,
+  "contact_multiset_control_equal_events": 344,
+  "all_equal_after_only_timestamp_and_contact_list_order_normalization": true,
+  "normalization": "Ignore top event timestamp; sort full serialized contact entries preserving all body order, values and duplicates. No tolerance, body-pair normalization or contact value omitted.",
+  "terminal_audit": false,
+  "accepted_OUT": null,
+  "accepted_RETURN": null
+}

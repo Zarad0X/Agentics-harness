@@ -1,0 +1,16 @@
+{
+  "schema": "parent-delivery-gap/1",
+  "observed_unix": 1792415339.147126,
+  "producer_directory": "/data3/yuantao/astra-roundtrip-work/harness/slip020-earlyhold-candidate-002",
+  "failed_parent_preflight": "RESOURCES.json differs from DELIVERY manifest; failed before parent directory creation or tests",
+  "changed_files": [
+    "RESOURCES.json"
+  ],
+  "manifest_sha256": "77dfde5eaf1e74d484be64bc713b129b81857910ea8e094fa15e56419a5b64a1",
+  "live_sha256": "7841d0e51f1f30bfdd25251663482c2f351739b9a92099b25603245bdb0d8340",
+  "runtime_files_changed": false,
+  "sealed_archive_valid": true,
+  "archive_sha256": "b0d0edabf25f8900152ea574303f9cd1a260d2595243bfd44987aacd16a7a062",
+  "recovery": "Independent parent tests must use fresh extraction of exact sealed archive, preserve mutable producer directory and failed preflight evidence",
+  "physical_effectiveness_proved": false
+}

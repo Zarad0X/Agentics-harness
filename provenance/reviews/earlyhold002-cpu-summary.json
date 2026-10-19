@@ -1,0 +1,127 @@
+{
+  "schema": "published-parent-cpu-summary/1",
+  "authority_filename": "parent-earlyhold002-cpu-recheck-001.json",
+  "authority_sha256": "c33208ab61f7138074b9ad4066e0071372ccaaaa30c1d836495f595a2a671513",
+  "source_delivery_sha256": "87425387c450cc264d6934c5de354c353a2af552579a106a766d6a6adc43fdfe",
+  "source_unchanged": true,
+  "payload_entries": 551,
+  "jobs": [
+    {
+      "argv": [
+        "qualify_prefix.py",
+        "inputs/normalized-prefix.json",
+        "1336472f9aa4ae03e1bf2d919d22250c6b8f22a78490d2b65fe4b3af56cc1159"
+      ],
+      "exit_code": 0,
+      "cpu_s": 13.038058000000001,
+      "cpu_cap_s": 45,
+      "wall_s": 13.055392086040229,
+      "wall_cap_s": 75,
+      "single_thread": true,
+      "native_launch": false
+    },
+    {
+      "argv": [
+        "test_real_prefix.py"
+      ],
+      "exit_code": 0,
+      "cpu_s": 15.488807,
+      "cpu_cap_s": 45,
+      "wall_s": 15.509218341961969,
+      "wall_cap_s": 75,
+      "single_thread": true,
+      "native_launch": false
+    },
+    {
+      "argv": [
+        "test_prefix_transport.py"
+      ],
+      "exit_code": 0,
+      "cpu_s": 6.527023,
+      "cpu_cap_s": 45,
+      "wall_s": 6.540222504991107,
+      "wall_cap_s": 75,
+      "single_thread": true,
+      "native_launch": false
+    },
+    {
+      "argv": [
+        "test_prefix_reader.py"
+      ],
+      "exit_code": 0,
+      "cpu_s": 26.681759,
+      "cpu_cap_s": 45,
+      "wall_s": 26.705469776003156,
+      "wall_cap_s": 75,
+      "single_thread": true,
+      "native_launch": false
+    },
+    {
+      "argv": [
+        "test_candidate.py"
+      ],
+      "exit_code": 0,
+      "cpu_s": 6.570274,
+      "cpu_cap_s": 45,
+      "wall_s": 6.584472646005452,
+      "wall_cap_s": 75,
+      "single_thread": true,
+      "native_launch": false
+    },
+    {
+      "argv": [
+        "test_audit_edges.py"
+      ],
+      "exit_code": 0,
+      "cpu_s": 7.554169999999999,
+      "cpu_cap_s": 45,
+      "wall_s": 7.566372731002048,
+      "wall_cap_s": 75,
+      "single_thread": true,
+      "native_launch": false
+    },
+    {
+      "argv": [
+        "run_capture_tests.py"
+      ],
+      "exit_code": 0,
+      "cpu_s": 1.052826,
+      "cpu_cap_s": 45,
+      "wall_s": 1.0653057859744877,
+      "wall_cap_s": 75,
+      "single_thread": true,
+      "native_launch": false
+    },
+    {
+      "argv": [
+        "baseline_replay_tests.py"
+      ],
+      "exit_code": 0,
+      "cpu_s": 1.255152,
+      "cpu_cap_s": 45,
+      "wall_s": 1.2659684069803916,
+      "wall_cap_s": 75,
+      "single_thread": true,
+      "native_launch": false
+    }
+  ],
+  "prefix": {
+    "qualified_cpu_prefix": true,
+    "pretrigger_commands": 221,
+    "trigger": 221,
+    "post_intervention_states_consumed": 0,
+    "native_validated": false
+  },
+  "original_groups": 51,
+  "additional_groups": {
+    "REAL_PREFIX_TESTS.json": 15,
+    "PREFIX_TRANSPORT_TESTS.json": 14,
+    "PREFIX_READER_TESTS.json": 4
+  },
+  "total_groups": 84,
+  "child_cpu_s": 78.16806899999999,
+  "passed": true,
+  "native_qualified": false,
+  "physical_benefit_proved": false,
+  "full_goal_complete": false
+}

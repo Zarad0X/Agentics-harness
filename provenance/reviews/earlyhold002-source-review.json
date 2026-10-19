@@ -1,0 +1,42 @@
+{
+  "schema": "parent-earlyhold002-source-review/1",
+  "observed_unix": 1792415484.624915,
+  "delivery_sha256": "87425387c450cc264d6934c5de354c353a2af552579a106a766d6a6adc43fdfe",
+  "sealed_archive_sha256": "b0d0edabf25f8900152ea574303f9cd1a260d2595243bfd44987aacd16a7a062",
+  "manifest_entries_verified": 551,
+  "source_binding_files_verified": 226,
+  "baseline_binding_files_verified": 220,
+  "baseline_runtime_binding_sha256": "144f79b32aba541316c9fab3d714ae71d7c4f286afa9cae6f6c1076708561eee",
+  "original_config_sha256": "cd08a30d2174db6c0cbaec6ce68f45536a9e920a081654ea390677e67682ace1",
+  "source_review": [
+    "All five inherited runtime/auditor deltas and qualifier byte-identical to001;002 supplies cold prefix normalization and tests only.",
+    "Tracking.propose isolates mutable state and never commits a rejected or normal unissued proposal. Shared admission dependencies used read-only in examined calls.",
+    "Original Supervisor hard/history/reserve checks precede trigger; unsafe zero-factor proposals reject before command.",
+    "First actual chronological prefix221 normal factor.125->.25 is changed to factor0; independent arithmetic agrees and actual Live caller emits only selected drive to fake readback.",
+    "Factor0 halts reference advancement, not all physical joint velocity or PI correction. Native braking and assistance effects unproved.",
+    "Identity telemetry adds target contacts without changing existing scoped selector or native contact_guard; telemetry structure audit is not an independent measurement of native truth.",
+    "Hold250/one intervention/endpoint100 and original collision/slip/actuator/assistance limits retained."
+  ],
+  "independent_cpu_replay": {
+    "path": "parent-earlyhold002-cpu-recheck-001.json",
+    "sha256": "c33208ab61f7138074b9ad4066e0071372ccaaaa30c1d836495f595a2a671513",
+    "jobs": 8,
+    "groups": 84,
+    "cpu_s": 78.16806899999999,
+    "fresh_parent_budget_s": 180,
+    "trigger": 221,
+    "pretrigger_commands": 221,
+    "post_intervention_states_consumed": 0
+  },
+  "delivery_gap_receipt": "parent-earlyhold002-delivery-directory-gap-001.json",
+  "review_qualified_scope": "isolated CPU source candidate and first causal trigger only; full native caller/auditor integration pending",
+  "native_launch_authorized": false,
+  "integrated_runtime": false,
+  "physical_effectiveness_proven": false,
+  "goal_complete": false,
+  "remaining": [
+    "Prepare final OFF/ON runtime with identical observability and original020 capture; bind all real CLI/auditor/parent interfaces",
+    "Review final sealed source/config and actual gate regression receipts",
+    "Contingent bounded matched native diagnostic only after parent review; no stable/multilayout claim"
+  ]
+}

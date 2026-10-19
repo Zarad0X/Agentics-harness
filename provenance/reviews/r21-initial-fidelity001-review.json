@@ -1,0 +1,54 @@
+{
+  "schema": "parent-initial-fidelity-review/1",
+  "observed_unix": 1792430077.416474,
+  "archive_sha256": "06d4ed8e91ca395810feebd2fefb25459dd0d2a41cf8cdee614955824960b90f",
+  "archive_bytes": 11908,
+  "payload_manifest_files_verified": 9,
+  "input_sha256": "88b49fc672a4b8639f7bee4ebaede9a71ce41eb1439c9f72548c85f71749e97a",
+  "independent_parsed_state_exact_equal": true,
+  "independent_physical_scalars": 146,
+  "independent_only_event_difference": "time_unix",
+  "worker_analyzer_reviewed": true,
+  "worker_runner_reviewed": true,
+  "recorded_object_velocities_available": false,
+  "recorded_home_control_targets_available": false,
+  "source_methods": [
+    "fieldwise type-aware differences",
+    "XYZ Euclidean norm",
+    "normalized sign-invariant quaternion geodesic; exact identity bypasses acos roundoff"
+  ],
+  "scope": "Recorded initial physical state and supplied actual mesh digest records only; not later dynamics, hidden solver state, OUT, strictRETURN or stability",
+  "native_untouched": true,
+  "terminal_audit_duplicated": false,
+  "account": "server22_chatgpt",
+  "model": "gpt-6-astra",
+  "parent_account": "local current account",
+  "authoritative_usage": {
+    "input_tokens": 221459,
+    "cached_input_tokens": 190848,
+    "output_tokens": 8010,
+    "reasoning_output_tokens": 732
+  },
+  "remote_comparison_child_cpu_s": 0.048216999999999996,
+  "remaining": [
+    "Full historical environment attestation absent",
+    "Native002 terminal and driver-owned independent audit pending",
+    "Legacy baseline core normalized scorecard gap retained"
+  ],
+  "parent_focused_math_checks": {
+    "passed": 9,
+    "scope": "6 quaternion cases, zero-norm rejection, XYZ norm, missing/added keys",
+    "test_only_abs_tolerance": 1e-14,
+    "physical_acceptance_tolerance": null
+  },
+  "parent_reproduced_summary_exact_equal": true,
+  "reproduction_source_archive": {
+    "release_url": "https://github.com/Zarad0X/robotwin-astra-harness/releases/tag/r21-import-closure-20261020",
+    "name": "r21-initial-fidelity001-reviewed.tar.gz",
+    "bytes": 12131,
+    "sha256": "f0283a81087ada25ee2b483b54bd7866ebe7d09532c1ad4bc04fb3a75fc91ef2",
+    "github_server_digest_verified": true,
+    "raw_input_excluded": true
+  },
+  "not_live_runtime_truth": true
+}

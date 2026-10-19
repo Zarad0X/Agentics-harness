@@ -1,0 +1,15 @@
+{
+  "schema": "parent-r21-full008-exit-race-counterexample/1",
+  "observed_unix": 1792453419.6823199,
+  "source_file_sha256": "315d29f8dd3b3e0518b8c6da23ad5c1a1629a291b6bd3cd6d4a3db0eb3f25c04",
+  "scenario": "Injected native completes successfully during an already-started GPU observation. Initial leader identity is valid; exact bound terminal exit0/emptyremaining/noaccountinggaps is persisted before the post-query identity disappears.",
+  "actual_monitor_failure": "ValueError:ValueError:leader missing/reused",
+  "actual_guard_failure": "ValueError:leader missing/reused",
+  "terminal_success_receipt_was_available": true,
+  "real_GPU_commands": 0,
+  "real_process_signals": 0,
+  "injected_signal_calls": [],
+  "physics_credit": false,
+  "expected": "Recognize a bounded exact terminal transition, retain final audit/ancestry/gap requirements; do not report resource failure solely because successfully completed leader is gone.",
+  "native_permission": false
+}

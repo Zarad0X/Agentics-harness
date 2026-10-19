@@ -1,0 +1,13 @@
+{
+  "name": "r21-full008-reviewed-source.tar.gz",
+  "bytes": 47537,
+  "sha256": "26df073cc1be0bf6029a505dccd108869d1d701f297d186867a45b734c036a24",
+  "members": 46,
+  "export_manifest_sha256": "b0ac52311e423fe137e7666f8d2f086fc1a69f1c5784abd4db9e98645c87c4de",
+  "original_source_manifest_sha256": "e2600169f1858ddf70d84c163e03ae467c53380d2071b819d5b0bdab2e8926c2",
+  "scope": "Frozen008 fullentry/dualGPUmonitor candidate preserved;26actual67components pass but parentexit-racecounterexample independently reproducedlocaland67. NativepermissionDENIED; no newphysics. Source0007supervisor/006controller/config byteexact;009repairpending. RawCLI/auth/nativeoutputs/assets/videoexcluded.",
+  "release": "r21-return-20261020",
+  "release_url": "https://github.com/Zarad0X/robotwin-astra-harness/releases/tag/r21-return-20261020",
+  "github_server_digest_verified": true,
+  "github_asset_id": 657753838
+}

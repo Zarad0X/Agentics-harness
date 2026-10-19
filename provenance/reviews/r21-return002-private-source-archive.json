@@ -1,0 +1,12 @@
+{
+  "name": "r21-exact-return002-reviewed-source.tar.gz",
+  "bytes": 219537,
+  "sha256": "834df1356029fef5f0e5048cf5775eb3c25f1c0e7704f047da5940b4f1439c58",
+  "members": 108,
+  "source_export_manifest_sha256": "aa7dc696464feae52b02a012b4f207a6356295f8f6c0118e9a1abbae560067eb",
+  "original_candidate_sha256": "5d6ec20a56e97934fdfff9e0aa11aa244bcc5eaae7981b0a9ca61e6ee521444a",
+  "scope": "Exact code/tests and bounded provenance/test fixture inputs from computational prototype;002 runtime validation pending, not physical RETURN. Parent independently ran frozen00141+candidate00225tests on actual67; raw CLI logs/account/native state/events/videos/binary assets excluded.",
+  "release": "r21-return-20261020",
+  "release_url": "https://github.com/Zarad0X/robotwin-astra-harness/releases/tag/r21-return-20261020",
+  "github_server_digest_verified": true
+}

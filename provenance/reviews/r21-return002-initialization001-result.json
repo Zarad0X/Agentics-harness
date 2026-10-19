@@ -1,0 +1,31 @@
+{
+  "id": "r21-return002-initialization-001",
+  "purpose": "initialization-only native API/evidence diagnostic; no full task",
+  "status": "terminal strict thread-affinity accounting violation; no measured scene/effectiveness result",
+  "protocol_spent": true,
+  "automatic_retry": false,
+  "driver_pid": 2244164,
+  "driver_start_ticks": 64541045,
+  "native_pid": 2244320,
+  "native_start_ticks": 64541331,
+  "native_exit": -9,
+  "native_wall_s": 12.102717690984719,
+  "known_wait4_native_and_reaped_cpu_s": 11.369277,
+  "aggregate_all_process_cpu_s": null,
+  "single_core_elapsed_upper_bound_valid": false,
+  "observed_sample_peak_not_exact_total": 16.17,
+  "remaining_owned": [],
+  "accounting_gaps": [
+    "thread_affinity_expanded_or_changed"
+  ],
+  "source_closure_unchanged": true,
+  "OUT": null,
+  "exact_RETURN": null,
+  "whole_goal": false,
+  "physics_steps": null,
+  "physical_phase_reached": "unknown; only generated caches present",
+  "cause": "Unknown offender/library/phase; old monitor records gap string without TID/comm/mask/milestone",
+  "evidence": "parent-r21-return002-affinity-failure-2040.json",
+  "evidence_sha256": "2fa00ffdab470e2a5f69afde9a058ad54fd5b8f301e3f148b9cc43cf6f7691f3",
+  "scope": "Bounded initializer/runtime diagnostic only; no OUT/RETURN episode; source/closure untouched, no measuredscene/result, original caches retained ondata9"
+}

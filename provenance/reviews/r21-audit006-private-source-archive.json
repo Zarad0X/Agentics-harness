@@ -1,0 +1,11 @@
+{
+  "asset": "r21-terminal-audit006-reviewed-source.tar.gz",
+  "bytes": 109125,
+  "sha256": "b001fdc8ec6dad91282d864ce3957d51f440e1262805794e033788008e4a2d3b",
+  "release": "r21-terminal-audit-20261020",
+  "source_manifest_sha256": "47a098899988e4b1c6da2ddc463a226f0a6df16365398a933c7a5e47c13890e1",
+  "original_archive_sha256": "7c82309f222e4b20809dc9f35b8dc2fc50d84e17816106e52618f75400828c8c",
+  "scope": "Audit-only candidate;51 actual67 regressions passed; readonly actual preflight rejected incomplete top-level6 artifact inventory vs recursive9 including3 caches. No claim/verifier/physics;007 input binding candidate pending.",
+  "release_url": "https://github.com/Zarad0X/robotwin-astra-harness/releases/tag/r21-terminal-audit-20261020",
+  "github_server_digest_verified": true
+}

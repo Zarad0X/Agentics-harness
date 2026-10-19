@@ -1,0 +1,73 @@
+{
+  "schema": "parent-r21-closed-recursive-artifact-inventory/1",
+  "observed_unix": 1792435439.9884152,
+  "attempt": "/data_ft_9_10/shaojing/robotwin-astra-20261008/recovery-ten-r21-rebaseline-20261020-002/outputs/ten-r21-rebaseline-20261020-002",
+  "files": {
+    "cache/gl/GLCache/44790f88f2b862ce7c07d3e9e32385f6/e5f0c1af7232b43e/d130063c54442396.bin": {
+      "bytes": 221335,
+      "sha256": "b5bc61422ab4037ca59d02d75dc61c05671fe8e8e49550758ae750e6bbe06c47",
+      "symlink": false
+    },
+    "cache/gl/GLCache/44790f88f2b862ce7c07d3e9e32385f6/e5f0c1af7232b43e/d130063c54442396.toc": {
+      "bytes": 296,
+      "sha256": "e7a68296d32b83ba440ff8f82068052686e422506f8cf8af0b33306558fec766",
+      "symlink": false
+    },
+    "cache/matplotlib/fontlist-v390.json": {
+      "bytes": 26026,
+      "sha256": "aca7cc7c4fc824019acc2cf287ee5936c4aea4f236c963bc2e200289da714738",
+      "symlink": false
+    },
+    "episode.mp4": {
+      "bytes": 2542302,
+      "sha256": "f7eb46a8bf0e3122edc7c36a81a85dbd6eccd84b4e1a57f1734404f3fa1a954f",
+      "symlink": false
+    },
+    "events.jsonl": {
+      "bytes": 6046404,
+      "sha256": "d98335ffd90fe621b72eda3ac8406e1fef3dc33a4efbc7eec4e511fca147b52f",
+      "symlink": false
+    },
+    "final-state.json": {
+      "bytes": 9624,
+      "sha256": "1c720c1df6fd4898a421ff90b1ff2b89a6a8fecd6ddec42a9a69d562a919c65d",
+      "symlink": false
+    },
+    "physics-meshes.json": {
+      "bytes": 346905,
+      "sha256": "e8056188bdf78fb293f8624c6cfdcc02497a1cf40b19c994b464f66404fc695b",
+      "symlink": false
+    },
+    "result.json": {
+      "bytes": 2981,
+      "sha256": "c5d9cbdefa2a8779e1e95ef5b26506039abe10647bfd028f0414616d7f9dc730",
+      "symlink": false
+    },
+    "terminal_status": {
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "symlink": false
+    }
+  },
+  "known_original_top_six": [
+    "physics-meshes.json",
+    "result.json",
+    "final-state.json",
+    "terminal_status",
+    "episode.mp4",
+    "events.jsonl"
+  ],
+  "additional_cache_paths": [
+    "cache/gl/GLCache/44790f88f2b862ce7c07d3e9e32385f6/e5f0c1af7232b43e/d130063c54442396.bin",
+    "cache/gl/GLCache/44790f88f2b862ce7c07d3e9e32385f6/e5f0c1af7232b43e/d130063c54442396.toc",
+    "cache/matplotlib/fontlist-v390.json"
+  ],
+  "cache_origin_evidence": "Original reviewed r21 driver routes GL shader and matplotlib caches under isolated episode/cache; original runner/renderer created these while native ran. Top-level inventory supplied to006 omitted nested files. No unexpected file ignored or removed.",
+  "original_verifier_output_exists": false,
+  "continuation_claim_exists": false,
+  "source": {
+    "driver": "recovery-parent002-001/parent-launch-rebaseline002.py",
+    "driver_sha256": "1b38e52f5787e6d2e8244063959384f8e3f3411f6d7f31559a3775e55f1570cf"
+  },
+  "scope": "Source-bound exact fullrecursive data inventory for input completeness repair only; not acceptance or authorization"
+}

@@ -1,0 +1,52 @@
+{
+  "observed_unix": 1792423892.4702077,
+  "sources_checked": 114,
+  "assets_checked": 107,
+  "baseline_files_checked": 11,
+  "source_mismatches": [],
+  "asset_mismatches": [],
+  "baseline_mismatches": [],
+  "asset_realpath": "/home/shaojing/HanZ/RoboTwin/assets/objects",
+  "asset_mount": "/dev/mapper/ubuntu--vg-ubuntu--lv /      ext4",
+  "original_launch": {
+    "pid": 1421557,
+    "command": [
+      "/home/shaojing/HanZ/tools/miniforge3/envs/robotwin/bin/python",
+      "-u",
+      "/data_ft_9_10/shaojing/robotwin-astra-20261008/versions/ten-r21/physics_runner.py",
+      "--release",
+      "/data_ft_9_10/shaojing/robotwin-astra-20261008/release",
+      "--output-root",
+      "/data_ft_9_10/shaojing/robotwin-astra-20261008/outputs",
+      "--output",
+      "/data_ft_9_10/shaojing/robotwin-astra-20261008/outputs/ten-r21",
+      "--gpu",
+      "4",
+      "--max-objects",
+      "10"
+    ]
+  },
+  "original_exit": "0",
+  "release_entries": [
+    "workspace"
+  ],
+  "baseline_entries": [
+    "fixtures",
+    "direct_core.py",
+    "separation.py",
+    "gripper_control.py",
+    "mesh_world.py",
+    "collision_world.py",
+    "physics_runner.py",
+    "verify_episode.py",
+    "astra_planner.py",
+    "convex_geometry.py",
+    "physics_geometry.py",
+    "surface_grasps.py",
+    "candidate_search.py"
+  ],
+  "data_mount": "/dev/sde /data_ft_9_10 ext4",
+  "output_writable": true,
+  "python_exists": true,
+  "matched_bytes": true
+}

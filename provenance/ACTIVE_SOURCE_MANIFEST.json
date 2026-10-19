@@ -161,10 +161,10 @@
     },
     "experience/LATEST.json": {
       "bytes": 242,
-      "sha256": "3d892e175eb4df99a9d8df50638493a02b893a42f06a23629c931f3b7f69111e",
+      "sha256": "401fb159c2e3c5f4fc13e451447edbb45ee7fb03394ce9c06e88c2bdc9b410c1",
       "source_path": "work/astra-roundtrip/evolution-ledger",
       "role": "parent-reviewed-summary; not authoritative portable ledger",
-      "transformation": "New chain/object-verified summary or current pointer; older snapshots retained"
+      "transformation": "New immutable timestamped summary or latest pointer; old snapshots preserved"
     },
     "experience/snapshots/20261019T1345Z.json": {
       "bytes": 35392,
@@ -191,6 +191,13 @@
       "source_path": "work/astra-roundtrip/evolution-ledger",
       "role": "parent-reviewed-summary; not authoritative portable ledger",
       "transformation": "New chain/object-verified summary or current pointer; older snapshots retained"
+    },
+    "experience/snapshots/20261019T153621Z.json": {
+      "bytes": 47873,
+      "sha256": "20ddd4ed90c5c08cbe0f003ba71c15e2a67fefeae8bdcb07bbe2b0af8cd7c13c",
+      "source_path": "work/astra-roundtrip/evolution-ledger",
+      "role": "parent-reviewed-summary; not authoritative portable ledger",
+      "transformation": "New immutable timestamped summary or latest pointer; old snapshots preserved"
     }
   },
   "archive": "archive/index.json",

@@ -1,5 +1,7 @@
 # 迭代、代码约定与经验
 
+先遵守[基线优先顺序](BASELINE_FIRST.md)：从已验证ten-r21逐项扩展，以同条件端到端回归证明候选没有丢失父版本能力；发生退化时回到已验证父版本，保留失败和差异。历史单向任务与新严格往返分别验收。
+
 每次变更使用conventional commit，如`fix: reject duplicate archive members`、`test: bind frozen fixtures to current core`、`docs: clarify external ledger setup`。一个修复对应明确问题和可复核证据，避免混入旧科学代码的外观重排。主树按用途分目录，没有通用work垃圾场；临时产物和失败恢复只进.local。
 
 新scripts/tests/scaffold使用标准Python、显式函数、清晰命名、四空格缩进、UTF-8、末尾换行、无tab/trailing whitespace。`python3 -B scripts/check_code.py`只编译这些新源码并查空白，不安装包、不执行编译内容。pyproject提供可选Ruff lint/format范围；若开发环境已有Ruff可按显式路径运行，CI不要求它。controller/tests/core和归档保持原始字节；harness/adapters/transport已统一格式；必要科学修改以小差异、回归和真实证据审查，不以格式化遮蔽行为变化。

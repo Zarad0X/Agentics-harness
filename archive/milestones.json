@@ -20,6 +20,21 @@
       "producer_status": "UNAPPROVED_BLOCKED retained; geometry completed only in new independent parent copy",
       "parent_review": "provenance/reviews/earlyhold-native001-source-review.json",
       "scope": "CPU-reviewed diagnostic experiment only, no stable/native physical success claim"
+    },
+    {
+      "tag": "capture019-diagnosis-001-20261019",
+      "url": "https://github.com/Zarad0X/robotwin-astra-harness/releases/tag/capture019-diagnosis-001-20261019",
+      "assets": [
+        {
+          "filename": "capture019-contact-loss-diagnosis-001.tar.gz",
+          "bytes": 10162870,
+          "sha256": "b9a15efef6a956aca5a97e3a8ba72bae484257c00eac2845bb977cc5d6879f53"
+        }
+      ],
+      "purpose": "Exact019 source-bound conditional recorded-API diagnosis, full formal chain and retained incomplete preview replays,16 focused tests and retained failures",
+      "producer_status": "Diagnosis complete; no production patch; preview input gap retained",
+      "parent_review": "provenance/reviews/capture019-diagnosis-review.json",
+      "scope": "Parent independently verified167 runtime files and16 focused groups. Sole-support loss mechanism verified; physical cause unresolved. Conditional replay is not fresh native geometry or physical acceptance. Newly acquired270 interleaved preview rows and002 replay are separate follow-up."
     }
   ]
 }

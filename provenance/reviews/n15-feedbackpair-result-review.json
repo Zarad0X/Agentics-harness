@@ -1,0 +1,83 @@
+{
+  "schema": "parent-n15-feedbackpair-result-review/1",
+  "observed_unix": 1792421194.60417,
+  "attempts": [
+    {
+      "run_id": "rt-v36-combined-n15-s101-019",
+      "audit_path": "work/astra-roundtrip/rt-v36-combined-n15-s101-019-functional-audit-001.json",
+      "audit_sha256": "725767c1bf46c213be1d26b1d08e27d42accb180ef5ce8c78a23a39500536a4b",
+      "runtime_binding_sha256": "c5b746e081d6b393571d74001739e50d8e242beeb4a4f95dd46cb403f7b2e078",
+      "config_sha256": "403533dbd7d86892c2aeb72055c990feb640dde7095a3be8ca981bf35e578d82",
+      "snapshot_files_verified": 218,
+      "runtime_source_files_verified": 11,
+      "valid_functional_receipts": true,
+      "audit_errors": [],
+      "OUT": 0,
+      "exact_RETURN": 0,
+      "whole_success": false,
+      "failure": "CandidateInfeasible:capture_feedback_budget",
+      "formal_steps": 4166,
+      "preview_steps": 16801,
+      "terminal_wall_s": 4808.308947566897,
+      "assistance_labels": {
+        "finger_friction": [
+          3.0,
+          2.4
+        ],
+        "magnetic_drive_limit_raw": 80,
+        "release_velocity_reset": true
+      },
+      "runtime_llm": {
+        "calls": 0,
+        "input_tokens": 0,
+        "instrumented": true,
+        "output_tokens": 0,
+        "reason": "deterministic local Python; no model client"
+      }
+    },
+    {
+      "run_id": "rt-v36-combined-n15-s101-021",
+      "audit_path": "work/astra-roundtrip/rt-v36-combined-n15-s101-021-functional-audit-001.json",
+      "audit_sha256": "e753193429b122d064147fa4b4a52135a765b0738090719990e6f284599beb4e",
+      "runtime_binding_sha256": "be79e32052b14c0dc25032842a09e874a7495829001353c4e0ded1b30679ff31",
+      "config_sha256": "403533dbd7d86892c2aeb72055c990feb640dde7095a3be8ca981bf35e578d82",
+      "snapshot_files_verified": 219,
+      "runtime_source_files_verified": 11,
+      "valid_functional_receipts": true,
+      "audit_errors": [],
+      "OUT": 0,
+      "exact_RETURN": 0,
+      "whole_success": false,
+      "failure": "CandidateInfeasible:capture_feedback_budget",
+      "formal_steps": 4166,
+      "preview_steps": 16801,
+      "terminal_wall_s": 4783.0961737022735,
+      "assistance_labels": {
+        "finger_friction": [
+          3.0,
+          2.4
+        ],
+        "magnetic_drive_limit_raw": 80,
+        "release_velocity_reset": true
+      },
+      "runtime_llm": {
+        "calls": 0,
+        "input_tokens": 0,
+        "instrumented": true,
+        "output_tokens": 0,
+        "reason": "deterministic local Python; no model client"
+      }
+    }
+  ],
+  "all_started_attempts": 2,
+  "new_attempts": 0,
+  "same_config_and_assistance_labels": true,
+  "conclusion": "No observed OUT/RETURN or formal-step improvement from021 velocity-aware feedback versus019 on this single matched15-object development layout; both fail capture_feedback_budget at4166. Mechanism and generality await already-owned postmortem.",
+  "causal_claim": false,
+  "CPU_diagnostic_only": true,
+  "not_stable_physical_validation": true,
+  "independent_audits_owned_by": "auto-audit-n15-feedbackpair-001",
+  "new_audit_executions": 0,
+  "postmortem": "postmortem-n15-feedbackpair-001",
+  "postmortem_duplicated": false
+}

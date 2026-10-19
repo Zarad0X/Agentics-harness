@@ -7,7 +7,7 @@
 | ten-r21 | 历史assisted单向取出10/10 | 不是完整roundtrip |
 | original020 | 独立审计OUT0/RETURN0 | raw事件不等于验收计数 |
 | original019 | 独立审计OUT1/RETURN0；终止于capture_both_contacts_lost | 诊断部分取出，完整任务失败；未完成RETURN与最终安全验收 |
-| 15物体019/021 | 两条均exit2；小文件终态记录均为capture_feedback_budget、formal step4166，raw completed_ids为空 | 019独立审计OUT0/RETURN0，021审计仍在进行；该对比暂未显示抓取反馈改进收益 |
+| 15物体019/021 | 两条独立审计均OUT0/15、精确RETURN0/15，完整失败；均为capture_feedback_budget、正式第4166步 | 同一seed101配置与辅助条件；这组没有显示021的收益。仅一个开发布局，CPU诊断；已有流程负责后续复盘 |
 | earlyhold | 002封包551项逐项校验；父端独立重跑84组CPU检查通过，78.168069 CPU秒；实际0–220命令一致，第221步首次干预可通过原有guard | 仅停止参考推进；关节仍可闭环纠偏。正式023/024集成已父端复核；48个实际registry用例与调用链检查通过，新预算共约102CPU秒。各一条原始10物体诊断已启动，物理收益未验证 |
 | capture-drive-contract@4 | 选定velocity target与zero guard冲突；fixed-in-tests | 全失败归因/native修复未证实 |
 | capture018 actuator | 独立审计拒绝；问题unresolved | 两个raw OUT不能计accepted |
@@ -23,4 +23,8 @@
 
 原始019/020复盘已接收并经父端16组CPU复测，诊断计数分别为1/0与0/0，两条均失败。023/024仅改变提前制动开关及身份，七份配置、020抓取、磁吸与安全判定不变；父端独立补齐几何证据，不改写生产任务原有超时失败。详见 `provenance/reviews/postmortem019020-review.json`、`earlyhold-native001-source-review.json`、`earlyhold-native001-cpu-summary.json` 和 `earlyhold-original10-experiment.json`。新对比预算为每版一条、无自动重试，终局必须独立审计。
 
-019的N4失败证据缺口已补齐：正式失败链1995条事件，同一候选两条成功预演分别2594/2682条，共7271条；源事件文件哈希、六个源码哈希和每条链的序号/前驱哈希均已核验。原始166MB日志及压缩数据不进主库，引用见 `provenance/reviews/capture019-chain-validation.json`。已交给22号机官方账号的Astra比较接触丢失之前的动作；完整记录与已确认物理原因须区分，目前尚无新归因或修复成功声明。023/024继续原预算，15物体021仍由已有流程审计。
+019的N4失败证据缺口已补齐：正式失败链1995条事件，同一候选两条成功预演分别2594/2682条，共7271条；源事件文件哈希、六个源码哈希和每条链的序号/前驱哈希均已核验。原始166MB日志及压缩数据不进主库，引用见 `provenance/reviews/capture019-chain-validation.json`。22号机Astra完成诊断后，父端核对167份原始019运行文件并独立复测16组测试（6.938922 CPU秒）。逐条接触谓词复算确认：N4只有finger0在443–489步取得有效支撑，finger1始终未取得；490步唯一支撑消失，原恢复保护在发出恢复命令前正确拒绝。因此失败标签不证明“两侧已夹稳后同时松脱”。接触消失的物理原因仍未知，没有生产修复补丁。详见 `provenance/reviews/capture019-diagnosis-review.json`。
+
+正式失败链能在明确条件下用原控制器与原审计器回放；两次预演先前只回放到缺少完整closure_source输入的位置。父端随后从同一封闭日志取回全部相邻控制记录：102/168条，共270条，原有capture事件逐项不变。新补齐的是历史输入；几何证书和成功guard回调仍是历史API条件，不是重新运行的原生几何或物理证明。22号机Astra正在独立目录补做完整预演回放（新180 CPU秒预算）；无额外物理尝试。数据身份与边界见 `capture019-preview-contiguous-summary.json`。
+
+023关闭提前制动的诊断已exit2，raw失败为loaded_slip_insufficient_braking_headroom，原有观察器正在独立审计；024开启版尚在运行。不得从运行时间更长推断成功或稳定收益。原配对仍为每版一条，无重试。15物体两份独立审计、配置/运行绑定及全部尝试的负结果已父端核对，见 `n15-feedbackpair-result-review.json`；既有观察器已启动其专属复盘，未另开重复审计。

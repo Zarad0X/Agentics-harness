@@ -1,0 +1,52 @@
+{
+  "schema": "parent-capture019-diagnosis-review/1",
+  "observed_unix": 1792420807.945996,
+  "delivery_sha256": "0409312225e835b77f8c8fd6fc1ad0e1a3a777cb41d4064c0b4468e02542dfe5",
+  "manifest_entries": 390,
+  "runtime_files_verified": 167,
+  "all_runtime_copies_exact019": true,
+  "production_delta": [],
+  "candidate_patch": null,
+  "source_review": [
+    "Recorded API executes actual unmodified Capture.run and original independent auditor. All formal emissions/control readbacks match supplied hashes.",
+    "Same-tick reads reuse the single retained observation; historical successful guard callbacks and geometry certificates are API evidence, not independently rerun native geometry/physics.",
+    "Formal failed receipt is valid under original auditor; this grants no successful-capture or episode credit.",
+    "Accepted-preview subset replay stops at first absent closure_source full state,535/510, and original auditor rejects incomplete subsets. Parent-recorded historical acceptance is not overturned.",
+    "Original opposite-support recovery, feedback200, source controls and other limits stay unchanged; there is no justified production patch."
+  ],
+  "independent_contact_recount": {
+    "observations": 491,
+    "finger0_valid_ticks": [
+      443,
+      489
+    ],
+    "finger1_valid_ticks": 0,
+    "first_loss_tick": 490,
+    "recovery_commands": 0,
+    "method": "Recompute exact original same-point impulse/separation predicates on every formal observation; inspect original recover source and complete emitted chain"
+  },
+  "parent_cpu_recheck": {
+    "file": "parent-capture019-diagnosis-cpu-recheck-001.json",
+    "sha256": "1fdfbb1a91f5304887bd6bdce3e200e549ca59e64d4871c066800c4dfc202320",
+    "groups": 16,
+    "cpu_s": 6.938922,
+    "new_parent_cpu_cap_s": 180,
+    "full_formal_events": 1995,
+    "preview_prefix_events": [
+      2193,
+      2101
+    ]
+  },
+  "confirmed_mechanism": "Only acquired finger0 support disappears at490 while finger1 never qualifies; unchanged recover(0) correctly stops before issuing recovery. The failure label does not prove simultaneous loss of two previously acquired contacts.",
+  "physical_cause": null,
+  "hypotheses": [
+    "entry-state/contact geometry sensitivity",
+    "native impulse/contact solver transient"
+  ],
+  "evidence_gap": "capture-only projection omits102/168 interleaved settling events from original preview traces",
+  "next_read_only_action": "Parent separately adopted finite30CPU/60wall/32MiB original contiguous-span extraction; output parent019-preview-contiguous-001.json. No native authorization.",
+  "proposed_records_policy": "Retain all four original proposals. Import two diagnostic observations with explicit canonical envelope fields and one new evidence-gap issue; update existing contact-recovery issue rather than duplicate its sole-support issue.",
+  "native_launch_authorized": false,
+  "physical_repair_proven": false,
+  "goal_complete": false
+}

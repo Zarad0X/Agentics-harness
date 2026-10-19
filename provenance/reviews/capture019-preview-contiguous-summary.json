@@ -1,0 +1,44 @@
+{
+  "schema": "native019-original10-preview-contiguous-relay/1",
+  "observed_unix": 1792420688.0406785,
+  "run_id": "rt-v36-combined-original10-019",
+  "source_bytes": 166822853,
+  "source_sha256": "222de24951c8aa40a7c8aee03e4b454bcf20df3238cd695b38a66a09cad52e31",
+  "raw_bytes": 12329745,
+  "raw_sha256": "c81eef36707d94175f872d47cec96da69e841fb825e6650773733fc5c9a78ffa",
+  "gzip_bytes": 2766253,
+  "gzip_sha256": "5e2edcfd4a31ed36ebecd0d5a50990a6148724336825c2997d61dfa188e16a6e",
+  "event_counts": [
+    2696,
+    2850
+  ],
+  "new_interleaved_events": [
+    102,
+    168
+  ],
+  "kind_counts": {
+    "capture_begin": 2,
+    "capture_command": 1269,
+    "capture_readback": 1311,
+    "capture_tick_started": 1269,
+    "capture_observation": 1269,
+    "capture_latch": 5,
+    "capture_rebase": 105,
+    "closure_control_source": 2,
+    "gripper_settle": 226,
+    "capture_terminal": 2,
+    "capture_loss": 1,
+    "capture_reacquire": 1,
+    "capture_relief": 42,
+    "closure_control_update": 42
+  },
+  "cpu_core": 118,
+  "cpu_cap_s": 30,
+  "wall_cap_s": 60,
+  "cpu_s_before_final_wire": 2.6906336869999996,
+  "physics_actions": 0,
+  "relay_path": "work/astra-roundtrip/parent019-preview-contiguous-001.json",
+  "relay_bytes": 3689373,
+  "relay_sha256": "dd86719e4482035578d562268143ac669338fe4e19f21ea658af8537f6a382c5",
+  "scope": "Metadata only; original rows remain in retained relay on verified data disks. Extra historical inputs do not establish a physical cause or new acceptance."
+}

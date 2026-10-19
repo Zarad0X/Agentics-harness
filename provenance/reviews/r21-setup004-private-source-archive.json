@@ -1,0 +1,12 @@
+{
+  "name": "r21-setup004-reviewed-source.tar.gz",
+  "bytes": 78071,
+  "sha256": "2077b2cfa39d2e2962425e1725f7841c9eb950f2be50c4f472e9b7a4c5cab388",
+  "members": 22,
+  "source_export_manifest_sha256": "3861e04e8634501eb3f74bdd02fa329129ba9a41c3c410b97d26f6f41b6414fa",
+  "original_candidate_sha256": "ee928231fbf68dce715079a84ef6ff0550bf0d4d8f7cde54450e32de7a8a579b",
+  "scope": "Exact004 diagnostic code/tests/source-text fixture;45actual67 CPUtests pass. One initialized diagnostic pinpoints constructor interval SapienRenderer line210 with mainmask48 vs0, internalnativecallunknown. Allownedcleaned; frozen002/007 unchanged. RawCLI/auth/nativeoutputs/assets excluded. No OUT/RETURN/physicalacceptance.",
+  "release": "r21-return-20261020",
+  "release_url": "https://github.com/Zarad0X/robotwin-astra-harness/releases/tag/r21-return-20261020",
+  "github_server_digest_verified": true
+}

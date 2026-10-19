@@ -1,0 +1,52 @@
+{
+  "id": "r21-return002-instrumented004-001",
+  "purpose": "single source-bound setup_scene statement initialization diagnostic",
+  "status": "terminal strict affinitychange duringSapienRendererconstructor; causeinsideunknown",
+  "protocol_spent": true,
+  "automatic_retry": false,
+  "driver_pid": 2401800,
+  "driver_start_ticks": 64891166,
+  "native_pid": 2401913,
+  "native_start_ticks": 64891446,
+  "native_exit": -9,
+  "native_wall_s": 19.257202126085758,
+  "known_wait4_native_and_reaped_cpu_s": 18.603997999999997,
+  "aggregate_all_process_cpu_s": null,
+  "single_core_elapsed_upper_bound_valid": false,
+  "sampled_peak_not_exact_total": 23.39,
+  "remaining_owned": [],
+  "accounting_gaps": [
+    "thread_affinity_expanded_or_changed"
+  ],
+  "source_closure_unchanged": true,
+  "all_owned_independently_inactive": true,
+  "OUT": null,
+  "exact_RETURN": null,
+  "whole_goal": false,
+  "physics_steps": null,
+  "offending_thread": {
+    "comm": "pt_main_thread",
+    "ppid": 2401800,
+    "session": 2401913,
+    "start_ticks": 64891446,
+    "tid": 2401913
+  },
+  "actual_mask": [
+    48
+  ],
+  "expected_core": 0,
+  "identity_status": "bracketed",
+  "setup_records": 9,
+  "phase_records": 28,
+  "last_setup_statement": {
+    "line": 210,
+    "label": "SapienRenderer",
+    "before_mask": [
+      0
+    ],
+    "after": null
+  },
+  "cause": "Affinityobserved48 whileSapienRenderer() active; Engine/import/globalconfig completedboundarymasks0; internalnativecall/libraryunknown. Nextdenoiserconfig217notreached.",
+  "evidence": "parent-r21-setup004-native-result-2140.json",
+  "evidence_sha256": "da71d4cca36956ec6ec9659301bf923b51ea2ea02d273d8a9b87b88f20f07df3"
+}

@@ -1,0 +1,29 @@
+{
+  "schema": "parent-r21-setup004-source-review/1",
+  "observed_unix": 1792446107.678646,
+  "archive_bytes": 77212,
+  "archive_sha256": "ee928231fbf68dce715079a84ef6ff0550bf0d4d8f7cde54450e32de7a8a579b",
+  "manifest_sha256": "c67a01634b28812f49802f9b9252a33cccd8791b8c009bbddcfd5f0aa132f25a",
+  "payload_entries": 19,
+  "source_review": "Strict003supervisor/helper byte-identical, same predicate/ownership/cleanup/budget. Minimal external source-bound Base_Task.setup_scene23statement hooks, mainthread firstinvocation only, bounded64receipts. Loader compiles exact69637B hash before executing module;002argv/source/config/physics unchanged. Extra metadata/tracing overhead diagnostic-only, not productionequivalence. No repin/whitelist/environment change.",
+  "actual67_tests": 45,
+  "actual67_test_receipt": "parent-r21-setup004-actual67-tests-001.json",
+  "test_wall_s": 7.408908571000211,
+  "test_wait4_cpu_s": 6.347291,
+  "worker_all2_batches_retained": true,
+  "worker_conservative_cpu_charge_s": 120,
+  "original002_007_frozen": true,
+  "source_sha256": {
+    "src/affinity_observation.py": "dc075f3ccc497c1961bddc0508702af366bb8a8c81042c24b5c925e28e3ddedb",
+    "src/common.py": "5d54354fa3c36c881778793e929ca4378c5a84dec229ae798b8ac9599f89db96",
+    "src/cpu_tests.py": "f9d46174c000a5f04731b674ecfb47b9deb92a4fd3d7a8c4b694f75b4f7ea2ac",
+    "src/phase_launcher.py": "4af8af6106d0df46f2827c428a381f393efda2b05bc9a8475c097d64afb5f964",
+    "src/setup_scene_trace.py": "30c762557b552d363345ebdcfe4d004041deaa937ce5f72713f410cd7b1d4201"
+  },
+  "authorized_new_instrumented_initialization_attempts": 1,
+  "native_wall_s": 300,
+  "native_cpu_s": 240,
+  "full_OUT_RETURN_authorized": false,
+  "old001_protocol_spent": true,
+  "physical_success": false
+}

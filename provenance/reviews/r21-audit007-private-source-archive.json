@@ -1,0 +1,12 @@
+{
+  "name": "r21-terminal-audit007-reviewed-source.tar.gz",
+  "bytes": 117114,
+  "sha256": "25fe377cc553ad771bec797465a0b8a39ab236f9d819713610bc17891de5c6e0",
+  "source_manifest_sha256": "9e2a9388f8ff634a8725b81e92cbbd652b951d40a2fb86e7bd945f3c2ff57be1",
+  "members": 33,
+  "scope": "Separate audit007 repair; original unchanged one-way verifier accepted baseline002 after65 actual67 tests and one controlled audit; no physics change or RETURN success",
+  "raw_CLI_auth_original_states_video_excluded": true,
+  "release": "r21-terminal-audit-20261020",
+  "release_url": "https://github.com/Zarad0X/robotwin-astra-harness/releases/tag/r21-terminal-audit-20261020",
+  "github_server_digest_verified": true
+}

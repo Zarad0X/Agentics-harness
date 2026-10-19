@@ -1,0 +1,33 @@
+{
+  "schema": "parent-r21-historical-oneway-acceptance/1",
+  "observed_unix": 1792437362.7364411,
+  "attempt": "ten-r21-rebaseline-20261020-002",
+  "accepted": true,
+  "OUT": 10,
+  "expected_count": 10,
+  "exact_RETURN": null,
+  "strict_full_goal_passed": false,
+  "multi_layout_stable_rate_established": false,
+  "contract": "Frozen original seed2 assisted10 one-way extract and catch-slot placement; exact original expected-count10 verifier unchanged. Original11 algorithm hashes and all502 recorded events match historical except event time/contact-list order. No strict return or broader new safety/contact acceptance claim.",
+  "original_verifier_sha256": "2877efe5d7adf40a9357ebedd3fbe62e5be930b7d285bbc2ac1c8af5d15d5244",
+  "verifier_report_sha256": "cd06cc7724c7b6757d9f943b77cf0b1ddf192928db6997191b5b4d605d464d4b",
+  "evidence_file": "parent-r21-audit007-complete-evidence-001.json",
+  "evidence_sha256": "b2bc5141e6b67a01967a64a405d57fd0ff255be5752c260bc8e402d28bf8e877",
+  "physical_retries_for_audit": 0,
+  "native_wall_s": 4717.703055178979,
+  "native_child_cpu_s": 4708.444477999999,
+  "all_attempts": "BASELINE_ATTEMPTS.json",
+  "prior_startup_failure_retained": true,
+  "prior_owned_metadata_audit_failure_retained": true,
+  "continuation_count": 1,
+  "continuation_claim_consumed": true,
+  "source_review": "parent-r21-audit007-final-source-review-001.json",
+  "recorded_trace_review": "parent-r21-full-recorded-trace-1810.json",
+  "limitations": [
+    "one successful replica, not stable rate",
+    "historical assistance retained including magnet80 and release velocity reset",
+    "historical current native metadata equality does not attest unrecorded historical environment",
+    "no exact originalposeRETURN10/15/20 or heldout acceptance"
+  ],
+  "source_receipt": "External work/astra-roundtrip/parent-r21-audit007-complete-evidence-001.json"
+}

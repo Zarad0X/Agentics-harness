@@ -1,0 +1,26 @@
+{
+  "schema": "parent-r21-renderer005-final-review/1",
+  "observed_unix": 1792448040.251986,
+  "archive_bytes": 19208,
+  "archive_sha256": "0c990c1e08fdb297cff8293534d35f32bd9f6a3214d9547b3a710bfa2868dfc3",
+  "manifest_sha256": "56a7a7a57571362aaf4086a089d96d8052728bfb346a9e9f6d64ea101adf03b0",
+  "payload_entries": 15,
+  "actual67_tests": 19,
+  "test_receipt": "parent-r21-renderer005-actual67-tests-002.json",
+  "test_wall_s": 0.37792235193774104,
+  "test_wait4_cpu_s": 0.14843099999999998,
+  "all_prior_failures_retained": "Parent00119tests6errors generated007symlink/missing004reference. Canonicalfixture prep incorrectly copied untracked007receipts and failed; partialisolated0700 ondata9, no export or native. Finalmanifest-onlyexact007copy+004read-onlyreference19pass, candidateunchanged.",
+  "source_review": "Purebuilder verifies exact007clean_envAST+140BinstalledNVIDIAICD. Exactoneenvaddition VK_ICD_FILENAMES, no inheritedauth/preload; GPU4uuid/core0 checked. No nativecontroller orautomaticretry. Reuse frozen004source/strictsupervisor/phaseargv unchanged. Sourcehypothesis not causalfix. Driver/loader hashes and non-elevated gate mandatory, actualGPUcontext mapping needed ifreached.",
+  "environment_diff": {
+    "VK_ICD_FILENAMES": "/usr/share/vulkan/icd.d/nvidia_icd.json"
+  },
+  "new_diagnostic_attempts_authorized": 1,
+  "native_wall_cap_s": 300,
+  "native_cpu_cap_s": 240,
+  "full_OUT_RETURN_authorized": false,
+  "source_sha256": {
+    "src/cpu_tests.py": "f5e353244a560ba4cf077a82af36990c23dfb25f2e700a3f8a9e57af16daca81",
+    "src/renderer_env.py": "37793d3f1f157b54a10f1c8c3e034851adf7d5a457ebf90b7ba919551ced1267"
+  },
+  "physical_success": false
+}

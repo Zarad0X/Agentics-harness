@@ -1,0 +1,44 @@
+{
+  "id": "r21-return002-env005-001",
+  "purpose": "ONE init-only NVIDIAICD environmentcontrol, notformalOUT/RETURN",
+  "status": "expectedinitstop reached, no observedaffinityviolation; GPU3and4contexts blockfulltaskadoption",
+  "protocol_spent": true,
+  "automatic_retry": false,
+  "driver_pid": 2489375,
+  "driver_start_ticks": 65084475,
+  "native_pid": 2489532,
+  "native_start_ticks": 65084766,
+  "native_exit": 2,
+  "expected_intentional_failure": "initialization_only_diagnostic_no_OUT_or_RETURN_credit",
+  "native_wall_s": 25.976094871060923,
+  "known_wait4_native_and_reaped_cpu_s": 24.595105,
+  "aggregate_all_process_cpu_s": null,
+  "single_core_elapsed_upper_bound_valid_under_observed_contract": true,
+  "sampled_peak_not_exact_total": 29.44,
+  "remaining_owned": [],
+  "accounting_gaps": [],
+  "source_closure_external_bindings_unchanged": true,
+  "all_owned_independently_inactive": true,
+  "OUT": null,
+  "exact_RETURN": null,
+  "whole_goal": false,
+  "formal_control_physics_steps": 0,
+  "initialization_physics_steps_excluded_from_formal_counter": true,
+  "setup_records": 48,
+  "all_setup_masks": [
+    0
+  ],
+  "observer_pack_controls_rng_unchanged": true,
+  "initial_layout_errors": [],
+  "device_context_observation": {
+    "GPU3": "G",
+    "GPU4": "C+G"
+  },
+  "actual_render_system_device": null,
+  "environment_diff": {
+    "VK_ICD_FILENAMES": "/usr/share/vulkan/icd.d/nvidia_icd.json"
+  },
+  "evidence": "parent-r21-renderer005-native-result-2210.json",
+  "evidence_sha256": "72aecd63a6f976537ecee237883fa49d5e17edd5eefe39caac7d90bc24ed4823",
+  "cause": "Preventioncontrolpassesinitializer; exactMesa/internalcallerunconfirmed. GPUresourcebindingunresolved; blockfullnativephysicsuntilreviewedcandidate."
+}

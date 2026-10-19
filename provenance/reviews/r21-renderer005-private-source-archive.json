@@ -1,0 +1,12 @@
+{
+  "name": "r21-renderer005-reviewed-source.tar.gz",
+  "bytes": 20252,
+  "sha256": "02cbc296a0a71cd78291b0a3aa369d3cf97639bd8c276c059a01d86174e3b2d5",
+  "members": 18,
+  "source_export_manifest_sha256": "c5c1286937f33a1ba7fd9b860fc8dfd189510101c878e5415747378833c7ca9d",
+  "original_candidate_sha256": "0c990c1e08fdb297cff8293534d35f32bd9f6a3214d9547b3a710bfa2868dfc3",
+  "scope": "Exact005 one-environment-key constructor/validators and19synthetic tests;19actual67pass afterparentdependencylayout correction, failuresretained. One NVIDIA-onlyinit controlreachesintentionalstop withoutaffinitygap; GPU3/4contexts blockadoption. RawCLI/auth/nativeoutputs/assets excluded; no OUT/RETURNacceptance.",
+  "release": "r21-return-20261020",
+  "release_url": "https://github.com/Zarad0X/robotwin-astra-harness/releases/tag/r21-return-20261020",
+  "github_server_digest_verified": true
+}

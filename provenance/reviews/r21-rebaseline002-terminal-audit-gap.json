@@ -1,0 +1,47 @@
+{
+  "schema": "reviewed-r21-rebaseline002-terminal/1",
+  "observed_unix": 1792434168.237279,
+  "run": "ten-r21-rebaseline-20261020-002",
+  "native_exit": 0,
+  "native_wall_s": 4717.703055178979,
+  "native_waited_child_cpu_s": 4708.444477999999,
+  "supervisor_own_cpu_at_native_terminal_s": 3511.01,
+  "CPU_scope": "Supervisor own sampledCPU is separate; native wait4 includes reaped child descendants, not exact orphan use; no accounting gaps or remaining session reported",
+  "raw_runner_completed_ids": [
+    3,
+    4,
+    19,
+    18,
+    11,
+    8,
+    10,
+    9,
+    12,
+    17
+  ],
+  "raw_runner_result_sha256": "c5d9cbdefa2a8779e1e95ef5b26506039abe10647bfd028f0414616d7f9dc730",
+  "original_verifier_ran": false,
+  "owned_initial_audit": {
+    "accepted": false,
+    "attempt": "ten-r21-rebaseline-20261020-002",
+    "error": "ValueError:bounded native metadata collection failed",
+    "schema": "r21-reproduction@1",
+    "strict_return": false
+  },
+  "owned_initial_audit_sha256": "0cb7a81b5dad5406e781412657a3ddc15815598303cc55eb4a95c6f98a885270",
+  "audit_metadata": {
+    "child_rc": 0,
+    "reason": "descendants_after_native_exit",
+    "accounting_gaps": [],
+    "remaining_session": [],
+    "observed_processes": "own metadata leader only",
+    "native_metadata_equal_launch": true,
+    "native_sha256": "91c8b40d0ac355bab9766104aa4c8440ddaefb6652bf82ae84349f4cd69a09e4"
+  },
+  "confirmed_code_defect": "Supervisor uses active scan from before wait4; a just-reaped leader can be misclassified as surviving descendant. Exact production interleaving unproved; new deterministic regression pending.",
+  "repair": "server22 gpt-6-astra r21-terminal-audit-repair-006 candidate; no physical rerun or old failed report overwrite",
+  "accepted_OUT": null,
+  "exact_RETURN": null,
+  "full_goal_success": false,
+  "validation_scope": "Raw original assisted one-way originalseed2 task completed; original independent verifier acceptance still pending controlled audit continuation. Not strict original-pose RETURN or stability."
+}

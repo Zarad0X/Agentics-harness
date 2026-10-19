@@ -1,0 +1,40 @@
+{
+  "schema": "reviewed-collector002-status/1",
+  "source_archive": {
+    "release_url": "https://github.com/Zarad0X/robotwin-astra-harness/releases/tag/earlyhold-collector-20261020",
+    "name": "earlyhold-collector002-reviewed-source.tar.gz",
+    "bytes": 24955,
+    "sha256": "280866151f1d52bd21438920b7d76f87297185352c29a13dd398032a8ee7964b",
+    "github_server_digest_verified": true
+  },
+  "source_sha256": "f2c2f2ffedd029329a0495aae9323e192dd51648ad52be1e6cecbe3d8365bf2b",
+  "worker_tests": 34,
+  "parent_actual15_linux_tests": 34,
+  "parent_test_cpu_s": 0.309592,
+  "parent_mac_test_failure_retained": "33pass and1 Linux-affinity test fails because macOS lacks sched_getaffinity; exact unchanged files pass34 on actual15. No test skipped or changed.",
+  "actual_collection001": {
+    "status": "unknown audit_hash",
+    "child_cpu_s": 0.114905,
+    "original_streams_read": false
+  },
+  "data_only_input_correction": "Both whole parsed audits canonically equal; remote serialization differs. Stage exact parent-pinned representations with both raw hash identities and original files retained. No source pin or content override.",
+  "actual_collection002": {
+    "status": "unknown line_size_limit",
+    "child_cpu_s": 17.868518,
+    "waited_driver_children_cpu_s": 17.961538,
+    "wall_s": 19.107433,
+    "both_loaded_streams_whole_hash_bytes_rows_verified": true,
+    "events_whole_hash_verified_by_separate_chunk_inventory": true,
+    "over_8MiB_event_lines": {
+      "023": 2,
+      "024": 4
+    },
+    "actual_event_line_bytes_range": [
+      27836585,
+      29467567
+    ]
+  },
+  "followup": "Bounded streaming and independent partial stream results; deferred secondary while mainline audit006 repaired. No memory/line/selection/physics limits relaxed and no third collection attempted.",
+  "native_firsthold_decline_cleanup": "unknown until derived source facts safely exported/reviewed",
+  "no_physics_or_duplicate_full_audit": true
+}

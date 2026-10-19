@@ -160,16 +160,22 @@
       "role": "parent-reviewed append-only experience summary publication; initial snapshot retained"
     },
     "experience/LATEST.json": {
-      "bytes": 240,
-      "sha256": "2b52c3d50652bcf73a2c18cc3f4d5c0730bcb5a4069bcd2fa1b3504e4bbb2611",
-      "source_path": "parent-verified-ledger:work/astra-roundtrip/evolution-ledger@694c66c3d062dd75b4af193b2c68e55baeef711e1032a2ed449f7bdb17907f12",
-      "role": "parent-reviewed append-only experience summary publication; initial snapshot retained"
+      "bytes": 242,
+      "sha256": "ca599c57b9fb78aa476cbfa60579b9eb3cb32663e8d97ab2044530a1450f83d2",
+      "source_path": "parent-verified-ledger:work/astra-roundtrip/evolution-ledger@15877fa82e69166aedc8338fbfe968acc3c7aa0d4df229bd81865d5edd8740c0",
+      "role": "parent-reviewed append-only experience summary publication; earlier snapshots retained"
     },
     "experience/snapshots/20261019T1345Z.json": {
       "bytes": 35392,
       "sha256": "b337754ee2f393ebf62294a6f1df18677a7798866b5e04fb44fdc067c0cb636b",
       "source_path": "parent-verified-ledger:work/astra-roundtrip/evolution-ledger@694c66c3d062dd75b4af193b2c68e55baeef711e1032a2ed449f7bdb17907f12",
       "role": "parent-reviewed append-only experience summary publication; initial snapshot retained"
+    },
+    "experience/snapshots/20261019T140934Z.json": {
+      "bytes": 35852,
+      "sha256": "c48fa4006bd06815b69bcf90cc12f833b4a07db77fc5246deff5b8588ec8e6e2",
+      "source_path": "parent-verified-ledger:work/astra-roundtrip/evolution-ledger@15877fa82e69166aedc8338fbfe968acc3c7aa0d4df229bd81865d5edd8740c0",
+      "role": "parent-reviewed append-only experience summary publication; earlier snapshots retained"
     }
   },
   "archive": "archive/index.json",

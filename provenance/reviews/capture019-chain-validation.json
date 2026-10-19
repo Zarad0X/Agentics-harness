@@ -1,0 +1,53 @@
+{
+  "schema": "parent019-capture-chain-validation/1",
+  "observed_unix": 1792418807.8204422,
+  "relay_filename": "parent019-capture-chains-001.json",
+  "relay_bytes": 5270980,
+  "relay_sha256": "b87b5e486f73895a858e3c4d5b5c990ad9bf2b7aff8f7fd8f0f47a954188f587",
+  "source_bytes": 166822853,
+  "source_sha256": "222de24951c8aa40a7c8aee03e4b454bcf20df3238cd695b38a66a09cad52e31",
+  "source_identity_matches_final_audit": true,
+  "raw_sha256": "a1f9f0eee7d2eadedd4f4c7182b223df155d4d01852df711458fa4daf1728b44",
+  "raw_bytes": 18196345,
+  "source_pins_verified": {
+    "src/capture_feedback.py": "8b6f81bc069e1d8a812574fb931715f0dd05aec7a544227bce7423576802c6f3",
+    "src/capture_native.py": "a1735259a2ac131c5b5ca12a69933f6fc8b366992aede91708868f77f068e6e3",
+    "src/capture_handoff.py": "1dbae11862bc4a578486bb05fdc84a35ec4fa2bdff0bbcd9150ee6c6760c0e3f",
+    "src/physics_runner.py": "2456c99c703ecf751c6d85c1fd3c936b654c731df28f219ed7b9ca14955c8cff",
+    "src/closure_hold.py": "9f797627f4212300aa0295139bb0ce3a3ba74b0253e106b599bac114ba5b03e0",
+    "src/gripper_control.py": "3fbdb17499cb2c7afe6a99be662e90f8c1294ce17b2d5c69a4d5343168efc49a"
+  },
+  "chains": [
+    {
+      "source_sha256": "44192b856c09159197964c1c27fed79dce4c7df442302db0f86f998655ee9419",
+      "candidate_sha256": "5e2cb7396bb47034380b1256713548fc0a98b7e5d531dbe1c006a9bf605c71bf",
+      "preview": false,
+      "records": 1995,
+      "status": "failed",
+      "failure": "CandidateInfeasible:capture_both_contacts_lost",
+      "terminal_sha256": "44cc915ffbdb1281adc00478dc4e56a131d66b58f250a32ed988ed196a9f410e"
+    },
+    {
+      "source_sha256": "da12e838845f811caf9fd3a7f8a82a8ee9c15e33a259220e9c5b418a002409d2",
+      "candidate_sha256": "5e2cb7396bb47034380b1256713548fc0a98b7e5d531dbe1c006a9bf605c71bf",
+      "preview": true,
+      "records": 2594,
+      "status": "accepted",
+      "failure": null,
+      "terminal_sha256": "369107ddccc059810198e24a7899488ddf8a90ea5726fd7882ee76096825e89e"
+    },
+    {
+      "source_sha256": "b77f99e7dabc108d5f23819730cd0197dc2df73f26fbbec7d1ca8daf734a353b",
+      "candidate_sha256": "5e2cb7396bb47034380b1256713548fc0a98b7e5d531dbe1c006a9bf605c71bf",
+      "preview": true,
+      "records": 2682,
+      "status": "accepted",
+      "failure": null,
+      "terminal_sha256": "5d3c66ce51601c03aff8fe8d014c883006d0d8b8ed9bb97a10b4e127cefcbb0a"
+    }
+  ],
+  "CPU_extraction_s": 7.064269355,
+  "physics_actions": 0,
+  "causal_conclusion": null,
+  "limits": "Source and hash-chain integrity only. Accepted preview trajectories are not successors of a changed formal command; hidden solver state unavailable."
+}

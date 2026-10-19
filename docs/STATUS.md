@@ -22,3 +22,5 @@
 提前制动002的源码与CPU复核见 `provenance/reviews/earlyhold002-source-review.json` 和 `earlyhold002-cpu-summary.json`。父端从精确封包新建副本复测，未读取改变命令之后的基线后继状态。远程生产目录的RESOURCES在封包后发生追加，已保留失败校验及归档有效的区别，见 `earlyhold002-delivery-gap.json`；下一次集成须分离不可变内容与最终资源证明。当前控制器已更新为父端审查后的024（225个绑定文件）；023/024均已另经原受控流程启动诊断。Git提交本身不触发部署。
 
 原始019/020复盘已接收并经父端16组CPU复测，诊断计数分别为1/0与0/0，两条均失败。023/024仅改变提前制动开关及身份，七份配置、020抓取、磁吸与安全判定不变；父端独立补齐几何证据，不改写生产任务原有超时失败。详见 `provenance/reviews/postmortem019020-review.json`、`earlyhold-native001-source-review.json`、`earlyhold-native001-cpu-summary.json` 和 `earlyhold-original10-experiment.json`。新对比预算为每版一条、无自动重试，终局必须独立审计。
+
+019的N4失败证据缺口已补齐：正式失败链1995条事件，同一候选两条成功预演分别2594/2682条，共7271条；源事件文件哈希、六个源码哈希和每条链的序号/前驱哈希均已核验。原始166MB日志及压缩数据不进主库，引用见 `provenance/reviews/capture019-chain-validation.json`。已交给22号机官方账号的Astra比较接触丢失之前的动作；完整记录与已确认物理原因须区分，目前尚无新归因或修复成功声明。023/024继续原预算，15物体021仍由已有流程审计。

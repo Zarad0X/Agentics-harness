@@ -1,0 +1,39 @@
+name: lean-harness
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  offline-checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    env:
+      PYTHONDONTWRITEBYTECODE: '1'
+      OMP_NUM_THREADS: '1'
+      OPENBLAS_NUM_THREADS: '1'
+      MKL_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Explicit private history bootstrap
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p .local/archive-cache
+          python3 -B scripts/fetch_archive.py
+      - name: Install pinned formatter
+        run: python3 -m pip install --quiet --disable-pip-version-check --index-url https://pypi.org/simple ruff==0.17.1
+      - name: Check code format and critical lint
+        run: |
+          ruff format --check
+          ruff check
+      - name: Verify current controller binding
+        run: python3 -B scripts/check_controller.py
+      - name: Check maintained source only
+        run: python3 -B scripts/check_code.py
+      - name: Offline provenance and ledger verification
+        run: python3 -B scripts/check_repository.py
+      - name: Offline adversarial scaffold tests
+        run: python3 -B -m unittest discover -s tests/scaffold -v
+      - name: Current core against 44 frozen upstream tests
+        run: python3 -B scripts/test_core.py

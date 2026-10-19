@@ -1,8 +1,8 @@
 {
   "schema": "baseline-first-iteration-policy/1",
-  "updated_unix": 1792427027.3245702,
+  "updated_unix": 1792429433.651392,
   "user_direction": "从成功的基线出发改进增强迭代",
-  "status": "active baseline-first;first new native attempt failed at import before grasp; data-only repair pending",
+  "status": "active baseline002 actual physics/search preview; originalr21 source retained; no success yet",
   "baseline": {
     "version": "ten-r21",
     "source": "work/astra-direct/verified-ten-r21",
@@ -30,7 +30,7 @@
     "component_tests_are_not_end_to_end_success": true
   },
   "reproduction_plan": {
-    "task": "repair-r21-import-closure-003",
+    "task": "monitor-r21-rebaseline002",
     "account": "server22_chatgpt",
     "model": "gpt-6-astra",
     "native_launch_not_yet_started": false,
@@ -40,12 +40,18 @@
     "no_automatic_retry": true,
     "parent_review_required": true,
     "prior_delivery": "restore001 blocked;repair00232actual67 tests passed and firstnative import failure retained",
-    "review": "parent-r21-002-final-source-review-001.json",
+    "review": "parent-r21-baseline002-final-source-review-001.json",
     "attempts_completed": 1,
-    "current_attempt": "ten-r21-rebaseline-20261020-001",
-    "attempt_status": "native import startup failure; independently rejected",
+    "current_attempt": "ten-r21-rebaseline-20261020-002",
+    "attempt_status": "native physics running, terminal and owned audit pending",
     "automatic_retry": false,
-    "new_protocol_required_after_repair": true
+    "new_protocol_required_after_repair": false,
+    "attempts_started_total": 2,
+    "attempts_completed_total": 1,
+    "current_protocol": "parent-r21-baseline002-protocol-001.json",
+    "current_protocol_attempts_started": 1,
+    "current_protocol_attempt_ceiling": 1,
+    "new_protocol_required_after_terminal": true
   },
   "preserved_jobs": [
     "original10-024 and owned earlyholdpair observer",
@@ -55,11 +61,16 @@
     "preflight": "parent-r21-host67-fidelity-preflight-001.json",
     "source114_assets107_algorithm11_match": true,
     "original_asset_system_symlink_untouched": true,
-    "next": "receive003 and actual67 import regression before fresh exact data closure004",
+    "next": "No new copy or source edits during baseline002; preserve original/source hashes and collect owned terminal audit",
     "dependency_inspection": "parent-r21-host67-closure-inspection-002.json",
     "all10_fixture_requirement": "parent-r21-immutable-fixture-requirement-001.json",
-    "current_closure": "/data_ft_9_10/shaojing/robotwin-astra-20261008/recovery-closure-exact-r21-003",
-    "known_gap": "two exact import-time metadata files; no giant Objaverse tree copy"
+    "current_closure": "/data_ft_9_10/shaojing/robotwin-astra-20261008/recovery-closure-exact-r21-004",
+    "known_gap": null,
+    "resolved_startup_gaps": [
+      "exact two metadata extras",
+      "canonical null-device diagnostic exception",
+      "type-compatible nonconstructible diagnostic sentinels"
+    ]
   },
   "full_goal_unchanged": "allOUT then each originalID/position/rawQuaternionRETURN,10/15/20,multipledev and heldout, unchanged physics/safety/assistance, independent audit and demo"
 }

@@ -1,0 +1,43 @@
+{
+  "schema": "parent-r21-import-readiness-review/1",
+  "observed_unix": 1792429670.447655,
+  "parent_actual67_tests": {
+    "003": 19,
+    "004": 26,
+    "005": 30
+  },
+  "final_test_cpu_s": 0.282172,
+  "final_test_upper_s": 0.5022838159929961,
+  "native005": {
+    "passed": true,
+    "wall_s": 17.473509683040902,
+    "wait4_cpu_s": 16.911553,
+    "scene_constructed": false,
+    "helpers_called": false,
+    "registered_names": 36,
+    "result_sha256": "dda82563dcfafff72f397ff8e0a729e17a27f2e29c15a5a43af43f7cdb9b8129",
+    "evidence": "work/astra-roundtrip/parent-r21-types005-native-diagnostic-001.json"
+  },
+  "minimal_changes": [
+    "Two exact import metadata JSON add28396bytes; original243 inputs unchanged",
+    "Canonical verified null-device exception; outside regular files/otherdevices/aliases/network remain blocked",
+    "Nonconstructible class sentinel supports original type-union annotations; constructor/profile guards retained"
+  ],
+  "closure": {
+    "path": "/data_ft_9_10/shaojing/robotwin-astra-20261008/recovery-closure-exact-r21-004",
+    "files": 245,
+    "bytes": 51066596,
+    "sha256": "e2f781eb39f2b02e62a687f277f224bed86c51deac0902089b65b095f0243180",
+    "device": "/dev/sde ext4",
+    "originals_untouched": true
+  },
+  "failed_startup_and_diagnostics_retained": true,
+  "source_common_and_algorithm_bytes_preserved": true,
+  "physical_success_not_established": true,
+  "full_goal_unchanged": "allOUT then originalID/position/rawQuaternionRETURN,10/15/20 dev+heldout layouts, independent physical audit/demo",
+  "limitations": [
+    "No full historical native-library/dynamics attestation",
+    "Import readiness is not physical10/10, preciseRETURN or stability",
+    "Current core parser lacks legacy normalized baseline rows; see separate all-attempt index and coverage issue"
+  ]
+}

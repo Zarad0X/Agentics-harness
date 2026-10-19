@@ -1,0 +1,35 @@
+{
+  "schema": "r21-baseline002-single-attempt-protocol/1",
+  "created_unix": 1792429156.382943,
+  "id": "r21-baseline-replication002",
+  "attempt": "ten-r21-rebaseline-20261020-002",
+  "maximum_attempts": 1,
+  "wall_cap_s": 7200,
+  "aggregate_native_child_cpu_cap_s": 7200,
+  "automatic_retry": false,
+  "stop_on_any_failure": true,
+  "previous_attempts": [
+    "ten-r21-rebaseline-20261020-001"
+  ],
+  "prior_failure_retained": true,
+  "rationale": "Prior soleattempt failed before scene due missing import data; exact2metadata data closure and actual native import are now independently validated. This new protocol authorizes one originaltask attempt only, not retry of old001.",
+  "required_import_gate": {
+    "output": "/data_ft_9_10/shaojing/robotwin-astra-20261008/recovery-import-types-diagnostic-005-001",
+    "result_sha256": "dda82563dcfafff72f397ff8e0a729e17a27f2e29c15a5a43af43f7cdb9b8129",
+    "terminal_sha256": "9d976b14b01bbb84b3b23b31dd5281c693701c0f2195040bd1eb7ebe21193b74",
+    "closure_sha256": "e2f781eb39f2b02e62a687f277f224bed86c51deac0902089b65b095f0243180",
+    "source6": {
+      "src/common.py": "439fdf442352d763078040c14198cce331364479fe3a2ae8a311244939ce50b0",
+      "src/engineering.py": "ca484dd014cc6379b2ecfb338fe339e07e7e6cb1c219c90aa9cb0d860f333f12",
+      "src/probe.py": "ef4ab0234b16ad67aed7e3f169d27b11171fd85f09209c852178d295d85c2247",
+      "src/seal.py": "4085cf33b91143521cb3bdd5991c8b43376ae039323afcb18971b9fbc465de3d",
+      "tests/test_import_closure.py": "d50b148c256d33abf0e892c7065200a06d2cda29bf3a210724f9cd884451ee4e",
+      "EXTRAS.json": "4d4f7f9d4e0586ae838523d1b326e1037591665a243fa001941cb524629e8a3c"
+    }
+  },
+  "source_review_sha256": "b95fcddf194cb17be4dee385c6ab5cd1029d4140dea6ada9a0290700f8d34ca7",
+  "task": "Exact originalseed2 all10 one-way extract/slot placement; original11 algorithms,114source,107assets,10fixtures preserved +2 importmetadata; rawmagnet80 friction3/2.4 releasevelocityreset1 finger1000/200/4 speed.01 preload.00025 search/previews original",
+  "acceptance": "Native terminal plus exact original expectedcount10 independent verifier, identity/lift/placement/stability/release/retreat and provenance. Not original-pose RETURN or multiseed stability. All attempts retained.",
+  "resource_admission": "Fresh GPU4 UUID/core/jobs/known project locks, no preemption, data9_10 physical/dev/sde; unknown global manager coverage explicit",
+  "terminal_owner": "New durable baseline002 parentdriver; exactly one terminal audit, no physics relaunch. Existing024 observer untouched"
+}

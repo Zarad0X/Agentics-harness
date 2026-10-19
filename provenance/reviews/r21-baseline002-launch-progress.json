@@ -1,0 +1,52 @@
+{
+  "schema": "baseline002-launch-progress/1",
+  "observed_unix": 1792429482.5329583,
+  "native": {
+    "pid": 1632459,
+    "start_ticks": "63196501",
+    "same_start": true,
+    "state": "R",
+    "cpu_s": 309.46
+  },
+  "driver": {
+    "pid": 1632304,
+    "start_ticks": "63196174",
+    "same_start": true,
+    "state": "R",
+    "cpu_s": 239.39
+  },
+  "events": {
+    "bytes": 1151487,
+    "age_s": 26.101627349853516
+  },
+  "event_kinds_observed": [
+    {
+      "kind": "return_plan",
+      "object_id": 4
+    },
+    {
+      "kind": "released",
+      "object_id": 4
+    },
+    {
+      "kind": "search_visit",
+      "object_id": 19
+    },
+    {
+      "kind": "candidate_preflight",
+      "object_id": 19
+    },
+    {
+      "kind": "grasp_preview",
+      "object_id": 19
+    }
+  ],
+  "run": "ten-r21-rebaseline-20261020-002",
+  "counts_pending_independent_terminal_audit": true,
+  "OUT": null,
+  "exact_RETURN": null,
+  "success": false,
+  "owner": "durable driver002 performs one ownedaudit after terminal, no auto-retry",
+  "live_state_not_authoritative_in_Git": true,
+  "source_driver_sha256": "1b38e52f5787e6d2e8244063959384f8e3f3411f6d7f31559a3775e55f1570cf"
+}

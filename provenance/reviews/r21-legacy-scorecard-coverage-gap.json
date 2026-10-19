@@ -1,0 +1,10 @@
+{
+  "schema": "parent-legacy-scorecard-gap/1",
+  "observed_unix": 1792429670.027123,
+  "source_evolution_sha256": "9faf274cfd961f31b7461ce297d90e21c60c58d54dffcc1e466b36da7ab1a26f",
+  "actual_public_run_scope_error": "unrecognized run identity",
+  "all_attempt_index": "BASELINE_ATTEMPTS.json",
+  "all_attempt_index_sha256": "d8861d5fcf6933539a528dbd7dff3f27a8446404a970b684d3e18e29169a9029",
+  "limitation": "Current core run_scope/adapt supports rt-v36-combined namespace only. New r21attempts are preserved as references + separate authoritative index, not represented as supported standardized physical rows in core scorecard. Do not claim unifiedscorecard covers them.",
+  "next": "Add scoped tested legacy-baseline ingestion and distinct historical one-way/strictRETURN contracts after active pinned helper ownership permits; no current helper/schema edits or threshold relaxation."
+}

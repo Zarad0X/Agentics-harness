@@ -1,0 +1,36 @@
+{
+  "schema": "reviewed-private-release-index/1",
+  "release_url": "https://github.com/Zarad0X/robotwin-astra-harness/releases/tag/r21-import-closure-20261020",
+  "private": true,
+  "assets": [
+    {
+      "name": "r21-import-closure-003.tar.gz",
+      "bytes": 116504,
+      "sha256": "5b2031cde89f45c3cef6ba397ec43ac50b5d97ad90f0eb170eb1d1b350779aab",
+      "github_server_digest_verified": true,
+      "url": "https://github.com/Zarad0X/robotwin-astra-harness/releases/download/r21-import-closure-20261020/r21-import-closure-003.tar.gz"
+    },
+    {
+      "name": "r21-import-null-device-004.tar.gz",
+      "bytes": 135828,
+      "sha256": "2d0f35ee1becf7690e241df5f2b3b6d4da19ef81c1b6d56d8868ce679d6573df",
+      "github_server_digest_verified": true,
+      "url": "https://github.com/Zarad0X/robotwin-astra-harness/releases/download/r21-import-closure-20261020/r21-import-null-device-004.tar.gz"
+    },
+    {
+      "name": "r21-import-constructor-types-005.tar.gz",
+      "bytes": 153037,
+      "sha256": "2932db6fa2b7c48bbb98e9306daa621fc31c7c1ed8ccde590e209e21390e7d35",
+      "github_server_digest_verified": true,
+      "url": "https://github.com/Zarad0X/robotwin-astra-harness/releases/download/r21-import-closure-20261020/r21-import-constructor-types-005.tar.gz"
+    },
+    {
+      "name": "r21-baseline002-parent-gate.tar.gz",
+      "bytes": 7651,
+      "sha256": "f01ecb89e2462ef511416367794b4c416e887ebe94f0baa520fb7dbf84e30eba",
+      "github_server_digest_verified": true,
+      "url": "https://github.com/Zarad0X/robotwin-astra-harness/releases/download/r21-import-closure-20261020/r21-baseline002-parent-gate.tar.gz"
+    }
+  ],
+  "runtime_deployment_not_implied_by_Git": true
+}

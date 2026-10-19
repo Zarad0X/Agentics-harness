@@ -1,0 +1,16 @@
+{
+  "observed_unix": 1792426765.7947745,
+  "independent_audit": {
+    "accepted": false,
+    "attempt": "ten-r21-rebaseline-20261020-001",
+    "error": "ValueError:native terminal failure",
+    "schema": "r21-reproduction@1",
+    "strict_return": false
+  },
+  "audit_exit": 1,
+  "audit_cpu_s": 0.200075,
+  "audit_wall_s": 0.20513660903088748,
+  "audit_path": "/data_ft_9_10/shaojing/robotwin-astra-20261008/recovery-ten-r21-rebaseline-20261020-001/baseline-audit-001.json",
+  "original_verifier_invoked": false,
+  "native_restarted": false
+}

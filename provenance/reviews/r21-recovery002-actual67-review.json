@@ -1,0 +1,57 @@
+{
+  "schema": "parent-r21-002-final-source-review/1",
+  "observed_unix": 1792426574.151171,
+  "archive_sha256": "41aa7cda5fc9e26b8d4958a4c5fc308019ba2c85a4c899a2707ebf851d6a4f23",
+  "source_test_count": 8,
+  "actual67_tests": "parent-r21-002-actual67-test-inspection-001.json",
+  "actual67_tests_passed": 32,
+  "test_cpu_s": 5.808043,
+  "test_upper_bound_s": 6.687469909898937,
+  "test_accounting_gaps": [],
+  "dependency_source_review": {
+    "closure": "recovery-closure-exact-r21-003",
+    "files": 243,
+    "bytes": 51038200,
+    "fixtures": "all10 exact original-snapshot anchors; no old independent historical attestation invented",
+    "nonruntime_references": "24 FK-only fixtureURDF references and one unexecuted root-rewrite literal, exact source-bound classification; no active/missing/hash findings waived",
+    "asset_glbs": 106,
+    "external_uris": 0,
+    "collision_globs_match": 10,
+    "original_release_system_symlink": "untouched; new closure regular files only on /dev/sde"
+  },
+  "native_environment_review": {
+    "evidence": "parent-r21-002-binding-correction-001.json",
+    "bounded_selected_native_library_hash_bytes": 88323751,
+    "native_metadata_returncode": 0,
+    "native_metadata_gaps": [],
+    "supervisor": "system Python3.10.12 with pidfd",
+    "child": "exact historical Conda Python3.10.20; no pidfd requirement",
+    "differences": [
+      "No complete historical package/library/driver attestation exists, so byte-equal hidden dynamics not asserted",
+      "Data-only release path and output/cache/temp paths changed; algorithms11/source114/assets107/fixtures10 unchanged",
+      "One-core/BLAS1 and controlled process supervision; conservative elapsed aggregateCPU bound depends on inherited affinity and no detach/affinity change contract",
+      "No kernel filesystem sandbox; immutable source/dependency review plus explicit data-disk routing"
+    ],
+    "current_versions": {
+      "numpy": "1.26.4",
+      "sapien": "3.0.0b1",
+      "torch": "2.4.1+cu121",
+      "imageio": "2.34.2"
+    }
+  },
+  "process_review": {
+    "no_detach_or_affinity_changes": true,
+    "all_subprocesses_waited": true,
+    "dependency_source_review": "Historical algorithms have only waited nvidia-smi/findmnt subprocesses; local planner runs in-process. Robot planning entry points disabled; scene construction AST extracts two functions. Imageio ffmpeg is a waited writer child. Imported native libraries use inherited affinity; transient invisible violations cannot be ruled out and remain explicit.",
+    "filesystem_routing_review": "Original runner output and torch/CUDA/MPL/GL caches in isolated data output; parent routes tmp/XDG/imageio too, disables bytecode. Settled layout already in107inventory so existing task does not write a new shared settled file. Background/clutter randomization disabled. Existing software can be read from/home, not mutated.",
+    "transient_sampling_limit_acknowledged": true
+  },
+  "parent_preparation_error_retained": "parent-r21-002-binding-correction-001.json; generated pycache moved aside, superseded closure/env not deployed; source8 unchanged; tests not rerun unnecessarily",
+  "approval_scope": "Source/CPU/dependency/environment review permits ONE historical assisted originalseed2 maxobjects10 attempt ONLY IF fresh GPU/core/job/knownlease admission passes. No physics success/RETURN/stability claim.",
+  "scientific_conditions": "11 unchangedr21 algorithms; rawmagnet80 friction3.0/2.4 releasevelocityreset1 finger1000/200/4 speed.01 preload.00025 originalsearchpreviewbudgets; exactexpected10 originalverifier",
+  "native_attempt_ceiling": 1,
+  "wall_cap_s": 7200,
+  "child_cpu_cap_s": 7200,
+  "automatic_retry": false,
+  "physics_validated": false
+}

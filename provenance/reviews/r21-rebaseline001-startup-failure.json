@@ -1,0 +1,139 @@
+{
+  "schema": "parent-r21-baseline-native-failure/1",
+  "observed_unix": 1792426746.0534122,
+  "run": "ten-r21-rebaseline-20261020-001",
+  "child": {
+    "own_ticks": 0,
+    "pid": 1513084,
+    "ppid": 1512909,
+    "session": 1513084,
+    "start_ticks": 62945277,
+    "state": "R",
+    "ticks": 0,
+    "waited_ticks": 0
+  },
+  "terminal": {
+    "accounting_gaps": [],
+    "accounting_strategy": "one-core-elapsed-upper-bound+wait4",
+    "binding": "c270debcfb6162450b048f88cfdecab5f8f20dc6da84983b44a81df183db998f",
+    "child": {
+      "own_ticks": 0,
+      "pid": 1513084,
+      "ppid": 1512909,
+      "session": 1513084,
+      "start_ticks": 62945277,
+      "state": "R",
+      "ticks": 0,
+      "waited_ticks": 0
+    },
+    "cpu_sample_peak_s": 12.4,
+    "cpu_upper_bound_s": 9.51753553294111,
+    "observed_processes": [
+      {
+        "own_ticks": 300,
+        "peak_ticks": 778,
+        "pid": 1513084,
+        "ppid": 1512909,
+        "session": 1513084,
+        "start_ticks": 62945277,
+        "state": "Z",
+        "ticks": 778,
+        "waited_ticks": 478
+      },
+      {
+        "own_ticks": 3,
+        "peak_ticks": 3,
+        "pid": 1513086,
+        "ppid": 1513084,
+        "session": 1513084,
+        "start_ticks": 62945284,
+        "state": "S",
+        "ticks": 3,
+        "waited_ticks": 0
+      },
+      {
+        "own_ticks": 0,
+        "peak_ticks": 0,
+        "pid": 1513122,
+        "ppid": 1513084,
+        "session": 1513084,
+        "start_ticks": 62945343,
+        "state": "S",
+        "ticks": 0,
+        "waited_ticks": 0
+      },
+      {
+        "own_ticks": 236,
+        "peak_ticks": 236,
+        "pid": 1513123,
+        "ppid": 1513122,
+        "session": 1513084,
+        "start_ticks": 62945343,
+        "state": "R",
+        "ticks": 236,
+        "waited_ticks": 0
+      },
+      {
+        "own_ticks": 223,
+        "peak_ticks": 223,
+        "pid": 1513248,
+        "ppid": 1513247,
+        "session": 1513084,
+        "start_ticks": 62945593,
+        "state": "R",
+        "ticks": 223,
+        "waited_ticks": 0
+      },
+      {
+        "own_ticks": 0,
+        "peak_ticks": 0,
+        "pid": 1513247,
+        "ppid": 1513084,
+        "session": 1513084,
+        "start_ticks": 62945593,
+        "state": "S",
+        "ticks": 0,
+        "waited_ticks": 0
+      }
+    ],
+    "process_children_cpu_s": 7.808000999999999,
+    "reason": null,
+    "remaining_session": [],
+    "returncode": 1,
+    "time_unix": 1792426659.8524835,
+    "wait4_scope": "native child plus descendants it reaped; not orphan exact usage",
+    "wall_s": 9.51753553294111,
+    "wrapper": {
+      "own_ticks": 84,
+      "pid": 1512909,
+      "ppid": 1,
+      "session": 1512909,
+      "start_ticks": 62944945,
+      "state": "R",
+      "ticks": 211,
+      "waited_ticks": 127
+    }
+  },
+  "driver": {
+    "own_ticks": 12,
+    "pid": 1512909,
+    "ppid": 1,
+    "session": 1512909,
+    "start_ticks": 62944945,
+    "state": "R",
+    "ticks": 91,
+    "waited_ticks": 79
+  },
+  "native_log_tail": "Traceback (most recent call last):\n  File \"/data_ft_9_10/shaojing/robotwin-astra-20261008/recovery-closure-exact-r21-003/code/physics_runner.py\", line 635, in <module>\n    if __name__=='__main__':sys.exit(main())\n  File \"/data_ft_9_10/shaojing/robotwin-astra-20261008/recovery-closure-exact-r21-003/code/physics_runner.py\", line 84, in main\n    import envs\n  File \"/data_ft_9_10/shaojing/robotwin-astra-20261008/recovery-closure-exact-r21-003/release/workspace/base/envs/__init__.py\", line 1, in <module>\n    from .utils import *\n  File \"/data_ft_9_10/shaojing/robotwin-astra-20261008/recovery-closure-exact-r21-003/release/workspace/base/envs/utils/__init__.py\", line 5, in <module>\n    from .rand_create_cluttered_actor import *\n  File \"/data_ft_9_10/shaojing/robotwin-astra-20261008/recovery-closure-exact-r21-003/release/workspace/base/envs/utils/rand_create_cluttered_actor.py\", line 90, in <module>\n    cluttered_objects_info, cluttered_objects_list, same_obj = get_all_cluttered_objects()\n  File \"/data_ft_9_10/shaojing/robotwin-astra-20261008/recovery-closure-exact-r21-003/release/workspace/base/envs/utils/rand_create_cluttered_actor.py\", line 17, in get_all_cluttered_objects\n    cluttered_objects_config = json.load(open(Path(\"./assets/objects/objaverse/list.json\"), \"r\", encoding=\"utf-8\"))\nFileNotFoundError: [Errno 2] No such file or directory: 'assets/objects/objaverse/list.json'\n",
+  "events_available": false,
+  "stage": "import envs before DirectScene/setup_demo or any grasp",
+  "task_success": false,
+  "OUT": null,
+  "exact_RETURN": null,
+  "counts_status": "not task-executed; incomplete native run, no valid terminal task result",
+  "confirmed_cause": "Import-time rand_create_cluttered_actor.py calls get_all_cluttered_objects even with cluttered_table false; missing objaverse/list.json in isolated data closure",
+  "original_algorithms_changed": false,
+  "automatic_retry_allowed": false,
+  "physics_started_this_attempt": "No DirectScene creation reached; native process was started and retained as attempted original baseline execution",
+  "next": "Read exact source/import dependencies; server22 small data-closure correction with bounded actual import regression; no new physics until parent review/new finite protocol"
+}

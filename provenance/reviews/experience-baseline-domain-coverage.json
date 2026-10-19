@@ -1,0 +1,48 @@
+{
+  "schema": "parent-experience-domain-coverage/1",
+  "observed_unix": 1792426265.6029088,
+  "source_sha256": "9faf274cfd961f31b7461ce297d90e21c60c58d54dffcc1e466b36da7ab1a26f",
+  "ledger_records": 272,
+  "ledger_head": "1ed65181273fcd3efa57b53949b1d5ffcd72f1379bbdf6200c8af18f75905d57",
+  "query": {
+    "stage": "full-episode",
+    "signature": "historical-r21",
+    "max_tokens": 1200
+  },
+  "results": {
+    "physical": {
+      "selected": [
+        "capture-drive-contract",
+        "capture018-audit-actuator",
+        "capture018-n15-feedback",
+        "episode018-timeout"
+      ],
+      "omitted": 6,
+      "required_present": {
+        "historical-r21-mutable-fixture-drift": false,
+        "historical-r21-working-supervisor-python-conflict": false,
+        "historical10-end-to-end-baseline-gate": false
+      },
+      "token_proxy": 1125
+    },
+    "orchestration": {
+      "selected": [
+        "historical-r21-mutable-fixture-drift",
+        "historical-r21-working-supervisor-python-conflict",
+        "candidate021022-native-handoff",
+        "capture019-preview-replay-002-required-experience-retrieval-coverage"
+      ],
+      "omitted": 1,
+      "required_present": {
+        "historical-r21-mutable-fixture-drift": true,
+        "historical-r21-working-supervisor-python-conflict": true,
+        "historical10-end-to-end-baseline-gate": false
+      },
+      "token_proxy": 1061
+    }
+  },
+  "confirmed_cause": "brief() default domain=physical explicitly filters out orchestration records before ranking. Baseline reproduction/fidelity/launcher issues are orchestration-domain, so default dispatch brief cannot retrieve them regardless of signature/budget. This explains required baseline issue omission in these queries; other historical omission mechanisms are not resolved.",
+  "source_location": "evolution.py341-346",
+  "fix_status": "unresolved; explicit exact-ID facts supplied in task prompts. Do not edit active observer-pinned evolution/dispatcher. Future reviewed retrieval candidate must cover requested cross-domain IDs without leaking heldout or exceeding declared budget.",
+  "native": false
+}

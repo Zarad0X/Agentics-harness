@@ -14,3 +14,9 @@
 22号机官方ChatGPT账号的gpt-6-astra已开始`restore-r21-baseline-001`，准备依赖、受控复跑与独立验收入口。当前仍是工程准备，不是已经重新跑出10/10。拟定首轮只有一条、最长7200秒、无自动重试，父端先审查交付并重新检查资源。原024和现有观察器保留既定预算与归属，不因主线调整而打断或重复运行。
 
 本仓库`controller/`暂保留024的已审查封存源码，作为诊断证据。Git提交不是部署；后续基线恢复交付经审核后，再单独决定维护入口与部署变化。原工作区`BASELINE_FIRST.json`及持续监控保存当前执行优先级，进程真相仍以原始运行和审计证据为准。
+
+## 2026-10-19 parent recovery review
+
+The first recovery packet passed 18 producer synthetic tests and all 26 manifest entries were independently rehashed. It is **not launchable on actual67**: it couples native Python to pidfd support and requires unavailable bwrap/writable cgroup. A narrow server22 Astra repair is in progress; no baseline physics attempt has been launched. See `provenance/reviews/r21-recovery001-final-review.json` and `r21-actual67-launch-constraints.json`.
+
+All ten fixtures must come from immutable server67 r21. Two current loose local fixtures differ (convex meshes and robot vertices); this is a fidelity finding, not a demonstrated cause of later physical failures. The 243-file closure inventory totals 51,038,200 bytes. The 106 GLBs have no external URI references and ten collision-directory inventories match; the static scanner also reports non-runtime XML references requiring source-bound classification. Closure copy and dynamic environment review remain pending.

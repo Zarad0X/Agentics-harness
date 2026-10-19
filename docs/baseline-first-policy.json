@@ -1,6 +1,6 @@
 {
   "schema": "baseline-first-iteration-policy/1",
-  "updated_unix": 1792424039.512589,
+  "updated_unix": 1792425453.7354932,
   "user_direction": "从成功的基线出发改进增强迭代",
   "status": "active priority; historical episode preserved, fresh replication pending",
   "baseline": {
@@ -30,7 +30,7 @@
     "component_tests_are_not_end_to_end_success": true
   },
   "reproduction_plan": {
-    "task": "restore-r21-baseline-001",
+    "task": "repair-r21-parent-supervision-002",
     "account": "server22_chatgpt",
     "model": "gpt-6-astra",
     "native_launch_not_yet_started": true,
@@ -38,7 +38,9 @@
     "proposed_wall_s": 7200,
     "proposed_child_cpu_s": 7200,
     "no_automatic_retry": true,
-    "parent_review_required": true
+    "parent_review_required": true,
+    "prior_delivery": "restore-r21-baseline-001 completed; parent-rejected unavailable launcher prerequisites",
+    "review": "parent-r21-final001-review-001.json"
   },
   "preserved_jobs": [
     "original10-024 and owned earlyholdpair observer",
@@ -48,7 +50,9 @@
     "preflight": "parent-r21-host67-fidelity-preflight-001.json",
     "source114_assets107_algorithm11_match": true,
     "original_asset_system_symlink_untouched": true,
-    "next": "new non-destructive exact dependency closure on verifiedphysicaldata9_10 before bulk writes"
+    "next": "new non-destructive exact dependency closure on verifiedphysicaldata9_10 before bulk writes",
+    "dependency_inspection": "parent-r21-host67-closure-inspection-002.json",
+    "all10_fixture_requirement": "parent-r21-immutable-fixture-requirement-001.json"
   },
   "full_goal_unchanged": "allOUT then each originalID/position/rawQuaternionRETURN,10/15/20,multipledev and heldout, unchanged physics/safety/assistance, independent audit and demo"
 }

@@ -1,0 +1,20 @@
+{
+  "schema": "parent-r21-final001-review/1",
+  "observed_unix": 1792425167.719272,
+  "archive_sha256": "768aa648e23eaadd5ab5b96e078fca854d3e771c709d1310ea2b44451fccd38f",
+  "manifest_sha256": "0341a290bc8ec315bf68c07679d0779c5110a71cd4cc67b688633b4fd0f80790",
+  "all_manifest_entries_verified": 26,
+  "source_sha256": "65b8143a340e3b6b2f44bdad53ddc2c1e2db94171cc4139acda103b58cc2411e",
+  "status": "blocked_actual67_integration; no native launch",
+  "confirmed": [
+    "Final source still requires supervisor executable hash equal historical Conda, while native lacks pidfd and system Python has pidfd",
+    "Final source requires bwrap absent on67 and writable dedicated cgroup absent on67"
+  ],
+  "evidence": "parent-r21-actual67-launch-constraints-001.json",
+  "scientific_success_unchanged": true,
+  "next": "Narrow parent adapter repair on22; keep original11 algorithms and all10 fixtures untouched; no unsolicited sudo or privileged host changes",
+  "native_attempts": 0,
+  "producer_synthetic_tests": 18,
+  "parent_tests_rerun": false,
+  "parent_tests_reason": "Source plus actual host probes conclusively show unsatisfied launch prerequisites. Do not rerun synthetic suite to hide integration failure."
+}

@@ -1,0 +1,34 @@
+{
+  "schema": "parent-r21-static-finding-classification/1",
+  "observed_unix": 1792425402.550242,
+  "source_inspection": "parent-r21-host67-closure-inspection-002.json",
+  "findings_count": 25,
+  "classifications": [
+    {
+      "finding": "24 fixturepanda URDF mesh references",
+      "status": "non-runtime dependency in this code path; not a missing native robot mesh",
+      "reason": "physics_runner.py137 constructs ForwardModel(fixtures/panda.urdf); direct_core.py43 onward parses joint XML and computes transforms, never loads URDF visual/collision filenames. NativeRobot receives release/workspace/candidate/franka-panda/panda.urdf via config path at physics_runner125; its referenced meshes are in source114 inventory.",
+      "bindings": {
+        "physics_runner.py": "cd3861f826b741f58b5be746a4d0f90301b50efece2cbdce97f7bcc2f481e534",
+        "direct_core.py": "e966abdaea8f6d7cf1df8b76282fad831d668b0b0fcd8f80d941a54eb9171daf"
+      }
+    },
+    {
+      "finding": "/home/chenyt/RoboTwin literal in run_real10_v11_targeted.py33",
+      "status": "not executed by historical runner",
+      "reason": "physics_runner.py90-94 compiles ONLY load_selected and build_catch_trays function AST; root rewrite and top-level driver containing this literal are outside selected AST.",
+      "binding": "1c9f768ca82200ae0e8e83e0a7ad6d1b4b96d41c868ae007e857ee08cba5378b"
+    }
+  ],
+  "additional_checks": {
+    "random_background": "demo_franka.yml disables background, cluttered_table, light randomization; Base_Task branch276 does not load texturetree",
+    "settled_initial_pose": "historical task loads bound settled pose layout before planning. Preserve original behavior; not an added formal-scene reset."
+  },
+  "limitations": [
+    "Source-path classification only; not dynamic physics import/load coverage or environment identity",
+    "Scanner rejects all findings and extras only allow release paths, so001 cannot express reviewed non-runtime references without source-adapter repair",
+    "No original algorithm/fixture/shared asset changes authorized or performed"
+  ],
+  "dependency_closure_accepted": false,
+  "native_attempts": 0
+}

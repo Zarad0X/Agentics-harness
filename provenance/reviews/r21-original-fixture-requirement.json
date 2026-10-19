@@ -1,0 +1,154 @@
+{
+  "schema": "parent-r21-immutable-fixture-requirement/1",
+  "observed_unix": 1792424534.497215,
+  "source_inventory": {
+    "observed_unix": 1792424371.5723386,
+    "fixtures": [
+      {
+        "path": "fixtures/collision-boxes.json",
+        "bytes": 17410,
+        "sha256": "5241d30b4aa8e0b36c857cd97bdc134bb0bdc04321af1dbc56db5cb8d4deb992",
+        "realpath": "/data_ft_9_10/shaojing/robotwin-astra-20261008/versions/ten-r21/fixtures/collision-boxes.json",
+        "symlink": false
+      },
+      {
+        "path": "fixtures/config.yml",
+        "bytes": 1959,
+        "sha256": "027855e7a21437d31efef03393dfe2ea9c253a57d93b830d7b5d8fdb16dc8491",
+        "realpath": "/data_ft_9_10/shaojing/robotwin-astra-20261008/versions/ten-r21/fixtures/config.yml",
+        "symlink": false
+      },
+      {
+        "path": "fixtures/convex-meshes.json",
+        "bytes": 2912614,
+        "sha256": "df7b1aa485f338261e15253d918df9c8f0ccfd7981d27a7255fdd6dc6d8c0550",
+        "realpath": "/data_ft_9_10/shaojing/robotwin-astra-20261008/versions/ten-r21/fixtures/convex-meshes.json",
+        "symlink": false
+      },
+      {
+        "path": "fixtures/effective-config.yml",
+        "bytes": 1960,
+        "sha256": "e919b5173d0fe73c180fb60463e3bb8ef576f4b244a03409cd71f1aa389e4e28",
+        "realpath": "/data_ft_9_10/shaojing/robotwin-astra-20261008/versions/ten-r21/fixtures/effective-config.yml",
+        "symlink": false
+      },
+      {
+        "path": "fixtures/example-approach-event.json",
+        "bytes": 1264,
+        "sha256": "67c1a4dc89ed72a114fe70e3516776573433c46cc34ecf8db32052c6d4cd49f4",
+        "realpath": "/data_ft_9_10/shaojing/robotwin-astra-20261008/versions/ten-r21/fixtures/example-approach-event.json",
+        "symlink": false
+      },
+      {
+        "path": "fixtures/fk-measured.json",
+        "bytes": 2702,
+        "sha256": "eda15b28c7026b1d2dabbc443ea09c5b31e323b0034961f9b203d88574bda67a",
+        "realpath": "/data_ft_9_10/shaojing/robotwin-astra-20261008/versions/ten-r21/fixtures/fk-measured.json",
+        "symlink": false
+      },
+      {
+        "path": "fixtures/initial-request.json",
+        "bytes": 43325,
+        "sha256": "3a746f6b20a6c890982229579c3baa4fcbe4510675f7e6a4e0b5dbf5b7f34d5f",
+        "realpath": "/data_ft_9_10/shaojing/robotwin-astra-20261008/versions/ten-r21/fixtures/initial-request.json",
+        "symlink": false
+      },
+      {
+        "path": "fixtures/initial-state.json",
+        "bytes": 16345,
+        "sha256": "34b19c1f20eb8e4325ec4055b6380bea9a52eb4bd5fd4704eb0bb046f3a57459",
+        "realpath": "/data_ft_9_10/shaojing/robotwin-astra-20261008/versions/ten-r21/fixtures/initial-state.json",
+        "symlink": false
+      },
+      {
+        "path": "fixtures/panda.urdf",
+        "bytes": 8664,
+        "sha256": "be80276223ca90363197d4316230173815b5ea45b1733ac514eb572ff1db786f",
+        "realpath": "/data_ft_9_10/shaojing/robotwin-astra-20261008/versions/ten-r21/fixtures/panda.urdf",
+        "symlink": false
+      },
+      {
+        "path": "fixtures/robot-vertices.json",
+        "bytes": 46962,
+        "sha256": "bcf9947b3776e0650e723124861a6a6d4fa3b07788a24a1b200c9032db845eec",
+        "realpath": "/data_ft_9_10/shaojing/robotwin-astra-20261008/versions/ten-r21/fixtures/robot-vertices.json",
+        "symlink": false
+      }
+    ],
+    "release_symlinks": [
+      {
+        "path": "workspace/base/assets",
+        "realpath": "/home/shaojing/HanZ/RoboTwin/assets",
+        "directory": true
+      }
+    ],
+    "asset_sizes": [],
+    "fixture_total_bytes": 3053205,
+    "original_code_file_count": 22
+  },
+  "current_mutable_local_comparison": {
+    "schema": "parent-r21-fixture-local-comparison/1",
+    "remote_inventory_sha256": "046c9c97e5a653ee85ce58cebc8447cd5fab186ddbef99b39c2006d10a1647f0",
+    "rows": [
+      {
+        "path": "fixtures/collision-boxes.json",
+        "local_exists": true,
+        "local_match": true
+      },
+      {
+        "path": "fixtures/config.yml",
+        "local_exists": true,
+        "local_match": true
+      },
+      {
+        "path": "fixtures/convex-meshes.json",
+        "local_exists": true,
+        "local_match": false
+      },
+      {
+        "path": "fixtures/effective-config.yml",
+        "local_exists": true,
+        "local_match": true
+      },
+      {
+        "path": "fixtures/example-approach-event.json",
+        "local_exists": true,
+        "local_match": true
+      },
+      {
+        "path": "fixtures/fk-measured.json",
+        "local_exists": true,
+        "local_match": true
+      },
+      {
+        "path": "fixtures/initial-request.json",
+        "local_exists": true,
+        "local_match": true
+      },
+      {
+        "path": "fixtures/initial-state.json",
+        "local_exists": true,
+        "local_match": true
+      },
+      {
+        "path": "fixtures/panda.urdf",
+        "local_exists": true,
+        "local_match": true
+      },
+      {
+        "path": "fixtures/robot-vertices.json",
+        "local_exists": true,
+        "local_match": false
+      }
+    ],
+    "native_success_inferred": false,
+    "scope": "Current localfixture comparison only, not independent proof of historical fixture identity"
+  },
+  "mandatory": "Restore ALL ten fixture bytes from immutable67versions/ten-r21/fixtures with exact listed hashes; never overlay current loose work/astra-direct/fixtures or r25 fixtures",
+  "observed_drift": [
+    "fixtures/convex-meshes.json",
+    "fixtures/robot-vertices.json"
+  ],
+  "causality": "Drift is confirmed between current local mutable fixtures and sealedr21. It is NOT demonstrated cause of any019/020/023/024 physical failure.",
+  "status": "parent fidelity requirement, no native reproduction yet"
+}

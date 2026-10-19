@@ -1,0 +1,119 @@
+{
+  "schema": "archived-runtime-index/1",
+  "asset": "harness-baseline-20261019.tar.gz",
+  "release_tag": "history-20261019",
+  "versions": [
+    {
+      "version": "v36-live-combined-001",
+      "binding_sha256": "40e57573303d8907238b396ea63152ade7f69aab6a7bf0759ad8786e4b56ef5c",
+      "files": 193
+    },
+    {
+      "version": "v36-live-combined-002",
+      "binding_sha256": "487aedd4508fab0944a0f4c7c44f753e47ebde0e99bd9ca812d597c9b5990bdf",
+      "files": 193
+    },
+    {
+      "version": "v36-live-combined-003",
+      "binding_sha256": "d00105df5819c908d583ebfd2f2d6e438a0d92def7e8cfd890c81bccb2bd8c73",
+      "files": 194
+    },
+    {
+      "version": "v36-live-combined-004",
+      "binding_sha256": "68dab528494d190e61074efbcf52b2f9ad8b8ca2cde7a0a4e2b5b42df65ae894",
+      "files": 195
+    },
+    {
+      "version": "v36-live-combined-005",
+      "binding_sha256": "f5da9a5898fb79a5c053ec9c13261022281c9a9601b80e663f39f9eb7caaffe1",
+      "files": 197
+    },
+    {
+      "version": "v36-live-combined-006",
+      "binding_sha256": "157014119f68878bbc1f8a6e71b1288296acf2c6167f60f2288314db8bd4da2e",
+      "files": 199
+    },
+    {
+      "version": "v36-live-combined-007",
+      "binding_sha256": "38051a0956965b1d9e738bdfca0df0fe91e7ce09af4c714ce10606d6c0ebe4ec",
+      "files": 201
+    },
+    {
+      "version": "v36-live-combined-008",
+      "binding_sha256": "77ec3c19613350a7b2733ec015792988801e458b4a683907026f294409bad44b",
+      "files": 201
+    },
+    {
+      "version": "v36-live-combined-009",
+      "binding_sha256": "aef95bd644a2e4e88e128d310a6e0458f0e1b9fb95e1e90f67c7949562e591e4",
+      "files": 201
+    },
+    {
+      "version": "v36-live-combined-010",
+      "binding_sha256": "f14b1e5c313f3f32f1f5a4d15e4f4afdf71b687d5184eba878a0e2f3f1b67f9f",
+      "files": 203
+    },
+    {
+      "version": "v36-live-combined-011",
+      "binding_sha256": "a9580563b0d053f42d5c276d02325de1f807b43f9fe1600e31164af6fc76eeea",
+      "files": 207
+    },
+    {
+      "version": "v36-live-combined-012",
+      "binding_sha256": "f95e2be36145d87b70d2800bc15b1c90730b1f456cce17932cac5f712f0b0712",
+      "files": 209
+    },
+    {
+      "version": "v36-live-combined-013",
+      "binding_sha256": "c296f9fc9b9195d3ea0ed0eba37454881d4e75b6bae2099aafa391add0a31623",
+      "files": 209
+    },
+    {
+      "version": "v36-live-combined-014",
+      "binding_sha256": "7b3456555eb5952201ff541ce61a2326298f9728a7ea56ce1f38b476ef99a20c",
+      "files": 211
+    },
+    {
+      "version": "v36-live-combined-015",
+      "binding_sha256": "1d869217ef79d9c371c556531aff89e336a254da06fb6626ffe74b9709308c82",
+      "files": 213
+    },
+    {
+      "version": "v36-live-combined-016",
+      "binding_sha256": "92199038ad4e950aab54a998d7368ed16006585fbafdbc0f5b8d316bdffada05",
+      "files": 216
+    },
+    {
+      "version": "v36-live-combined-017",
+      "binding_sha256": "4d20c0a52fdbcb063adacb5a796be4376193143cb706275284364fcd1e696068",
+      "files": 216
+    },
+    {
+      "version": "v36-live-combined-018",
+      "binding_sha256": "cf44c7546e0441f7c3054af657b24cb577762e7da22e1da7707ee8f36a573c23",
+      "files": 216
+    },
+    {
+      "version": "v36-live-combined-019",
+      "binding_sha256": "c5b746e081d6b393571d74001739e50d8e242beeb4a4f95dd46cb403f7b2e078",
+      "files": 218
+    },
+    {
+      "version": "v36-live-combined-020",
+      "binding_sha256": "144f79b32aba541316c9fab3d714ae71d7c4f286afa9cae6f6c1076708561eee",
+      "files": 220
+    },
+    {
+      "version": "v36-live-combined-021",
+      "binding_sha256": "be79e32052b14c0dc25032842a09e874a7495829001353c4e0ded1b30679ff31",
+      "files": 219
+    },
+    {
+      "version": "v36-live-combined-022",
+      "binding_sha256": "55a33985874e39b12b697264dc2372060244fa868f164d748f0819b1c145e412",
+      "files": 221
+    }
+  ],
+  "maintained_development_candidate": "v36-live-combined-021",
+  "physical_acceptance": "Not established; archived runtime counts/hashes are provenance only."
+}

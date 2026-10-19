@@ -1,0 +1,10 @@
+{
+  "formatter": "ruff 0.17.1",
+  "line_length": 100,
+  "files": 16,
+  "exact_AST_matches": 16,
+  "only_docstring_whitespace_differences": [],
+  "executable_AST_and_nondocstring_constants_unchanged": true,
+  "archived_originals_modified": false,
+  "original_runtime_or_harness_sources_modified": false
+}

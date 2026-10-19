@@ -1,0 +1,18 @@
+# Maintained code uses consistent formatting; frozen controller and upstream tests retain original bytes.
+[tool.ruff]
+target-version = "py38"
+line-length = 100
+include = ["harness/*.py", "adapters/*.py", "transport/*.py", "scripts/*.py", "tests/scaffold/*.py"]
+extend-exclude = ["controller", "tests/core", ".local", "delivery"]
+
+[tool.ruff.lint]
+select = ["E9", "F63", "F7", "F82"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+
+[tool.harness]
+stdlib_check = "python3 -B scripts/check_code.py"
+maintained = ["harness", "adapters", "transport", "scripts", "tests/scaffold"]
+legacy_byte_exact = ["controller", "tests/core"]

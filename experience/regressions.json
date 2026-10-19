@@ -1,0 +1,167 @@
+{
+  "schema": "harness-experience-summary/1",
+  "source_snapshot": "20261019T115853Z",
+  "source_records": 131,
+  "source_head": "c9bcfdf4b6be8e369513ec88ced9282e75e7bf17a319271ba87363f864b63709",
+  "records": [
+    {
+      "baseline_source_sha256": "cf44c7546e0441f7c3054af657b24cb577762e7da22e1da7707ee8f36a573c23",
+      "behavior_schema": "regression-behavior/2",
+      "behaviors": {
+        "corrective": {
+          "candidate-counterexample": "accept",
+          "changed-force": "reject",
+          "changed-gain": "reject",
+          "collision": "reject",
+          "nonfinite": "reject",
+          "nonzero-velocity": "reject",
+          "old-counterexample": "reject",
+          "valid-zero-velocity-left": "accept",
+          "valid-zero-velocity-right": "accept",
+          "wrong-arm": "reject"
+        },
+        "preservation": {
+          "candidate-counterexample": "reject",
+          "changed-force": "reject",
+          "changed-gain": "reject",
+          "collision": "reject",
+          "nonfinite": "reject",
+          "nonzero-velocity": "reject",
+          "old-counterexample": "reject",
+          "valid-zero-velocity-left": "accept",
+          "valid-zero-velocity-right": "accept",
+          "wrong-arm": "reject"
+        }
+      },
+      "control_checks": [
+        "valid-zero-velocity-left",
+        "valid-zero-velocity-right"
+      ],
+      "counterexamples": [
+        "3f45d5322b71e19e293288b3bbea112f2b214ce819c55f1b50a8b501192ec760"
+      ],
+      "id": "capture-drive-contract/2",
+      "intent_scope": "Capture correction or preservation; slip terminal/geometry unsafe cases retain rejection. New corrective domains require reviewed revisions.",
+      "kind": "regression",
+      "negative_checks": [
+        "wrong-arm",
+        "nonfinite",
+        "changed-gain",
+        "changed-force",
+        "nonzero-velocity",
+        "collision"
+      ],
+      "objects": [
+        "3f45d5322b71e19e293288b3bbea112f2b214ce819c55f1b50a8b501192ec760",
+        "4d717903dbb1cd9726961e9e99203e5d12ac6bf4137d0f635c11e1068628db4f",
+        "77d85c8385b213d6b41abc9ae904de8a1a426b4524bb93157dc4e53f8d817a52",
+        "aed8595aa3bbcb900af6201cd6fb68e21a398cf3e720f9547c1b3d672f7f50ee",
+        "cf44c7546e0441f7c3054af657b24cb577762e7da22e1da7707ee8f36a573c23",
+        "f87124cd20393b9cdcbe6524f9078d8726816f7c215bddf521069ee53c68b2cc"
+      ],
+      "revision": 2,
+      "revision_evidence": [
+        "aed8595aa3bbcb900af6201cd6fb68e21a398cf3e720f9547c1b3d672f7f50ee",
+        "4d717903dbb1cd9726961e9e99203e5d12ac6bf4137d0f635c11e1068628db4f"
+      ],
+      "status": "unresolved",
+      "supersedes": "capture-drive-contract/1"
+    },
+    {
+      "baseline_source_sha256": "6fa9ddb8ab2b53609743e7be249a8a96fa4c89473ec9524023259044a7140cea",
+      "behavior_schema": "regression-behavior/2",
+      "behaviors": {
+        "preservation": {
+          "candidate-counterexample": "reject",
+          "collision": "reject",
+          "frozen-certificate": "accept",
+          "module-global-override": "reject",
+          "old-counterexample": "reject",
+          "warmed-cost": "accept"
+        }
+      },
+      "control_checks": [
+        "frozen-certificate",
+        "warmed-cost"
+      ],
+      "counterexamples": [
+        "1a4b1d8c45c3954a29d01dd102945f03b612d0291684ce30fba07c5cad39381f"
+      ],
+      "id": "geometry-dispatch/2",
+      "intent_scope": "Capture correction or preservation; slip terminal/geometry unsafe cases retain rejection. New corrective domains require reviewed revisions.",
+      "kind": "regression",
+      "negative_checks": [
+        "module-global-override",
+        "collision"
+      ],
+      "objects": [
+        "1a4b1d8c45c3954a29d01dd102945f03b612d0291684ce30fba07c5cad39381f",
+        "2df6e424430990d828301b1ecc4cd6d50a9ba5b71ba9496e7f519b4e48d70e84",
+        "4d717903dbb1cd9726961e9e99203e5d12ac6bf4137d0f635c11e1068628db4f",
+        "6fa9ddb8ab2b53609743e7be249a8a96fa4c89473ec9524023259044a7140cea",
+        "aed8595aa3bbcb900af6201cd6fb68e21a398cf3e720f9547c1b3d672f7f50ee",
+        "dbbe23310f2c72000dd9f2df9db30c9f2f20c8dc90e2a87559593bdbf075720f"
+      ],
+      "revision": 2,
+      "revision_evidence": [
+        "aed8595aa3bbcb900af6201cd6fb68e21a398cf3e720f9547c1b3d672f7f50ee",
+        "4d717903dbb1cd9726961e9e99203e5d12ac6bf4137d0f635c11e1068628db4f"
+      ],
+      "status": "unresolved",
+      "supersedes": "geometry-dispatch/1"
+    },
+    {
+      "baseline_source_sha256": "29674a199256d1505c760b869a96638c28e1b9c9e4945ade348e5cfb171cf96a",
+      "behavior_schema": "regression-behavior/2",
+      "behaviors": {
+        "preservation": {
+          "below-bound": "accept",
+          "candidate-counterexample": "reject",
+          "changed-magnet-label": "reject",
+          "nonfinite": "reject",
+          "old-counterexample": "reject",
+          "quaternion-sign": "accept",
+          "slip-over-limit": "reject",
+          "stale-input": "reject"
+        }
+      },
+      "case_semantics_sha256": "a22c73daef85bbdd16028cffb8a89ed83bd9320705dd039cb4ffc9f707317985",
+      "control_checks": [
+        "below-bound",
+        "quaternion-sign"
+      ],
+      "counterexamples": [
+        "4c7348959e99bad2974cc291d05b2a494e34d83a9d5291750a3dfbeceae42387"
+      ],
+      "id": "slip014-guard/3",
+      "intent_scope": "Capture correction or preservation; slip terminal/geometry unsafe cases retain rejection. New corrective domains require reviewed revisions.",
+      "kind": "regression",
+      "negative_checks": [
+        "stale-input",
+        "nonfinite",
+        "slip-over-limit",
+        "changed-magnet-label"
+      ],
+      "objects": [
+        "29674a199256d1505c760b869a96638c28e1b9c9e4945ade348e5cfb171cf96a",
+        "4c7348959e99bad2974cc291d05b2a494e34d83a9d5291750a3dfbeceae42387",
+        "4d717903dbb1cd9726961e9e99203e5d12ac6bf4137d0f635c11e1068628db4f",
+        "8b6f7ca11663ef7d3bbe1ff05630f92f1dab03990978817a7d34f5906f25aa62",
+        "a22c73daef85bbdd16028cffb8a89ed83bd9320705dd039cb4ffc9f707317985",
+        "aed8595aa3bbcb900af6201cd6fb68e21a398cf3e720f9547c1b3d672f7f50ee",
+        "dd62a8abd0f16517915f7248f9def6183e3ee5172d91d2f00b67d6568f1b8dc9",
+        "e50b82c5d7de7707cca334a83e38950c249a65b5e7aa718ae37f93b24390e3bd"
+      ],
+      "revision": 3,
+      "revision_evidence": [
+        "aed8595aa3bbcb900af6201cd6fb68e21a398cf3e720f9547c1b3d672f7f50ee",
+        "4d717903dbb1cd9726961e9e99203e5d12ac6bf4137d0f635c11e1068628db4f",
+        "a22c73daef85bbdd16028cffb8a89ed83bd9320705dd039cb4ffc9f707317985"
+      ],
+      "revision_reason": "Clarify recorded magnet-label check; neither Monitor nor this fixture measures magnetic force.",
+      "status": "unresolved",
+      "supersedes": "slip014-guard/2"
+    }
+  ],
+  "historical_snapshot_not_live": true
+}

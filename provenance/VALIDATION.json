@@ -1,0 +1,52 @@
+{
+  "schema": "parent-lean-repository-validation/1",
+  "observed_unix": 1792412949.3304782,
+  "platform": "macOS",
+  "python": "3.9.6",
+  "core_tests": {
+    "passed": 44,
+    "failed": 0,
+    "skipped": 0,
+    "scope": "Current formatted core, unchanged frozen upstream tests and verified archived real fixtures"
+  },
+  "tool_tests": {
+    "passed": 23,
+    "failed": 0,
+    "scope": "Archive corruption, missing objects, symlinks, traversal, offline/fetch/staging boundaries"
+  },
+  "controller": {
+    "variant": "v36-live-combined-021",
+    "bound_files": 220,
+    "verified": true,
+    "physical_acceptance": false
+  },
+  "archive": {
+    "sha256": "69de27a52df93cf02abc528474b6be28fb65d98cc0230e6ca0ac2358b81f3a16",
+    "members": 6388,
+    "source_files_verified": 6384,
+    "ledger_records": 131,
+    "ledger_objects": 323,
+    "verified": true
+  },
+  "format": {
+    "tool": "ruff0.17.1",
+    "line_length": 100,
+    "imported_module_AST_matches": 16,
+    "format_check": true,
+    "critical_lint": true
+  },
+  "parent_review_fixes": [
+    "Include upload_evidence22_data3.py in actual staged source dependency closure;16 files",
+    "Create test-owned temporary directories under ignored canonical local path onmacOS; production symlink refusal unchanged",
+    "Correct archived runtime inspection path",
+    "Retain one readable current controller with explicit source binding and no physical success claim"
+  ],
+  "failures_retained": [
+    "Upstream first scaffold44tests43pass/1error due2missinghistoricalwrapperfixtures; fullfivewrapperclosure fixed",
+    "Parentfirst23tooltests errored due macOS symlinkeddefaulttemporaryroot; canonicaltestownedroot fixed"
+  ],
+  "remote_scaffold_delivery_sha256": "3a94da9ed21c0d79efd944b8866d4fd444210f2545b5a14e28fdb991bd71f386",
+  "original_live_experiments_modified": false,
+  "original_evidence_deleted": false,
+  "physical_goal_complete": false
+}

@@ -1,0 +1,15 @@
+# 证据、历史和身份
+
+Git主树只存当前源及摘要；Release资产保存旧完整导出。初始归档保存298份历史操作脚本、001..022 runtime及原RUNTIME_BINDING、131行不可变ledger及完整对象、44项测试fixtures、previous/patched adapters、parent proofs和原SOURCE_MANIFEST。上述规模由parent提供，本任务未读取实际完整包；最终由parent用工具独立核实。
+
+两套身份互不替代：ACTIVE_SOURCE_MANIFEST绑定当前core/adapters/transport/原测试模块/派生经验；archive/index绑定Release资产与原SOURCE_MANIFEST摘要，后者绑定原导入源。根维护工具/docs/CI不属于byte-exact来源清单，可正常审查演进。源文件source_path只记录来源，不触发文件访问。导出时间不是原checkout时间，未知不能从文件名推断。
+
+校验器流式hash全包和原source pins，全部snapshot按index枚举。原Store.rows在新临时副本上验证seq/prev/hash、唯一ID、HEAD及payload.objects闭包；它不会在旧tar/原ledger创建LOCK或修复历史。内容地址对象也逐个核对，清单中的额外evidence都验证字节。当前原测试还须与归档原测试一致。程序报告source/ledger verification与physical acceptance分别列明。
+
+摘要不能替代完整记录。experience/issues.json与regressions.json由parent从实际131行快照派生，保留原raw status、unresolved、scope、source/review/registry引用，不自行升级问题状态。建议记录source archive摘要、snapshot路径、HEAD和相关记录/对象摘要；工具检查导入字节，parent独立审查派生关系。新经验先追加当前外部authority，再生成不同身份的reviewed归档；不能修改初始tar来补新知识。
+
+raw OUT/RETURN不是accepted counts；CPU/接口合成fixture不是原生结果；原生执行、独立物理审计、多布局、heldout和adoption各有门槛。SHA正确只能证明字节相同，不证明作者诚实、事件真的发生、外部文件仍存在或全部物理政策合规。
+
+不导出CLI/account-preflight/账号日志、凭据、keys/cookies、raw prompts、大视频/资产/native二进制。历史CURRENT_COORDINATION只代表导出时进程状态，必须有实际观测/导出时间；GitHub不是实时运行真相。大产物如需引用，仅记录parent实际测量的source path/hash/bytes/time/availability；未测量写unknown/null，不伪造hash。此类引用本身可入清单，校验器不会下载或读取外部路径。
+
+若原证据闭包含排除内容，不能删对象或改ledger后仍声称原始完整快照；parent须报告冲突并决定合适边界。本任务只消费审核后的显式包，不广泛扫描home/workspace。下载工具继承gh认证但不查看凭据或环境值；CI仅给下载步骤注入临时GH_TOKEN并屏蔽gh输出。GitHub发布不会转移官方ChatGPT session或改变server22的模型计费账号。

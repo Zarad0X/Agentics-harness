@@ -1,0 +1,159 @@
+{
+  "schema": "harness-active-source/1",
+  "files": {
+    "harness/evolution.py": {
+      "bytes": 45778,
+      "sha256": "e8a77565e6b2a5bc4c9b46ea9893631772e768ba3c3c9e4a5854836b7a240ba1",
+      "source_path": "work/astra-roundtrip/evolution.py",
+      "role": "current-verified-core",
+      "source_sha256": "9faf274cfd961f31b7461ce297d90e21c60c58d54dffcc1e466b36da7ab1a26f",
+      "transformation": "Ruff format only; all executable AST and non-docstring string constants preserved; archived originals unchanged"
+    },
+    "harness/parent_adapter.py": {
+      "bytes": 10672,
+      "sha256": "8ee692908c0e506ebe679ed2e2f88984cf622e46c01c007e26bbccf94987ee82",
+      "source_path": "work/astra-roundtrip/parent_adapter.py",
+      "role": "current-verified-core",
+      "source_sha256": "0cef3b6c898663ba28be83bd10d5a29b6f9fc2bef8564e8fa607aa3ea27cacde",
+      "transformation": "Ruff format only; all executable AST and non-docstring string constants preserved; archived originals unchanged"
+    },
+    "harness/usage_accounting.py": {
+      "bytes": 10339,
+      "sha256": "d78a6ade0235c4ce61ba4b831c61f1e23e0893de7fbd73d2a6cee7c1b8d372f6",
+      "source_path": "work/astra-roundtrip/usage_accounting.py",
+      "role": "current-verified-core",
+      "source_sha256": "4ebb54d06a3422fe85ba8fddc79c4a5b4e4eefcd1027efbfdc414ed051ac0ed5",
+      "transformation": "Ruff format only; all executable AST and non-docstring string constants preserved; archived originals unchanged"
+    },
+    "adapters/dispatch22_data3.py": {
+      "bytes": 7415,
+      "sha256": "15f256d7eeca0b967c325f00c709ff1ffe95ac7bff4e55bef44f3157b770b0aa",
+      "source_path": "work/astra-roundtrip/dispatch22_data3.py",
+      "role": "current-operational-integration-source; live original workspace retained",
+      "source_sha256": "550d1983e3c083dd1efa973b198cce3c4fc1249cc13c0c69aa001beb5cc7aff8",
+      "transformation": "Ruff format only; all executable AST and non-docstring string constants preserved; archived originals unchanged"
+    },
+    "adapters/collect_live_combined012_15.py": {
+      "bytes": 7411,
+      "sha256": "f0f66e3a0d17143912602abea90163f93a92f37d6dfd5c33fee16b151e05889b",
+      "source_path": "work/astra-roundtrip/collect_live_combined012_15.py",
+      "role": "current-operational-integration-source; live original workspace retained",
+      "source_sha256": "9d5ef7a6b5d43c043a492533139bbfb5b4a099956caeb1c9c848396a5f01f2cd",
+      "transformation": "Ruff format only; all executable AST and non-docstring string constants preserved; archived originals unchanged"
+    },
+    "adapters/launch_existing_combined15.py": {
+      "bytes": 10400,
+      "sha256": "ca94ceb86dce360db72f184331d06aee32997ae12c42543d8c3ccf500370c007",
+      "source_path": "work/astra-roundtrip/launch_existing_combined15.py",
+      "role": "current-operational-integration-source; live original workspace retained",
+      "source_sha256": "6a84326bcd6060322c07c9d89bf8cab88c488c6957737292eb2854deaa341bbb",
+      "transformation": "Ruff format only; all executable AST and non-docstring string constants preserved; archived originals unchanged"
+    },
+    "adapters/account22.py": {
+      "bytes": 3748,
+      "sha256": "f69dc0a3bd9526d38eabd9bbf2385bcbf309ba529f46aed27bb51e8ac9e5d697",
+      "source_path": "work/astra-roundtrip/account22.py",
+      "role": "current-operational-integration-source; live original workspace retained",
+      "source_sha256": "ecbe988502b7ab4bf253f696abdb7f53ca2cfdb80b838d5a828ccaef859cf5d3",
+      "transformation": "Ruff format only; all executable AST and non-docstring string constants preserved; archived originals unchanged"
+    },
+    "adapters/append_completed_usage.py": {
+      "bytes": 485,
+      "sha256": "e12750b72e605d2ecb50307a4d9ddb9b45f39972d0e7bc2db414aa00dcf0b2b5",
+      "source_path": "work/astra-roundtrip/append_completed_usage.py",
+      "role": "current-operational-integration-source; live original workspace retained",
+      "source_sha256": "2e16128a21dfbf213e0d96c15c0c3cb05172cf04961b447ceca6916ba53ba1cf",
+      "transformation": "Ruff format only; all executable AST and non-docstring string constants preserved; archived originals unchanged"
+    },
+    "adapters/completed_usage_source.py": {
+      "bytes": 5564,
+      "sha256": "b75913bf5ef66987336fe0305cbfc238e1c857e8ed14f2aa86ffe28810ba1a80",
+      "source_path": "work/astra-roundtrip/completed_usage_source.py",
+      "role": "current-operational-integration-source; live original workspace retained",
+      "source_sha256": "dd6d8d554ae8b11484ced4259f2deebfb0e34f5ec2d75b532e2dd9fd3f66d376",
+      "transformation": "Ruff format only; all executable AST and non-docstring string constants preserved; archived originals unchanged"
+    },
+    "adapters/sync_completed_usage22.py": {
+      "bytes": 3336,
+      "sha256": "23210aa2966091cdaee7fc62b09a3d03d1dd3ec16cd48387b0689fe7626d8d2d",
+      "source_path": "work/astra-roundtrip/sync_completed_usage22.py",
+      "role": "current-operational-integration-source; live original workspace retained",
+      "source_sha256": "63da7baae0445c256c8106fbc315ad84464ff577695a85ab17576cb85774d43d",
+      "transformation": "Ruff format only; all executable AST and non-docstring string constants preserved; archived originals unchanged"
+    },
+    "adapters/watch019020_terminals.py": {
+      "bytes": 9158,
+      "sha256": "c210e59c750cbf1bfe3664e2c5ea7b3488bae9d0175f51fdff3b242d84a08cf0",
+      "source_path": "work/astra-roundtrip/watch019020_terminals.py",
+      "role": "current-operational-integration-source; live original workspace retained",
+      "source_sha256": "9992e76841d3e1cf0fbb2f1acf75c58b3ce3500104f2d34ae54ce4c2eb5497d3",
+      "transformation": "Ruff format only; all executable AST and non-docstring string constants preserved; archived originals unchanged"
+    },
+    "adapters/watch_n15_feedbackpair_001.py": {
+      "bytes": 9251,
+      "sha256": "83296bfadaff08e58b2ce550f3ce6fc2f79b2df50a8a0f28eb937db0a4f6e509",
+      "source_path": "work/astra-roundtrip/watch_n15_feedbackpair_001.py",
+      "role": "current-operational-integration-source; live original workspace retained",
+      "source_sha256": "b4f3aadb2576f8dcdac68c45eba0741d1afcba30b56153eed33f17a290956f41",
+      "transformation": "Ruff format only; all executable AST and non-docstring string constants preserved; archived originals unchanged"
+    },
+    "adapters/upload_reference22.py": {
+      "bytes": 2276,
+      "sha256": "a54be33e6a5383574e8508d2180a9876c716c506a12953680abfc101365c6eba",
+      "source_path": "work/astra-roundtrip/upload_reference22.py",
+      "role": "current-operational-integration-source; live original workspace retained",
+      "source_sha256": "6b9ac297f93eeaaf2b3768033f8620950bfabeacdd7ceecf2564365e67892335",
+      "transformation": "Ruff format only; all executable AST and non-docstring string constants preserved; archived originals unchanged"
+    },
+    "adapters/upload_evidence22_data3.py": {
+      "bytes": 2586,
+      "sha256": "704b22f3fa088ddb1f6d59b762c0b56113102e9789b9c86f819242de35583b89",
+      "source_path": "work/astra-roundtrip/upload_evidence22_data3.py",
+      "role": "current-operational-integration-source; live original workspace retained",
+      "source_sha256": "4997ab5970266137eec531c91224e1865ee5b6ce4478b2aa9f3234e16495f3fd",
+      "transformation": "Ruff format only; all executable AST and non-docstring string constants preserved; archived originals unchanged"
+    },
+    "transport/codex22.py": {
+      "bytes": 11256,
+      "sha256": "91dfc9a426ea0b7b8844e3a5937d09453be379a4f14eb930f77f55d6308d8e30",
+      "source_path": "outputs/codex22.py",
+      "role": "existing-authless-transport-source; external SSH/VPN provisioning required",
+      "source_sha256": "68a8642621f1ac715c91275744fb01a9af2b9a6c8eedaf188087d8869584c7b4",
+      "transformation": "Ruff format only; all executable AST and non-docstring string constants preserved; archived originals unchanged"
+    },
+    "transport/remote15.py": {
+      "bytes": 1273,
+      "sha256": "9850a16f279f1c715b06dc5bc7d58b05a92da3ff9b4f3f67625b4a15dda581d1",
+      "source_path": "work/astra-direct/remote15.py",
+      "role": "existing-authless-transport-source; external SSH/VPN provisioning required",
+      "source_sha256": "dc07ffadb7071f555ec6376173fbe86c6ee000ccd92f530704a3e339e056a02a",
+      "transformation": "Ruff format only; all executable AST and non-docstring string constants preserved; archived originals unchanged"
+    },
+    "tests/core/test_evolution.py": {
+      "bytes": 16351,
+      "sha256": "7f8365bf941278074b1106f523049aa24f26db3f04a21c4ad115d420367a314f",
+      "source_path": "work/astra-roundtrip/parent-evolution-review-002/tests/test_evolution.py",
+      "role": "unmodified-upstream44-tests"
+    },
+    "tests/core/test_revision.py": {
+      "bytes": 19925,
+      "sha256": "697a7703f915dbe3f42803f7089d1efaaae07539de40e34eef4ec173dbe15656",
+      "source_path": "work/astra-roundtrip/parent-evolution-review-002/tests/test_revision.py",
+      "role": "unmodified-upstream44-tests"
+    },
+    "experience/issues.json": {
+      "bytes": 24705,
+      "sha256": "b3d44a468984fc8767635ba5e78ff7b25b27c78b022a031940f30ae1a785a10c",
+      "source_path": "frozen-ledger:repositories/robotwin-astra-harness-full-export-20261019/evidence/ledger-snapshots/20261019T115853Z",
+      "role": "derived-latest-issue-or-regression-summary; full history in archive"
+    },
+    "experience/regressions.json": {
+      "bytes": 6782,
+      "sha256": "50ea95e4f9ffdbe50592e9255a05b5e68cc642d6bcd0fdd8c91cf224af50e447",
+      "source_path": "frozen-ledger:repositories/robotwin-astra-harness-full-export-20261019/evidence/ledger-snapshots/20261019T115853Z",
+      "role": "derived-latest-issue-or-regression-summary; full history in archive"
+    }
+  },
+  "archive": "archive/index.json",
+  "initial_import": "Current maintained core and integration sources; historical runtime/evidence in private release asset, not expanded in Git"
+}

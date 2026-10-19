@@ -1,0 +1,76 @@
+{
+  "schema": "external-artifact-index/1",
+  "created_unix": 1792411371.904525,
+  "state_is_historical_not_live": true,
+  "raw_outputs_committed": false,
+  "physical_data_roots": {
+    "simulation_outputs": "/data_ft_6/shaojing/robotwin-astra-roundtrip-20261009",
+    "assets": "/data_ft_8/shaojing/HanZ/RoboTwin/handoff-20260911-validation/work-v21-r3/base/assets/objects",
+    "server22_work": "/data3/yuantao/astra-roundtrip-work/harness"
+  },
+  "runs": [
+    {
+      "run_id": "rt-v36-combined-original10-019",
+      "host": "A6000-15",
+      "output_path": "/data_ft_6/shaojing/robotwin-astra-roundtrip-20261009/runs/rt-v36-combined-original10-019",
+      "runtime_binding_sha256": "c5b746e081d6b393571d74001739e50d8e242beeb4a4f95dd46cb403f7b2e078",
+      "configuration_path": "/data_ft_6/shaojing/robotwin-astra-roundtrip-20261009/versions/implementation-v36-live-combined-019/harness/configs/v36/continuous-original10-headroom06-k6-reserved-entry-copytrace17.json",
+      "last_observation": "parent-user-status-1792410685.json",
+      "out": null,
+      "exact_return": null,
+      "whole_success": null
+    },
+    {
+      "run_id": "rt-v36-combined-original10-020",
+      "host": "A6000-15",
+      "output_path": "/data_ft_6/shaojing/robotwin-astra-roundtrip-20261009/runs/rt-v36-combined-original10-020",
+      "runtime_binding_sha256": "144f79b32aba541316c9fab3d714ae71d7c4f286afa9cae6f6c1076708561eee",
+      "configuration_path": "/data_ft_6/shaojing/robotwin-astra-roundtrip-20261009/versions/implementation-v36-live-combined-020/harness/configs/v36/continuous-original10-headroom06-k6-reserved-entry-copytrace17.json",
+      "last_observation": "parent-user-status-1792410685.json",
+      "out": 0,
+      "exact_return": 0,
+      "whole_success": false,
+      "audit": "evidence/parent-reviews/rt-v36-combined-original10-020-functional-audit-001.json"
+    },
+    {
+      "run_id": "rt-v36-combined-n15-s101-019",
+      "host": "A6000-15",
+      "output_path": "/data_ft_6/shaojing/robotwin-astra-roundtrip-20261009/runs/rt-v36-combined-n15-s101-019",
+      "runtime_binding_sha256": "c5b746e081d6b393571d74001739e50d8e242beeb4a4f95dd46cb403f7b2e078",
+      "configuration_path": "/data_ft_6/shaojing/robotwin-astra-roundtrip-20261009/versions/implementation-v36-live-combined-019/harness/configs/v36/continuous-generated-n15-s101-entry.json",
+      "last_observation": "parent-user-status-1792410685.json",
+      "out": null,
+      "exact_return": null,
+      "whole_success": null
+    },
+    {
+      "run_id": "rt-v36-combined-n15-s101-021",
+      "host": "A6000-15",
+      "output_path": "/data_ft_6/shaojing/robotwin-astra-roundtrip-20261009/runs/rt-v36-combined-n15-s101-021",
+      "runtime_binding_sha256": "be79e32052b14c0dc25032842a09e874a7495829001353c4e0ded1b30679ff31",
+      "configuration_path": "/data_ft_6/shaojing/robotwin-astra-roundtrip-20261009/versions/implementation-v36-live-combined-021/harness/configs/v36/continuous-generated-n15-s101-entry.json",
+      "last_observation": "parent-user-status-1792410685.json",
+      "out": null,
+      "exact_return": null,
+      "whole_success": null
+    }
+  ],
+  "closed020_science": {
+    "path": "/data_ft_6/shaojing/robotwin-astra-roundtrip-20261009/runs/rt-v36-combined-original10-020/artifacts/loaded-science.jsonl.xz",
+    "compressed_bytes": 11304896,
+    "compressed_sha256": "0ee6479c16cba736f18a946d638e6e1dfb093fcdbe7947becdce3f16c8a8fbce",
+    "raw_bytes": 140958567,
+    "raw_sha256": "1ef9f6635342e6651d85f19a6d540c0a295670be4d54b43b74ead134ede703c9",
+    "rows": 4355
+  },
+  "baseline": {
+    "name": "ten-r21",
+    "claim": "Historical assisted one-way10/10 only; preserve original source/assets/evidence externally. Not full original-pose roundtrip acceptance."
+  },
+  "limitations": [
+    "Remote paths are references, not portable downloads or guaranteed future availability.",
+    "Only stated artifact hashes have been measured; data-root directories have no invented aggregate digest.",
+    "No archived PID or running-state claim is live status.",
+    "No full10/15/20 multitask/heldout acceptance claimed."
+  ]
+}

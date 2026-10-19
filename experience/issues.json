@@ -1,0 +1,539 @@
+{
+  "schema": "harness-experience-summary/1",
+  "source_snapshot": "20261019T115853Z",
+  "source_records": 131,
+  "source_head": "c9bcfdf4b6be8e369513ec88ced9282e75e7bf17a319271ba87363f864b63709",
+  "records": [
+    {
+      "cause": "Run ID mismatch, missing required source-bound gate argv, and original10-stamped regressions differ from requested n15 config.",
+      "confidence": "direct parser/source/config comparison",
+      "domain": "orchestration",
+      "fixes": [],
+      "hypothesis": "Producer used stale pre-integration parent interface snapshot; source algorithm behavior is separate and remains unproved native.",
+      "id": "candidate021022-native-handoff@1",
+      "issue_id": "candidate021022-native-handoff",
+      "kind": "issue",
+      "objects": [
+        "0d0423b62fbf372e183d8bd9cabd524efbd27c121ee6b07b812aebee0d013680",
+        "cfccb9f33a142222cec1c79e6b101d353a784ae91caab3cd82802d304bf3c953"
+      ],
+      "regressions": [],
+      "scope": {
+        "assistance": "unchanged; orchestration-only gap",
+        "code": "6a84326bcd6060322c07c9d89bf8cab88c488c6957737292eb2854deaa341bbb",
+        "conditions": "candidate021022 proposed commands versus integrated Harness002 parent interfaces",
+        "config": "403533dbd7d86892c2aeb72055c990feb640dde7095a3be8ca981bf35e578d82",
+        "model": "gpt-6-astra",
+        "split": "development",
+        "stage": "full-episode"
+      },
+      "status": "unresolved",
+      "symptom": "candidate packet not launchable through current verified controller",
+      "version": 1
+    },
+    {
+      "cause": "Selected retained finger velocity targets are nonzero while the sealed capture guard requires zero; gains and 4N cap match.",
+      "confidence": "confirmed selected admission mismatch only",
+      "domain": "physical",
+      "fixes": [
+        {
+          "assessment": "e1d58bd2e10001b0ebb8efb9d484f79fbcfba6e9cc0940d319ca7774cec6f3c7",
+          "config": "cd08a30d2174db6c0cbaec6ce68f45536a9e920a081654ea390677e67682ace1",
+          "source": "c5b746e081d6b393571d74001739e50d8e242beeb4a4f95dd46cb403f7b2e078"
+        },
+        {
+          "assessment": "f0b5b3e9b132b994b22f6ae1a2e6bfdabc760439848d610e6483db63e3dc8731",
+          "config": "cd08a30d2174db6c0cbaec6ce68f45536a9e920a081654ea390677e67682ace1",
+          "source": "144f79b32aba541316c9fab3d714ae71d7c4f286afa9cae6f6c1076708561eee"
+        }
+      ],
+      "hypothesis": "Upstream lifecycle left velocity targets behind; all-failure attribution and native repair effect remain unproved.",
+      "id": "capture-drive-contract@4",
+      "issue_id": "capture-drive-contract",
+      "kind": "issue",
+      "objects": [
+        "1886414321cee337dbf2ca900ae16c69fcbe0d91e8813440abc5756f6a96539b",
+        "3f45d5322b71e19e293288b3bbea112f2b214ce819c55f1b50a8b501192ec760",
+        "471a2b48ad4fbecdfae5d7191f5c082f2c9664c438c06bba17c5f3264f02388c",
+        "590c5cd02cc4c05f4d5a046ee77380f7c672206d6fdb3152476c494f6ff515b2",
+        "aed8595aa3bbcb900af6201cd6fb68e21a398cf3e720f9547c1b3d672f7f50ee",
+        "e1d58bd2e10001b0ebb8efb9d484f79fbcfba6e9cc0940d319ca7774cec6f3c7",
+        "f0b5b3e9b132b994b22f6ae1a2e6bfdabc760439848d610e6483db63e3dc8731"
+      ],
+      "regressions": [
+        "capture-drive-contract/2"
+      ],
+      "scope": {
+        "assistance": "SAPIEN/PD/limited magnet unchanged",
+        "code": "sealed018/capture_feedback.py:127",
+        "conditions": "original10 selected object4/left preview",
+        "config": null,
+        "model": "gpt-6-astra (task provenance; run development tokens unavailable)",
+        "split": "development",
+        "stage": "capture"
+      },
+      "status": "fixed-in-tests",
+      "symptom": "capture_drive_contract",
+      "version": 4
+    },
+    {
+      "cause": "Final018 original10 audit rejects capture_audit_actuator_contract; two raw OUT events are not accepted counts.",
+      "confidence": "source-bound observation; physical causal remedy unverified",
+      "domain": "physical",
+      "fixes": [],
+      "hypothesis": "Compare exact actuator snapshot/handoff/auditor semantics in019; CPU correction does not demonstrate valid native receipts.",
+      "id": "capture018-audit-actuator@1",
+      "issue_id": "capture018-audit-actuator",
+      "kind": "issue",
+      "objects": [
+        "b2465a421a6ee8b3683d56dae1e28cb76f56bc588870f1b6615cf3cc0e6c838c",
+        "db3831c69816028c8ebb6e97133a4ae2c8ddbb07f1b6ff25a630bfd0753a940c"
+      ],
+      "regressions": [],
+      "scope": {
+        "assistance": "SAPIEN/PD/limited magnet unchanged",
+        "code": "sealed018",
+        "conditions": "018 development layouts only",
+        "config": null,
+        "model": "gpt-6-astra",
+        "split": "development",
+        "stage": "capture"
+      },
+      "status": "unresolved",
+      "symptom": "Original10 raw extraction events do not pass independent functional audit",
+      "version": 1
+    },
+    {
+      "cause": "Complete chain replay matches sealed018; 159 of 200 formal feedback ticks are triggered solely by inward finger speed; preview/formal object and contact states differ before capture.",
+      "confidence": "source-bound observation; physical causal remedy unverified",
+      "domain": "physical",
+      "fixes": [
+        {
+          "aggregate_child_cpu_s": 52.447644,
+          "candidate_versions": [
+            "021",
+            "022"
+          ],
+          "evidence": "bd96905a7e90eebf35d3cb7b409c04dfabf87e55206668349b3cd9ec8404df19",
+          "jobs": 10,
+          "status": "parent source and CPU tests passed; native benefit unverified"
+        }
+      ],
+      "hypothesis": "Position/preload relief may fail to arrest inward velocity. Velocity-aware relief has CPU replay evidence only; physical benefit unresolved.",
+      "id": "capture018-n15-feedback@2",
+      "issue_id": "capture018-n15-feedback",
+      "kind": "issue",
+      "native_regression_gap": "Matched generated n15 configuration-bound launch receipts/handoff remain pending; frozen formal replay still fails742/200/0",
+      "objects": [
+        "286c8385e405e8b4c8b5285f16be239361db7600d383aa411a29a54dbc9eedd6",
+        "356a0c63cd87258900e7bb0b3c34cf16a0926457555bc1e282332aa506e5d25c",
+        "5540ccc1f6ccd85fa941ff80871465509d64c527a9c3a40b0d0dd13056d41bc2",
+        "6bfe1fd81a6701ff1f61f524e8433d6b5c2bc6567cece279ea7c5d1a2731a14b",
+        "bc31b005507ff5acd5702ebab89462bb40a11b8d3b47ca6bf880ca1c1c6f17d5",
+        "bd96905a7e90eebf35d3cb7b409c04dfabf87e55206668349b3cd9ec8404df19"
+      ],
+      "regressions": [],
+      "scope": {
+        "assistance": "SAPIEN/PD/limited magnet unchanged",
+        "code": "sealed018",
+        "conditions": "018 development layouts only",
+        "config": null,
+        "model": "gpt-6-astra",
+        "split": "development",
+        "stage": "capture"
+      },
+      "status": "unresolved",
+      "symptom": "capture_feedback_budget after 200 feedback ticks",
+      "version": 2
+    },
+    {
+      "cause": null,
+      "confidence": "stub only",
+      "domain": "transport",
+      "fixes": [],
+      "hypothesis": "Synthetic boundary test; no real network call",
+      "id": "demo-transport@1",
+      "issue_id": "demo-transport",
+      "kind": "issue",
+      "objects": [
+        "2831426b3cbd63f03ca598f85e600b3c3b92bf67945eff6fbd36c06fdd5c3df6"
+      ],
+      "regressions": [],
+      "scope": {
+        "assistance": "SAPIEN/PD/limited magnet unchanged",
+        "code": "orchestration-stub",
+        "conditions": "selected development native receipts",
+        "config": null,
+        "model": "gpt-6-astra (task provenance; run development tokens unavailable)",
+        "split": "development",
+        "stage": "capture"
+      },
+      "status": "unresolved",
+      "symptom": "transport_timeout",
+      "version": 1
+    },
+    {
+      "cause": "Terminal exit124 and independent audit lacks final result/state; accepted OUT/RETURN counts remain unknown.",
+      "confidence": "source-bound observation; physical causal remedy unverified",
+      "domain": "physical",
+      "fixes": [],
+      "hypothesis": "Repeated invalid previews and geometry cost may dominate; compare complete matched019/020 preview counts and wall/CPU before attributing cause.",
+      "id": "episode018-timeout@1",
+      "issue_id": "episode018-timeout",
+      "kind": "issue",
+      "objects": [
+        "5b18873d2bf04bbd0aa9f4d8be5d7cdd22bfde244655220b19b94413087967eb",
+        "8eeff51edca498443273c03feb652bc42209188088e21a7372c854bce69f2bdb"
+      ],
+      "regressions": [],
+      "scope": {
+        "assistance": "SAPIEN/PD/limited magnet unchanged",
+        "code": "sealed018",
+        "conditions": "018 development layouts only",
+        "config": null,
+        "model": "gpt-6-astra",
+        "split": "development",
+        "stage": "full-episode"
+      },
+      "status": "unresolved",
+      "symptom": "n20 ended at wall timeout without final receipts",
+      "version": 1
+    },
+    {
+      "cause": "Warmed pairs were 2.15% and 2.59% slower; replaced mesh_world.np raises in baseline but candidate returns True.",
+      "confidence": "confirmed sealed offline measurements only",
+      "domain": "engineering",
+      "fixes": [],
+      "hypothesis": null,
+      "id": "geometry-optimization@2",
+      "issue_id": "geometry-optimization",
+      "kind": "issue",
+      "objects": [
+        "1a4b1d8c45c3954a29d01dd102945f03b612d0291684ce30fba07c5cad39381f",
+        "6fa9ddb8ab2b53609743e7be249a8a96fa4c89473ec9524023259044a7140cea",
+        "8d98eb5e8f2c265a787cfad2a6e230ca11502833d14ab7115199270f310c0b0e",
+        "aed8595aa3bbcb900af6201cd6fb68e21a398cf3e720f9547c1b3d672f7f50ee",
+        "f1b42c808cd6c216566554e0d5b2b01f3c451bb1174f713d13dd7d0c24aa2125"
+      ],
+      "regressions": [
+        "geometry-dispatch/2"
+      ],
+      "scope": {
+        "assistance": "SAPIEN/PD/limited magnet unchanged",
+        "code": "rejected capture-geometry-opt-001",
+        "conditions": "selected development native receipts",
+        "config": null,
+        "model": "gpt-6-astra (task provenance; run development tokens unavailable)",
+        "split": "development",
+        "stage": "geometry"
+      },
+      "status": "unresolved",
+      "symptom": "warmed benchmark slower; module-global dispatch mismatch",
+      "version": 2
+    },
+    {
+      "cause": "001 selected same-strength outcomes by content hash; dispatch post-completion accounting shared the generic exception path.",
+      "confidence": "source-confirmed defect; writer lost-update risk not an identified historical loss",
+      "domain": "engineering",
+      "fixes": [
+        {
+          "candidate": "evolution-harness-002",
+          "status": "local-tests-pending-parent-review"
+        }
+      ],
+      "hypothesis": null,
+      "id": "harness-completion-state@1",
+      "issue_id": "harness-completion-state",
+      "kind": "issue",
+      "objects": [
+        "03612402b01a2802d474e1116dc65d10962dc594a4b53c44435ee72ef966f928",
+        "4d717903dbb1cd9726961e9e99203e5d12ac6bf4137d0f635c11e1068628db4f",
+        "7a493299b1e979acf759fb93b51ea4de974d9df2c57fe0180f3eb9e89e82c058",
+        "aed8595aa3bbcb900af6201cd6fb68e21a398cf3e720f9547c1b3d672f7f50ee"
+      ],
+      "regressions": [
+        "tests/test_revision.py:test_completion_monotonic_and_accounting_failure_separate",
+        "tests/test_revision.py:test_dispatch_post_completion_accounting_unknown_not_model_failed"
+      ],
+      "scope": {
+        "assistance": "none",
+        "code": "4d717903dbb1cd9726961e9e99203e5d12ac6bf4137d0f635c11e1068628db4f",
+        "conditions": "parent integration review/local boundary reproduction",
+        "config": null,
+        "model": "gpt-6-astra",
+        "split": "development",
+        "stage": "harness"
+      },
+      "status": "unresolved",
+      "symptom": "Accounting or transport failure could obscure a known completion",
+      "version": 1
+    },
+    {
+      "cause": "001 assess hardcoded old reject/new accept for every registry entry, conflating safety preservation with correction.",
+      "confidence": "source-confirmed defect; writer lost-update risk not an identified historical loss",
+      "domain": "engineering",
+      "fixes": [
+        {
+          "candidate": "evolution-harness-002",
+          "status": "local-tests-pending-parent-review"
+        }
+      ],
+      "hypothesis": null,
+      "id": "harness-regression-intent@1",
+      "issue_id": "harness-regression-intent",
+      "kind": "issue",
+      "objects": [
+        "20913fbeaac35e5ed43d5c062b295c6a67429d997edec5b007f384d932ffcc75",
+        "4d717903dbb1cd9726961e9e99203e5d12ac6bf4137d0f635c11e1068628db4f",
+        "aed8595aa3bbcb900af6201cd6fb68e21a398cf3e720f9547c1b3d672f7f50ee"
+      ],
+      "regressions": [
+        "tests/test_revision.py:test_preservation_reject_reject_stays_unresolved",
+        "tests/test_revision.py:test_weakened_negative_needs_reviewed_registry_revision"
+      ],
+      "scope": {
+        "assistance": "none",
+        "code": "4d717903dbb1cd9726961e9e99203e5d12ac6bf4137d0f635c11e1068628db4f",
+        "conditions": "parent integration review/local boundary reproduction",
+        "config": null,
+        "model": "gpt-6-astra",
+        "split": "development",
+        "stage": "harness"
+      },
+      "status": "unresolved",
+      "symptom": "Every old rejection was required to become acceptance",
+      "version": 1
+    },
+    {
+      "cause": "001 dispatch forwarded 10185518 cumulative input; authority delta is5217731, with4967787 already counted.",
+      "confidence": "source-confirmed defect; writer lost-update risk not an identified historical loss",
+      "domain": "engineering",
+      "fixes": [
+        {
+          "candidate": "evolution-harness-002",
+          "status": "local-tests-pending-parent-review"
+        }
+      ],
+      "hypothesis": null,
+      "id": "harness-resumed-usage@1",
+      "issue_id": "harness-resumed-usage",
+      "kind": "issue",
+      "objects": [
+        "7a493299b1e979acf759fb93b51ea4de974d9df2c57fe0180f3eb9e89e82c058",
+        "7e8eec57f001628d06136caf9cbdc27af7ae99467afe3f7af7dfff541591321e",
+        "ab9344ea840183b9169528d7208e3f62f4b4134fa139824e83500c248f891351",
+        "aed8595aa3bbcb900af6201cd6fb68e21a398cf3e720f9547c1b3d672f7f50ee"
+      ],
+      "regressions": [
+        "tests/test_revision.py:test_authoritative_actual_resumed_increment",
+        "tests/test_revision.py:test_corrected_dispatch_actual_wrappers_with_stubs"
+      ],
+      "scope": {
+        "assistance": "none",
+        "code": "4d717903dbb1cd9726961e9e99203e5d12ac6bf4137d0f635c11e1068628db4f",
+        "conditions": "parent integration review/local boundary reproduction",
+        "config": null,
+        "model": "gpt-6-astra",
+        "split": "development",
+        "stage": "harness"
+      },
+      "status": "unresolved",
+      "symptom": "Session cumulative usage was counted as task input",
+      "version": 1
+    },
+    {
+      "cause": "Literal prefix matching rejected the harmless scanner marker inside001 source; the retained002 migration attempt failed before that import.",
+      "confidence": "source-confirmed defect; writer lost-update risk not an identified historical loss",
+      "domain": "engineering",
+      "fixes": [
+        {
+          "candidate": "evolution-harness-002",
+          "status": "local-tests-pending-parent-review"
+        }
+      ],
+      "hypothesis": null,
+      "id": "harness-source-scanner@1",
+      "issue_id": "harness-source-scanner",
+      "kind": "issue",
+      "objects": [
+        "4d717903dbb1cd9726961e9e99203e5d12ac6bf4137d0f635c11e1068628db4f",
+        "bfb1e848a556dcc5f6ee9cd70c755d2b6ec2b4d672fa3bf80a7e7d36c05f8314"
+      ],
+      "regressions": [
+        "tests/test_revision.py:test_scanner_source_literal_is_data_real_key_header_refused"
+      ],
+      "scope": {
+        "assistance": "none",
+        "code": "4d717903dbb1cd9726961e9e99203e5d12ac6bf4137d0f635c11e1068628db4f",
+        "conditions": "parent integration review/local boundary reproduction",
+        "config": null,
+        "model": "gpt-6-astra",
+        "split": "development",
+        "stage": "harness"
+      },
+      "status": "unresolved",
+      "symptom": "Credential scanner rejected its own reviewed source",
+      "version": 1
+    },
+    {
+      "cause": "Original helper reads JSON before resolution and overwrites with write_text; concurrent readers can replace each other\u2019s appended rows.",
+      "confidence": "source-confirmed defect; writer lost-update risk not an identified historical loss",
+      "domain": "engineering",
+      "fixes": [
+        {
+          "candidate": "evolution-harness-002",
+          "status": "local-tests-pending-parent-review"
+        }
+      ],
+      "hypothesis": null,
+      "id": "harness-usage-write-race@1",
+      "issue_id": "harness-usage-write-race",
+      "kind": "issue",
+      "objects": [
+        "843ce0b5b1404e4425c3935e9556b05201474d3233e38fdbd5c2c2566af2724b",
+        "d1b752f4a9508c40618548e49b0d9f41c34b043cab25f7910b7de0b54b835664"
+      ],
+      "regressions": [
+        "tests/test_revision.py:test_concurrent_updates_duplicates_preserve_rows",
+        "tests/test_revision.py:test_atomic_failure_preserves_authority"
+      ],
+      "scope": {
+        "assistance": "none",
+        "code": "4d717903dbb1cd9726961e9e99203e5d12ac6bf4137d0f635c11e1068628db4f",
+        "conditions": "parent integration review/local boundary reproduction",
+        "config": null,
+        "model": "gpt-6-astra",
+        "split": "development",
+        "stage": "harness"
+      },
+      "status": "unresolved",
+      "symptom": "Shared usage ledger update had no serialization or atomic replacement",
+      "version": 1
+    },
+    {
+      "cause": "Controlled real selector test confirms target weak contact is omitted for actual202_inner0926_s1c0n03 name, included under roundtrip_3 alias. Missing scoped pairs cannot prove absence of target contact.",
+      "confidence": "source and recorded-state CPU replay independently verified; native causality unresolved",
+      "fixes": [],
+      "hypothesis": "Inspect all consumers before determining observability versus safety effect; no native absent-contact inference or force readback established.",
+      "id": "original10-target-contact-scope@1",
+      "issue_id": "original10-target-contact-scope",
+      "kind": "issue",
+      "objects": [
+        "027737c203e7b371b1f06797b1f506da3f6dd45a7e004391d8479c0f9a43b902",
+        "25db365f8927505514f7238eb20f96070188428c894ae092bdfc05efd91561cd",
+        "4d637230cf6c6e21dd843c3120e5f2c568ef7c31d7de98b5b2e1d4cb123df788",
+        "b97ba116d1b915c1d13ab7aa3f629816bdeb910257f39366facad29ad2329496"
+      ],
+      "regressions": [],
+      "scope": {
+        "assistance": "unchanged SAPIEN/PD/magnet80/finger1000-200-4",
+        "code": "sealed020 slip_supervisor/loaded_tracking/live_clearance",
+        "conditions": "original10 seed2 object3 left lowering; recorded020; candidate not native validated",
+        "config": "cd08a30d2174db6c0cbaec6ce68f45536a9e920a081654ea390677e67682ace1",
+        "model": "gpt-6-astra server22; parent local review",
+        "split": "development",
+        "stage": "loaded-transport"
+      },
+      "status": "unresolved",
+      "symptom": "Original10 target actor name differs from hard-coded roundtrip_ID weak-contact selector",
+      "version": 1
+    },
+    {
+      "cause": "Recorded relative rotation 0.006006523234956806 exceeds unchanged 0.006 rad component guard; independent recorded-state replay agrees.",
+      "confidence": "confirmed limit crossing; cause hypothesis only",
+      "domain": "physical",
+      "fixes": [],
+      "hypothesis": "Compliance/creep or dynamic loading may explain growth; latent physical cause unconfirmed.",
+      "id": "slip014-guard@3",
+      "issue_id": "slip014-guard",
+      "kind": "issue",
+      "objects": [
+        "0e2a4ba3fd13f71074fd6c300f843905a5040f4d37995dfecb8a44cf010bdf5e",
+        "29674a199256d1505c760b869a96638c28e1b9c9e4945ade348e5cfb171cf96a",
+        "4c7348959e99bad2974cc291d05b2a494e34d83a9d5291750a3dfbeceae42387",
+        "4d717903dbb1cd9726961e9e99203e5d12ac6bf4137d0f635c11e1068628db4f",
+        "5c0813a5bb84d69d9c85d95180f6edaee89bfb96b0a1038fd7241630f9347be3",
+        "6d20ee2bae9f2ac2ce991522ad8ca7c0521c3e93b1c91ef4285f03088e3e4211",
+        "8b6f7ca11663ef7d3bbe1ff05630f92f1dab03990978817a7d34f5906f25aa62",
+        "a22c73daef85bbdd16028cffb8a89ed83bd9320705dd039cb4ffc9f707317985",
+        "aed8595aa3bbcb900af6201cd6fb68e21a398cf3e720f9547c1b3d672f7f50ee",
+        "d0cb360549dd157020e1a93464b7eff93257236b157ac9b90d2c7b562c6a905b",
+        "dd62a8abd0f16517915f7248f9def6183e3ee5172d91d2f00b67d6568f1b8dc9",
+        "e50b82c5d7de7707cca334a83e38950c249a65b5e7aa718ae37f93b24390e3bd"
+      ],
+      "regressions": [
+        "slip014-guard/3"
+      ],
+      "revision_reason": "Explicit label-only regression scope; physical slip cause and native effectiveness unresolved",
+      "scope": {
+        "assistance": "SAPIEN/PD/limited magnet unchanged",
+        "code": "sealed014/018",
+        "conditions": "n20 seed101 object1018 selected loaded ticks",
+        "config": null,
+        "model": "gpt-6-astra (task provenance; run development tokens unavailable)",
+        "split": "development",
+        "stage": "loaded-transport"
+      },
+      "status": "unresolved",
+      "symptom": "empirical_bound_violation:slip_rotation_rad",
+      "version": 3
+    },
+    {
+      "cause": "All1561 actual Supervisor calls and independent arithmetic reproduce: reserve1.626405mm>headroom1.378018mm. Full020 audit valid receipts but OUT0/RETURN0, full task failed.",
+      "confidence": "source and recorded-state CPU replay independently verified; native causality unresolved",
+      "fixes": [],
+      "hypothesis": "Whether native braking is safe or reserve well calibrated remains unproved; no recorded-state counterfactual establishes future states.",
+      "id": "slip020-braking-reserve@3",
+      "issue_id": "slip020-braking-reserve",
+      "kind": "issue",
+      "objects": [
+        "25db365f8927505514f7238eb20f96070188428c894ae092bdfc05efd91561cd",
+        "37506669b69d8cec4a885aa2eebdae4e96807ad4cff04ba4baf793b9c72ed204",
+        "4d637230cf6c6e21dd843c3120e5f2c568ef7c31d7de98b5b2e1d4cb123df788",
+        "b97ba116d1b915c1d13ab7aa3f629816bdeb910257f39366facad29ad2329496"
+      ],
+      "regressions": [],
+      "scope": {
+        "assistance": "unchanged SAPIEN/PD/magnet80/finger1000-200-4",
+        "code": "sealed020 slip_supervisor/loaded_tracking/live_clearance",
+        "conditions": "original10 seed2 object3 left lowering; recorded020; candidate not native validated",
+        "config": "cd08a30d2174db6c0cbaec6ce68f45536a9e920a081654ea390677e67682ace1",
+        "model": "gpt-6-astra server22; parent local review",
+        "split": "development",
+        "stage": "loaded-transport"
+      },
+      "status": "unresolved",
+      "symptom": "First warning1560 rejects translation reserve before first hold",
+      "version": 3
+    },
+    {
+      "cause": "Source-bound actual Tracking replay matches63 decisions; recorded reference acceleration reaches12.185693rad/s2. Governor does not bound inter-command reference acceleration by nominal.4 timing parameter.",
+      "confidence": "source and recorded-state CPU replay independently verified; native causality unresolved",
+      "fixes": [],
+      "hypothesis": "Transition may contribute to transient slip; native causal mechanism and effect of earlier hold remain unvalidated.",
+      "id": "slip020-factor-transition@1",
+      "issue_id": "slip020-factor-transition",
+      "kind": "issue",
+      "objects": [
+        "1d5e82896ab517bc59acc7e7ec12a7b61e8ebdb56dde678386d464c95a0e078a",
+        "25db365f8927505514f7238eb20f96070188428c894ae092bdfc05efd91561cd",
+        "4d637230cf6c6e21dd843c3120e5f2c568ef7c31d7de98b5b2e1d4cb123df788",
+        "b97ba116d1b915c1d13ab7aa3f629816bdeb910257f39366facad29ad2329496"
+      ],
+      "regressions": [],
+      "scope": {
+        "assistance": "unchanged SAPIEN/PD/magnet80/finger1000-200-4",
+        "code": "sealed020 slip_supervisor/loaded_tracking/live_clearance",
+        "conditions": "original10 seed2 object3 left lowering; recorded020; candidate not native validated",
+        "config": "cd08a30d2174db6c0cbaec6ce68f45536a9e920a081654ea390677e67682ace1",
+        "model": "gpt-6-astra server22; parent local review",
+        "split": "development",
+        "stage": "loaded-transport"
+      },
+      "status": "unresolved",
+      "symptom": "Last issued factor.25->.5 precedes largest measured slip-rate jump",
+      "version": 1
+    }
+  ],
+  "historical_snapshot_not_live": true
+}

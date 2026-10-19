@@ -1,0 +1,29 @@
+{
+  "schema": "parent-earlyhold001-source-review/1",
+  "observed_unix": 1792413376.799712,
+  "delivery_sha256": "4eaddd2f4eb3eef93862793b1eb0b4de45948c89705244a873d29a1e5a512340",
+  "delivery_entries_verified": 523,
+  "archive_sha256": "b945afb1767d3a74a8f20a2f359ce3933ee47e60d87e93e553323408c83be5af",
+  "review_scope": "Independent parent inspection of explicit delta and original contact-scope consumers, plus byte verification; not complete candidate regression approval",
+  "contact_finding": "Original scoped_contacts selects weak target pairs by roundtrip_ID name, but result is used for loaded tick/terminal logs. Original native contact_guard independently reads scene contacts and actual env.objects[target].actor name. This confirms an observability omission, not evidence that this selector bypasses the native contact guard.",
+  "source_pins": {
+    "src/live_clearance.py": "5c832ee3e4d4e09a97c50b55ec5ac6d4d33eeef3df43fe1c78c6725b514c1c36",
+    "src/physics_runner.py": "8506e2d652db0899f5923bdee065d3589d8267deb0fa6bfb5ee081133f0ed1b7",
+    "harness/loaded_audit.py": "eb654dd1fdf05adece1c3f2231fa019b91dba84196dee4aea9631e29c87a1ee1",
+    "harness/slip_audit.py": "65491bb9cf0cb10dd6dd0cc4a846f39fc2679c0894ec3d67efa898c7e5661f74"
+  },
+  "candidate_review_observations": [
+    "Detached Tracking.propose copies mutable controller state before decide; first causal guarded zero selection still requires actual prefix qualification.",
+    "Telemetry observer uses actual target actor identity and keeps original filter; no force readback invented.",
+    "00151 passing groups are producer reports, not parent independent replay.",
+    "Full prefix0..220 now supplied to new002 task; unissued altered successor states must not be consumed."
+  ],
+  "native_launch_authorized": false,
+  "physical_effectiveness_proven": false,
+  "pending": [
+    "Actual221 first-trigger qualification",
+    "Parent complete independent source/config-bound regression review",
+    "Future native matched-pair authorization only after review"
+  ],
+  "goal_complete": false
+}

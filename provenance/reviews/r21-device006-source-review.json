@@ -1,0 +1,29 @@
+{
+  "schema": "parent-r21-device006-final-source-review/1",
+  "observed_unix": 1792449802.9833238,
+  "archive_bytes": 184936,
+  "archive_sha256": "37ef323b141855b460aecfa18344ad0eb5c127737c9f0867f580aeeeb0d36405",
+  "manifest_sha256": "b376573743a0d20f71b18b031ca09f1747b54989b7c006c1de818ddd150f31a7",
+  "payload_entries": 80,
+  "fork_manifest_sha256": "4ce3b2298da270a628a751efeacb2c55649be71f951310d9aa90157bc925c522",
+  "fork_entries": 25,
+  "actual67_tests": 43,
+  "test_receipt": "parent-r21-device006-actual67-tests-001.json",
+  "test_wall_s": 0.7593436309834942,
+  "test_wait4_cpu_s": 0.48417499999999997,
+  "runner_three_replacements_reverse_to_exact002": true,
+  "other_inherited_sources_config_closure_exact": true,
+  "phase_only_three_pin_changes": true,
+  "strict_supervisor_helpers_byte_exact": true,
+  "source_review": "Exactsame Base_Tasksetupcodeobject inprivateglobals changingonlyEngine anddeprecatedRenderer lookups. ExplicitnativeRendererDevice andeveryRenderSystem/Scene device PCI checks beforeassets/steps. InheritedPhysxCpuSystem/config/order andallcontrolleralgorithms preserved. Newhonestsource/manifest phasepins, SDKbytes/extensionbound,freshparentlease. No sharedSDKglobalmutation. GPU4exclusivepmon plus7identityrecords required; no CPUtests_as_nativeclaim.",
+  "environment_diff": {
+    "VK_ICD_FILENAMES": "/usr/share/vulkan/icd.d/nvidia_icd.json"
+  },
+  "worker_all3_batches_retained": true,
+  "worker_conservative_cpu_charge_s": 180,
+  "initialization_attempts_authorized": 1,
+  "wall_cap_s": 300,
+  "cpu_cap_s": 240,
+  "full_OUT_RETURN_authorized": false,
+  "physical_success": false
+}

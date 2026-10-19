@@ -1,0 +1,12 @@
+{
+  "name": "r21-device006-reviewed-source.tar.gz",
+  "bytes": 181038,
+  "sha256": "ec2b527f9b9e6687e6118782d1d7cf49cd86cfbe9f54bf2645dfe30bb601b44b",
+  "members": 80,
+  "source_export_manifest_sha256": "13a2c252a065bdc0d445e9d0a8b2bf7fb9b51654daa75f39ad1a9237f707f7d9",
+  "original_candidate_sha256": "37ef323b141855b460aecfa18344ad0eb5c127737c9f0867f580aeeeb0d36405",
+  "scope": "Exact006 scoped explicit PCI Device/native renderer/allScene RenderSystem binding and43 synthetic regressions; independently43actual67 tests pass. Three runner replacements reverse exact002; all inherited controller/physics/config/verifiers preserved. ONE finite initializer reports7 correct actualGPU4identities, unchanged observer/layout, no affinity gaps. Sameowned PID GPU3G+GPU4C+G remains; exclusiveGPU4 FAILED, fullOUT/RETURN unattempted. All failures retained; no raw CLI/auth/native outputs/assets/video.",
+  "release": "r21-return-20261020",
+  "release_url": "https://github.com/Zarad0X/robotwin-astra-harness/releases/tag/r21-return-20261020",
+  "github_server_digest_verified": true
+}

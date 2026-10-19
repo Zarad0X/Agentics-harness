@@ -1,0 +1,25 @@
+{
+  "schema": "reviewed-milestone-archives/1",
+  "milestones": [
+    {
+      "tag": "earlyhold-native-001-20261019",
+      "url": "https://github.com/Zarad0X/robotwin-astra-harness/releases/tag/earlyhold-native-001-20261019",
+      "assets": [
+        {
+          "filename": "earlyhold-native-integration-001.tar.gz",
+          "bytes": 11300980,
+          "sha256": "e38529b27d3db3e457dc531e91d283419719794b52545da81af2a9cd3083e7ff"
+        },
+        {
+          "filename": "parent-earlyhold-native001-regression-closure.tar.gz",
+          "bytes": 2835456,
+          "sha256": "d853b793a57b7973b60817c86e7a89e7a32cf383a24c4340d5bd6979a1600662"
+        }
+      ],
+      "purpose": "Exact OFF023/ON024 source and portable CPU inputs, retained failed attempts, separately parent-generated complete regression closure",
+      "producer_status": "UNAPPROVED_BLOCKED retained; geometry completed only in new independent parent copy",
+      "parent_review": "provenance/reviews/earlyhold-native001-source-review.json",
+      "scope": "CPU-reviewed diagnostic experiment only, no stable/native physical success claim"
+    }
+  ]
+}

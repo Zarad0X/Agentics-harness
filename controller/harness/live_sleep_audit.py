@@ -138,11 +138,11 @@ def inspect(run,manifest,cfg):
         p=out/'live-sleep-receipt.json';terminal=json.loads(p.read_text());inputs[str(p)]=file_hash(p)
         if terminal.get('schema')!='live-sleep-qualification/2' or terminal['binding']!=expected or terminal['formal_credit'] is not False or terminal['goal_complete'] is not False or not terminal['qualification_only']:raise ValueError('live_receipt_binding')
         events=[json.loads(s) for s in (out/'events.jsonl').read_text().splitlines()]
-        if manifest.get('runtime_variant') in ('v36-live-combined-011','v36-live-combined-012','v36-live-combined-013','v36-live-combined-014','v36-live-combined-015','v36-live-combined-016','v36-live-combined-017','v36-live-combined-018','v36-live-combined-021') and 'action_tapes' not in terminal:raise ValueError('live_tape_inventory_required')
+        if manifest.get('runtime_variant') in ('v36-live-combined-011','v36-live-combined-012','v36-live-combined-013','v36-live-combined-014','v36-live-combined-015','v36-live-combined-016','v36-live-combined-017','v36-live-combined-018','v36-live-combined-024') and 'action_tapes' not in terminal:raise ValueError('live_tape_inventory_required')
         if 'action_tapes' in terminal:verify_tape_inventory(out,terminal['action_tapes'])
         logged=[e for e in events if e['kind']=='live_sleep_boundary']
         from summary_stream import rows as summary_rows
-        if manifest.get('runtime_variant') in ('v36-live-combined-012','v36-live-combined-013','v36-live-combined-014','v36-live-combined-015','v36-live-combined-016','v36-live-combined-017','v36-live-combined-018','v36-live-combined-021') and 'summary_stream' not in terminal:raise ValueError('live_summary_stream_required')
+        if manifest.get('runtime_variant') in ('v36-live-combined-012','v36-live-combined-013','v36-live-combined-014','v36-live-combined-015','v36-live-combined-016','v36-live-combined-017','v36-live-combined-018','v36-live-combined-024') and 'summary_stream' not in terminal:raise ValueError('live_summary_stream_required')
         # Monotone captured formal trajectory counters permit a single pass.
         trajectory=(out/'trajectory.jsonl').open('rb');rolling=hashlib.sha256();trajectory_count=0;previous_count=0
         qualified_objects=set();summary_count=0

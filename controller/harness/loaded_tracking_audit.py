@@ -42,7 +42,7 @@ class Replay:
         require(np.all(self.drive>=self.limits[:,0]) and np.all(self.drive<=self.limits[:,1]),'drive_limits')
         self.budget=8*(len(self.points)-1)+2101;self.arrival=None;self.previous_q=None;self.last_trials=[]
 
-    def next(self,state):
+    def next(self,state,advance_factors=None):
         self.last_trials=[]
         a=self.a;q=np.array(state['robots'][a.arm]['q'][:7]);v=np.array(state['robots'][a.arm]['qdot'][:7])
         require(np.isfinite(q).all() and np.isfinite(v).all() and self.count<self.budget,'state_budget')
@@ -59,7 +59,7 @@ class Replay:
         future=[ee(a.world.model,a.arm,x) for x in forecast_vectors]
         transform=now@a.relative;next_transforms=[ee(a.world.model,a.arm,q+.004*x)@a.relative for x in velocities]
         step=max(np.linalg.norm((verts@t[:3,:3].T+t[:3,3])-(verts@transform[:3,:3].T+transform[:3,3]),axis=1).max() for verts in a.local for t in next_transforms)
-        factors=[0.] if self.count==0 or self.at==len(self.points)-1 else [1.,.5,.25,.125,0.]
+        factors=[0.] if self.count==0 or self.at==len(self.points)-1 else ([1.,.5,.25,.125,0.] if advance_factors is None else advance_factors)
         trials=[];self.last_trials=trials
         for advance in factors:
             new_at=min(self.at+advance,len(self.points)-1);i=min(int(new_at),len(self.points)-2)

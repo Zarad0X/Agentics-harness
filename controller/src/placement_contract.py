@@ -13,7 +13,7 @@ from provenance import digest,file_hash
 # IK, path planning, endpoint thresholds and loaded call semantics are unchanged.
 FUNCTION_AST = {('physics_runner.py', 'plan_to'): 'f950cccebcb087106645c29daf644fba0dd3fd898b9236a44b9d1aef97400b89', ('mesh_world.py', 'free'): 'c1e4af48dc7f9d1d2e5edbf58d139aa0bbb3c3d610bc307f19482cdc791a71ff', ('collision_world.py', '__init__'): '9d3d01458388927e52698879c0814b57d102d0ab460159abd0cb454e1ba9b506'}
 # 008 additionally pins provenance capture and its complete placement caller.
-FUNCTION_AST.update({('physics_runner.py', 'main'): '70b47b0f5ece3aab1fa708769f98f5e6b03f324229739227c6319b8bce35b2e7', ('placement_contract.py', 'endpoint_receipt'): 'c917fda0ac8f0bd5fbf91a0441573535579e3660a5c86bd67b7be116281c3dc5'})
+FUNCTION_AST.update({('physics_runner.py', 'main'): '912dd91b6fcffefcdd6c924fcb7e93ff7dfbe435471fd05f75b5925832124358', ('placement_contract.py', 'endpoint_receipt'): 'c917fda0ac8f0bd5fbf91a0441573535579e3660a5c86bd67b7be116281c3dc5'})
 HELPER_SHA256 = '46c29be0b13f3e12cb51fec693cc7e261ead81dd646c9b8353afb7224503c64e'
 
 

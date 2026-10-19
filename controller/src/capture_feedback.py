@@ -9,7 +9,6 @@ import copy
 import math
 import numpy as np
 from provenance import digest
-from velocity_relief import goals as velocity_relief_goals, POLICY as VELOCITY_RELIEF_POLICY
 from preview_errors import CandidateInfeasible
 from closure_hold import settle_closure
 from closure_regulation import Regulator, targets as relief_targets, wire_controls
@@ -89,8 +88,7 @@ def motion(row):
 
 class Capture:
     def __init__(self,api,source):
-        self.api=api;self.source=dict(source,schema='capture-feedback/018-followup001',
-            feedback_policy=dict(VELOCITY_RELIEF_POLICY),
+        self.api=api;self.source=dict(source,schema='capture-feedback/017',
             limits=dict(total_ticks=TOTAL_TICKS,sweep_ticks=SWEEP_TICKS,hold_ticks=HOLD_TICKS,
                         recovery_ticks=RECOVERY_TICKS,recovery_rounds=RECOVERY_ROUNDS,
                         recovery_distance_m=RECOVERY_DISTANCE,feedback_ticks=FEEDBACK_TICKS,dt=DT,slew_m=SLEW,
@@ -167,7 +165,6 @@ class Capture:
                 self.latches[i]=target
             if compressed or row['finger_velocity'][i]<-.01 or (object_fast and touch):
                 goals[i]=max(old[i],max(0.,q-PRELOAD))
-        goals=velocity_relief_goals(row,old,goals)
         self.step(goals,'feedback')
 
     def step(self,goals=None,reason='hold',active=None,regulator=None):

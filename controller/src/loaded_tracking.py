@@ -4,6 +4,7 @@ The certified reference never becomes the drive target or measured state.
 Forecasts are kinematic, empirical early guards, NOT native safety proofs.
 No state setters, gain/force changes, geometry changes or new assistance.
 """
+import copy
 import runtime_profile as timing
 import numpy as np
 from loaded_clearance import ee
@@ -49,7 +50,7 @@ class Tracking:
         return self.path[i]+u*(self.path[i+1]-self.path[i])
 
     @timing.measured('tracking')
-    def decide(self,state):
+    def decide(self,state,advance_factors=None):
         self.last_trials=[]
         p=POLICY;a=self.a;arm=a.arm;dt=p['dt'];h=p['horizon_s']
         q=np.asarray(state['robots'][arm]['q'][:7]);qd=np.asarray(state['robots'][arm]['qdot'][:7])
@@ -71,7 +72,7 @@ class Tracking:
         next_objects=[ee(a.world.model,arm,q+dt*v)@a.relative for v in velocities]
         payload_step=max(float(np.linalg.norm(v@nobj[:3,:3].T+nobj[:3,3]-(v@obj[:3,:3].T+obj[:3,3]),axis=1).max()) for v in a.local for nobj in next_objects)
         trials=[];self.last_trials=trials
-        for factor in ([0.] if self.index==0 or self.cursor==len(self.path)-1 else p['advance_factors']):
+        for factor in ([0.] if self.index==0 or self.cursor==len(self.path)-1 else (p['advance_factors'] if advance_factors is None else advance_factors)):
             cursor=min(self.cursor+factor,len(self.path)-1);ref=self.reference_at(cursor)
             velocity=(ref-self.reference)/dt
             reference_ee=ee(a.world.model,arm,ref);old_ee=ee(a.world.model,arm,self.reference)
@@ -121,6 +122,17 @@ class Tracking:
                 check(stalls<=p['max_stall_ticks'],'stall_budget')
                 return dict(observed_q=q.tolist(),predictor_velocities=[v.tolist() for v in velocities],index=self.index,cursor=cursor,reference_q=ref.tolist(),reference_v=velocity.tolist(),bias=bias.tolist(),q=drive.tolist(),v=vdrive.tolist(),stalls=stalls,trials=trials)
         raise CandidateInfeasible('loaded_tracking_predictive_guard:'+str(trials))
+
+    def propose(self,state,advance_factors=None):
+        # decide only assigns last_trials; isolate every mutable controller field.
+        # Admission/world are read-only dependencies, not copied native state.
+        fork=copy.copy(self)
+        for key,value in vars(self).items():
+            if key!='a':setattr(fork,key,copy.deepcopy(value))
+        try:return fork.decide(state,advance_factors=advance_factors)
+        except CandidateInfeasible as exc:
+            exc.proposal_trials=copy.deepcopy(fork.last_trials)
+            raise
 
     def commit(self,decision):
         self.previous_q=np.asarray(decision['observed_q'])

@@ -7,7 +7,7 @@ def inspect(run):
  run=Path(run);errors=[];receipt=None
  try:
   manifest_raw=(run/'diagnostic-manifest.json').read_bytes();m=json.loads(manifest_raw)
-  if m.get('runtime_variant')!='v36-live-combined-021' or m.get('profiling')!=CONTRACT:raise ValueError('profile_manifest')
+  if m.get('runtime_variant')!='v36-live-combined-024' or m.get('profiling')!=CONTRACT:raise ValueError('profile_manifest')
   root=Path(__file__).resolve().parents[1];bp=root/'harness/configs/v36/BINDINGS.json';sealed=json.loads(bp.read_bytes())
   expected_sources=dict(sealed['runtime_dependencies']);expected_sources['harness/configs/v36/BINDINGS.json']=hashlib.sha256(bp.read_bytes()).hexdigest()
   if m['snapshot_sha256']!=expected_sources:raise ValueError('profile_reviewed_sources')

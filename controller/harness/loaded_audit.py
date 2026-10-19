@@ -16,6 +16,7 @@ from collision_world import pose_matrix
 from astra_planner import so3_log
 from placement_audit_v30 import expected_binding
 from loaded_tracking_audit import Replay,equivalent
+from slip_audit import Replay as SlipReplay
 from loaded_tracking_audit005 import Replay as Replay005,CONTRACT as CONTRACT005
 
 def streamed_hash(path):
@@ -41,7 +42,7 @@ def replay_commands(path,profile):
     q=np.asarray(dense);v=np.vstack(((q[1:]-q[:-1])/dt,np.zeros(7)))
     return [dict(q=a.tolist(),v=b.tolist()) for a,b in zip(q,v)]+[dict(q=q[-1].tolist(),v=[0.]*7) for _ in range(1100)]
 
-def start(row,world_factory,variant,expected_profile=None,legacy=False):
+def base_start(row,world_factory,variant,expected_profile=None,legacy=False):
     b=row['binding'];s=row['state'];c=row['controls'];arm=row['arm']
     require(row['variant']==variant and row['phase'] in ('transport','lowering'),'loaded_motion_identity')
     require(digest(b)==row['binding_sha256'] and b['state']==digest(s) and b['controls']==digest(c),'loaded_binding_hash')
@@ -62,9 +63,10 @@ def start(row,world_factory,variant,expected_profile=None,legacy=False):
     else:require(row['certificate']=={'safe':None,'reason':'original_monitor_only'},'loaded_A_not_clearance_claim')
     monitor=Monitor(a);initial=monitor.measure(s,native,expected[0]['q'])
     tracking=(Replay005 if profile['tracking']==CONTRACT005 else Replay)(a,expected,s,c,profile) if 'tracking' in profile else None
+    if 'slip_supervisor' in profile:tracking=SlipReplay(a,expected,s,c,profile,native)
     return dict(row=row,a=a,monitor=monitor,commands=expected,index=0,fixed=fixed_controls(c,arm),violations=list(initial['violations']),maxima={},tracking=tracking,previous_state=s,previous_controls=c)
 
-def tick(active,row):
+def base_tick(active,row):
     a=active['a'];i=active['index'];start_row=active['row'];c=row['controls']
     require(row['variant']==start_row['variant'] and row['target']==int(a.target) and row['arm']==a.arm and row['phase']==start_row['phase'],'loaded_tick_identity')
     tracking=active['tracking']
@@ -92,9 +94,10 @@ def tick(active,row):
     require(not active['violations'],'loaded_execution_after_bound_violation')
     active['violations'].extend(measured['violations']);active['index']+=1
     if tracking is not None:tracking.accept(d)
+    if isinstance(tracking,SlipReplay):tracking.observe(row['state'],row['native_ee'],active['index'])
     active['previous_state']=row['state'];active['previous_controls']=c
 
-def terminal(active,row):
+def base_terminal(active,row):
     require(type(row['completed']) is bool and type(row['ticks']) is int and row['ticks']>=0,'loaded_terminal_types')
     require(row['target']==active['row']['target'] and row['arm']==active['row']['arm'] and row['phase']==active['row']['phase'],'loaded_terminal_identity')
     require(row['ticks']==active['index'],'loaded_terminal_tick_count')
@@ -111,7 +114,10 @@ def terminal(active,row):
             try:r.next(rejected['pre_state'])
             except ValueError as exc:
                 reason=str(exc).removeprefix('tracking_audit_')
-                require(reason in ('predictive_guard','stall_budget','state_budget') and rejected['reason'].startswith('loaded_tracking_'+('time_budget' if reason=='state_budget' else reason)),'loaded_rejection_reason')
+                if reason.startswith('slip_'):
+                    require(isinstance(r,SlipReplay) and rejected['reason']=='loaded_'+reason and equivalent(rejected.get('slip'),r.last_slip),'loaded_slip_rejection_reason')
+                else:
+                    require(reason in ('predictive_guard','stall_budget','state_budget') and rejected['reason'].startswith('loaded_tracking_'+('time_budget' if reason=='state_budget' else reason)),'loaded_rejection_reason')
             else:raise ValueError('loaded_unreproducible_rejection')
             if not isinstance(r,Replay005):require(equivalent(r.last_trials,rejected['trials']),'loaded_rejected_predicates')
         pending=t['pending_issue']
@@ -121,6 +127,7 @@ def terminal(active,row):
         if row['completed']:require(pending is None and rejected is None,'loaded_pending_command_on_success')
     if row['completed']:
         tracking=active['tracking']
+        require(not isinstance(tracking,SlipReplay) or tracking.stage!='hold','loaded_unresolved_slip_hold_on_success')
         n=len(active['commands'])-1100 if tracking is None else tracking.arrival
         require(n is not None,'loaded_reference_not_finished')
         extra=active['index']-n-100
@@ -140,8 +147,10 @@ def inspect(run,manifest,cfg):
         binding=expected_binding(run,manifest);binding['scene_manifest_sha256']=file_hash(out/'scene-manifest.json')
         scene=json.loads((out/'scene-manifest.json').read_text());canonical=set(map(str,scene['selected_ids']))
         legacy=manifest.get('runtime_variant') in ('v36-live-combined-001','v36-live-combined-002')
-        require(manifest.get('runtime_variant') in ('v36-live-combined-001','v36-live-combined-002','v36-live-combined-003','v36-live-combined-004','v36-live-combined-005','v36-live-combined-017','v36-live-combined-018','v36-live-combined-021'),'loaded_unsupported_runtime')
-        profile=PROFILE if legacy or variant=='A_original' else (profile_for(variant) if manifest['runtime_variant'] in ('v36-live-combined-005','v36-live-combined-017','v36-live-combined-018','v36-live-combined-021') else SMOOTH_PROFILE)
+        from earlyhold_integration import validate_runtime
+        validate_runtime(manifest,cfg)
+        require(variant=='B_clearance','earlyhold_loaded_variant')
+        profile=profile_for(variant)
         if variant=='B_clearance' and manifest['runtime_variant']=='v36-live-combined-005':profile=dict(profile,tracking=CONTRACT005)
         require(receipt['schema']==CONTRACT and receipt['variant']==variant and receipt['binding']==binding,'loaded_receipt_binding')
         require(receipt['formal_credit'] is False and receipt['goal_complete'] is False,'loaded_credit')
@@ -197,3 +206,18 @@ def inspect(run,manifest,cfg):
                 all_extraction_loaded_motions_witnessed=full,clearance_variant=variant=='B_clearance',
                 empirical_envelope_only=True,in_flight_bound_proved=False,return_insertion_covered=False,
                 formal_credit=False,goal_complete=False,receipt=receipt)
+
+# Actual continuous audit -> inspect -> these wrappers -> independent reconstruction.
+def start(row,world_factory,variant,expected_profile=None,legacy=False):
+    from earlyhold_integration import ENABLED,contract,validate_runtime
+    from earlyhold_audit import start as independent_start
+    validate_runtime()
+    require(not legacy and variant=='B_clearance','earlyhold_caller_variant')
+    require(row['binding'].get('native_integration')==contract(),'earlyhold_admission_source')
+    return independent_start(row,world_factory,ENABLED)
+def tick(active,row):
+    from earlyhold_audit import tick as independent_tick
+    return independent_tick(active,row)
+def terminal(active,row):
+    from earlyhold_audit import terminal as independent_terminal
+    return independent_terminal(active,row)

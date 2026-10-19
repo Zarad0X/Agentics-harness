@@ -1,0 +1,33 @@
+{
+  "schema": "parent-earlyhold-original10-experiment/1",
+  "observed_unix": 1792417305.281419,
+  "hypothesis": "First guarded reference hold before proposed reacceleration reduces later payload slip under unchanged020 capture and native assistance",
+  "arms": {
+    "023": "earlyhold OFF; common new telemetry/proposal path",
+    "024": "earlyhold ON; only enabled setting/identity differs"
+  },
+  "episode_ceiling": 2,
+  "authorized_runs": [
+    "rt-v36-combined-original10-023",
+    "rt-v36-combined-original10-024"
+  ],
+  "retries": 0,
+  "replication": false,
+  "limits": {
+    "wall_s": 86400,
+    "cpu_s": 86400,
+    "max_physics_steps": 10000000,
+    "capture_every_steps": 25,
+    "max_frames": 1000000
+  },
+  "source_review": "parent-earlyhold-native001-source-review-001.json",
+  "cpu_review": "parent-earlyhold-native001-cpu-recheck-001.json",
+  "receipt_closure_archive_sha256": "d853b793a57b7973b60817c86e7a89e7a32cf383a24c4340d5bd6979a1600662",
+  "assistance": "unchanged020 SAPIEN/PD/magnet80/finger1000-200-4",
+  "task": "allOUT then each original ID/position/raw-quaternionRETURN; same existing velocities/contact/assistance release/both-HOME gates",
+  "scope": "CPU-native diagnostic only; cannot prove stable physical success or broad10/15/20 generalization",
+  "hard_failure": "No continuation/retry/reset or guard relaxation after stop; preserve terminal and independently audit",
+  "count_all_attempts": true,
+  "native_success": false,
+  "full_goal_complete": false
+}

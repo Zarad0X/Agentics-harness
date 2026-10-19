@@ -21,9 +21,11 @@ from continuous_budget_v36 import TIMEOUT_CAPS,validate_timeout
 from runtime_profile import CONTRACT as PROFILE_CONTRACT
 
 def validate_manifest(run,m):
+    from earlyhold_integration import validate_runtime
+    validate_runtime(m,json.loads((run/"config.json").read_text()))
     if m.get('profiling')!=PROFILE_CONTRACT:raise ValueError('runtime_profile_contract')
-    if m.get('capture_contract')!='capture-feedback/018-followup001-experimental':raise ValueError('capture_contract')
-    if m.get('runtime_variant')!='v36-live-combined-021':raise ValueError('live_sleep_runtime_variant')
+    if m.get('capture_contract')!='capture-feedback/017-experimental':raise ValueError('capture_contract')
+    if m.get('runtime_variant')!='v36-live-combined-024':raise ValueError('live_sleep_runtime_variant')
     if m.get('loaded_variant') not in ('A_original','B_clearance'):raise ValueError('loaded_variant_binding')
     cfg=load_config(run/'config.json');validate_scope(cfg)
     validate_timeout(cfg.count,m.get('timeout_s'))
@@ -76,7 +78,8 @@ def prepare(a):
         if file_hash(p)!=h:raise ValueError('snapshot_copy_changed:'+name)
     write_once(run/'config.json',cfg.to_dict())
     mapping={str(p.relative_to(snap)):file_hash(p) for p in sorted(snap.rglob('*')) if p.is_file()}
-    m=dict(capture_contract='capture-feedback/018-followup001-experimental',profiling=PROFILE_CONTRACT,runtime_variant='v36-live-combined-021',loaded_variant=a.loaded_variant,preview_accounting_schema='preview-lifecycle/35',schema='continuous-diagnostic-supervisor/36',continuous_diagnostic=True,reconstructed=False,
+    from earlyhold_integration import contract
+    m=dict(earlyhold_integration=contract(),capture_contract='capture-feedback/017-experimental',profiling=PROFILE_CONTRACT,runtime_variant='v36-live-combined-024',loaded_variant=a.loaded_variant,preview_accounting_schema='preview-lifecycle/35',schema='continuous-diagnostic-supervisor/36',continuous_diagnostic=True,reconstructed=False,
         accepted=False,whole_episode_success=False,full_ten_success=False,dataset_success=False,formal_credit=False,
         run_id=a.run_id,release=str(release),release_sha256=hashes,python=str(python),gpu=gpu,timeout_s=timeout,execution=e,headless_environment=native,
         snapshot_sha256=mapping,source_sha256=source,config_sha256=file_hash(run/'config.json'),disk=disk,

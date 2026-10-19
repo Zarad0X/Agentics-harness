@@ -152,6 +152,24 @@
       "sha256": "50ea95e4f9ffdbe50592e9255a05b5e68cc642d6bcd0fdd8c91cf224af50e447",
       "source_path": "frozen-ledger:repositories/robotwin-astra-harness-full-export-20261019/evidence/ledger-snapshots/20261019T115853Z",
       "role": "derived-latest-issue-or-regression-summary; full history in archive"
+    },
+    "experience/README.md": {
+      "bytes": 520,
+      "sha256": "dbbfec2ba509bfc6dd6d89b957036f5699216a1739570452dda8f58366525c6a",
+      "source_path": "parent-verified-ledger:work/astra-roundtrip/evolution-ledger@694c66c3d062dd75b4af193b2c68e55baeef711e1032a2ed449f7bdb17907f12",
+      "role": "parent-reviewed append-only experience summary publication; initial snapshot retained"
+    },
+    "experience/LATEST.json": {
+      "bytes": 240,
+      "sha256": "2b52c3d50652bcf73a2c18cc3f4d5c0730bcb5a4069bcd2fa1b3504e4bbb2611",
+      "source_path": "parent-verified-ledger:work/astra-roundtrip/evolution-ledger@694c66c3d062dd75b4af193b2c68e55baeef711e1032a2ed449f7bdb17907f12",
+      "role": "parent-reviewed append-only experience summary publication; initial snapshot retained"
+    },
+    "experience/snapshots/20261019T1345Z.json": {
+      "bytes": 35392,
+      "sha256": "b337754ee2f393ebf62294a6f1df18677a7798866b5e04fb44fdc067c0cb636b",
+      "source_path": "parent-verified-ledger:work/astra-roundtrip/evolution-ledger@694c66c3d062dd75b4af193b2c68e55baeef711e1032a2ed449f7bdb17907f12",
+      "role": "parent-reviewed append-only experience summary publication; initial snapshot retained"
     }
   },
   "archive": "archive/index.json",

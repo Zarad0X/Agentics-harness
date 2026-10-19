@@ -14,6 +14,9 @@ from collision_world import pose_matrix
 import astra_planner as planner
 from preview_errors import CandidateInfeasible
 from loaded_tracking import Tracking,POLICY
+from slip_supervisor import Supervisor,observation,POLICY as SLIP_POLICY
+from earlyhold import EarlyHold,CONTRACT as EARLYHOLD_CONTRACT
+from target_contacts import observe_target_contacts
 
 PROFILE=dict(dt=.004,max_velocity=.25,max_acceleration=None,first_sample=True,
              handoff='V36_measured_start_no_bias',hold_steps=100,extra_hold_max=1000,
@@ -22,7 +25,7 @@ PROFILE=dict(dt=.004,max_velocity=.25,max_acceleration=None,first_sample=True,
 
 SMOOTH_PROFILE=dict(PROFILE,max_acceleration=.4,clock='segment_quintic_rest_to_rest')
 
-TRACKING_PROFILE=dict(SMOOTH_PROFILE,handoff='retained_drive_bias_with_fixed_measured_reference',tracking=POLICY)
+TRACKING_PROFILE=dict(SMOOTH_PROFILE,handoff='retained_drive_bias_with_fixed_measured_reference',tracking=POLICY,slip_supervisor=SLIP_POLICY)
 
 def profile_for(variant):
     return TRACKING_PROFILE if variant=='B_clearance' else PROFILE
@@ -38,14 +41,16 @@ def fixed_controls(c,arm):
 
 def scoped_contacts(env,target):
     rows=[];total=0
-    for contact in env.scene.get_contacts():
+    all_contacts=list(env.scene.get_contacts())
+    for contact in all_contacts:
         total+=1;names=[b.entity.get_name() for b in contact.bodies]
         if 'roundtrip_'+str(target) in names or any(np.linalg.norm(p.impulse)>.002 or p.separation<-.0003 for p in contact.points):
             rows.append(dict(bodies=names,points=[dict(position=p.position.tolist(),normal=p.normal.tolist(),separation=float(p.separation),impulse=p.impulse.tolist()) for p in contact.points]))
-    return dict(total_contact_pairs=total,scoped_contacts=rows)
+    return dict(total_contact_pairs=total,scoped_contacts=rows,target_contact_observation=observe_target_contacts(env,target,all_contacts))
 
 class Live:
-    def __init__(self,api,arm,target,variant,log):
+    def __init__(self,api,arm,target,variant,log,earlyhold=False):
+        self.earlyhold_enabled=earlyhold
         self.api=api;self.arm=arm;self.target=target;self.variant=variant;self.log=log
         self.armed=False;self.monitor=None;self.pending=None;self.tracking=None;self.issued=None;self.index=0;self.phase=None
         self.attempts=0;self.completed=0;self.goal_position=None;self.goal_rotation=None;self.rejected=None
@@ -109,8 +114,13 @@ class Live:
         self.expected=commands(path,profile);self.index=0;self.monitor=Monitor(a);self.fixed=fixed_controls(c,arm)
         self.tracking=Tracking(a,self.expected,s,c) if self.variant=='B_clearance' else None
         self.issued=None;self.rejected=None
-        binding=dict(state=digest(s),controls=digest(c),path=np.asarray(path).tolist(),commands_sha256=digest(self.expected),
-                     relative=a.relative.tolist(),envelope=asdict(a.env),profile=profile,geometry=digest(a.world.meshes),
+        self.slip=Supervisor(arm,target,a.env) if self.tracking is not None else None
+        self.earlyhold=EarlyHold(self.earlyhold_enabled,self.phase)
+        self.slip_packet=None;self.previous_reference_v=[0.]*7
+        from earlyhold_integration import contract,ENABLED
+        if self.earlyhold_enabled is not ENABLED:raise CandidateInfeasible("earlyhold_arm_setting")
+        binding=dict(native_integration=contract(),state=digest(s),controls=digest(c),path=np.asarray(path).tolist(),commands_sha256=digest(self.expected),
+                     earlyhold=dict(EARLYHOLD_CONTRACT,enabled=self.earlyhold_enabled),relative=a.relative.tolist(),envelope=asdict(a.env),profile=profile,geometry=digest(a.world.meshes),
                      goal_position=self.goal_position,goal_rotation=self.goal_rotation,**obstacle_binding(a.obstacles))
         self.api.event('loaded_live_admission',object_id=target,arm=arm,loaded_phase=self.phase,binding_sha256=digest(binding))
         self.log.append(dict(kind='live_admission',variant=self.variant,arm=arm,target=target,phase=self.phase,certificate=certificate,binding=binding,binding_sha256=digest(binding),commands=self.expected,state=s,controls=c,native_ee=pose_matrix(self.api.ee_pose(arm)).tolist()))
@@ -119,15 +129,21 @@ class Live:
             raise CandidateInfeasible('loaded_stale_live_binding')
         metrics=self.monitor.measure(s,pose_matrix(self.api.ee_pose(arm)),self.expected[0]['q'])
         if metrics['violations']:raise CandidateInfeasible('loaded_initial_empirical_bound:'+str(metrics['violations']))
+        if self.slip is not None:self.slip_packet=observation(0,s,pose_matrix(self.api.ee_pose(arm)),metrics,arm,target)
     @timing.measured('live_before')
     def before_tick(self):
         if self.tracking is None:return
         if self.issued is not None:raise RuntimeError('loaded_unobserved_issued_command')
         s=self.api.state();c=self.api.controls()
         if fixed_controls(c,self.arm)!=self.fixed:raise CandidateInfeasible('loaded_actuator_or_idle_control_changed')
-        try:decision=self.tracking.decide(s)
+        self.tracking.last_trials=[]
+        self.earlyhold.last=None
+        try:
+            native=pose_matrix(self.api.ee_pose(self.arm))
+            factors,slip=self.slip.decide(self.slip_packet,digest(s),digest(native.tolist()),self.index,self.previous_reference_v)
+            decision=self.earlyhold.select(self.tracking,self.slip,s,factors,slip)
         except CandidateInfeasible as exc:
-            self.rejected=dict(pre_state=s,pre_controls=c,index=self.index,reason=str(exc),trials=self.tracking.last_trials)
+            self.rejected=dict(pre_state=s,pre_controls=c,index=self.index,reason=str(exc),trials=getattr(exc,'proposal_trials',self.tracking.last_trials),slip=self.slip.last_witness,earlyhold=self.earlyhold.last)
             raise
         self.issued=dict(decision=decision,pre_state_sha256=digest(s),pre_controls_sha256=digest(c))
         self.api.command(self.arm,decision['q'],decision['v'])
@@ -151,6 +167,7 @@ class Live:
         # Every following command is selected BEFORE qf and native scene.step.
         while self.tracking.index==0 or not self.tracking.at_end:tick()
         for _ in range(100):tick()
+        if self.slip.mode=='hold':raise CandidateInfeasible('loaded_slip_endpoint_hold_unresolved')
     @timing.measured('live_observe')
     def observe(self,target,held):
         if self.monitor is None:return
@@ -167,7 +184,11 @@ class Live:
         native=pose_matrix(self.api.ee_pose(self.arm));metrics=self.monitor.measure(s,native,reference)
         self.log.append(dict(kind='live_tick',variant=self.variant,arm=self.arm,target=target,phase=self.phase,index=self.index,command=command,state=s,native_ee=native.tolist(),metrics=metrics,controls_sha256=digest(c),controls=c,contacts=self.api.contacts(),**({} if self.tracking is None else dict(tracking=self.issued))))
         self.index+=1
-        if self.tracking is not None:self.tracking.commit(self.issued['decision']);self.issued=None
+        if self.tracking is not None:
+            self.previous_reference_v=self.issued['decision']['reference_v']
+            self.earlyhold.accept(self.issued['decision'])
+            self.tracking.commit(self.issued['decision']);self.issued=None
+            self.slip_packet=observation(self.index,s,native,metrics,self.arm,target)
         if metrics['violations']:raise CandidateInfeasible('empirical_bound_violation:'+','.join(metrics['violations']))
     @timing.measured('placement')
     def move(self,phase,p,r,joint_goal,original):
@@ -184,7 +205,7 @@ class Live:
             for extra in range(0,1001,50):
                 actual=pose_matrix(self.api.ee_pose(self.arm));pe=float(np.linalg.norm(actual[:3,3]-p));re=float(np.linalg.norm(planner.so3_log(np.asarray(r)@actual[:3,:3].T)))
                 self.api.event('physical_tracking',target=self.target,extra_hold_steps=extra,position_error_m=pe,rotation_error_rad=re,loaded_live=True)
-                if pe<=.005 and re<=.04:
+                if pe<=.005 and re<=.04 and (self.tracking is None or self.slip.mode!='hold'):
                     completed=True;return True
                 if extra<1000:
                     for _ in range(50):self.api.tick(self.target,True)

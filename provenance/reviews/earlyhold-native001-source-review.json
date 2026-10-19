@@ -1,0 +1,56 @@
+{
+  "schema": "parent-earlyhold-native001-source-review/1",
+  "observed_unix": 1792417227.665539,
+  "delivery_sha256": "ad69672d87cf9f749c9b4f606876b4c6b037d27b6ef220ec9f383923dd1e8e3c",
+  "manifest_entries": 703,
+  "runtime_variants": [
+    "v36-live-combined-023",
+    "v36-live-combined-024"
+  ],
+  "baseline": "exact020 only; no021/022 velocity relief",
+  "original10_config_sha256": "cd08a30d2174db6c0cbaec6ce68f45536a9e920a081654ea390677e67682ace1",
+  "configs_per_arm_byte_exact": 7,
+  "original_loaded_guard_AST_exact": [
+    "base_start",
+    "base_tick",
+    "base_terminal"
+  ],
+  "OFF_ON_different_python_files": [
+    "harness/continuous_audit_v36.py",
+    "harness/continuous_v36.py",
+    "harness/live_sleep_audit.py",
+    "harness/runtime_profile_audit.py",
+    "harness/sleep_copy_audit_v35.py",
+    "src/earlyhold_integration.py",
+    "src/physics_runner.py",
+    "src/placement_contract.py"
+  ],
+  "OFF_ON_semantic_difference": "enabled bool and explicit version identities; corresponding main AST hash seals necessarily differ",
+  "source_review": [
+    "Reviewed complete16file delta: factory constructor and manifest/audit routing, unchanged original loaded helper bodies, explicit identity seals, reviewed proposal/telemetry overlay.",
+    "Contract uses existing snapshot BINDINGS.json, avoiding outer RUNTIME_BINDING omission; actual copied native snapshot contract tested in both arms.",
+    "Independent audit arithmetic imports no runtime Tracking/EarlyHold; real continuous audit routes admission/tick/terminal through wrappers.",
+    "Pending221 unissued normal and selected commands audited without consuming any changed successor.",
+    "All current registry cases passed in fresh parent copy; geometry missing in producer now has independently executed evidence, not a retroactive producer pass.",
+    "Original capture/handoff, collision, assistance, slip reserves, hold/endpoint, HOME and acceptance guards remain unchanged.",
+    "Telemetry identity via API doubles proves code/structure only; force readback unavailable; no native stability benefit established."
+  ],
+  "parent_CPU": {
+    "recheck": "parent-earlyhold-native001-cpu-recheck-001.json",
+    "jobs": 11,
+    "cpu_s": 102.02115699999999,
+    "budget_s": 180,
+    "regression_receipts": 6,
+    "actual_cases": 48,
+    "closure_export": "parent-earlyhold-native001-regression-export-001.json",
+    "total_cpu_including_export": 102.29490799999999
+  },
+  "producer_status_preserved": "UNAPPROVED_BLOCKED; original15CPUcap and missing geometry history retained",
+  "native_launch_authorized": false,
+  "physical_effectiveness_proven": false,
+  "goal_complete": false,
+  "remaining": [
+    "independently inspect/import real receipt objects and candidate assessment",
+    "one separately reviewed finite original10 pair; no repetition or stability claim"
+  ]
+}

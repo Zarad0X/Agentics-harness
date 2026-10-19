@@ -1,0 +1,143 @@
+{
+  "schema": "parent-earlyhold-native001-recheck/1",
+  "observed_unix": 1792417112.6947262,
+  "archive_sha256": "e38529b27d3db3e457dc531e91d283419719794b52545da81af2a9cd3083e7ff",
+  "delivery_sha256": "ad69672d87cf9f749c9b4f606876b4c6b037d27b6ef220ec9f383923dd1e8e3c",
+  "manifest_entries": 703,
+  "materialized_files": 4610,
+  "source_unchanged": true,
+  "child_cpu_s": 102.02115699999999,
+  "new_parent_aggregate_cpu_cap_s": 180,
+  "passed": true,
+  "native_qualified": false,
+  "native_launch_authorized": false,
+  "physical_effectiveness_proven": false,
+  "full_goal_complete": false,
+  "authority_sha256": "e9bc40e35bc4382bb9664fba96f8b5e5bcd77ad12d97733d9933657821cd4543",
+  "jobs": [
+    {
+      "argv": [
+        "driver.py",
+        "023",
+        "cases"
+      ],
+      "exit_code": 0,
+      "cpu_s": 18.586077,
+      "cpu_cap_s": 45,
+      "wall_s": 18.62925587099744,
+      "wall_cap_s": 75
+    },
+    {
+      "argv": [
+        "driver.py",
+        "024",
+        "cases"
+      ],
+      "exit_code": 0,
+      "cpu_s": 19.052455000000002,
+      "cpu_cap_s": 45,
+      "wall_s": 19.093890508986078,
+      "wall_cap_s": 75
+    },
+    {
+      "argv": [
+        "integrated_test.py",
+        "023"
+      ],
+      "exit_code": 0,
+      "cpu_s": 25.409784000000002,
+      "cpu_cap_s": 45,
+      "wall_s": 25.458187251002528,
+      "wall_cap_s": 75
+    },
+    {
+      "argv": [
+        "integrated_test.py",
+        "024"
+      ],
+      "exit_code": 0,
+      "cpu_s": 25.444258,
+      "cpu_cap_s": 45,
+      "wall_s": 25.489683772961143,
+      "wall_cap_s": 75
+    },
+    {
+      "argv": [
+        "source_checks.py",
+        "023"
+      ],
+      "exit_code": 0,
+      "cpu_s": 0.499727,
+      "cpu_cap_s": 3,
+      "wall_s": 0.5334393309894949,
+      "wall_cap_s": 75
+    },
+    {
+      "argv": [
+        "source_checks.py",
+        "024"
+      ],
+      "exit_code": 0,
+      "cpu_s": 0.6358459999999999,
+      "cpu_cap_s": 3,
+      "wall_s": 0.6680838419706561,
+      "wall_cap_s": 75
+    },
+    {
+      "argv": [
+        "driver.py",
+        "023",
+        "capture"
+      ],
+      "exit_code": 0,
+      "cpu_s": 2.18144,
+      "cpu_cap_s": 3,
+      "wall_s": 2.2164908220293,
+      "wall_cap_s": 75
+    },
+    {
+      "argv": [
+        "driver.py",
+        "024",
+        "capture"
+      ],
+      "exit_code": 0,
+      "cpu_s": 1.65544,
+      "cpu_cap_s": 3,
+      "wall_s": 1.688468411040958,
+      "wall_cap_s": 75
+    },
+    {
+      "argv": [
+        "extra_tests.py"
+      ],
+      "exit_code": 0,
+      "cpu_s": 6.764288,
+      "cpu_cap_s": 15,
+      "wall_s": 6.798821390024386,
+      "wall_cap_s": 75
+    },
+    {
+      "argv": [
+        "baseline_check.py"
+      ],
+      "exit_code": 0,
+      "cpu_s": 0.9723529999999999,
+      "cpu_cap_s": 4,
+      "wall_s": 1.0047131779720075,
+      "wall_cap_s": 75
+    },
+    {
+      "argv": [
+        "protocol.py"
+      ],
+      "exit_code": 0,
+      "cpu_s": 0.8194889999999999,
+      "cpu_cap_s": 2,
+      "wall_s": 0.8516381370136514,
+      "wall_cap_s": 75
+    }
+  ],
+  "actual_registry_cases": 48,
+  "actual_receipts": 6
+}

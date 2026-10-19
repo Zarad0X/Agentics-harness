@@ -278,7 +278,7 @@ def audit(run):
     profiler_sidecar=inspect_profile(run)
     from runtime_profile_audit import inspect as inspect_runtime_profile
     runtime_measurement=inspect_runtime_profile(run)
-    return dict(runtime_measurement=runtime_measurement,runtime_variant='v36-live-combined-021',loaded_motion_witness=loaded_report,live_sleep_witness=live_report,visual_deliverable_complete=False,offline_render_pending=True,sleep_copy_witness=copy_report,placement_HOME_entry_witness=entry_report,placement_endpoint_admissions=admission_report,placement_trace_witness=trace_report,terminal_outcome=terminal_report,profiler_sidecar=profiler_sidecar,schema='continuous-functional/36',checks=checks,errors=errors,inputs_sha256=inputs,raw=raw,
+    return dict(runtime_measurement=runtime_measurement,runtime_variant='v36-live-combined-024',loaded_motion_witness=loaded_report,live_sleep_witness=live_report,visual_deliverable_complete=False,offline_render_pending=True,sleep_copy_witness=copy_report,placement_HOME_entry_witness=entry_report,placement_endpoint_admissions=admission_report,placement_trace_witness=trace_report,terminal_outcome=terminal_report,profiler_sidecar=profiler_sidecar,schema='continuous-functional/36',checks=checks,errors=errors,inputs_sha256=inputs,raw=raw,
         valid_functional_receipts=valid,raw_continuous_completed=raw_completed,stage_checks=stages,completed_guard_checks=guards,
         completed_guard_exits=bool(guards) and all(guards.values()),functional_gate_passed=passed,
         independent_verification=verification,HOME_replays=replays,formal_credit=False,whole_episode_success=False,

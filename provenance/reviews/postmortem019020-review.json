@@ -1,0 +1,62 @@
+{
+  "schema": "parent-postmortem019020-review/1",
+  "observed_unix": 1792417118.2568781,
+  "delivery_sha256": "86a16b05b04d486621d54a69405340550e965cf1f39a7194ecb32dabc63f9162",
+  "manifest_entries_verified": 356,
+  "historical_source_delivery_entries_reported": 462,
+  "count_scope_note": "462 is sum of historical019/020 delivery inputs; current postmortem payload manifest contains356 entries. Use actual manifest, not ambiguous handoff wording.",
+  "cold_input_pins_verified": 175,
+  "export_objects_verified": 169,
+  "parent_audit_bytes_exact": [
+    "018",
+    "019",
+    "020"
+  ],
+  "independent_cpu_recheck": {
+    "file": "parent-postmortem019020-cpu-recheck-001.json",
+    "sha256": "14768b17df9586d4f7792a4a957aa42ff73379bda91a9db6ee548511c8fe65f2",
+    "groups": 16,
+    "chronological_decisions": 1561,
+    "cpu_s": 0.61578
+  },
+  "comparison": {
+    "019": {
+      "OUT": 1,
+      "exact_RETURN": 0,
+      "failure": "capture_both_contacts_lost"
+    },
+    "020": {
+      "OUT": 0,
+      "exact_RETURN": 0,
+      "failure": "loaded_slip_insufficient_braking_headroom"
+    },
+    "018": {
+      "OUT": null,
+      "exact_RETURN": null,
+      "valid_functional_receipts": false
+    }
+  },
+  "limits": [
+    "Both final attempts valid diagnostic receipts but failed task; no full HOME/RETURN/heldout/offline video acceptance",
+    "Same config/assistance/execution limits; differences in stopping points do not support throughput claims",
+    "No fresh native audit duplicated; exact observer audits accepted as scoped evidence",
+    "Capture recovery rejects absent opposite support; root physical cause needs exact contact history",
+    "020 reserve arithmetic reproduced; no counterfactual native continuation or braking benefit established"
+  ],
+  "reviewed_record_selection": {
+    "import": [
+      "postmortem019020-001:final-observation:018",
+      "postmortem019020-001:final-observation:019",
+      "postmortem019020-001:final-observation:020",
+      "postmortem019020-capture019-contact-recovery@1"
+    ],
+    "retain_export_without_duplicate_issue": [
+      "postmortem019020-slip020-first-warning-reserve@1",
+      "postmortem019020-terminal-receipt-coverage@1"
+    ],
+    "reason": "Existing slip020-braking-reserve and acceptance evidence already track these findings; retain complete proposal as reference without multiplying equivalent issues"
+  },
+  "native_launch_authorized": false,
+  "physical_repair_proven": false,
+  "goal_complete": false
+}

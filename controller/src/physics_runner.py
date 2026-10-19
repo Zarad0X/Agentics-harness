@@ -1383,7 +1383,8 @@ def main(diagnostic=None,continuous=False,continuous_version=23,visual=None,load
                 controls=lambda:loaded_controls(env),contacts=lambda:scoped_contacts(env,target),world=collision_world,model=model,rng=rng,
                 execute=execute,tick=tick,event=event,relative=lambda:relative,
                 command=lambda a,q,v:__import__('actuator_targets').issue(env.robot,a,q,v,bounds))
-            live=Live(live_api,arm,target,loaded_variant,loaded_science)
+            from earlyhold_integration import make_live
+            live=make_live(live_api,arm,target,loaded_variant,loaded_science)
             slots=env.grid_slots_right if arm=='right' else env.grid_slots_left
             options=[s for s in slots if s not in env.grid_slots]
             base_xy=np.array([-.55 if arm=='left' else .55,-.55])
@@ -1620,7 +1621,7 @@ def main(diagnostic=None,continuous=False,continuous_version=23,visual=None,load
             accepted=failure is None and len(completed)==args.max_objects and (cfg.mode=='extraction' or ledger.returned==ledger.selected),
             full_ten_success=False,whole_episode_success=False,verification_required=True,
             failure=failure,magnetic_drive_limit_raw=80,forbidden_legacy_calls=calls,
-            custom_planning_calls=plans,physics_steps=step,physics_preview_attempts=preview_attempts,grasp_preview_attempts=grasp_preview_attempts,physics_preview_steps=preview_total_steps,forecast_isolation='separate_PhysxCpuSystem',runtime_variant='v36-live-combined-021',loaded_variant=loaded_variant,forecast_contract='separation-sleep-hypotheses/1',gpu_at_start=gpu,
+            custom_planning_calls=plans,physics_steps=step,physics_preview_attempts=preview_attempts,grasp_preview_attempts=grasp_preview_attempts,physics_preview_steps=preview_total_steps,forecast_isolation='separate_PhysxCpuSystem',runtime_variant='v36-live-combined-024',loaded_variant=loaded_variant,forecast_contract='separation-sleep-hypotheses/1',gpu_at_start=gpu,
             retained=['SAPIEN physics','PD actuators','scene construction','magnetic drive'],
             release_velocity_reset=True,finger_friction=[3.0,2.4],
             geometry_source='live_PhysX_cooked_convex_shapes',physics_mesh_sha256=mesh_hash,

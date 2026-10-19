@@ -47,11 +47,6 @@ def verify(events,world_factory=None):
             q=row['finger_position'][i];t=row['touching'][i]
             if (t and q-old[i]>.0005) or row['finger_velocity'][i]<-.01 or (obj and t):
                 goals[i]=max(old[i],max(0.,q-.00025))
-        # Independently implemented velocity relief; no controller import.
-        for i in range(2):
-            if row['touching'][i] and row['finger_velocity'][i]<-.01:
-                preload=max(0.,.00025-.004*(-row['finger_velocity'][i]-.01))
-                goals[i]=max(goals[i],old[i],max(0.,row['finger_position'][i]-preload))
         answer=[]
         for u,g in zip(old,goals):
             g=float(np.float32(g));request=u+max(-.00004,min(.00004,g-u));v=np.float32(request)
@@ -103,8 +98,7 @@ def verify(events,world_factory=None):
             from capture_handoff_audit import bind_capture
             bind_capture(handoff_receipt,source)
             handoff_receipt=None
-            need(source['schema']=='capture-feedback/018-followup001' and source['arm'] in ('left','right'),'schema')
-            need(source.get('feedback_policy')==dict(name='velocity-preload-relief/1',horizon_s=.004,max_preload_reduction_m=.00025,speed_trigger_m_s=.01,contact_required=True),'feedback_policy')
+            need(source['schema']=='capture-feedback/017'  and source['arm'] in ('left','right'),'schema')
             need(source['slots']==([7,8] if source['arm']=='left' else [16,17]),'arm_slots')
             need(source['contact_identity']=='selected_native_child_links_and_target_entity','sensor_identity')
             controls=copy.deepcopy(source['controls']);need(len(controls)==18,'controls')

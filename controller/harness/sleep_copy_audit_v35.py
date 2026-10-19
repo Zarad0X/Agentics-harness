@@ -161,7 +161,7 @@ def inspect(run,manifest,cfg):
     if target is None:return dict(requested=False,valid=True,errors=[],diagnostic_conclusion=False)
     try:
         a=run/'artifacts';receipt=json.loads((a/'sleep-copy-native-receipt.json').read_text())
-        if manifest.get('runtime_variant') in ('v36-live-combined-012','v36-live-combined-013','v36-live-combined-014','v36-live-combined-015','v36-live-combined-016','v36-live-combined-017','v36-live-combined-018','v36-live-combined-021') and receipt.get('schema')!='sleep-copy-observer/36-chunked':raise ValueError('copy_chunked_required')
+        if manifest.get('runtime_variant') in ('v36-live-combined-012','v36-live-combined-013','v36-live-combined-014','v36-live-combined-015','v36-live-combined-016','v36-live-combined-017','v36-live-combined-018','v36-live-combined-024') and receipt.get('schema')!='sleep-copy-observer/36-chunked':raise ValueError('copy_chunked_required')
         scene=json.loads((a/'scene-manifest.json').read_text())
         binding=expected_binding(run,manifest);binding['scene_manifest_sha256']=file_hash(a/'scene-manifest.json')
         with (a/'events.jsonl').open() as stream:

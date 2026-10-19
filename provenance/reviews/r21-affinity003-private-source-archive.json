@@ -1,0 +1,12 @@
+{
+  "name": "r21-affinity003-reviewed-source.tar.gz",
+  "bytes": 36390,
+  "sha256": "406b170f9c13252c212b0aeb1100f3f6ea141867b4e842933af8d35331e432a9",
+  "members": 18,
+  "source_export_manifest_sha256": "9fbb9d521a427aa6ced873ab629de3f2386510523f86cf99770a2efe558b45b8",
+  "original_candidate_sha256": "e24602a6e72ac019ea33d249de7604ad6913d0cf673c09480e7ce8951dc77f3a",
+  "scope": "Exact additive diagnostic source/tests; parent31 actual67 CPU tests pass. One instrumented initialization reveals exact main-thread affinity change during setup_scene; rootcall unknown. Frozen002/007 unchanged. Raw CLI/auth/native state/events/videos/assets excluded; no full OUT/RETURN capability acceptance.",
+  "release": "r21-return-20261020",
+  "release_url": "https://github.com/Zarad0X/robotwin-astra-harness/releases/tag/r21-return-20261020",
+  "github_server_digest_verified": true
+}

@@ -1,0 +1,28 @@
+{
+  "schema": "parent-r21-affinity003-source-review/1",
+  "observed_unix": 1792444463.010376,
+  "archive_bytes": 36090,
+  "archive_sha256": "e24602a6e72ac019ea33d249de7604ad6913d0cf673c09480e7ce8951dc77f3a",
+  "manifest_sha256": "754e1086640a49c74fe612a4b66966a1a7b2d4a95218d20f510c6c3e488385cb",
+  "payload_entries": 15,
+  "source_review": "Complete diff against007 inspected. Same affinity predicate/ownership/cleanup/cadence/budget. Add bracketed owned thread evidence, immediate raw reap, bounded external initialization-only hooks. Source-only002 loader metadata/tracing overhead differs; no production equivalence claim. No re-pin, whitelist or relaxed physics.",
+  "actual67_tests": 31,
+  "actual67_test_receipt": "parent-r21-affinity003-actual67-tests-001.json",
+  "test_wall_s": 7.206446464988403,
+  "test_wait4_cpu_s": 6.359028,
+  "worker_all3_batches_retained": true,
+  "worker_conservative_cpu_charge_s": 180,
+  "original002_007_frozen": true,
+  "source_sha256": {
+    "src/affinity_observation.py": "dc075f3ccc497c1961bddc0508702af366bb8a8c81042c24b5c925e28e3ddedb",
+    "src/common.py": "5d54354fa3c36c881778793e929ca4378c5a84dec229ae798b8ac9599f89db96",
+    "src/cpu_tests.py": "1d82c2ba32d4787e6482c0914d40c3b0cb0cfecbab0c4f9ba73dcc3567ff3bb9",
+    "src/phase_launcher.py": "4e7bfc3cf4e820268770bb4d4fac5022469ebe0393233f8ee9d7967134ee1d8a"
+  },
+  "authorized_new_instrumented_initialization_attempts": 1,
+  "native_wall_s": 300,
+  "native_cpu_s": 240,
+  "full_OUT_RETURN_authorized": false,
+  "old001_protocol_spent": true,
+  "physical_success": false
+}

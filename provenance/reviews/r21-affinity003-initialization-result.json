@@ -1,0 +1,43 @@
+{
+  "id": "r21-return002-instrumented003-001",
+  "purpose": "new single initialization-only diagnostic with additive thread/phase evidence, not an OUT/RETURN task",
+  "status": "terminal strict CPU affinity changed by mainthread; exact offender observed, nativecauseunknown",
+  "protocol_spent": true,
+  "automatic_retry": false,
+  "driver_pid": 2327844,
+  "driver_start_ticks": 64726706,
+  "native_pid": 2327989,
+  "native_start_ticks": 64726986,
+  "native_exit": -9,
+  "native_wall_s": 19.194257269031368,
+  "known_wait4_native_and_reaped_cpu_s": 18.497247,
+  "aggregate_all_process_cpu_s": null,
+  "single_core_elapsed_upper_bound_valid": false,
+  "sampled_peak_not_exact_total": 23.26,
+  "remaining_owned": [],
+  "accounting_gaps": [
+    "thread_affinity_expanded_or_changed"
+  ],
+  "source_closure_unchanged": true,
+  "OUT": null,
+  "exact_RETURN": null,
+  "whole_goal": false,
+  "physics_steps": null,
+  "offending_thread": {
+    "comm": "pt_main_thread",
+    "ppid": 2327844,
+    "session": 2327989,
+    "start_ticks": 64726986,
+    "tid": 2327989
+  },
+  "actual_mask": [
+    95
+  ],
+  "expected_core": 0,
+  "identity_status": "bracketed",
+  "phase_count": 28,
+  "last_phase": "runner:setup_scene",
+  "cause": "Mainthread moves{0}to{95} during setup_scene; native call/library notidentified, comm doesnotprovePyTorch cause",
+  "evidence": "parent-r21-affinity003-native-result-2110.json",
+  "evidence_sha256": "df3bdac0f0f4d398468e29290eff79ff488011a479a7851ec1ee599b110fe93d"
+}

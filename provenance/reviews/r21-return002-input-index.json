@@ -1,0 +1,24 @@
+{
+  "schema": "r21-return002-reviewed-input-index/1",
+  "inputs": [
+    {
+      "file": "parent-r21-return002-exact-closure-text-1940.json",
+      "bytes": 4219980,
+      "sha256": "460435dd8dde502cecf6b26046b230690c9ec3bc8ff89cf9c5960c6e0de785ce"
+    },
+    {
+      "file": "parent-r21-return002-measurement-patterns-1940.json",
+      "bytes": 10271,
+      "sha256": "de55bb83c656c581b330a88cef46856c0d968c5facb0a7b50f07170eb3884e42"
+    }
+  ],
+  "scope": "Exact closure task/robot text and real fixtures are reference DATA;245 file hashes match original physicaldata67 closure. Binary assets remain on67, no raw original states/events/videos in Git.002 coding only.",
+  "parent_closure": "recovery-closure-exact-r21-004",
+  "closure_sha256": "e2f781eb39f2b02e62a687f277f224bed86c51deac0902089b65b095f0243180",
+  "all245_fresh_verified": true,
+  "text_files": 124,
+  "text_bytes": 4017839,
+  "storage_verified": "/dev/sde ext4 data67; /dev/sdb1 data3 and /dev/sdc1 data4 on22",
+  "native_ready": false,
+  "physics_started": false
+}

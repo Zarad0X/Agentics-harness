@@ -1,0 +1,36 @@
+{
+  "schema": "parent-r21-return001-source-review/1",
+  "observed_unix": 1792439023.964459,
+  "archive_bytes": 192983,
+  "archive_sha256": "1dc78c74d485519edfb82dd7f8fa72cb27edf336eacedbc3fe260811ede6b308",
+  "manifest_sha256": "c1478cad41add09d1363363db5124640c94d58340652655026801177b582ca22",
+  "files_verified": 68,
+  "unchanged_parent_modules": [
+    "verify_episode.py",
+    "separation.py",
+    "candidate_search.py",
+    "convex_geometry.py",
+    "mesh_world.py",
+    "collision_world.py",
+    "direct_core.py",
+    "physics_geometry.py",
+    "astra_planner.py",
+    "gripper_control.py",
+    "surface_grasps.py"
+  ],
+  "runner_three_insertions_reversible_to_exact_parent": true,
+  "parent_actual67_tests": 41,
+  "test_wall_s": 1.1695874619763345,
+  "test_child_cpu_s": 0.875022,
+  "native_ready": false,
+  "physical_attempts": 0,
+  "OUT_preserved_physically": null,
+  "exact_RETURN": null,
+  "review": "Bounded computational prototype only. Measured SE3 target relation uses actual grasp; original OUT snapshot, unchanged original and strict verifiers; evidence envelope rejects missing facts. Unconditional readiness blocker plus unwired inherited primitives prevent deployment. New revision must complete actual observer/drive/RNG/telemetry/identity/layout bridge, preservingOUT; no promotion from plans or tests.",
+  "worker_test_failures_retained": "001 Python3.8/missingNumPy and accounting loss conservatively60s;00230pass;final00341pass, no fabricated child usage",
+  "parent_review_errors_retained": [
+    "Attempted nonexistent test_moves.py read; actual inventory has test_candidate.py/fixture_contract.py; no test skipped",
+    "Initial insertion-removal check assumed additions followed anchors, failed assertion before review saved. Actual declared insertions precede anchors; exact delta inspected and removed in correct order, resulting bytes match parent exactly. No source changes or test rerun."
+  ],
+  "next": "Provide actual67 source/fixtures and read-only strict manifest/telemetry patterns, then separate002 nativebridge implementation on22."
+}

@@ -35,6 +35,28 @@
       "producer_status": "Diagnosis complete; no production patch; preview input gap retained",
       "parent_review": "provenance/reviews/capture019-diagnosis-review.json",
       "scope": "Parent independently verified167 runtime files and16 focused groups. Sole-support loss mechanism verified; physical cause unresolved. Conditional replay is not fresh native geometry or physical acceptance. Newly acquired270 interleaved preview rows and002 replay are separate follow-up."
+    },
+    {
+      "tag": "capture019-preview002-n15postmortem-20261019",
+      "url": "https://github.com/Zarad0X/robotwin-astra-harness/releases/tag/capture019-preview002-n15postmortem-20261019",
+      "assets": [
+        {
+          "filename": "capture019-preview-replay-002.tar.gz",
+          "bytes": 8263666,
+          "sha256": "16a5d892c5dff2fd175cbb1b7c9e228a2cfe9b0950794978136ef7770ce79f0f"
+        },
+        {
+          "filename": "n15-feedback-postmortem-001.tar.gz",
+          "bytes": 771854,
+          "sha256": "e8e5161c7b61c2adde2976ccfe59720516c5eec32c003706dadd184948f141a6"
+        }
+      ],
+      "parent_reviews": [
+        "provenance/reviews/capture019-preview002-review.json",
+        "provenance/reviews/n15-feedback-postmortem-review.json"
+      ],
+      "purpose": "Complete conditional019 replay with tests/failed attempts plus all-attempt negative n15 source-bound postmortem",
+      "scope": "No production patch, native acceptance or physical root-cause claim. Full n15 native chains remain untransferred."
     }
   ]
 }

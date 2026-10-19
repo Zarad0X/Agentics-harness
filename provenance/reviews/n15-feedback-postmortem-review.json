@@ -1,0 +1,35 @@
+{
+  "schema": "parent-n15-feedback-postmortem-review/1",
+  "observed_unix": 1792422502.763157,
+  "archive_sha256": "e8e5161c7b61c2adde2976ccfe59720516c5eec32c003706dadd184948f141a6",
+  "delivery_sha256": "67c0c265ad200f62c12ff627d530dbc986bb4873962326462f3dc6fa43f131cf",
+  "manifest_entries": 199,
+  "source_files_exact_local": {
+    "019": 14,
+    "021": 15
+  },
+  "independent_cpu": {
+    "receipt": "parent-n15-feedback-postmortem-cpu-recheck-001.json",
+    "groups": 9,
+    "synthetic_formula_cases": 48,
+    "cpu_s": 0.318005,
+    "source_unchanged": true
+  },
+  "findings": [
+    "Both15seed101 attempts valid failed diagnostic receipts; allOUT/RETURN0,formal4166, feedback guard200 exhausted. Equal counters do not prove equal emitted commands or initial states.",
+    "Nine groups/48 cases check evidence semantics and pure emitted/helper/independent formula behavior, not original native control trajectories.",
+    "Unapplied reporting proposal AST reverses exactly retained verifier result/output changes; it still omits nested preview summaries and feedback counters.",
+    "Historical018 original10 invalid counts remain unknown; n15-018 valid failed0/0 remains separate.",
+    "Endpoint qdot is not drive velocity target or qualified contact/branch evidence. Actual021 activation/deltas and physical cause remain unknown until full capture chains are inspected."
+  ],
+  "production_delta": [],
+  "reporting_proposal": {
+    "sha256": "414a961a16165bbe0b547b6b3f2858854774251789a32a11e0c1da162e388d08",
+    "adopted": false,
+    "reason": "Incomplete nested inventory and command counters; do not deploy into pinned observers or sealed runtimes"
+  },
+  "read_only_next_action": "Parent adopted finite30CPU/60wall8MiB compressed extraction from both closed event streams, full capture spans with interleaved closure records and every preview retained. Acquisition not new native physics.",
+  "new_native_attempts": 0,
+  "physical_cause_resolved": false,
+  "native_launch_authorized": false
+}

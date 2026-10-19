@@ -1,0 +1,43 @@
+{
+  "schema": "reviewed-n15-evidence-transfer-gap/1",
+  "failures": [
+    {
+      "exit_code": 1,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"<string>\", line 70, in <module>\nAssertionError: Compressed bound exceeded; no complete relay\n",
+      "remote_evidence_dir": "/data_ft_6/shaojing/robotwin-astra-roundtrip-20261009/runs/parent-n15-feedback-chains-001",
+      "script_sha256": "eda30c3be22fbcc05f64f55b969515bf7e3bbdd1bd90e7e83807d45e13f813b9",
+      "complete": false,
+      "retry_authorized": false,
+      "remote_failure": {
+        "complete": false,
+        "error": "AssertionError:Compressed bound exceeded; no complete relay",
+        "cpu_core": 126,
+        "cpu_s": 15.031436636,
+        "wall_s": 16.033860709983855,
+        "physics_actions": 0
+      }
+    },
+    {
+      "complete": false,
+      "exit_code": 1,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"<string>\", line 72, in <module>\nAssertionError: Individual compressed bound exceeded; no complete pair\n",
+      "retry_authorized": false
+    }
+  ],
+  "repair_plan": {
+    "schema": "parent-n15-capture-transport-repair-plan/1",
+    "reason": "Combined two-run output exceeded8MiB. Preserve original failure; split complete runs without dropping events or changing native data.",
+    "prior_failed_attempt": "parent-n15-feedback-chains-001",
+    "prior_cpu_s": 15.031436636,
+    "transport_repair_limit": 1,
+    "new_child_cpu_cap_s": 30,
+    "new_wall_cap_s": 60,
+    "total_acquisition_cpu_ceiling_s": 60,
+    "per_run_gzip_cap_bytes": 8388608,
+    "total_gzip_cap_bytes": 16777216,
+    "physics_actions": 0,
+    "source_semantics_unchanged": true,
+    "stop_if_any_new_bound_or_hash_fails": true
+  },
+  "scope": "Both read-only attempts stopped on compressed output bounds, no complete chain relay and no physical attempts. Existing plan stops; new streaming candidate is being prepared on22 and has not been approved or executed."
+}

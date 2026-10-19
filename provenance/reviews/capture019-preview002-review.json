@@ -1,0 +1,50 @@
+{
+  "schema": "parent-capture019-preview002-review/1",
+  "observed_unix": 1792422993.450794,
+  "archive_sha256": "16a5d892c5dff2fd175cbb1b7c9e228a2cfe9b0950794978136ef7770ce79f0f",
+  "delivery_sha256": "33bbbc51adbb1eed75ef3697ac183a4bce3f0c6223f017a9d6c8ad921cfe19cd",
+  "manifest_entries": 491,
+  "runtime_files_exact019": 167,
+  "production_delta": [],
+  "parent_cpu_receipt": "parent-capture019-preview002-cpu-recheck-001.json",
+  "parent_cpu_s": 23.78309,
+  "base_groups": 16,
+  "auxiliary_cases": 16,
+  "independent_receipt_cases": 11,
+  "full_span_matches": [
+    1995,
+    2696,
+    2850
+  ],
+  "recovery_assembly_cpu_s": 0.03573835599999999,
+  "parent_assembly_failure_retained": "All five jobs passed; initial receipt assembly called len() on integer BASE_REGRESSIONS.groups16 and raised TypeError. Read existing results once, corrected summary type; no test rerun.",
+  "findings": [
+    "Actual unchanged019 Capture and closure hold replay every retained formal1995 and preview2696/2850 events with original full closure_source and270 auxiliary rows.",
+    "Formal still fails at490; preview capture auditor correctly refuses acceptance without a geometry world factory; standalone closure receipts validate dwell/control updates without certifying full scene or physical success.",
+    "Same-tick repeated observations, successful guard callbacks and geometry certificates are explicitly historical API inputs, not independently observed native geometry.",
+    "Counterfactual tests stop before the first changed-command successor; all six previews and two formal attempts remain in inventories.",
+    "Focused43 groups/cases are not three full registry suites; runtime is byte unchanged and no promotion or new native launch is granted.",
+    "Default600 and scoped1000 token retrieval missed required records; explicit five-row export recovered delivery and was verified. Selection algorithm root cause is unknown."
+  ],
+  "same_candidate_entry_comparison": {
+    "preview1": {
+      "identical_command_prefix_count": 3,
+      "initial_controls_equal": true,
+      "target_entry_position_difference_m": 0.00027347829601345215,
+      "target_entry_raw_quaternion_angle_rad": 0.0024484491649438265
+    },
+    "preview2": {
+      "identical_command_prefix_count": 443,
+      "initial_controls_equal": true,
+      "target_entry_position_difference_m": 0.0009040119207162352,
+      "target_entry_raw_quaternion_angle_rad": 0.008433209085301105
+    }
+  },
+  "physical_cause": null,
+  "software_defect_demonstrated": false,
+  "input_completeness_verified_for_selected_spans": true,
+  "independent_native_geometry_replayed": false,
+  "native_launch_authorized": false,
+  "physical_success_inferred": false,
+  "next": "Keep live024/owned023 audit. Design source-preserving raw-stream transport for n15; fix required-record delivery in an isolated future candidate, no edits to pinned observers."
+}

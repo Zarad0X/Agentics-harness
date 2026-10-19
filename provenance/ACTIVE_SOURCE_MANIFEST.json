@@ -161,10 +161,10 @@
     },
     "experience/LATEST.json": {
       "bytes": 242,
-      "sha256": "2d58fde66fa22d43a377a5cc36601ee2a541b17781ac26b15748cba498473805",
+      "sha256": "3d892e175eb4df99a9d8df50638493a02b893a42f06a23629c931f3b7f69111e",
       "source_path": "work/astra-roundtrip/evolution-ledger",
       "role": "parent-reviewed-summary; not authoritative portable ledger",
-      "transformation": "Latest reviewed summary pointer; old snapshots retained"
+      "transformation": "New chain/object-verified summary or current pointer; older snapshots retained"
     },
     "experience/snapshots/20261019T1345Z.json": {
       "bytes": 35392,
@@ -184,6 +184,13 @@
       "source_path": "work/astra-roundtrip/evolution-ledger",
       "role": "parent-reviewed-summary; not authoritative portable ledger",
       "transformation": "Append-only timestamped chain/object-verified issue and active-regression summary"
+    },
+    "experience/snapshots/20261019T151814Z.json": {
+      "bytes": 46464,
+      "sha256": "91fa5b62e242178e0ba4a56989f8b2e1f23ddd120a7ae9ca413c82f82f425ef3",
+      "source_path": "work/astra-roundtrip/evolution-ledger",
+      "role": "parent-reviewed-summary; not authoritative portable ledger",
+      "transformation": "New chain/object-verified summary or current pointer; older snapshots retained"
     }
   },
   "archive": "archive/index.json",

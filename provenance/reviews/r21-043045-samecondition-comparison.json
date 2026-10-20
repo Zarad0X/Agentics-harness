@@ -1,0 +1,16 @@
+{
+  "observed_unix": 1792540146.3380504,
+  "OUT_all10_milestones_equal": true,
+  "OUT_all_native_preview_selected_fields_equal": true,
+  "OUT_preview_counts": {
+    "043": 57,
+    "045": 57
+  },
+  "RETURN_wrapper_counts": {
+    "043": 8,
+    "045": 5
+  },
+  "scope": "out-boundary uniquely distinguishes OUTphysicalforecasts from livewholeepisode rawgrasp_preview; RETURNwrapper/raw labels overlap, notadditive",
+  "correction": "Earlier043OUT59label included2RETURN12rawpreviews; originalboundary count is57. Historicalreceipt not rewritten.",
+  "metadata_not_realtime_authority": true
+}

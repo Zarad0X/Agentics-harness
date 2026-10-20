@@ -1,0 +1,27 @@
+{
+  "schema": "045-partial-demo/1",
+  "observed_unix": 1792540050.143648,
+  "local_path": "/Users/zhanghan/Downloads/RoboTwin-Astra-045-OUT10-RETURN2-partial.mp4",
+  "remote_path": "/data_ft_6/shaojing/robotwin-astra-20261008/mainline-r21-bind045/outputs/freshprotocol/episode/episode.mp4",
+  "bytes": 3226572,
+  "sha256": "9935bde7ef608dfaf10dd2e6bfdfd0beeb25f33732b6682e0a72bdda09cfdbd6",
+  "full_decode_exit": 0,
+  "media": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 320,
+        "height": 240,
+        "r_frame_rate": "10/1"
+      }
+    ],
+    "format": {
+      "duration": "551.400000"
+    }
+  },
+  "scope": "partialfailureprocess: allOUT10 + exactRETURN12/17;9graspadmissionfailure. Notcomplete10roundtripdemo",
+  "whole_success": false,
+  "metadata_not_realtime_authority": true
+}

@@ -1,0 +1,681 @@
+{
+  "schema": "045-independent-terminal-parent-review/1",
+  "observed_unix": 1792539909.8657305,
+  "source_sha256": "73abe6636326368e6d86c84a823b8c5685f1e6e1b2fedbbb7b5fa98138e30bbf",
+  "config_sha256": "327627ce4d3e12d842c33d25d648353abcde25f832371c12b30438516dbed355",
+  "all_owned_inactive": true,
+  "identities": [
+    {
+      "pid": 200074,
+      "start_ticks": 334709479,
+      "active": false,
+      "state": null
+    },
+    {
+      "pid": 267586,
+      "start_ticks": 335325843,
+      "active": false,
+      "state": null
+    },
+    {
+      "pid": 267586,
+      "start_ticks": 335325843,
+      "active": false,
+      "state": null
+    },
+    {
+      "pid": 200087,
+      "start_ticks": 334709657,
+      "active": false,
+      "state": null
+    },
+    {
+      "pid": 200087,
+      "start_ticks": 334709657,
+      "active": false,
+      "state": null
+    },
+    {
+      "pid": 200093,
+      "start_ticks": 334709704,
+      "active": false,
+      "state": null
+    },
+    {
+      "pid": 200094,
+      "start_ticks": 334709704,
+      "active": false,
+      "state": null
+    },
+    {
+      "pid": 200257,
+      "start_ticks": 334709935,
+      "active": false,
+      "state": null
+    },
+    {
+      "pid": 200258,
+      "start_ticks": 334709935,
+      "active": false,
+      "state": null
+    },
+    {
+      "pid": 201405,
+      "start_ticks": 334717521,
+      "active": false,
+      "state": null
+    },
+    {
+      "pid": 267585,
+      "start_ticks": 335325780,
+      "active": false,
+      "state": null
+    },
+    {
+      "pid": 267585,
+      "start_ticks": 335325780,
+      "active": false,
+      "state": null
+    }
+  ],
+  "OUT": 10,
+  "exact_RETURN": 2,
+  "exact_RETURN_ids": [
+    "12",
+    "17"
+  ],
+  "full_success": false,
+  "accepted_objects": [
+    {
+      "exact_pose": true,
+      "extracted": true,
+      "identity_ok": true,
+      "object_id": "12",
+      "passed": true,
+      "physically_returned": true,
+      "position_error_m": 0.00466450616506852,
+      "rotation_error_deg": 6.946257180579877,
+      "speed_m_s": 0.000847057365999546,
+      "spin_rad_s": 0.03802205659963012,
+      "stable": true,
+      "symmetry_adjusted_error_deg": null
+    },
+    {
+      "exact_pose": true,
+      "extracted": true,
+      "identity_ok": true,
+      "object_id": "17",
+      "passed": true,
+      "physically_returned": true,
+      "position_error_m": 0.007970702505339877,
+      "rotation_error_deg": 0.591847178110884,
+      "speed_m_s": 0.0006589897992974964,
+      "spin_rad_s": 0.011131592788435602,
+      "stable": true,
+      "symmetry_adjusted_error_deg": null
+    }
+  ],
+  "independent_errors": [
+    "object_final_failed:10",
+    "object_final_failed:11",
+    "object_final_failed:18",
+    "object_final_failed:19",
+    "object_final_failed:3",
+    "object_final_failed:4",
+    "object_final_failed:8",
+    "object_final_failed:9",
+    "runner_failure_or_legacy_calls",
+    "runner_not_completed",
+    "unexpected_final_contact:['202_inner0926_s1c0n03', 'real10_catch_left']",
+    "unexpected_final_contact:['203_inner0926_s1c0n04', 'real10_catch_left']",
+    "unexpected_final_contact:['210_inner0926_s1c0n11', 'real10_catch_right']",
+    "unexpected_final_contact:['217_inner0926_s1c0n18', 'real10_catch_right']",
+    "unexpected_final_contact:['218_inner0926_s1c0n19', 'real10_catch_left']"
+  ],
+  "failure": "RuntimeError:RuntimeError:return_no_admitted_current_staging_grasp:9",
+  "native_exit": 2,
+  "native_reason": null,
+  "native_accounting_gaps": [],
+  "native_wait4_CPU_s": 6155.265362,
+  "native_wall_s": 6161.058918473311,
+  "CPU_sample_peak_not_wait4_s": 6177.47,
+  "phase_elapsed_s": {
+    "OUT": 5442.875435369089,
+    "RETURN": 698.9176885308698,
+    "whole_observed": 6141.793124340009
+  },
+  "previews_reported": 69,
+  "preview_semantics": "existingverifier count notuniquephysicalsimulationcount",
+  "new_rejection_stages": {
+    "17:pregrasp_ik": 2,
+    "9:grasp": 17,
+    "9:pregrasp_ik": 2,
+    "9:pregrasp_collision": 5
+  },
+  "return_selected_events": [
+    {
+      "kind": "return_preview_terminal",
+      "object_id": 12,
+      "trial": 1,
+      "failure": null,
+      "physics_step": 110522
+    },
+    {
+      "kind": "return_preview",
+      "object_id": 12,
+      "trial": 1,
+      "accepted": true,
+      "failure": null,
+      "physics_step": 110522
+    },
+    {
+      "kind": "return_preview_terminal",
+      "object_id": 12,
+      "trial": 2,
+      "failure": null,
+      "physics_step": 110522
+    },
+    {
+      "kind": "return_preview",
+      "object_id": 12,
+      "trial": 2,
+      "accepted": true,
+      "failure": null,
+      "physics_step": 110522
+    },
+    {
+      "kind": "return_release_waypoint",
+      "object_id": 12,
+      "physics_step": 115812,
+      "object_offset_m": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "kind": "returned",
+      "object_id": 12,
+      "physics_step": 128398
+    },
+    {
+      "kind": "return_preview_terminal",
+      "object_id": 17,
+      "trial": 1,
+      "failure": null,
+      "physics_step": 128398
+    },
+    {
+      "kind": "return_preview",
+      "object_id": 17,
+      "trial": 1,
+      "accepted": false,
+      "failure": "forbidden_robot_contact:['panda_leftfinger', 'container_wall_x+']",
+      "physics_step": 128398
+    },
+    {
+      "kind": "return_preview_terminal",
+      "object_id": 17,
+      "trial": 1,
+      "failure": null,
+      "physics_step": 128398
+    },
+    {
+      "kind": "return_preview",
+      "object_id": 17,
+      "trial": 1,
+      "accepted": true,
+      "failure": null,
+      "physics_step": 128398
+    },
+    {
+      "kind": "return_preview_terminal",
+      "object_id": 17,
+      "trial": 2,
+      "failure": null,
+      "physics_step": 128398
+    },
+    {
+      "kind": "return_preview",
+      "object_id": 17,
+      "trial": 2,
+      "accepted": true,
+      "failure": null,
+      "physics_step": 128398
+    },
+    {
+      "kind": "return_release_waypoint",
+      "object_id": 17,
+      "physics_step": 133234,
+      "object_offset_m": [
+        0.0028358637337300846,
+        0.005537955375461326,
+        1.8827558599943117e-06
+      ]
+    },
+    {
+      "kind": "return_prerelease_geometry",
+      "object_id": 17,
+      "physics_step": 134940,
+      "position_error_to_raw_m": 0.008906445004400252,
+      "rotation_error_to_raw_deg": 0.25901484806601033,
+      "collision_free": true,
+      "payload_clearances_m": {
+        "10": 0.01,
+        "11": 0.01,
+        "12": 0.003739229230056468,
+        "18": 0.01,
+        "19": 0.01,
+        "3": 0.01,
+        "4": 0.01,
+        "8": 0.01,
+        "9": 0.01
+      }
+    },
+    {
+      "kind": "returned",
+      "object_id": 17,
+      "physics_step": 137853
+    }
+  ],
+  "raw_grasp_preview_results": [
+    {
+      "kind": "grasp_preview",
+      "object_id": 17,
+      "trial": 1,
+      "accepted": false,
+      "failure": "separation_failed:no_short_separating_motion",
+      "physics_step": 42956
+    },
+    {
+      "kind": "grasp_preview",
+      "object_id": 17,
+      "trial": 1,
+      "accepted": false,
+      "failure": "separation_failed:no_short_separating_motion",
+      "physics_step": 42956
+    },
+    {
+      "kind": "grasp_preview",
+      "object_id": 17,
+      "trial": 1,
+      "accepted": false,
+      "failure": "separation_failed:no_short_separating_motion",
+      "physics_step": 42956
+    },
+    {
+      "kind": "grasp_preview",
+      "object_id": 17,
+      "trial": 1,
+      "accepted": false,
+      "failure": "separation_failed:no_short_separating_motion",
+      "physics_step": 42956
+    },
+    {
+      "kind": "grasp_preview",
+      "object_id": 17,
+      "trial": 1,
+      "accepted": false,
+      "failure": "separation_failed:no_short_separating_motion",
+      "physics_step": 42956
+    },
+    {
+      "kind": "grasp_preview",
+      "object_id": 17,
+      "trial": 1,
+      "accepted": false,
+      "failure": "separation_failed:no_short_separating_motion",
+      "physics_step": 61873
+    },
+    {
+      "kind": "grasp_preview",
+      "object_id": 17,
+      "trial": 1,
+      "accepted": false,
+      "failure": "separation_failed:no_short_separating_motion",
+      "physics_step": 61873
+    },
+    {
+      "kind": "grasp_preview",
+      "object_id": 17,
+      "trial": 1,
+      "accepted": false,
+      "failure": "separation_failed:no_short_separating_motion",
+      "physics_step": 61873
+    },
+    {
+      "kind": "grasp_preview",
+      "object_id": 17,
+      "trial": 1,
+      "accepted": false,
+      "failure": "separation_failed:no_short_separating_motion",
+      "physics_step": 61873
+    },
+    {
+      "kind": "grasp_preview",
+      "object_id": 17,
+      "trial": 1,
+      "accepted": false,
+      "failure": "separation_failed:no_short_separating_motion",
+      "physics_step": 61873
+    },
+    {
+      "kind": "grasp_preview",
+      "object_id": 12,
+      "trial": 1,
+      "accepted": false,
+      "failure": "separation_failed:initial_intersection_or_unresolved_gap",
+      "physics_step": 61873
+    },
+    {
+      "kind": "grasp_preview",
+      "object_id": 12,
+      "trial": 1,
+      "accepted": false,
+      "failure": "separation_failed:no_short_separating_motion",
+      "physics_step": 61873
+    },
+    {
+      "kind": "grasp_preview",
+      "object_id": 17,
+      "trial": 1,
+      "accepted": false,
+      "failure": "separation_failed:no_short_separating_motion",
+      "physics_step": 70654
+    },
+    {
+      "kind": "grasp_preview",
+      "object_id": 17,
+      "trial": 1,
+      "accepted": false,
+      "failure": "separation_failed:no_short_separating_motion",
+      "physics_step": 70654
+    },
+    {
+      "kind": "grasp_preview",
+      "object_id": 17,
+      "trial": 1,
+      "accepted": false,
+      "failure": "separation_failed:no_short_separating_motion",
+      "physics_step": 70654
+    },
+    {
+      "kind": "grasp_preview",
+      "object_id": 17,
+      "trial": 1,
+      "accepted": false,
+      "failure": "separation_failed:no_short_separating_motion",
+      "physics_step": 70654
+    },
+    {
+      "kind": "grasp_preview",
+      "object_id": 17,
+      "trial": 1,
+      "accepted": false,
+      "failure": "separation_failed:no_short_separating_motion",
+      "physics_step": 70654
+    },
+    {
+      "kind": "grasp_preview",
+      "object_id": 17,
+      "trial": 1,
+      "accepted": false,
+      "failure": "separation_failed:no_short_separating_motion",
+      "physics_step": 70654
+    },
+    {
+      "kind": "grasp_preview",
+      "object_id": 12,
+      "trial": 1,
+      "accepted": false,
+      "failure": "forbidden_payload_contact:['216_inner0926_s1c0n17', '211_inner0926_s1c0n12']",
+      "physics_step": 70654
+    },
+    {
+      "kind": "grasp_preview",
+      "object_id": 17,
+      "trial": 1,
+      "accepted": false,
+      "failure": "separation_failed:no_short_separating_motion",
+      "physics_step": 70654
+    },
+    {
+      "kind": "grasp_preview",
+      "object_id": 17,
+      "trial": 1,
+      "accepted": false,
+      "failure": "separation_failed:no_short_separating_motion",
+      "physics_step": 70654
+    },
+    {
+      "kind": "grasp_preview",
+      "object_id": 17,
+      "trial": 1,
+      "accepted": false,
+      "failure": "separation_failed:no_short_separating_motion",
+      "physics_step": 70654
+    },
+    {
+      "kind": "grasp_preview",
+      "object_id": 17,
+      "trial": 1,
+      "accepted": false,
+      "failure": "separation_failed:no_short_separating_motion",
+      "physics_step": 70654
+    },
+    {
+      "kind": "grasp_preview",
+      "object_id": 17,
+      "trial": 1,
+      "accepted": false,
+      "failure": "separation_failed:no_short_separating_motion",
+      "physics_step": 70654
+    },
+    {
+      "kind": "grasp_preview",
+      "object_id": 17,
+      "trial": 1,
+      "accepted": false,
+      "failure": "separation_failed:no_short_separating_motion",
+      "physics_step": 70654
+    },
+    {
+      "kind": "grasp_preview",
+      "object_id": 9,
+      "trial": 1,
+      "accepted": true,
+      "failure": null,
+      "physics_step": 70654
+    },
+    {
+      "kind": "grasp_preview",
+      "object_id": 9,
+      "trial": 2,
+      "accepted": true,
+      "failure": null,
+      "physics_step": 70654
+    },
+    {
+      "kind": "grasp_preview",
+      "object_id": 12,
+      "trial": 1,
+      "accepted": false,
+      "failure": "separation_failed:initial_intersection_or_unresolved_gap",
+      "physics_step": 83935
+    },
+    {
+      "kind": "grasp_preview",
+      "object_id": 17,
+      "trial": 1,
+      "accepted": false,
+      "failure": "separation_failed:no_short_separating_motion",
+      "physics_step": 83935
+    },
+    {
+      "kind": "grasp_preview",
+      "object_id": 17,
+      "trial": 1,
+      "accepted": false,
+      "failure": "separation_failed:no_short_separating_motion",
+      "physics_step": 83935
+    },
+    {
+      "kind": "grasp_preview",
+      "object_id": 17,
+      "trial": 1,
+      "accepted": false,
+      "failure": "separation_failed:no_short_separating_motion",
+      "physics_step": 83935
+    },
+    {
+      "kind": "grasp_preview",
+      "object_id": 17,
+      "trial": 1,
+      "accepted": false,
+      "failure": "separation_failed:no_short_separating_motion",
+      "physics_step": 83935
+    },
+    {
+      "kind": "grasp_preview",
+      "object_id": 17,
+      "trial": 1,
+      "accepted": false,
+      "failure": "separation_failed:no_short_separating_motion",
+      "physics_step": 83935
+    },
+    {
+      "kind": "grasp_preview",
+      "object_id": 17,
+      "trial": 1,
+      "accepted": false,
+      "failure": "separation_failed:no_short_separating_motion",
+      "physics_step": 83935
+    },
+    {
+      "kind": "grasp_preview",
+      "object_id": 17,
+      "trial": 1,
+      "accepted": false,
+      "failure": "separation_failed:no_short_separating_motion",
+      "physics_step": 83935
+    },
+    {
+      "kind": "grasp_preview",
+      "object_id": 17,
+      "trial": 1,
+      "accepted": false,
+      "failure": "separation_failed:no_short_separating_motion",
+      "physics_step": 83935
+    },
+    {
+      "kind": "grasp_preview",
+      "object_id": 17,
+      "trial": 1,
+      "accepted": false,
+      "failure": "forbidden_robot_contact:['panda_rightfinger', 'container_wall_x+']",
+      "physics_step": 83935
+    },
+    {
+      "kind": "grasp_preview",
+      "object_id": 17,
+      "trial": 1,
+      "accepted": false,
+      "failure": "separation_failed:no_short_separating_motion",
+      "physics_step": 83935
+    },
+    {
+      "kind": "grasp_preview",
+      "object_id": 17,
+      "trial": 1,
+      "accepted": false,
+      "failure": "separation_failed:no_short_separating_motion",
+      "physics_step": 83935
+    },
+    {
+      "kind": "grasp_preview",
+      "object_id": 12,
+      "trial": 1,
+      "accepted": true,
+      "failure": null,
+      "physics_step": 83935
+    },
+    {
+      "kind": "grasp_preview",
+      "object_id": 12,
+      "trial": 2,
+      "accepted": true,
+      "failure": null,
+      "physics_step": 83935
+    },
+    {
+      "kind": "grasp_preview",
+      "object_id": 17,
+      "trial": 1,
+      "accepted": true,
+      "failure": null,
+      "physics_step": 96873
+    },
+    {
+      "kind": "grasp_preview",
+      "object_id": 17,
+      "trial": 2,
+      "accepted": true,
+      "failure": null,
+      "physics_step": 96873
+    },
+    {
+      "kind": "grasp_preview",
+      "object_id": 12,
+      "trial": 1,
+      "accepted": true,
+      "failure": null,
+      "physics_step": 110522
+    },
+    {
+      "kind": "grasp_preview",
+      "object_id": 12,
+      "trial": 2,
+      "accepted": true,
+      "failure": null,
+      "physics_step": 110522
+    },
+    {
+      "kind": "grasp_preview",
+      "object_id": 17,
+      "trial": 1,
+      "accepted": false,
+      "failure": "forbidden_robot_contact:['panda_leftfinger', 'container_wall_x+']",
+      "physics_step": 128398
+    },
+    {
+      "kind": "grasp_preview",
+      "object_id": 17,
+      "trial": 1,
+      "accepted": true,
+      "failure": null,
+      "physics_step": 128398
+    },
+    {
+      "kind": "grasp_preview",
+      "object_id": 17,
+      "trial": 2,
+      "accepted": true,
+      "failure": null,
+      "physics_step": 128398
+    }
+  ],
+  "source32_unchanged": true,
+  "raw_goals_sha256": "ff83f32c090b9d7705d48ad7e7c1ae6b0b6d594efa905a8f288f10de84d17d37",
+  "thresholds_unchanged": true,
+  "assistance": "magnet80/friction3/2.4",
+  "runtime_LLM": {
+    "calls": 0,
+    "tokens": 0
+  },
+  "new_physical_retry": false,
+  "scope": "singleoriginalseed2 assisted10, originalindependentverifiers;2acceptedreturnsnotfull orstable10/10;9failurecausependingactualgeometrydiagnosis",
+  "parent_account": "localcoordination/resultreview;primarycontrolfix044officialserver22ChatGPT",
+  "metadata_not_realtime_authority": true,
+  "full_parent_review_sha256": "33b448a89ac05aec82fd76f7211b3031054f65dc181145eed7f4af3765b80bf1",
+  "raw_9_rejection_rows": "excludedfromGit; available in originaldata3/data6run and parentreview hash"
+}

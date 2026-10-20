@@ -1,0 +1,8 @@
+{
+  "observed_unix": 1792532918.0054066,
+  "original_input_hashes_verified": 5,
+  "raw_event_lines_verified": 13,
+  "fixture_source": "full parent-collected043 native failure evidence",
+  "all_exact": true,
+  "metadata_not_realtime_authority": true
+}

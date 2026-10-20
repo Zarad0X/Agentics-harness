@@ -1,0 +1,20 @@
+{
+  "schema": "parent045-namespace-only-deployment-review/1",
+  "observed_unix": 1792532917.980858,
+  "source_sha256": "73abe6636326368e6d86c84a823b8c5685f1e6e1b2fedbbb7b5fa98138e30bbf",
+  "source_files": 32,
+  "tested_controls_equal044": true,
+  "namespace_only_delta": [
+    "PARENT-REVIEW-TEMPLATE.json",
+    "fork/src/render_device_binding.py",
+    "harness/parent_entry.py"
+  ],
+  "tested044_source": "b8a2223ce738bc8fcda31e6e7ec7a7a06708585180d0ebe24caf017cb517dff9",
+  "review044": "parent-mainline044-source-review-2144.json",
+  "parent043_out10_immutable": true,
+  "config_sha256": "327627ce4d3e12d842c33d25d648353abcde25f832371c12b30438516dbed355",
+  "full045_testtime_identity": false,
+  "required": "one existingactual045staticcheck before singleGPUepisode",
+  "physical_success": false,
+  "metadata_not_realtime_authority": true
+}

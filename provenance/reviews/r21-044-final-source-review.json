@@ -1,0 +1,75 @@
+{
+  "schema": "parent044-final-source-review/1",
+  "observed_unix": 1792532917.967507,
+  "source_sha256": "b8a2223ce738bc8fcda31e6e7ec7a7a06708585180d0ebe24caf017cb517dff9",
+  "delivery_artifacts_verified": 85,
+  "source_files_verified": 46,
+  "slot2_testtime_files_equal": 47,
+  "production_changes": [
+    "fork/src/inherited_return.py",
+    "fork/src/return_release.py"
+  ],
+  "raw_provenance": {
+    "observed_unix": 1792532918.0054066,
+    "original_input_hashes_verified": 5,
+    "raw_event_lines_verified": 13,
+    "fixture_source": "full parent-collected043 native failure evidence",
+    "all_exact": true
+  },
+  "confirmed_cause": "In all6 actual043fullworld failures17payload overlaps actual returned12 at finaldescentgoal; replacing only actual12 by ideal12 clears all6. Original GJK converged, no signed penetration-depth claim; translation/rotation not separately isolated.",
+  "minimal_fix": "single analytic measured12 support-plane offset along original native contactnormal; 6.222mm within9mmactioncap; all original physical thresholds and fullMeshWorldguards unchanged",
+  "unchanged": [
+    "OUT allsource bytes",
+    "RETURN12 all3 actual waypoints",
+    "acceptance config",
+    "original independent verifiers",
+    "24candidates/6forecasts/2fullmotionpasses",
+    "assistance/physicalthresholds"
+  ],
+  "cpu_results": [
+    {
+      "accounting_gaps": [],
+      "child_wait4_cpu_s": 1.24842,
+      "cpu_cap_s": 30,
+      "driver_cpu_s": 0.066325,
+      "reason": null,
+      "remaining_session": [],
+      "retries": 0,
+      "returncode": 0,
+      "slot": "1",
+      "total_measured_cpu_s": 1.314745,
+      "wall_cap_s": 30,
+      "wall_s": 2.372000295028556,
+      "within_cap": true
+    },
+    {
+      "accounting_gaps": [],
+      "child_wait4_cpu_s": 6.4430380000000005,
+      "cpu_cap_s": 30,
+      "driver_cpu_s": 0.07770599999999998,
+      "reason": null,
+      "remaining_session": [],
+      "retries": 0,
+      "returncode": 0,
+      "slot": "2",
+      "total_measured_cpu_s": 6.5207440000000005,
+      "wall_cap_s": 30,
+      "wall_s": 7.577313048997894,
+      "within_cap": true
+    }
+  ],
+  "CPU_total_s": 7.835489000000001,
+  "execution_wall_s": 9.94931334402645,
+  "no_retests": true,
+  "admitted": "candidate may enter one fresh bounded actualGPUepisode after namespace-only deployment and existingstaticcheck",
+  "limitations": [
+    "CPUdiagnostic only; endpoints/lastdescent notfullprefix/dynamictracking",
+    "CPU uses more restrictive1200collisionchecks and testRNG20261021, notnativepredictionequivalence",
+    "prerelease hypothetical trackedstate is notphysics",
+    "044 entry still targets043: must not invoke; new045 path andprotocolnamespace only",
+    "original twofullnativeforecasts thenformal and unchanged independentaudits required",
+    "no stablepromotion or fullsuccess"
+  ],
+  "parent_account": "local current chat review; primaryfix officialserver22ChatGPT gpt-6-astra",
+  "metadata_not_realtime_authority": true
+}

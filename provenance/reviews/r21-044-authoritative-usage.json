@@ -1,0 +1,22 @@
+{
+  "schema": "044-authoritative-incremental-usage/1",
+  "account": "server22 ownChatGPT",
+  "model": "gpt-6-astra",
+  "provider": "officialOpenAI",
+  "session": "01a15b34-2b7f-79c1-bc59-8dcb0cd6c80a",
+  "usage": {
+    "input_tokens": 1892936,
+    "cached_input_tokens": 1800320,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 21390,
+    "reasoning_output_tokens": 4548
+  },
+  "completed_event_sha256": "6b5bf79af3d519bd5d64ebdbb7bc8d10210996666eec26a56c91736c999cfc12",
+  "origin": "freshsession completedcounter, no priorcounter subtraction; cached/reasoning are subsets notadded",
+  "wall_s": 591.2726911469945,
+  "codex_exit": 0,
+  "identities_inactive": true,
+  "parent_account": "local currentchat coordination/review",
+  "observed_unix": 1792532994.707409,
+  "metadata_not_realtime_authority": true
+}

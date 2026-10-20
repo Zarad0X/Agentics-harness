@@ -1,0 +1,23 @@
+{
+  "schema": "045-single-physical-protocol/1",
+  "observed_unix": 1792532964.6159732,
+  "parent_review": "parent-mainline044-source-review-2144.json",
+  "deployment_review": "parent-mainline045-source-review-2144.json",
+  "actual_check": "parent-mainline045-actualcheck-review-2144.json",
+  "source_sha256": "73abe6636326368e6d86c84a823b8c5685f1e6e1b2fedbbb7b5fa98138e30bbf",
+  "task": "seed2 assistedoriginal10 allOUT then each originalidentity/rawpose RETURN",
+  "native_wall_cap_s": 7100,
+  "native_CPU_cap_s": 7100,
+  "original_independent_audit_cap_each_s": 120,
+  "attempts": 1,
+  "automatic_retry": false,
+  "old_attempts_remain_spent": true,
+  "assistance": "magnet80 friction3/2.4 unchanged",
+  "acceptance": "original .01m/10deg rawquat, stability/identity/contact/doublearms/releaseddrive unchanged",
+  "candidate_budget": "24candidates/6forecasts/2fullmotionpasses unchanged",
+  "devices": "known043profile3/5/6 leased, actual3+6graphics expected, explicitrenderer6",
+  "audit_owner": "existing045parent_entry originalverifiers; parentreadonlymonitor",
+  "limitations": "staticcheck and CPUdiagnostic are notphysicalsuccess; no stablepromotion",
+  "next": "one existingcontrolledentry launch",
+  "metadata_not_realtime_authority": true
+}

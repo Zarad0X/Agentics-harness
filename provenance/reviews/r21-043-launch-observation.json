@@ -1,0 +1,38 @@
+{
+  "task": "r21-mainline-bind043",
+  "observed_unix": 1792525145.5394368,
+  "active": true,
+  "driver": {
+    "pid": 160786,
+    "start_ticks": 333925651,
+    "state": "R"
+  },
+  "native": {
+    "own_ticks": 0,
+    "pid": 160797,
+    "ppid": 160786,
+    "session": 160797,
+    "start_ticks": 333925830,
+    "state": "R",
+    "ticks": 0,
+    "waited_ticks": 0
+  },
+  "source_sha256": "b08b5533a0627a1992af3c5380c19392232bbda996884856889a33e3937e8ea5",
+  "target": "/data_ft_6/shaojing/robotwin-astra-20261008/mainline-r21-bind043",
+  "poll_command": "python3 -B work/astra-roundtrip/.local/poll043_physical.py",
+  "observation": "parent-mainline043-physical-observation-1792525145.json",
+  "physical_stage": "actualSDKrendercontextscreated,initializationpendingevents; no OUTorRETURNclaim",
+  "renderPCI": "0000:c1:00.0",
+  "owned_gpu_contexts": [
+    3,
+    6
+  ],
+  "native_core": 108,
+  "driver_core": 107,
+  "native_cap_s": 7100,
+  "audit_cap_each_s": 120,
+  "automatic_retry": false,
+  "audit_owner": "existing043parent_entry",
+  "acceptance": null,
+  "metadata_not_realtime_authority": true
+}

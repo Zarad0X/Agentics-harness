@@ -1,0 +1,20 @@
+{
+  "schema": "reviewed-source-archive/1",
+  "archive_name": "r21-036-reviewed-source.tar.gz",
+  "bytes": 233581,
+  "sha256": "12ebc295d4d5afbc784a07a73bb293134b1761a83c2938a4f6235139e4ffd23f",
+  "members": 96,
+  "original_packet": {
+    "bytes": 1131622,
+    "sha256": "b75ba43b01cdc2df338d54d4143c19d73429bf8392dc5eafeff3c2dda37bc5b6"
+  },
+  "original_source_files": 94,
+  "source_sha256": "6f8eb6fea33f3cc70efdd742aafe6a1bc75d0741267dd4d7e04da6ea00fe1ae0",
+  "github_release": "r21-return-20261020",
+  "source_only": true,
+  "raw_logs_and_physics_data_excluded": true,
+  "physical_success": false,
+  "validation": "source94/final24Python/raw7tests verified; actual15 startupcheck exit0; single new physical attempt, no final counts",
+  "github_asset_id": 659542018,
+  "github_server_digest_verified": true
+}

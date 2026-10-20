@@ -1,0 +1,213 @@
+{
+  "schema": "036-parent-running-checkpoint/1",
+  "observed_unix": 1792506289.0233345,
+  "attempt": "r21-mainline-returnfix036-full-001",
+  "host": "15",
+  "target": "/data_ft_6/shaojing/robotwin-astra-20261008/mainline-r21-returnfix036",
+  "output": "/data_ft_6/shaojing/robotwin-astra-20261008/mainline-r21-returnfix036/outputs/freshprotocol/episode",
+  "driver": {
+    "pid": 11829,
+    "start_ticks": 332034571,
+    "expected_start_ticks": 332034571,
+    "same_identity": true,
+    "state": "S",
+    "own_CPU_s": 16.61,
+    "allowed": [
+      107
+    ]
+  },
+  "native": {
+    "pid": 11841,
+    "start_ticks": 332034752,
+    "expected_start_ticks": 332034752,
+    "same_identity": true,
+    "state": "R",
+    "own_CPU_s": 63.65,
+    "allowed": [
+      108
+    ]
+  },
+  "native_start_unix": 1792506220.0414693,
+  "source_sha256": "6f8eb6fea33f3cc70efdd742aafe6a1bc75d0741267dd4d7e04da6ea00fe1ae0",
+  "review_sha256": "154b166cd78bddb95109ea4f37c43563c7ca92887e8a00fa7312be4e1cb0f85f",
+  "phase": "OUT firstobject3 shadow grasp preview; initial original10 andbotharms recorded; no accepted counts",
+  "native_active": true,
+  "formal_physics_step": 0,
+  "initial_state": {
+    "kind": "initial_state",
+    "physics_step": 0,
+    "object_ids": [
+      "3",
+      "4",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "17",
+      "18",
+      "19"
+    ],
+    "robot_arms": [
+      "left",
+      "right"
+    ]
+  },
+  "render_observations": [
+    {
+      "name": "render-device-000.json",
+      "stage": "selected_before_renderer",
+      "role": null,
+      "actual": {
+        "can_render": true,
+        "cuda_id": 0,
+        "is_cpu": false,
+        "is_cuda": true,
+        "name": "NVIDIA RTX A6000",
+        "pci_string": "0000:c1:00.0"
+      }
+    },
+    {
+      "name": "render-device-001.json",
+      "stage": "render_system_before_scene",
+      "role": "formal",
+      "actual": {
+        "can_render": true,
+        "cuda_id": 0,
+        "is_cpu": false,
+        "is_cuda": true,
+        "name": "NVIDIA RTX A6000",
+        "pci_string": "0000:c1:00.0"
+      }
+    },
+    {
+      "name": "render-device-002.json",
+      "stage": "scene_before_timestep_ground_assets",
+      "role": "formal",
+      "actual": {
+        "can_render": true,
+        "cuda_id": 0,
+        "is_cpu": false,
+        "is_cuda": true,
+        "name": "NVIDIA RTX A6000",
+        "pci_string": "0000:c1:00.0"
+      }
+    },
+    {
+      "name": "render-device-003.json",
+      "stage": "render_system_before_scene",
+      "role": "grasp_preview",
+      "actual": {
+        "can_render": true,
+        "cuda_id": 0,
+        "is_cpu": false,
+        "is_cuda": true,
+        "name": "NVIDIA RTX A6000",
+        "pci_string": "0000:c1:00.0"
+      }
+    },
+    {
+      "name": "render-device-004.json",
+      "stage": "scene_before_timestep_ground_assets",
+      "role": "grasp_preview",
+      "actual": {
+        "can_render": true,
+        "cuda_id": 0,
+        "is_cpu": false,
+        "is_cuda": true,
+        "name": "NVIDIA RTX A6000",
+        "pci_string": "0000:c1:00.0"
+      }
+    },
+    {
+      "name": "render-device-005.json",
+      "stage": "render_system_before_scene",
+      "role": "separation_preview",
+      "actual": {
+        "can_render": true,
+        "cuda_id": 0,
+        "is_cpu": false,
+        "is_cuda": true,
+        "name": "NVIDIA RTX A6000",
+        "pci_string": "0000:c1:00.0"
+      }
+    },
+    {
+      "name": "render-device-006.json",
+      "stage": "scene_before_timestep_ground_assets",
+      "role": "separation_preview",
+      "actual": {
+        "can_render": true,
+        "cuda_id": 0,
+        "is_cpu": false,
+        "is_cuda": true,
+        "name": "NVIDIA RTX A6000",
+        "pci_string": "0000:c1:00.0"
+      }
+    }
+  ],
+  "GPU_profile": "actualC+G6 andauxiliaryG3, lease3/5/6 held;5unused; no exclusive5/6/globalisolation claim",
+  "GPU_leases_held": {
+    "gpu-3.lock": true,
+    "gpu-5.lock": true,
+    "gpu-6.lock": true
+  },
+  "CPU": {
+    "driver": [
+      107
+    ],
+    "native": [
+      108
+    ],
+    "legacy_and_entry_locks": true
+  },
+  "maximum_attempts": 1,
+  "native_CPU_wall_caps_s": 7100,
+  "automatic_retry": false,
+  "accepted_OUT": null,
+  "accepted_RETURN": null,
+  "full_success": null,
+  "latest_live": "parent-mainline036-live-1792506289.json",
+  "latest_recorded_event_kinds": [
+    {
+      "kind": "search_visit",
+      "object_id": 3,
+      "physics_step": 0
+    },
+    {
+      "kind": "candidate_rejected",
+      "object_id": 3,
+      "physics_step": 0
+    },
+    {
+      "kind": "candidate_preflight",
+      "object_id": 3,
+      "physics_step": 0
+    },
+    {
+      "kind": "grasp_preview",
+      "object_id": 3,
+      "physics_step": 0
+    }
+  ],
+  "latest_file_progress": {
+    "events.jsonl": {
+      "bytes": 31331,
+      "mtime": 1792506268.0531206
+    },
+    "roundtrip/trajectory.jsonl": {
+      "bytes": 108565,
+      "mtime": 1792506237.5613892
+    }
+  },
+  "monitor_script": "work/astra-roundtrip/.local/monitor036_live.py",
+  "terminal_audit_owner": "036 driver11829/start332034571 owns original OUT/out-boundary and strictRETURN/roundtrip audits once after native,120caps each; receive existing results, no duplicateaudit",
+  "source_review": "parent-mainline036-source-review-1418.json",
+  "check": "parent-mainline036-check001-native-receipt.json",
+  "check_native_wall_s": 0.8689140970818698,
+  "check_native_waited_CPU_s": 0.31263199999999997,
+  "next": "Preserve036 exact identities/source and budget; monitor actual CPU/event progression, eventualexisting terminal/audits. Receive allraw evidence and independently review OUT/strictRETURN; no automaticretry.",
+  "billing": "036coding official22ChatGPT gpt-6-astra completed, authoritative219receipts; no liveAIworker. Currentcoordination localaccount. RuntimeLLMcalls0; development not per-data.",
+  "limits": "Native full-motion preview not proven PhysXreplay-equivalent; hidden contacthistory and addedcost unknown. CPU7mocks not physicalfix; no strictRETURN success yet.",
+  "not_realtime_authority": true
+}

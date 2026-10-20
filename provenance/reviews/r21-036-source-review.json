@@ -1,0 +1,55 @@
+{
+  "schema": "036-parent-source-review/1",
+  "observed_unix": 1792506109.6079402,
+  "source_manifest_sha256": "6f8eb6fea33f3cc70efdd742aafe6a1bc75d0741267dd4d7e04da6ea00fe1ae0",
+  "payload_files": 94,
+  "final_tested_python_hashes": 24,
+  "raw7tests_verified": true,
+  "actual_CPU_tests": {
+    "batches": 1,
+    "child_wait4_cpu_s": 0.46176999999999996,
+    "cpu_cap_s": 60,
+    "driver_cpu_s": 0.07781300000000001,
+    "total_measured_cpu_s": 0.5395829999999999,
+    "wall_cap_s": 60,
+    "wall_s": 1.5807114300550893,
+    "within_cap": true
+  },
+  "conservative_charge_s": 60,
+  "unused_second_batch": true,
+  "fork_delta": [
+    "fork/src/render_device_binding.py",
+    "fork/src/physics_runner.py"
+  ],
+  "runner_preservation": "remove new RETURN preview function and two wrapper edits recovers034 byte-for-byte; original OUT algorithms/control/guards unchanged",
+  "clone_review": {
+    "environment": "switch closure env and context.env to existing independent grasp_scene; preview separation uses separate separation_scene",
+    "event": "replace event with local trace sink, formal observer/video disabled in preview_mode",
+    "state": "copy public pose/velocity/control; source pack and drive targets checked unchanged, never restore/teleport formal scene",
+    "restoration": "finally restores env/event/mode/RNG/plans even unexpected exceptions; detach clone drive",
+    "admission": "two previews cover exact inherited live placement method; current+alreadyreturned goals/rawpose/speeds and arm home checked",
+    "limits": "hidden PhysX contact history not copied; no terminal stability-window guarantee in forecast, original finalaudit unchanged"
+  },
+  "specific_regressions": [
+    "real034 positive separation impulse reject",
+    "full motion mock rejects fourth lower contact and restores source",
+    "full release/retreat success wiring and restore",
+    "actual17 final spin counterexample rejects",
+    "unexpected exception restores"
+  ],
+  "original_verifier_and_config_unchanged": true,
+  "common_and_cleanenv_unchanged": true,
+  "native_wall_CPU_cap_s": 7100,
+  "audit_caps_each_s": 120,
+  "maximum_physical_attempts": 1,
+  "automatic_retry": false,
+  "physical_success": false,
+  "stable_promotion": false,
+  "decision": "accept candidate for one source-bound diagnostic fullGPUrun after actual15startupcheck/fresh admission; not physically fixed",
+  "known_resource_deviation": "explicitGPU6 plus historical implicitG3; GPU3currentlyfree, bootstrap may hold3cooperative lease alongside entry5/6; no exclusive5/6 or globalGPUisolation claim",
+  "remaining": [
+    "native clone and full motion realism",
+    "finite runtime overhead/possible allcandidate rejection",
+    "original OUT10 preservation and strictall10RETURN terminal audits"
+  ]
+}

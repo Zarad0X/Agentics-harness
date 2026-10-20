@@ -1,0 +1,29 @@
+{
+  "schema": "038-rejected-source-archive/1",
+  "observed_unix": 1792520967.803977,
+  "tag": "r21-return-20261020",
+  "archive_name": "r21-038-rejected-candidate-reviewed-source.tar.gz",
+  "bytes": 163654,
+  "sha256": "7cf9a19c3f52a384a77a9709d7584197aa016dd993fcf22fe991817c05ba1ad5",
+  "github_asset_id": 660130824,
+  "github_server_digest_verified": true,
+  "source_manifest_sha256": "75d477c897be50652539bd257d3d13eed0d9b44680ebeca117c158535896e336",
+  "exported_files": 58,
+  "excluded": [
+    "harness/MAINLINE_FOCUS.json",
+    "harness/baseline-comparison.json",
+    "harness/clean-env-provenance.json",
+    "harness/evidence-summary.json",
+    "harness/parent-mainline-native15-032.json",
+    "harness/parent-mainline-resource-15-1792485628.json",
+    "harness/parent-mainline034-resources15-1148.json",
+    "harness/parent032-SOURCE.json",
+    "harness/parent033-SOURCE.json",
+    "preservation.json"
+  ],
+  "scope": "Rejected038 controlcandidate/source/tests/derivedgeometry/structuredCPUreceipts; raw CLI/accountpreflight/historicalGPUCLIinventories excluded; originalSOURCE retained as provenance, filtered subset not alone deployable",
+  "modelworker_tests": "1pass1error",
+  "independentparent_tests": "1pass1fail0errors",
+  "candidate_promoted": false,
+  "native_authority": false
+}

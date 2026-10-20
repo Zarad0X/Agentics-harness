@@ -1,0 +1,102 @@
+{
+  "schema": "038-negative-artifact-hash-index/1",
+  "observed_unix": 1792521023.7655551,
+  "remote_root": "/data3/yuantao/astra-roundtrip-work/harness/parent-final-038-1818-001",
+  "parent_files": [
+    {
+      "path": "FINAL.json",
+      "bytes": 1236,
+      "sha256": "3ac0320949c99507236f6d3d7023e3d017f78efcecbef0bacb106bc2d2302d81"
+    },
+    {
+      "path": "PROTOCOL.json",
+      "bytes": 868,
+      "sha256": "e33589c9447f82cdbaca918a150ccfb5a4964fc25503896519ee305176bb6834"
+    },
+    {
+      "path": "STARTED.json",
+      "bytes": 214,
+      "sha256": "e076c734aec104bdd223e3b66c87b4ebeccf007fa8cf94c71aab6cf7d8bd518b"
+    },
+    {
+      "path": "cases/candidate-route.json",
+      "bytes": 15609,
+      "sha256": "3b58b38af901b803859a5b9b4cfc91fd8d2c198dbbf5725f1d77dcff0aacd27e"
+    },
+    {
+      "path": "cases/original-witnesses.json",
+      "bytes": 11972,
+      "sha256": "5cdfb455af815a6f78d5844836cad93ccef9aadb594e4b2c8e6218cde78099a2"
+    },
+    {
+      "path": "cases/preservation.json",
+      "bytes": 2838,
+      "sha256": "f8b4d0abca76806300ff0917d18b5cca2a383baa5cf5cd1458a344b5b98ba02b"
+    },
+    {
+      "path": "cases/summary.json",
+      "bytes": 181,
+      "sha256": "4b3eccefa0a2d030884b4410285fa58f6a72cb94dcf9f7bc711a71ad3e049853"
+    },
+    {
+      "path": "child.log",
+      "bytes": 822,
+      "sha256": "fe840d074f1428e153df436deac5ffbadc38c4dd273151bbe985d7090a6cac5e"
+    },
+    {
+      "path": "driver.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "driver.py",
+      "bytes": 3443,
+      "sha256": "458dc5a1f06b3818c8689754f43f0697f2453a5322db91511e4d0cfa4b3b95a7"
+    },
+    {
+      "path": "progress.jsonl",
+      "bytes": 237,
+      "sha256": "94f8a9b2555a62fc9e660aba586840425eb67dbe69cca24fc1173313671b3790"
+    },
+    {
+      "path": "raw-wait4.json",
+      "bytes": 100,
+      "sha256": "17abf5dbe120c9b15bef44bcd9be572f44b523ce3f0067abfcd5c121b6dbabe8"
+    },
+    {
+      "path": "reservation.json",
+      "bytes": 7182,
+      "sha256": "73d2bde3fffff025b433619a3f211b2c7d6713736d89d44bcc94ff1ab7e4b652"
+    },
+    {
+      "path": "started.json",
+      "bytes": 757,
+      "sha256": "0d8110a9869241e479cc8d7225dcf2510b544e37ba755af23675245cbdf8119a"
+    },
+    {
+      "path": "terminal.json",
+      "bytes": 953,
+      "sha256": "4dda88a121bd536028c3e8ac150fc138449f0775ee6a99331fb32f6bd65fd4f4"
+    }
+  ],
+  "parent_identities": [
+    {
+      "pid": 2088301,
+      "start_ticks": 44837200,
+      "same_identity": false,
+      "state": null
+    },
+    {
+      "pid": 2088449,
+      "start_ticks": 44837290,
+      "same_identity": false,
+      "state": null
+    }
+  ],
+  "original038_testlog": {
+    "bytes": 1224,
+    "sha256": "e15385b1b0293b7fe5213a676910616406d11b7cf96ba6766f4819c6bdc39571",
+    "scope": "privateunittesthelpererror, contentexcluded"
+  },
+  "raw_CLI_exported": false
+}

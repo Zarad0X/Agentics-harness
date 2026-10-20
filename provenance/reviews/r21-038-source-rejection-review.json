@@ -1,0 +1,61 @@
+{
+  "schema": "038-parent-source-and-real-candidate-rejection/1",
+  "observed_unix": 1792520655.84653,
+  "source_sha256": "75d477c897be50652539bd257d3d13eed0d9b44680ebeca117c158535896e336",
+  "source_files_verified": 68,
+  "archive_sha256": "73e8096ebe2fc8f69e82887834f53ec4eba5fcb34119e5b69a07abb67cc37dfd",
+  "runtime_final_testtime_bindings": 24,
+  "final_test_helper_change": "one line NumPyfloat conversion, originalfailedhelper retained; originalworker not rerun",
+  "original_modelworker_tests": "1pass/1error/no candidatecheck,60charge;037+038120/120spent",
+  "parent_protocol": "parent-mainline038-final-verification-protocol-1818.json",
+  "parent_attempts": 1,
+  "parent_tests": {
+    "tests": 2,
+    "errors": 0,
+    "failures": 1,
+    "skips": 0,
+    "preservation_passed": true,
+    "candidate_passed": false
+  },
+  "parent_CPU_waited_child_s": 3.372443,
+  "parent_driver_CPU_s": 1.124701,
+  "parent_wall_s": 5.405811192002147,
+  "parent_conservative_charge_s": 60,
+  "parent_source_unchanged": true,
+  "parent_no_accounting_gaps": true,
+  "parent_remaining_session": [],
+  "failure": {
+    "segment": 3,
+    "reason": "cartesian_collision",
+    "collision": [
+      "panda_hand",
+      "object_17"
+    ],
+    "pose": [
+      0.09313376642834968,
+      -0.2067228447989465,
+      0.9232965269985147
+    ],
+    "preceding_segments_passed": 3,
+    "route_offset_m": -0.04346133652628668
+  },
+  "cause": "Candidate clearance corridor separated payload12 projection from17 but failed actual reviewed robot-hand collision predicate during lowerendpoint approach; is a confirmed partial-world route rejection, not native collision or unique fullphysicalcause.",
+  "next_hypothesis": "Before another pathproposal, test complete gripper+payload finalpose feasibility and choose one minimal goalpreserving correction from036: graspchoice or access/order if needed, not payload-only standoff.",
+  "physical_runs": 0,
+  "deployment_approved": false,
+  "candidate_promoted": false,
+  "accepted_OUT": 10,
+  "accepted_exact_RETURN": 1,
+  "full_success": false,
+  "usage038": {
+    "raw_session_cumulative": {
+      "input_tokens": 2385519,
+      "cached_input_tokens": 2175104,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 24784,
+      "reasoning_output_tokens": 6870
+    },
+    "incremental_status": "unknown priorinterruptedhistory; notzero, rawsubsetcounters notadditive"
+  },
+  "new_work": "039 must inherit physicallyverified036, retain038failedvariant; no more038testing under exhaustedbudgets."
+}

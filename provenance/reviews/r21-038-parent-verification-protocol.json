@@ -1,0 +1,17 @@
+{
+  "schema": "parent038-final-acceptance-protocol/1",
+  "created_unix": 1792520491.513608,
+  "authority": "Existing user mainline authorization for necessary parent source/config and realregression verification; independent single acceptance check",
+  "purpose": "Final sealed038 candidate geometry verification after one-line test-helper conversion; not extension/retry of modelworker budget",
+  "prior037038_charge_s": 120,
+  "prior_budget_spent": true,
+  "source_sha256": "75d477c897be50652539bd257d3d13eed0d9b44680ebeca117c158535896e336",
+  "final_test_sha256": "be93d272889bf70d8c4fa84f0289fd61937d5dab564c0335a63400726ad7ed68",
+  "interpreter_sha256": "d8bc934f061929428736eae11bb108eef56cf3ff12f0afbc816355c62999e1b0",
+  "attempts": 1,
+  "wall_cap_s": 60,
+  "CPU_cap_s": 60,
+  "automatic_retry": false,
+  "native_authority": false,
+  "stop_on_failure": true
+}

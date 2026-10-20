@@ -1,0 +1,40 @@
+{
+  "schema": "parent027-review/1",
+  "observed_unix": 1792480224.5817978,
+  "payload334_source150_candidate119_verified": true,
+  "snapshots": [
+    {
+      "batch": "batch001",
+      "source_manifest_sha256": "6831292b99c7fa39cf47aa2962e8b9d02da8f21e5041c16de0a6dedec5850806",
+      "files": 150,
+      "archive_sha256": "adca40681fa83e5cb31243ce3a053957232166b1f7ca32f28cc171ba6994e8b9"
+    },
+    {
+      "batch": "batch002",
+      "source_manifest_sha256": "98e659934b184a26d57d6fe80cca365ff639d32e6b5886076ad94b321fbcc856",
+      "files": 150,
+      "archive_sha256": "e210a8164416f600c7510e276eba872e55aa4e03851265e20252e4cc1dad5f83"
+    }
+  ],
+  "original026candidate112_byteexact": true,
+  "all27production_src_byteexact024": true,
+  "candidate_source_manifest_sha256": "c58382fd2f1ee76a0a61898807678faca75b1130d85799fbdbf24289e9528a9f",
+  "source_manifest_sha256": "98e659934b184a26d57d6fe80cca365ff639d32e6b5886076ad94b321fbcc856",
+  "producer120spent": true,
+  "passed_unittest_methods": 42,
+  "process_suites_pass": 10,
+  "process_suites_total": 11,
+  "clock_entry_methods_unrun": 5,
+  "buildCLI_artifact_admission_pass": true,
+  "external_entry_negative_pass": true,
+  "actual_evaluator_cleanup_pass": true,
+  "three_lifecycle_TEST_pass": true,
+  "code_pass": false,
+  "actual67": false,
+  "physical_permission": false,
+  "exactworker1448786_start40637688_inactive": true,
+  "confirmed_failure": "candidate/tests/entry027 imports ownclock018 before test_clock018->test_runtime installs008source loader; bootstrap correctly rejects helperpreloaded before5entrymethods run.",
+  "next": "Small fixture-only import-order fix: install inherited test_runtime/source loader first, then obtain verifiedclock. Allguards unchanged; freezeconsistenthash/count/adapter thenexecute all11plannedcommands,42+5 methods andpipelines. No newmetatest/architecture.",
+  "baseline_OUT": 10,
+  "strict_RETURN": null
+}

@@ -1,0 +1,18 @@
+{
+  "schema": "039-rejected-source-archive/1",
+  "observed_unix": 1792522114.699879,
+  "tag": "r21-return-20261020",
+  "archive_name": "r21-039-rejected-inputs002-reviewed-source.tar.gz",
+  "bytes": 156574,
+  "sha256": "0767e26c261b14c2ccc5c07791cc29a1cb304137ff8aef6f4ef106e9435544ef",
+  "exported_files": 53,
+  "excluded": [
+    "harness/parent-mainline-native15-032.json"
+  ],
+  "scope": "filtered rejected039inputs002source/tests/derivedgeometry; originalSOURCEprovenance, no rawCLI/accountlogs/nativephysics. Full original039 andinputs002sealed retained22/local; filteredsubset notalone deployable",
+  "candidate_promoted": false,
+  "native_authority": false,
+  "source_manifest_sha256": "9d8feaeda03e9bb01d29f5517e4e684c4f1f19d903bf5d3ad2280cdb64f310a4",
+  "github_asset_id": 660174263,
+  "github_server_digest_verified": true
+}

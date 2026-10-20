@@ -1,0 +1,59 @@
+{
+  "schema": "parent039-endpoint-rejection-review/1",
+  "observed_unix": 1792521952.5067132,
+  "source_sha256": "9d8feaeda03e9bb01d29f5517e4e684c4f1f19d903bf5d3ad2280cdb64f310a4",
+  "algorithm_parent036": "6f8eb6fea33f3cc70efdd742aafe6a1bc75d0741267dd4d7e04da6ea00fe1ae0",
+  "verified_runtime_unchanged039": true,
+  "run": {
+    "batches": 1,
+    "child_wait4_cpu_s": 2.002061,
+    "cpu_cap_s": 60,
+    "driver_cpu_s": 0.8202319999999999,
+    "total_measured_cpu_s": 2.8222929999999997,
+    "wall_cap_s": 60,
+    "wall_s": 3.708406178979203,
+    "within_cap": true
+  },
+  "test_summary": {
+    "errors": 0,
+    "failfast": true,
+    "failures": 1,
+    "physical_tests": 0,
+    "planned_tests": 3,
+    "retries": 0,
+    "scope": "preservation, endpoint geometry, order mock wiring",
+    "skips": 0,
+    "tests": 2
+  },
+  "actual_core": 68,
+  "sampled_idle": 1.0,
+  "result": "reject039; soleoriginal60 spent, no retry or GPU",
+  "confirmed": "all6 measured12grasps exactgoal IK converge; all6 partialworld clear with measuredstaged17; both measured17grasps IK converge but after12 exactgoal collision payload_part0 vs12part0",
+  "critical_scope": "partial world only, not physical penetration or unique cause; rawgoal12/17 exactpayloadzeroGJK irrespectivegrasp suggests check initialgoal contact/cookedpartframes/proxy calibration before newroute",
+  "raw_goals_unchanged": true,
+  "physics": {
+    "OUT": 10,
+    "strictRETURN": 1,
+    "full": false,
+    "source": "036"
+  },
+  "next": "official22 evidence-led diagnosis of baseline geometry/frame and rawinitial pair before smallest direct repair;039sealed unchanged and exhausted",
+  "test": "original039 singlebatch actuallyexecuted;1pass1fail0error,thirdmocknotrun",
+  "source_files_verified": 54,
+  "tests_runtime_source_unchanged": true,
+  "model_inputs002_wall_s": 220.2040094580152,
+  "model_inputs002_usage_increment": {
+    "input_tokens": 941786,
+    "cached_input_tokens": 799232,
+    "output_tokens": 9589,
+    "reasoning_output_tokens": 1186
+  },
+  "usage_limitation": "official completed counter delta; durable canonicalimportpending; cache/reasoning subsets, not additive",
+  "raw_cpu_evidence": {
+    "path": "/data3/yuantao/astra-roundtrip-work/harness/parent-original039-budget-001",
+    "child_waited_CPU_s": 2.002061,
+    "driver_CPU_s": 0.8202319999999999,
+    "wall_s": 3.708406178979203
+  },
+  "not_realtime_authority": true
+}

@@ -1,0 +1,26 @@
+{
+  "schema": "043-partialdemo-byte-decode-proof/1",
+  "observed_unix": 1792531559.223592,
+  "local_path": "/Users/zhanghan/Downloads/RoboTwin-Astra-043-OUT10-RETURN1-object12-partial.mp4",
+  "remote_source": "/data3/yuantao/astra-roundtrip-work/harness/inputs043-for044/run/episode/episode.mp4",
+  "bytes": 3005715,
+  "sha256": "6881c45f8bade11c6e90df5fbb210cb7d5e4add8a99bb566f13914d4e783dff8",
+  "ffprobe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 320,
+        "height": 240,
+        "r_frame_rate": "10/1"
+      }
+    ],
+    "format": {
+      "duration": "513.500000"
+    }
+  },
+  "full_decode_exit": 0,
+  "claim": "043independentOUT10/RETURN1{12}/fullfalse; partialfailureprocessvideo, notwholeRETURNdemo",
+  "metadata_not_realtime_authority": true
+}

@@ -1,0 +1,37 @@
+{
+  "schema": "044-dispatch-checkpoint/1",
+  "observed_unix": 1792531646.314697,
+  "task": "r21-mainline-return17-044",
+  "status": "active exactownedofficial22freshsession; diagnosedactual043failure/minimalcandidatepending",
+  "account": "server22_chatgpt",
+  "model": "gpt-6-astra",
+  "official_provider_verified": true,
+  "fresh_limits_verified": true,
+  "session": "01a15b34-2b7f-79c1-bc59-8dcb0cd6c80a",
+  "worker": {
+    "pid": 2330398,
+    "start_ticks": 45938672,
+    "ppid": 1,
+    "session": 2330398
+  },
+  "model_identity": {
+    "pid": 2330399,
+    "start_ticks": 45938679,
+    "ppid": 2330398,
+    "session": 2330399
+  },
+  "input_root": "/data3/yuantao/astra-roundtrip-work/harness/inputs043-for044",
+  "raw_files_verified": 63,
+  "source_files_verified": 32,
+  "data_device": "/dev/sdb1",
+  "free_bytes_afterstage": 25418256384,
+  "native_authority": false,
+  "cpu_budget": "044twoCPUslots30CPU30wall each: actualnativefailurediagnostic thenfinalcandidate targetedregression, total60executionCPU/wall; no retries/native/SDK; oldbudgetsremainspent",
+  "poll_command": "python3 -B work/astra-roundtrip/.local/poll044_durable.py",
+  "latest_observation": "parent-mainline044-observation-1792531557.json",
+  "previous043": "parent-mainline043-independent-terminal-review-2114.json",
+  "preserve": "036OUT10/RETURN17 andfrozenten-r21;043OUT10/RETURN12notpromoted",
+  "next": "receive044directcauseandminimalfix/realfixture/twoboundedCPUreceipts; parentfinalsource/config/regressionreviewbeforeanynewphysicalprotocol",
+  "context_policy": "freshsession seededwithpersistentexperience/completeactualevidence; no oldmillion-tokenchat replay; costbenefitnotclaimeduntilauthoritativecompletioncounter",
+  "metadata_not_realtime_authority": true
+}

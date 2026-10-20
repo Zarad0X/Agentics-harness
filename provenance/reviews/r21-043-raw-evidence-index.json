@@ -1,0 +1,24 @@
+{
+  "observed_unix": 1792531287.5568361,
+  "archive": "/data_ft_6/shaojing/robotwin-astra-20261008/mainline-r21-bind043/parent-collection-043-001/043-native-evidence.tar.gz",
+  "archive_bytes": 106158404,
+  "archive_sha256": "52cc59d28d05883bae8ff4e6bf3702cf5045f99087a592909e2f9ec90bbc4534",
+  "inventory": "/data_ft_6/shaojing/robotwin-astra-20261008/mainline-r21-bind043/parent-collection-043-001/INVENTORY.json",
+  "inventory_sha256": "3b88c049c247657da9e55e73c1daac171f6a3eccf670c9c48531feb5dc6c657f",
+  "raw_files": 63,
+  "raw_total_bytes": 511705994,
+  "all_owned_inactive": true,
+  "source_sha256": "b08b5533a0627a1992af3c5380c19392232bbda996884856889a33e3937e8ea5",
+  "metadata_not_realtime_authority": true,
+  "replica22": {
+    "observed_unix": 1792531342.5867968,
+    "target": "/data3/yuantao/astra-roundtrip-work/harness/inputs043-for044",
+    "archive_bytes": 106158404,
+    "archive_sha256": "52cc59d28d05883bae8ff4e6bf3702cf5045f99087a592909e2f9ec90bbc4534",
+    "raw_files_verified": 63,
+    "source_files_verified": 32,
+    "mount": "/data3/devsdb1",
+    "local_bulk_files_written": false
+  },
+  "raw_not_uploaded_toGitHub": true
+}

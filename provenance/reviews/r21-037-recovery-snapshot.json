@@ -1,0 +1,26 @@
+{
+  "schema": "037-reviewed-recovery-snapshot/1",
+  "observed_unix": 1792515134.258202,
+  "not_realtime_authority": true,
+  "parent_checkpoint": "parent-mainline037-recovery-checkpoint-1648.json",
+  "parent_checkpoint_sha256": "dc1c0df7dfdfeb2af5cc8172c70be6a7b3db6ff25304d8a4a2b85ce8ad1f384d",
+  "physical_results": {
+    "OUT": 10,
+    "exact_RETURN": 1,
+    "full_success": false,
+    "active_physics": false
+  },
+  "previous_dispatch": "r21-mainline-safeplace037-retry1",
+  "confirmed_aborted_utc": "2026-10-20T16:33:16.531Z",
+  "reason": "interrupted; initiator not established",
+  "last_command": "mkdir candidate directory and readonly036source; output returned beforeabort",
+  "candidate_files_before_resume": 0,
+  "task_named_or_cwd_processes_before_resume": [],
+  "recovery": "sameUUID resumed after freshverified officialserver22ChatGPTpreflight; localstaleSSHclient only closed after exactparent+commandhashcheck",
+  "new_dispatch": "r21-mainline-safeplace037-resume1648",
+  "model": "gpt-6-astra",
+  "cumulative_cpu_budget": "original max2testbatches/120charge, notreset",
+  "runtime_permission": "no native/GPU/deploy authority",
+  "usage": "interrupted turn has no turn.completed; authoritative finalincrement unknown,notzero; resumedhistoryunknown retained",
+  "limits": "No new safeRETURNsource/tests/physicalfix delivered at snapshot. Exactlive modelPIDbinding notestablished. No stable/fullsuccess claim."
+}

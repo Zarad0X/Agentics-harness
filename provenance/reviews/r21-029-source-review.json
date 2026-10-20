@@ -1,0 +1,44 @@
+{
+  "schema": "parent029-source-review/1",
+  "observed_unix": 1792482316.9110348,
+  "task": "r21-TID-lifetime-029",
+  "archive_sha256": "5f7b265261e371193925f1c655798e1efe343cf6053008a4bcc8c3ae2acd8e3f",
+  "archive_bytes": 690388,
+  "all156payload140source120candidate_rows_verified": true,
+  "frozen_NOT_TESTED_snapshot140_verified": true,
+  "changed_candidate_files": [
+    "harness/evaluator021.py",
+    "tests/lifetime026.py"
+  ],
+  "added_candidate_files": [
+    "tests/tid_lifetime029.py"
+  ],
+  "production_src_C_clock_build_recipe_byteexact028": true,
+  "source_manifest_sha256": "1addf8a883661a41c5d02ff94a53ff9627b1283b2b139a7aef70b974d88604a0",
+  "candidate_manifest_sha256": "71203659171faa4eb68b7c4ac6bcd9778a0cbc971cfeb5b9d62358d80351bccb",
+  "adapter_sha256": "3950f875d2d404b6304e53d69049f5d2bb010054a9e085838212ddeeb7f7e0e6",
+  "passed_methods": 0,
+  "not_run_methods": 64,
+  "not_run_commands": 12,
+  "code_pass": false,
+  "implementation_complete": false,
+  "admission_deferred_before_reservation": true,
+  "spent_batches": 0,
+  "remaining_original029_conservative_ceiling_s": 120,
+  "static_confirmed_gaps": [
+    "readable terminal TID state discarded",
+    "final owner state validation incomplete",
+    "initial scope disappearance still denial",
+    "operation witness coverage incomplete"
+  ],
+  "parent_extra_findings": [
+    "Proc.thread parser validates state then discards it; readable Z/X TID can enter active list",
+    "role final owner check lacks recognized-state validation",
+    "wrong-affinity/successful-stat-mismatch DENY retains guard but lacks operation-specific witness",
+    "incomplete acquisition still deliberately DENY; no complete-child-tree proof"
+  ],
+  "latest_independent_cpu1_idle_fraction": 0.7346938775510204,
+  "target_HOLD": true,
+  "physical_permission": false,
+  "next": "New030source-onlyrevision finishes identified gaps from028validatedparent+029unverifiedproposal; at mosttwo unused02960CPU reservations reassigned, notextra120; admission/actualregression required; no target029"
+}

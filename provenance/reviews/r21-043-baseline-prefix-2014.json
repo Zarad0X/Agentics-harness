@@ -1,0 +1,86 @@
+{
+  "schema": "043-live-baseline-prefix-review/1",
+  "observed_unix": 1792527279.8925655,
+  "raw_evidence": {
+    "path": "parent-mainline043-live-prefix-review-2014.json",
+    "bytes": 35929,
+    "sha256": "7f15d2e09e7204eb7b3e2165ae93a80d9155b968165032e4e63a4e64a41f241d"
+  },
+  "baseline": "036 independentlyOUT10/strictRETURN1/fullfalse",
+  "candidate": "043 originalseed2 assisted10 physicalsingleattempt",
+  "source_sha256": "b08b5533a0627a1992af3c5380c19392232bbda996884856889a33e3937e8ea5",
+  "config_sha256": "327627ce4d3e12d842c33d25d648353abcde25f832371c12b30438516dbed355",
+  "comparison_scope": "selectedstructuredmilestones/previewoutcomes/deferredqueues/placementrejections throughcurrentlyobservedprefix; notallstatebyteequality orwholeepisodeacceptance",
+  "same_prefix": {
+    "milestones": {
+      "count": 6,
+      "equal_to036_prefix": true
+    },
+    "previews": {
+      "count": 20,
+      "equal_to036_prefix": true
+    },
+    "deferred": {
+      "count": 4,
+      "equal_to036_prefix": true
+    },
+    "placement_rejections": {
+      "count": 6,
+      "equal_to036_prefix": true
+    }
+  },
+  "extracted_events": [
+    {
+      "kind": "extracted",
+      "object_id": 3,
+      "physics_step": 10329
+    },
+    {
+      "kind": "extracted",
+      "object_id": 4,
+      "physics_step": 19724
+    },
+    {
+      "kind": "extracted",
+      "object_id": 19,
+      "physics_step": 28780
+    },
+    {
+      "kind": "extracted",
+      "object_id": 18,
+      "physics_step": 42956
+    },
+    {
+      "kind": "extracted",
+      "object_id": 11,
+      "physics_step": 51150
+    },
+    {
+      "kind": "extracted",
+      "object_id": 8,
+      "physics_step": 61873
+    }
+  ],
+  "active_identity": {
+    "pid": 160797,
+    "start_ticks": 333925830,
+    "state": "R",
+    "own_CPU_s": 2133.51,
+    "waited_CPU_s": 4.55
+  },
+  "driver": {
+    "pid": 160786,
+    "start_ticks": 333925651
+  },
+  "elapsed_wall_s": 2149.240118265152,
+  "native_wall_CPU_cap_s": 7100,
+  "new_native_attempts": 0,
+  "new_AI_batches": 0,
+  "strict_RETURN_phase_started": false,
+  "independent_acceptance": null,
+  "known_rejections": "object17no_short_separating_motion andobject19stagingblocks_home/release_retreat alreadyappearinsame036prefix; no newcauseorwholefailureinferred",
+  "action": "preserve043currentrun/source/leases/budgets; no fix/test/retry whilematchingbaselineprefixprogresses; existingentryownsoriginalOUT/RETURNaudits",
+  "next": "readonlyexactPID/start+CPU/events/terminalmonitor; ifterminalawaitownedoriginalauditthencollectallrawanddemo",
+  "parent_account": "localcurrentchat coordination+independentreview; server22no newAIinferencebatch",
+  "metadata_not_realtime_authority": true
+}

@@ -1,0 +1,10 @@
+{
+  "schema": "parent014-canonical67-staging/1",
+  "observed_unix": 1792460744.8368418,
+  "path": "/data_ft_9_10/shaojing/robotwin-astra-20261008/parent-scope014-review-001/payload",
+  "archive_sha256": "5f2a2e6d0d4e162585a30105c52f8754c7f1380cdf66c172ea3f1fb1512c5054",
+  "manifest_entries": 80,
+  "source_entries": 46,
+  "verified": true,
+  "native_actions": 0
+}

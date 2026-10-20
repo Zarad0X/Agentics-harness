@@ -1,0 +1,60 @@
+{
+  "schema": "parent014-cost-review/1",
+  "observed_unix": 1792460931.148623,
+  "source_manifest_sha256": "464b28e9352a522d02d86b60106756506a82afd437c8f2b53863cc1423d1165d",
+  "raw_probe": {
+    "path": "parent-r21-014-actual67-runtime-probe-0140.json",
+    "sha256": "9bab3f149e4fcac7998f167726c901c46d96e590bfb222bc307b8b7571a88b62"
+  },
+  "source_review": "parent-r21-014-source-review-0140.json",
+  "original_scope_inheritance_verified": true,
+  "original_launcher_exited": true,
+  "all_mock_roles_complete": true,
+  "unknowns": [],
+  "errors": [],
+  "remaining_active": [],
+  "forecast": {
+    "custodian": {
+      "guard_s": 24,
+      "hard_cap_s": 30,
+      "passes": false,
+      "projected_cpu_s": 136.09875349599992
+    },
+    "driver": {
+      "guard_s": 115,
+      "hard_cap_s": 135,
+      "passes": false,
+      "projected_cpu_s": 4020.570011800002
+    }
+  },
+  "actual_test_scope": "short stdlib-only actual014 runtime; no native/SDK; 32metadata/128native mockthreads",
+  "actual_forecast_model": "existing worstcomplete-sample/path times conservativephasecounts and2xmargin; projected values not observedCPU of7200srun",
+  "hot_cost": {
+    "32": {
+      "samples": 38,
+      "min_cpu_s": 0.00016256400000000393,
+      "median_cpu_s": 0.00032163450000000093,
+      "max_cpu_s": 0.0011782149999999963
+    },
+    "128": {
+      "samples": 99,
+      "min_cpu_s": 0.00024708700000000694,
+      "median_cpu_s": 0.0005474359999999845,
+      "max_cpu_s": 0.005076413000000002
+    }
+  },
+  "confirmed": "014 source solves originalOS permission failure and fullmockscope inheritance; original complete-wrapper cost forecast still fails both fixed guards",
+  "hypotheses": [
+    "scope.rows repeated Path/stat/parsing/owned metadata expensive; detailed attribution remains unmeasured",
+    "worst-cost cache-miss extrapolation may overestimate allcalls; even min128-thread scan247us exceeds128us illustration, so model cleanup alone not established sufficient"
+  ],
+  "qualification": "DENY; no physical permission",
+  "native_actions": 0,
+  "assisted_OUT10_preserved": true,
+  "exact_RETURN": null,
+  "parent_source_review_correction": {
+    "field": "confirmed_test_adapter_defect",
+    "retracted": "nested ModuleType exec does not inherit hook",
+    "reason": "Unverified parent causal claim; exact source instead shows ReviewedPath.__truediv__ only matches bare root keys, but failing tests append root-name/src/file.py as one string; server015 investigating real nested behavior. Original receipt retained; do not use retracted cause."
+  }
+}

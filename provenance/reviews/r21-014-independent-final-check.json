@@ -1,0 +1,267 @@
+{
+  "schema": "parent014-independent-final-check/1",
+  "observed_unix": 1792460910.8958056,
+  "checks": [
+    [
+      {
+        "expected": {
+          "pid": 3062672,
+          "start_ticks": 66359663
+        },
+        "observed": null
+      },
+      {
+        "expected": {
+          "pid": 3062673,
+          "start_ticks": 66359672
+        },
+        "observed": null
+      },
+      {
+        "expected": {
+          "pid": 3062674,
+          "start_ticks": 66359680
+        },
+        "observed": null
+      },
+      {
+        "expected": {
+          "pid": 3062760,
+          "start_ticks": 66359779
+        },
+        "observed": null
+      },
+      {
+        "expected": {
+          "pid": 3062759,
+          "start_ticks": 66359771
+        },
+        "observed": null
+      },
+      {
+        "expected": {
+          "pid": 3063050,
+          "start_ticks": 66360185
+        },
+        "observed": null
+      },
+      {
+        "expected": {
+          "pid": 3063074,
+          "start_ticks": 66360193
+        },
+        "observed": null
+      }
+    ],
+    [
+      {
+        "expected": {
+          "pid": 3062672,
+          "start_ticks": 66359663
+        },
+        "observed": null
+      },
+      {
+        "expected": {
+          "pid": 3062673,
+          "start_ticks": 66359672
+        },
+        "observed": null
+      },
+      {
+        "expected": {
+          "pid": 3062674,
+          "start_ticks": 66359680
+        },
+        "observed": null
+      },
+      {
+        "expected": {
+          "pid": 3062760,
+          "start_ticks": 66359779
+        },
+        "observed": null
+      },
+      {
+        "expected": {
+          "pid": 3062759,
+          "start_ticks": 66359771
+        },
+        "observed": null
+      },
+      {
+        "expected": {
+          "pid": 3063050,
+          "start_ticks": 66360185
+        },
+        "observed": null
+      },
+      {
+        "expected": {
+          "pid": 3063074,
+          "start_ticks": 66360193
+        },
+        "observed": null
+      }
+    ]
+  ],
+  "files": {
+    "metadata/raw-reap.json": {
+      "sha256": "c37b5cc5564592b28723cdcb2a4d400eb6d0f4e1a7a87397eee0920fdd30b917",
+      "value": {
+        "pid": 3062674,
+        "raw_status": 0,
+        "ru_stime": 0.017033,
+        "ru_utime": 0.068133
+      }
+    },
+    "metadata/terminal.json": {
+      "sha256": "818f0804e3de43e91047b4bf9c6a047fe2663613a6523271fe156c3c56bb7c5a",
+      "value": {
+        "accounting_gaps": [],
+        "accounting_strategy": "one-core-elapsed-upper-bound+wait4",
+        "binding": "bounded-native-metadata",
+        "child": {
+          "own_ticks": 6,
+          "pid": 3062674,
+          "ppid": 3062673,
+          "session": 3062674,
+          "start_ticks": 66359680,
+          "state": "R",
+          "ticks": 6,
+          "waited_ticks": 0
+        },
+        "cpu_sample_peak_s": 0.07,
+        "cpu_upper_bound_s": 0.9039459059713408,
+        "observed_processes": [
+          {
+            "own_ticks": 7,
+            "peak_ticks": 7,
+            "pid": 3062674,
+            "ppid": 3062673,
+            "session": 3062674,
+            "start_ticks": 66359680,
+            "state": "Z",
+            "ticks": 7,
+            "waited_ticks": 0
+          }
+        ],
+        "process_children_cpu_s": 0.08516599999999999,
+        "reason": null,
+        "remaining_session": [],
+        "returncode": 0,
+        "time_unix": 1792460795.2024214,
+        "wait4_scope": "native child plus descendants it reaped; not orphan exact usage",
+        "wall_s": 0.9039459059713408,
+        "wrapper": {
+          "own_ticks": 6,
+          "pid": 3062673,
+          "ppid": 3062672,
+          "session": 3062673,
+          "start_ticks": 66359672,
+          "state": "R",
+          "ticks": 6,
+          "waited_ticks": 0
+        }
+      }
+    },
+    "native.control/raw-reap.json": {
+      "sha256": "c82a9a0082eae6244efb5392ce67b5c32b08dd4d753e401132eab2553d38aa96",
+      "value": {
+        "pid": 3062760,
+        "raw_status": 0,
+        "ru_stime": 0.036606,
+        "ru_utime": 0.065079
+      }
+    },
+    "native.control/terminal.json": {
+      "sha256": "84e3d2e82d2d62587d5c5853719db02a8b394364a0b85eba139f5a5848f411bf",
+      "value": {
+        "accounting_gaps": [],
+        "accounting_strategy": "one-core-elapsed-upper-bound+wait4",
+        "binding": "60e5d434b20f79bc1588fb5b22dfc9d164048b0ca67ecc88de2729a8e4ae4720",
+        "child": {
+          "own_ticks": 6,
+          "pid": 3062760,
+          "ppid": 3062673,
+          "session": 3062760,
+          "start_ticks": 66359779,
+          "state": "R",
+          "ticks": 6,
+          "waited_ticks": 0
+        },
+        "cpu_sample_peak_s": 0.09,
+        "cpu_upper_bound_s": 2.3387322300113738,
+        "observed_processes": [
+          {
+            "own_ticks": 9,
+            "peak_ticks": 9,
+            "pid": 3062760,
+            "ppid": 3062673,
+            "session": 3062760,
+            "start_ticks": 66359779,
+            "state": "Z",
+            "ticks": 9,
+            "waited_ticks": 0
+          }
+        ],
+        "process_children_cpu_s": 0.101685,
+        "reason": null,
+        "remaining_session": [],
+        "returncode": 0,
+        "time_unix": 1792460797.6298482,
+        "wait4_scope": "native child plus descendants it reaped; not orphan exact usage",
+        "wall_s": 2.3387322300113738,
+        "wrapper": {
+          "own_ticks": 12,
+          "pid": 3062673,
+          "ppid": 3062672,
+          "session": 3062673,
+          "start_ticks": 66359672,
+          "state": "R",
+          "ticks": 19,
+          "waited_ticks": 7
+        }
+      }
+    },
+    "observer-raw-reap.json": {
+      "sha256": "38d1763a341dc8f95e605eee5e3f680a0fa705847c1e326c9f1965c2c1520d28",
+      "value": {
+        "child": {
+          "own_ticks": 6,
+          "pid": 3062759,
+          "ppid": 3062673,
+          "session": 3062759,
+          "start_ticks": 66359771,
+          "state": "R",
+          "ticks": 6,
+          "waited_ticks": 0
+        },
+        "pid": 3062759,
+        "raw_status": 0,
+        "ru_stime": 0.033791,
+        "ru_utime": 0.052563,
+        "scope": "observer plus command children it reaped; not exact tree CPU"
+      }
+    },
+    "observer-cleanup.json": {
+      "sha256": "b4702353ee4526549cd206905d98ff683c0df513649bf9279871710dd0f0a89b",
+      "value": {
+        "reaped": true,
+        "remaining": []
+      }
+    },
+    "session-raw-reap.json": {
+      "sha256": "0242fb475af34bc88e06b31ebdda6c8c9914a36514a00c4e03379fc822ff3869",
+      "value": {
+        "pid": 3063050,
+        "raw_status": 0,
+        "returncode": 0,
+        "ru_stime": 0.012272,
+        "ru_utime": 0.074586
+      }
+    }
+  },
+  "compiler_path": "/usr/bin/cc",
+  "physical_actions": 0
+}

@@ -1,0 +1,22 @@
+{
+  "schema": "parent-supervision-candidate-review/1",
+  "observed_unix": 1792458961.650332,
+  "candidate": "r21-existing-scope-supervision-013",
+  "status": "blocked-no-runtime-qualification",
+  "payload_entries": 39,
+  "source_entries": 21,
+  "manifest_sha256": "a1a3baad5e64fd8cb6a7ce3b736fa6e93270944793e07792d69313b9a24379b0",
+  "source_manifest_sha256": "e9343eb7faac7514846071dafaeed643404ccbc2fc89bc4f097a0eab716d8bad",
+  "worker_tests_reported": 100,
+  "worker_batches": 1,
+  "conservative_charge_s": 60,
+  "actual67_full_test_suite_executed": false,
+  "native_permission": false,
+  "physical_success": false,
+  "accepted_baseline": "originalseed2assistedOUT10 preserved; exactRETURNnone",
+  "review": "Newcommon013/custody013 readonlyscopehookandclassifier source-onlydiagnostic; productionhardDENY. AddedOSreaderreads namespacesforALLscopeinitialhelpers; actual67permissiondenied beforefirstsample. Testintegrationhasabsolute22input-bindingkeys preventingcanonical67relocation. Full010runtimewiring absent.",
+  "independent_validation": "39payload21sources byteverified; parentactual67probe2CPU5wallcap errorPermissionError /proc/2970981/ns at.00194CPU/.00309wall; zero successfulsamples and no backendclassification/fullcost. SubsequentcurrentSSHoriginprobe confirmsinitial2ancestors areunownedhelpers withunreadablenamespaces; ownrootreadable. No omission or falsefast-pass.",
+  "probe": "parent-r21-013-os-acquisition-probe-0110.json",
+  "origin_probe": "parent-r21-scope-helper-origin-probe-0110.json",
+  "remaining": "014completeportableentry+source-boundoriginalscope/explicitunownedhelper handling, oldguards retained; actual67stdlibinheritance+fullcost beforeanynative"
+}

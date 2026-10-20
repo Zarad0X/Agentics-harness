@@ -1,0 +1,22 @@
+{
+  "schema": "parent013-actual67-os-acquisition-probe/1",
+  "observed_unix": 1792458762.1916666,
+  "source_manifest_sha256": "e9343eb7faac7514846071dafaeed643404ccbc2fc89bc4f097a0eab716d8bad",
+  "scope_source_sha256": "250176b32c6e695d77ca96642332cd0c924723b8a4f5553e73fd219fc7c11b26",
+  "probe_cpu_cap_s": 2,
+  "probe_wall_cap_s": 5,
+  "own_cpu_s": 0.0019403880000000012,
+  "wall_s": 0.0030899159610271454,
+  "samples": [],
+  "error": "PermissionError:[Errno 13] Permission denied: '/proc/2970981/ns'",
+  "fence_sha256": "a44f8c0566d81d26d4a8552b570ea53e499109808bff031d3345cafba1fd41e3",
+  "actual_same_scope_membership": "0::/user.slice/user-1030.slice/session-14201.scope",
+  "member_identities": null,
+  "scope_mutations": 0,
+  "native_actions": 0,
+  "original_futurejob_scope_provenance": false,
+  "backend_classification_executed": false,
+  "full_wrapper_forecast": false,
+  "physical_success": false,
+  "portability_gap": "integration013/tests use absolute22input-bindings paths; original source unmodified, not blindly rerunsealedharness or fakehashes"
+}

@@ -1,0 +1,47 @@
+{
+  "schema": "parent-current-scope-initial-origin-cost-probe-summary/1",
+  "observed_unix": 1792458832.5670974,
+  "membership": "0::/user.slice/user-1030.slice/session-14203.scope",
+  "scope_type": "domain",
+  "initial_members": [
+    {
+      "pid": 2974108,
+      "start_ticks": 66163397,
+      "ppid": 1655645,
+      "session": 2974108,
+      "uid": 0,
+      "initial_role": "ancestor-unowned-SSH-helper",
+      "namespace_readable": false
+    },
+    {
+      "pid": 2974217,
+      "start_ticks": 66163498,
+      "ppid": 2974108,
+      "session": 2974108,
+      "uid": 1030,
+      "initial_role": "ancestor-unowned-SSH-helper",
+      "namespace_readable": false
+    },
+    {
+      "pid": 2974218,
+      "start_ticks": 66163504,
+      "ppid": 2974217,
+      "session": 2974218,
+      "uid": 1030,
+      "initial_role": "probe-owned-root",
+      "namespace_readable": true
+    }
+  ],
+  "all_initial_members_are_self_or_ancestors": true,
+  "sample_count": 30,
+  "members_each_sample": 3,
+  "min_cpu_s": 0.0001490239999999976,
+  "max_cpu_s": 0.0002875490000000015,
+  "own_wall_s": 0.006044731941074133,
+  "scope_mutations": 0,
+  "spawned_children": 0,
+  "cpu_cap_s": 2,
+  "full_wrapper_cost": false,
+  "original_job_inheritance_proven": false,
+  "notes": "Source-of-helpers bound onlyto this currentexplicitSSHancestorchain, never signal them. Permissiondeniedtohelpersnamespaces isnotactualmanipulationfailure. CheapPIDstat+membership measurement excludes actualtaskthread/affinity/receipts/guards; nofullbudgetforecast."
+}

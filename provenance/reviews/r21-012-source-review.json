@@ -1,0 +1,19 @@
+{
+  "schema": "parent-supervision-candidate-review/1",
+  "observed_unix": 1792458961.251467,
+  "candidate": "r21-supervision-cost-012",
+  "status": "blocked-no-runtime-qualification",
+  "payload_entries": 55,
+  "source_entries": 41,
+  "manifest_sha256": "d46bef33a4ef2bac0fb36a7a9c107cd43a177fda50b7f383364b4ff7f71d315e",
+  "source_manifest_sha256": "e323264f923bcf78c95a3f88a1f0a065dfb1042c0bfb809d4f1050d3f301fc3c",
+  "worker_tests_reported": 99,
+  "worker_batches": 1,
+  "conservative_charge_s": 60,
+  "actual67_full_test_suite_executed": false,
+  "native_permission": false,
+  "physical_success": false,
+  "accepted_baseline": "originalseed2assistedOUT10 preserved; exactRETURNnone",
+  "review": "SourceSharedAudit replaces4session scanswithsameinitialrows; newbetween-scansmembercouldbemissed, andone63.8msscan/sec aloneprojects459CPU/7200 vs30cap.21newtests are diagnosticcounterexamples+limits, notproofruntimefix. Oldnativecontrol untouched.",
+  "independent_validation": "Static source/diff/forecast+55payload41sources byteverified; scopeglobalbaselineactualcostretained. Noadditionalruntime retry or sourcepromotion."
+}

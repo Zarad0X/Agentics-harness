@@ -1,0 +1,54 @@
+{
+  "schema": "parent024-source-review/1",
+  "observed_unix": 1792474789.189576,
+  "payload133_verified": true,
+  "source112_verified": true,
+  "source_manifest_sha256": "793a822a41cb7c54f0b4ee8ffbea08569c6e232d29eb3017cbe76ad4d8a64637",
+  "snapshots": [
+    {
+      "all_source_hashes_verified": true,
+      "archive_sha256": "7ba33cbae46031d5999eb4e9c2bb71c0f1a35acadb9a0e7430c18e982d61db61",
+      "batch": "batch001",
+      "coverage": "old production counterexample only",
+      "files": 112,
+      "snapshot": "evidence/batch001/tested-source.tar.gz",
+      "source_manifest_sha256": "b473cdb228a3183a921dd612fc1a942a815196370c606fd82d4d1499757ae2d6",
+      "all_source_hashes_parent_verified": true
+    },
+    {
+      "all_source_hashes_verified": true,
+      "archive_sha256": "4ef8d9f01cebbae9c5d8a51ef5db40422fb5a0cbb4113de669b05f30b683e4f3",
+      "batch": "batch002",
+      "coverage": "all final coverage",
+      "files": 112,
+      "snapshot": "evidence/batch002/tested-source.tar.gz",
+      "source_manifest_sha256": "793a822a41cb7c54f0b4ee8ffbea08569c6e232d29eb3017cbe76ad4d8a64637",
+      "all_source_hashes_parent_verified": true
+    }
+  ],
+  "production_changed": [
+    "src/observer_control.py",
+    "src/parent_driver.py"
+  ],
+  "unchanged_production_files": 25,
+  "scope014_C_physics_envelope_unchanged": true,
+  "active209_pass_producer_evidence": true,
+  "unique157_repeat52": true,
+  "retained32_and02310_new0246_and5signal_cases_pass": true,
+  "final_suite_count": 26,
+  "final_suite_pass": 26,
+  "final_suite_fail": 0,
+  "allfour_exact_lifecycle_predicates_pass": true,
+  "old_counterexample_same_event_trace_verified": true,
+  "causal_scope": "Synchronous self-delivered alarm at actual persist calls actual installed old handler; confirms scheduled mechanism, not unobserved historical023 schedule",
+  "production_review": "Failure-only unwinding flag before timer cancellation/persistence; queued alarm returns withoutrearm, TERM/INT/HUP/XCPU stilllowerdriverhard2100 butretainfirstexception. Active handler unchanged. Outer custody/hard limits/ownedcleanup unchanged; preboundary and arbitraryIOstalls unproved.",
+  "producer_two_batches_spent120": true,
+  "exact_worker1406915_start40111585_inactive": true,
+  "code_pass": true,
+  "cost_pass": false,
+  "actual67": false,
+  "physical_permission": false,
+  "baseline_OUT": 10,
+  "strict_RETURN": null,
+  "next": "Independent actual67 two sealed prechange/final roots, existing run_batch/original007 fixedfinite2x30CPU60wall120charge; originalkernel2core caller/full residual stillgate. No physics now."
+}

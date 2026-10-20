@@ -1,0 +1,20 @@
+{
+  "schema": "reviewed-source-archive/1",
+  "archive_name": "r21-024-reviewed-source.tar.gz",
+  "bytes": 334371,
+  "sha256": "d070f842ab5ef8ad7996e06cc3e1ba896c204dbabae214f1c39ac72c4144d2aa",
+  "members": 130,
+  "source_manifest_sha256": "793a822a41cb7c54f0b4ee8ffbea08569c6e232d29eb3017cbe76ad4d8a64637",
+  "github_release": "r21-return-20261020",
+  "source_only": true,
+  "compiled_binaries_excluded": true,
+  "raw_logs_excluded": true,
+  "active209_actual67_passed": true,
+  "capture_failed": false,
+  "code_pass": true,
+  "cost_pass": false,
+  "actual67_full_kernel_qualified": false,
+  "physical_permission": false,
+  "github_asset_id": 658398155,
+  "github_server_digest_verified": true
+}

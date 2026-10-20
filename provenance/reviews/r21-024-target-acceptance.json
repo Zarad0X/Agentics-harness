@@ -1,0 +1,37 @@
+{
+  "schema": "parent024-target-acceptance/1",
+  "observed_unix": 1792475041.108493,
+  "source_manifest_sha256": "793a822a41cb7c54f0b4ee8ffbea08569c6e232d29eb3017cbe76ad4d8a64637",
+  "actual67_code_pass": true,
+  "old_prechange_counterexample_gate_pass": true,
+  "final209pass": true,
+  "final26suitespass": true,
+  "four_exact_phase_predicates_pass": true,
+  "preobserver_negative_lifecycle_credit": false,
+  "allfive_signalcontrols_pass": true,
+  "samehostCcompile": true,
+  "inputbindings87": true,
+  "producer120spent": true,
+  "parent120spent": true,
+  "worker_returncodes": [
+    0,
+    0
+  ],
+  "wrapper_defaultDENY_exit1": true,
+  "worker_wall_s": [
+    0.9081426300108433,
+    26.278945969068445
+  ],
+  "all80knowninactive_twice": true,
+  "signals_sent": 0,
+  "local_fixture_true": true,
+  "actualreal005ICDindependentcheck": true,
+  "kernel2core_qualified": false,
+  "complete_productioncost_pass": false,
+  "physics_success": false,
+  "instrumented_TEST_model_s": [
+    1049.9447643639717,
+    131.88774852800057
+  ],
+  "next": "025minimalexistingparentcaller startup/exit bound; hold originalkernel/fullphysical until reviewed. No024producer/parentrerun."
+}

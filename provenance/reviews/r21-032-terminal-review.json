@@ -1,0 +1,166 @@
+{
+  "schema": "parent-mainline032-terminal-review/1",
+  "observed_unix": 1792495422.365079,
+  "attempt": "r21-mainline-return15-032-full-001",
+  "status": "terminal wall_timeout; independent OUT10 accepted; strict RETURN incomplete/unaccepted",
+  "source_sha256": "7d19057e821dada5868f8ab8d5c0f75f9e8e3ec469776cc9405b52b7b1822259",
+  "config_sha256": "327627ce4d3e12d842c33d25d648353abcde25f832371c12b30438516dbed355",
+  "all40_source_files_unchanged": true,
+  "OUT_phase_files_hashes_verified": {
+    "events.jsonl": {
+      "bytes": 6046386,
+      "sha256": "5aba70a3bc4c75c11a343f8332b39f7ce798beeb7a6fa1fae1388b6bbf5f9d4e"
+    },
+    "final-state.json": {
+      "bytes": 5804,
+      "sha256": "a0f780c023e23af831a313013ce1da513bd7a5098796f6908a549bed46a7b364"
+    },
+    "physics-meshes.json": {
+      "bytes": 346905,
+      "sha256": "e8056188bdf78fb293f8624c6cfdcc02497a1cf40b19c994b464f66404fc695b"
+    },
+    "result.json": {
+      "bytes": 2441,
+      "sha256": "5105230b86e1532e7c761d0b4deff696e111cbe02c6d08dff68496d61b0566fa"
+    }
+  },
+  "OUT_verifier_sha256": "2877efe5d7adf40a9357ebedd3fbe62e5be930b7d285bbc2ac1c8af5d15d5244",
+  "RETURN_verifier_sha256": "e73fbc33ea8e470ec7d91e6716152b401288ebd3f71e68af307aebed37b88d7f",
+  "OUT": 10,
+  "OUT_audit_accepted": true,
+  "OUT_raw_wait_status": 0,
+  "exact_RETURN": null,
+  "RETURN_audit_accepted": false,
+  "RETURN_raw_wait_status": 512,
+  "RETURN_errors": [
+    "missing_or_malformed_evidence:FileNotFoundError:[Errno 2] No such file or directory: '/data_ft_6/shaojing/robotwin-astra-20261008/mainline-r21-return-20261020-032/outputs/freshprotocol/episode/scene-manifest.json'"
+  ],
+  "raw_returned_ids": [
+    17
+  ],
+  "raw_return_started_ids": [
+    17,
+    12
+  ],
+  "full_success": false,
+  "whole_native_clean_accepted": false,
+  "native_wall_s": 7200.356933781877,
+  "native_returncode": null,
+  "native_raw_wait4": null,
+  "native_CPU_sample_peak_s": 6710.62,
+  "native_aggregate_CPU_s": null,
+  "native_accounting_gaps": [
+    "native_wait4_unavailable",
+    "owned_descendants_still_active"
+  ],
+  "native_terminal_reason": "wall_timeout",
+  "owned_identities_currently_absent": [
+    {
+      "pid": 4143531,
+      "expected_start_ticks": 330115108,
+      "present": false
+    },
+    {
+      "pid": 4143533,
+      "expected_start_ticks": 330115130,
+      "present": false
+    },
+    {
+      "pid": 4143536,
+      "expected_start_ticks": 330115157,
+      "present": false
+    },
+    {
+      "pid": 4143535,
+      "expected_start_ticks": 330115157,
+      "present": false
+    },
+    {
+      "pid": 4143538,
+      "expected_start_ticks": 330115384,
+      "present": false
+    },
+    {
+      "pid": 4143539,
+      "expected_start_ticks": 330115384,
+      "present": false
+    },
+    {
+      "pid": 4143801,
+      "expected_start_ticks": 330123345,
+      "present": false
+    },
+    {
+      "pid": 4143807,
+      "expected_start_ticks": 330123360,
+      "present": false
+    }
+  ],
+  "CPU_caveat": "later absence does not repair original missing wait4 or make sampled CPU exact",
+  "OUT_last_release_elapsed_s": 6894.160883426666,
+  "first_RETURN_reached": true,
+  "last_trajectory_phase": "RETURN",
+  "last_physics_step": 123775,
+  "all_original_artifacts": {
+    "files": 53,
+    "bytes": 491125395,
+    "remote_index": "/data_ft_6/shaojing/robotwin-astra-20261008/mainline-r21-return-20261020-032/collections/terminal-evidence-index-1118.json",
+    "remote_index_sha256": "2e1ff7e47a5695eb09c79790517c7972a9d3248db751594ae4e62a0ff739de8b",
+    "local_index": "parent-mainline032-artifact-index-1118.json",
+    "original_files_unchanged": true
+  },
+  "major_artifact_refs": [
+    {
+      "path": "/data_ft_6/shaojing/robotwin-astra-20261008/mainline-r21-return-20261020-032/outputs/freshprotocol/episode/events.jsonl",
+      "bytes": 6442658,
+      "sha256": "bcf555f289608403b2d38700fdca26afdd6822f771dee7f212662611181394c8"
+    },
+    {
+      "path": "/data_ft_6/shaojing/robotwin-astra-20261008/mainline-r21-return-20261020-032/outputs/freshprotocol/episode/episode.mp4",
+      "bytes": 2621488,
+      "sha256": "a6074585dc1919200b68cc1c2ca51416bb23cdcb0b57b0d8136451c7299a5edc"
+    },
+    {
+      "path": "/data_ft_6/shaojing/robotwin-astra-20261008/mainline-r21-return-20261020-032/outputs/freshprotocol/episode/roundtrip/trajectory.jsonl",
+      "bytes": 465606222,
+      "sha256": "259a89e8cb889364869232b7428f9377ab0572e55766c5da909605c47e5e2e42"
+    }
+  ],
+  "video": {
+    "playable": false,
+    "probe_returncode": 1,
+    "failure": "moov atom not found after interrupted MP4; no new playable demo",
+    "old_OUT_demo": "/Users/zhanghan/Downloads/RoboTwin-Astra-10of10-rebaseline002.mp4"
+  },
+  "model_cost": {
+    "development": {
+      "input_tokens": 2574112,
+      "cached_input_tokens": 2463360,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 25745,
+      "reasoning_output_tokens": 5383
+    },
+    "scope": "shared development cost; not per generated episode",
+    "runtime_llm_calls": 0,
+    "runtime_llm_tokens": 0,
+    "subsets_not_additive": true
+  },
+  "observed_symptoms": [
+    "OUT used about6894 seconds of7200; only first return raw completed before timeout",
+    "RETURN root manifest/result absent at abrupt termination; original independent audit fails closed",
+    "native finalizer reported wait4 unavailable and then-current owned member; all recorded identities now absent",
+    "MP4 lacks moov after SIGKILL"
+  ],
+  "confirmed_causes": [
+    "controller stopped on predeclared wall cap; no budget extension",
+    "root scene-manifest.json missing at audit path; staged roundtrip manifest exists"
+  ],
+  "unproven_hypotheses": [
+    "planning/clone/observer overhead explains OUT duration",
+    "external CUDA overlap explains slowdown"
+  ],
+  "next_task": "r21-mainline-direct033",
+  "next": "official22 scoped direct-cost/partial-evidence repair; no new physics or generic qualification until candidate source/targeted tests and parent review",
+  "automatic_retry": false,
+  "stable_rate_established": false
+}

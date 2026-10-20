@@ -1,6 +1,6 @@
 {
-  "snapshot": "snapshots/20261020T091142Z.json",
-  "sha256": "c8de5b72beea5a270c090ae37134d2ab0a39992a04ff7fde347d19a42c19a733",
-  "source_records": 802,
-  "source_head": "3806a39c4e20d04521b0c9b92af635c8fd87a5d982c6df273f5c0d5348a1f25d"
+  "snapshot": "snapshots/20261020T112429Z.json",
+  "sha256": "ce4728f4314aad4ed9df196dbef466837bb65f5d13daeafd164d0cb2c9a07e53",
+  "source_records": 825,
+  "source_head": "22bfbaa74407e7154f840012b0986f0d4b0171f0d565c9be4256406ccb16715c"
 }

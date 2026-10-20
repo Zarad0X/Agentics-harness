@@ -1,0 +1,43 @@
+{
+  "schema": "parent026-review/1",
+  "observed_unix": 1792478444.466655,
+  "payload163_verified": true,
+  "source128_verified": true,
+  "candidate112_verified": true,
+  "snapshots": [
+    {
+      "batch": "batch001",
+      "files": 128,
+      "source_manifest_sha256": "59740d22c3a0b73afd717ad6888a775cefd372ca6c9e458ebeac253106481a6e",
+      "archive_sha256": "3a29a79b7d4177f171dffcdc1deabd8020fe2bf5196bc8d1f80c2f15c00bf57f"
+    },
+    {
+      "batch": "batch002",
+      "files": 128,
+      "source_manifest_sha256": "ef7ad4dec77ecec3342cda02078893b722ddc511036125b6a567cb239045faf9",
+      "archive_sha256": "738388781b026da70ed5b7827ddaa38867c9c3e182ba3cfc5cd3fffac042005a"
+    }
+  ],
+  "source_manifest_sha256": "ef7ad4dec77ecec3342cda02078893b722ddc511036125b6a567cb239045faf9",
+  "candidate_source_sha256": "6a3fb974ca3f013b7ad27ef2e97e31484da621278e6e01304cd40fdf06d94057",
+  "candidate_changed": [
+    "harness/evaluator021.py"
+  ],
+  "unchanged111": true,
+  "all27production_src_byteexact024": true,
+  "producer_two_batches_spent120": true,
+  "preliminary_pass": 3,
+  "preliminary_fail": 1,
+  "final_tests_run": 0,
+  "Ccompiler_started": false,
+  "code_pass": false,
+  "deploy_allowed": false,
+  "actual67": false,
+  "physical_permission": false,
+  "exactworker1441479_start40481617_inactive": true,
+  "confirmed_failure": "Additive tests/run026 directly calls candidate build(), whose unchanged ownclock source_binding demands __main__.__file__ belongs to candidate manifest; runner outside root triggers ClockDeny before compiler/tests.",
+  "candidate_review": "Terminal-known identity handling after scope and argv read only; scope mismatch remains DENY. Bounded first denial witness. Both are proposals without final execution; actual025cause unconfirmed.",
+  "next": "027fix ONLYsource-bound entry integration: build via actual CLI, place/bind legitimate test entries under candidate manifest or use existing bound entry. Never spoof __main__/relax clock/unbindsource. All finalcounterexamples/strictnegativecontrols stillneeded before newtargetrun.",
+  "baseline_OUT": 10,
+  "strict_RETURN": null
+}

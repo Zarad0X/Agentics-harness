@@ -1,0 +1,152 @@
+{
+  "schema": "parent041-source-review/1",
+  "observed_unix": 1792523527.740596,
+  "source_sha256": "c17b91ddfbb5cd8eadff2640096d66e946ba3272601d6f935d3131514351527f",
+  "delivery_files_verified": 71,
+  "packet_files_verified": 44,
+  "final_testtime_equal": true,
+  "changed_fork036": [
+    "fork/src/inherited_return.py",
+    "fork/src/physics_runner.py",
+    "fork/src/render_device_binding.py",
+    "fork/src/return_protocol.py",
+    "fork/src/return_release.py"
+  ],
+  "test_result": {
+    "SAT_runs": 0,
+    "errors": 1,
+    "failfast": true,
+    "failures": 0,
+    "physics_runs": 0,
+    "planned_tests": 3,
+    "retries": 0,
+    "scope": "native evidence binding, unchangedOUT/order/goals, measured-grasp release endpoints and runtime guard",
+    "skips": 0,
+    "source_sha256": "c17b91ddfbb5cd8eadff2640096d66e946ba3272601d6f935d3131514351527f",
+    "source_unchanged": true,
+    "tests": 2
+  },
+  "accounting": {
+    "batches": 1,
+    "child_wait4_cpu_s": 1.4347109999999998,
+    "cpu_cap_s": 60,
+    "driver_cpu_s": 0.063364,
+    "total_measured_cpu_s": 1.4980749999999998,
+    "wall_cap_s": 60,
+    "wall_s": 2.579474903002847,
+    "within_cap": true
+  },
+  "resource": {
+    "core": 6,
+    "existing_cooperative_lease": "parent-test-cpu-6.lock",
+    "idle_fraction": 1.0
+  },
+  "whole_suite_passed": false,
+  "metadata_error": "endpoint filename lacks trial; second17index0 FileExistsError. Guard receipt filenames same gap. No control assertion failed yet; thirdtestunrun.",
+  "candidate": "04112-before17+nativecontactnormal4mm releaseprepose17, rawGoals+fullpreview+guards/config/verifiersunchanged; limitedexactseed2scene binding",
+  "manual_source_findings": [
+    "return_release bound exactraw17pose andnormalfrommeasured21nativecontacts; wrongnormalnegativecase retained",
+    "normal offset isactionwaypoint notfinalgoal; independentfinalnativeaudit stillrequired",
+    "extra prerelease geometry usesactualmeasuredactor atactualrobotq andcheckscompleteMeshWorld; no collisionexemptions/marginchange",
+    "return_order andfullpreviewprefix aligned; OUT/math/planner/grasp/physicsguards unchanged",
+    "no physicsvalidation ofnewrelease/changedorder; source/runtime preserved in042 exceptrevieweddevice namespace/environment"
+  ],
+  "retained_endpoints": [
+    {
+      "ik_success": true,
+      "index": 0,
+      "object_id": "12",
+      "original_all_clear": false,
+      "partialworld_free": true,
+      "path": "cpu-001/cases/endpoint-12-0.json",
+      "payload_clearance_capped_m": 0.01,
+      "release_all_clear": true,
+      "trial": 1,
+      "wrong_normal_all_clear": null
+    },
+    {
+      "ik_success": true,
+      "index": 1,
+      "object_id": "12",
+      "original_all_clear": false,
+      "partialworld_free": true,
+      "path": "cpu-001/cases/endpoint-12-1.json",
+      "payload_clearance_capped_m": 0.01,
+      "release_all_clear": true,
+      "trial": 1,
+      "wrong_normal_all_clear": null
+    },
+    {
+      "ik_success": true,
+      "index": 2,
+      "object_id": "12",
+      "original_all_clear": false,
+      "partialworld_free": true,
+      "path": "cpu-001/cases/endpoint-12-2.json",
+      "payload_clearance_capped_m": 0.01,
+      "release_all_clear": true,
+      "trial": 1,
+      "wrong_normal_all_clear": null
+    },
+    {
+      "ik_success": true,
+      "index": 3,
+      "object_id": "12",
+      "original_all_clear": false,
+      "partialworld_free": true,
+      "path": "cpu-001/cases/endpoint-12-3.json",
+      "payload_clearance_capped_m": 0.01,
+      "release_all_clear": true,
+      "trial": 1,
+      "wrong_normal_all_clear": null
+    },
+    {
+      "ik_success": true,
+      "index": 6,
+      "object_id": "12",
+      "original_all_clear": false,
+      "partialworld_free": true,
+      "path": "cpu-001/cases/endpoint-12-6.json",
+      "payload_clearance_capped_m": 0.01,
+      "release_all_clear": true,
+      "trial": 1,
+      "wrong_normal_all_clear": null
+    },
+    {
+      "ik_success": true,
+      "index": 7,
+      "object_id": "12",
+      "original_all_clear": false,
+      "partialworld_free": true,
+      "path": "cpu-001/cases/endpoint-12-7.json",
+      "payload_clearance_capped_m": 0.01,
+      "release_all_clear": true,
+      "trial": 1,
+      "wrong_normal_all_clear": null
+    },
+    {
+      "ik_success": true,
+      "index": 0,
+      "object_id": "17",
+      "original_all_clear": false,
+      "partialworld_free": true,
+      "path": "cpu-001/cases/endpoint-17-0.json",
+      "payload_clearance_capped_m": 0.0039984329153724745,
+      "release_all_clear": true,
+      "trial": 1,
+      "wrong_normal_all_clear": false
+    }
+  ],
+  "native_authority": false,
+  "physical_result": {
+    "OUT": 10,
+    "full": false,
+    "new_physical_runs": 0,
+    "returned_id": 17,
+    "source": "036",
+    "strictRETURN": 1
+  },
+  "followup": "042fixreceipttrial identity andprocessVulkanvisibility; old041one60spent, no retry; oneparentfinal60correctedsource +one30deviceprobe only",
+  "packaging_missing": "harness/parent-mainline-native15-032.json referencedbylauncher absentfrom041;042preparesoriginalboundfile",
+  "metadata_not_realtime_authority": true
+}

@@ -1,0 +1,20 @@
+{
+  "schema": "041-proposed-source-archive/1",
+  "observed_unix": 1792523723.048525,
+  "tag": "r21-return-20261020",
+  "archive_name": "r21-041-proposed-release-candidate-source.tar.gz",
+  "bytes": 271011,
+  "sha256": "e572fb4809c5e3774803ee7a7ee1c50a897a1238ef9b14236f480179c698ebb1",
+  "source_sha256": "c17b91ddfbb5cd8eadff2640096d66e946ba3272601d6f935d3131514351527f",
+  "files": 70,
+  "excluded": [
+    "cpu-001/child.log",
+    "cpu-001/progress.jsonl"
+  ],
+  "candidate_promoted": false,
+  "test_result": "1pass1error;3rdnotrun;old041single60spent",
+  "native_authority": false,
+  "scope": "041proposedcontrol/regrdata/structuredCPUreceipts; rawCLIexcluded. Historicalnativepinpackagingmissing, notalonedeplyable. Full071fileproof retainedlocal/22.",
+  "github_asset_id": 660235028,
+  "github_server_digest_verified": true
+}

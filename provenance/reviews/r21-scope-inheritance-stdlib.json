@@ -1,0 +1,45 @@
+{
+  "schema": "parent-stdlib-kernel-inheritance-review/1",
+  "observed_unix": 1792459429.9147038,
+  "source_sha256": "b947cacc68b408dae94aa6ab4042def044064d97a8eb6d8b87fd70eef221d4d6",
+  "original_scope": "0::/user.slice/user-1030.slice/session-14206.scope",
+  "scope_inode": [
+    29,
+    509926
+  ],
+  "originalSSHparent_exited_custodian_reparented": true,
+  "known_grandchild_outlives_native_reparented_same_original_scope": true,
+  "original_scope_inode_stable": true,
+  "errors": [],
+  "known_remaining": [],
+  "scope_mutations": 0,
+  "all_roles_stdlib_only": true,
+  "native_SDK_or_physics_actions": 0,
+  "custodian_own_cpu_s": 0.040645682,
+  "mock_native_raw_reap": {
+    "pid": 2993543,
+    "raw_status": 0,
+    "returncode": 0,
+    "ru_utime": 0.029261,
+    "ru_stime": 0.00418
+  },
+  "grandchild_wait4_scope": "unavailable to custodian: not directchild; no exacttreeCPUclaim",
+  "full014_wiring_or_budget_qualified": false,
+  "physical_success": false,
+  "limitations": "Kernelprimitive only,not actual014integration or multirole/fullsupervisor-performance. Cooperative currentSSHscope; no adversarialhostcontainment proof.",
+  "archive": {
+    "schema": "parent-stdlib-inheritance-private-archive/1",
+    "observed_unix": 1792459361.575444,
+    "archive_name": "r21-scope-inheritance-001.tar.gz",
+    "bytes": 3257,
+    "sha256": "d217c3a7a8f3e4e4880c9852af657ea45dbfdeefbae73f20f3c391e5526336c5",
+    "manifest_sha256": "042d498887a96db8bc3b3f3014456956c52095cdf97236686cd4f26a6c406703",
+    "source_sha256": "b947cacc68b408dae94aa6ab4042def044064d97a8eb6d8b87fd70eef221d4d6",
+    "role_types": "stdlibmockcustodian/native/grandchild only; no SDK/physics",
+    "primitive_verified": true,
+    "full014_source_or_budget_qualified": false,
+    "release": "r21-return-20261020",
+    "github_server_digest_verified": true,
+    "github_asset_id": 657924375
+  }
+}

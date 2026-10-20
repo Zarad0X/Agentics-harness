@@ -1,0 +1,297 @@
+{
+  "schema": "r21-mainline-pairdiag035/1",
+  "status": "unresolved; terminal pending at supplied snapshot",
+  "symptoms": {
+    "formal_step": 83935,
+    "raw_OUT": 8,
+    "independent_acceptance": null,
+    "exact_RETURN": "not_started",
+    "cursors": {
+      "17": [
+        24,
+        104
+      ],
+      "12": [
+        48,
+        117
+      ]
+    },
+    "five_17_indices": [
+      0,
+      4,
+      5,
+      6,
+      7
+    ],
+    "five_17_clone_steps": 49916,
+    "nested_pair_contact_failures": 360,
+    "failure": "separation_failed:no_short_separating_motion",
+    "source_unchanged": "reported true per preview; not cross-run equality"
+  },
+  "confirmed_code_facts": [
+    {
+      "fact": "Finite search:24 indices/visit, <=6 grasp forecasts; advance before IK/preflight; resume failed visits; reset remaining cursors only on committed pick. Candidate geometry regenerated each visit.12 advancing24->48 with zero forecasts means failure before preview admission, not proven separation failure.",
+      "refs": [
+        "search:11-62",
+        "runner:533-579,659-662"
+      ]
+    },
+    {
+      "fact": "Local separation family:25 offsets, six IK waypoints/offset, <=.002 joint sampling; each geometric survivor gets <=6 acceleration/bias profiles on copied shadow scenes. no_short means this family exhausted, not global impossibility.",
+      "refs": [
+        "separation:16-65",
+        "runner:315-338"
+      ]
+    },
+    {
+      "fact": "Held/nonrobot payload contact rejected if impulse>.002 OR penetration>.0003, except named support allowances. Label alone cannot distinguish impulse from penetration.72 failures/preview is consistent with12 geometric survivors x6 profiles. Aggregate trial_steps already includes nested clone work.",
+      "refs": [
+        "runner:211-240,315-338,458-479",
+        "observation034:178-257"
+      ]
+    },
+    {
+      "fact": "Copied public scene/control state checked, formal source unchanged and grasp RNG restored. Hidden PhysX contact history is not proven replay-equivalent. Two successful grasp previews required. Formal observer.record and video disabled on preview ticks; trace serialization and observer deep copy still occur at outer events.",
+      "refs": [
+        "runner:193-241,279-314,458-488",
+        "observer:342-361"
+      ]
+    },
+    {
+      "fact": "Origin cache keys exact rpy/xyz strings, preserves arithmetic order, stores immutable tuple rows, returns fresh lists; no scene/q/plan/RNG cache. Existing limited equivalence receipt says equal and formal_physics_state_tested=false.",
+      "refs": [
+        "cache:31-48",
+        "origin032:30-39",
+        "cache033:31-48",
+        "prior_equivalence:1",
+        "prior_test_scope:39-145"
+      ]
+    }
+  ],
+  "comparison": {
+    "release_prefix_equal_order_and_steps": true,
+    "prefix": [
+      [
+        3,
+        10329
+      ],
+      [
+        4,
+        19724
+      ],
+      [
+        19,
+        28780
+      ],
+      [
+        18,
+        42956
+      ],
+      [
+        11,
+        51150
+      ],
+      [
+        8,
+        61873
+      ],
+      [
+        10,
+        70654
+      ],
+      [
+        9,
+        83935
+      ]
+    ],
+    "032_pair": "After release9 at83935, verification12 followed1138.5847795s later; released12 at96873, then verification17 after63.70904565s and release17 at110022. Gap includes all pending-object work.",
+    "032_failure_history": "32 object17 no_short; object12:2 initial_intersection,1 no_short,1 forbidden17/12 contact. Summary does not align individual candidates at83935.",
+    "source_hashes": {
+      "candidate_search.py": {
+        "032": "092ac6ab62b1ab6356c9ce2a6e9b57f60506860ed9b2fafeb18a0045348542df",
+        "033": "092ac6ab62b1ab6356c9ce2a6e9b57f60506860ed9b2fafeb18a0045348542df",
+        "034": "092ac6ab62b1ab6356c9ce2a6e9b57f60506860ed9b2fafeb18a0045348542df",
+        "baseline": "092ac6ab62b1ab6356c9ce2a6e9b57f60506860ed9b2fafeb18a0045348542df",
+        "fork006_manifest": "092ac6ab62b1ab6356c9ce2a6e9b57f60506860ed9b2fafeb18a0045348542df"
+      },
+      "separation.py": {
+        "032": "618bef41090b9531081b42bc9106278106d9e793638e74e0664143e94dcbb4ce",
+        "033": "618bef41090b9531081b42bc9106278106d9e793638e74e0664143e94dcbb4ce",
+        "034": "618bef41090b9531081b42bc9106278106d9e793638e74e0664143e94dcbb4ce",
+        "baseline": "618bef41090b9531081b42bc9106278106d9e793638e74e0664143e94dcbb4ce",
+        "fork006_manifest": "618bef41090b9531081b42bc9106278106d9e793638e74e0664143e94dcbb4ce"
+      },
+      "direct_core.py": {
+        "032": "e966abdaea8f6d7cf1df8b76282fad831d668b0b0fcd8f80d941a54eb9171daf",
+        "033": "3b11485a2a84011350d8da05af9c3e2374c40be7033e48ef23429a53f6d6aea0",
+        "034": "3b11485a2a84011350d8da05af9c3e2374c40be7033e48ef23429a53f6d6aea0",
+        "baseline": "e966abdaea8f6d7cf1df8b76282fad831d668b0b0fcd8f80d941a54eb9171daf",
+        "fork006_manifest": "e966abdaea8f6d7cf1df8b76282fad831d668b0b0fcd8f80d941a54eb9171daf"
+      },
+      "astra_planner.py": {
+        "032": "cf4781e65a46d7ef4684fbe18ea82b04be8b13067d37277692ddc8defc155b01",
+        "033": "cf4781e65a46d7ef4684fbe18ea82b04be8b13067d37277692ddc8defc155b01",
+        "034": "cf4781e65a46d7ef4684fbe18ea82b04be8b13067d37277692ddc8defc155b01",
+        "baseline": "cf4781e65a46d7ef4684fbe18ea82b04be8b13067d37277692ddc8defc155b01",
+        "fork006_manifest": "cf4781e65a46d7ef4684fbe18ea82b04be8b13067d37277692ddc8defc155b01"
+      },
+      "mesh_world.py": {
+        "032": "543c43fb247cb85dd4e8f5d398507da87f39d43804e49d5f06edf1bf5e637a72",
+        "033": "543c43fb247cb85dd4e8f5d398507da87f39d43804e49d5f06edf1bf5e637a72",
+        "034": "543c43fb247cb85dd4e8f5d398507da87f39d43804e49d5f06edf1bf5e637a72",
+        "baseline": "543c43fb247cb85dd4e8f5d398507da87f39d43804e49d5f06edf1bf5e637a72",
+        "fork006_manifest": "543c43fb247cb85dd4e8f5d398507da87f39d43804e49d5f06edf1bf5e637a72"
+      }
+    },
+    "runner_diff": "032->034 only early provenance and video flags/writer. Search/separation/guard/copy logic unchanged.033/034 cache and native_bridge byte-identical. Local packet comparison does not attest deployed runtime bytes."
+  },
+  "hypotheses": [
+    {
+      "hypothesis": "Changed pair state after earlier picks",
+      "assessment": "Plausible; cursor reset explicitly handles changed obstructions/poses. Matching eight release steps/order does not prove equal poses, velocities, contacts, controls or RNG."
+    },
+    {
+      "hypothesis": "Numerical/cache behavioral divergence",
+      "assessment": "No positive evidence; exact-string origin math and existing limited equivalence argue against stale scene cache. Native equivalence, hidden clone history and per-candidate RNG equality remain unproved."
+    },
+    {
+      "hypothesis": "Preexisting limited separation search plus budget cost",
+      "assessment": "Best-supported symptom explanation: same failure family predates034, nested guard rejects unsafe pair contact.032 ultimately extracted12 then17, so global impossibility unsupported. No CPU-fraction or completion prediction."
+    }
+  ],
+  "narrow_existing_data_comparison": [
+    "Compare existing032/034 source/config/mesh/initial-state identities, then exact release9/extracted state at83935: pair12/17 raw poses and velocities, robot q/qdot/drive targets and pair contacts. Compare each against its initial and preceding retained boundary; other bodies only if relevant collision input differs. Nearest sampled trajectory is not exact83935.",
+    "Align same-step search_visit cursors/totals,17 indices0/4/5/6/7 and eventual032 successful12 index. Compare candidate_preflight geometry/IK/paths, after_closure/failure_state, separation offsets/profiles/near/rejected and failure_contacts. Compare available RNG/source proofs; final OUT-RNG hash does not prove per-candidate equality. Exclude timestamps from numeric equality.",
+    "Different preflight state supports scene/state divergence. Equal state plus different geometry/IK/path with equal recorded RNG isolates numerical/input divergence, not cache causality. Equal geometry/closure inputs but different physical failures points toward clone/native history; public-state equality cannot exclude hidden state. Matching decision sequence with different durations supports cost. Missing RNG/contact metrics stay unknown.",
+    "Use existing root event time_unix to bound release9-to-verification12 and preview/visit intervals; strict roundtrip events omit timestamps. Counts/process samples cannot separate planning, clone, observer, rendering or scheduling CPU. No instrumentation/new fixtures/new runs proposed."
+  ],
+  "budget": "At supplied progress elapsed4511.891636s, arithmetic headroom2588.108364s to7100 wall cap, not current headroom or forecast.49916 clone steps is work count, not measured time. Formal83935 can remain fixed during finite shadow search.",
+  "fixes": [],
+  "fix_rationale": "No defect-specific minimal fix supported. Preserve active packet, original7100 one attempt, ordering/RNG/guards/thresholds. No evidence supports skipping profiles/caching outcomes/reordering pair.",
+  "needed_terminal_evidence": [
+    "Original driver terminal reason, raw wait4/CPU/accounting and owned-identity cleanup evidence.",
+    "Final pair verification/exhaustion and complete source-bound event tails.",
+    "Driver-owned original OUT and strict RETURN audits; scene/config/source bindings, partial artifacts and video status. RawOUT8 is not acceptance; exactRETURN not started at snapshot."
+  ],
+  "limitations": [
+    "Only local existing evidence read. No code changes/tests/physics/SSH/subagents/account or quota changes/credential access. No active packet, baseline/reference or driver audit modification.",
+    "Requested server22 official gpt-6-astra session context; backend/account not independently credential-attested."
+  ],
+  "references": {
+    "observation034": {
+      "path": "/data4/yuantao/astra-roundtrip-20261009/reference/parent-mainline034-search-observation-1318.json",
+      "sha256": "04087525121855c76538f6aa7598a932b2e2b1c6fe5957c6522cea1648316479",
+      "lines": "1-314; compact previews164-283"
+    },
+    "timeline032": {
+      "path": "/data4/yuantao/astra-roundtrip-20261009/reference/parent-mainline032-timeline-1118.json",
+      "sha256": "e29d259455a2b658949c4f0251b61987a8a12db036e0c8b6f779c366e6a79d8a",
+      "lines": "1-214: OUT events"
+    },
+    "summary032": {
+      "path": "/data3/yuantao/astra-roundtrip-work/harness/r21-mainline-direct033/packet/harness/evidence-summary.json",
+      "sha256": "8a433efd504aea274245752f407d4dfb82080a752d115073d15a7553c82b798e",
+      "lines": "67-145: gaps/counts/failures"
+    },
+    "search": {
+      "path": "/data3/yuantao/astra-roundtrip-work/harness/r21-mainline-bind034/packet/fork/src/candidate_search.py",
+      "sha256": "092ac6ab62b1ab6356c9ce2a6e9b57f60506860ed9b2fafeb18a0045348542df",
+      "lines": "11-62"
+    },
+    "separation": {
+      "path": "/data3/yuantao/astra-roundtrip-work/harness/r21-mainline-bind034/packet/fork/src/separation.py",
+      "sha256": "618bef41090b9531081b42bc9106278106d9e793638e74e0664143e94dcbb4ce",
+      "lines": "16-65"
+    },
+    "runner": {
+      "path": "/data3/yuantao/astra-roundtrip-work/harness/r21-mainline-bind034/packet/fork/src/physics_runner.py",
+      "sha256": "c3de33ff4d293633590a07af4a0c4c77138b98b737ac8d7e01aab2d4dd1ca7f7",
+      "lines": "193-241,279-338,426-488,533-579,659-674"
+    },
+    "cache": {
+      "path": "/data3/yuantao/astra-roundtrip-work/harness/r21-mainline-bind034/packet/fork/src/direct_core.py",
+      "sha256": "3b11485a2a84011350d8da05af9c3e2374c40be7033e48ef23429a53f6d6aea0",
+      "lines": "31-48"
+    },
+    "observer": {
+      "path": "/data3/yuantao/astra-roundtrip-work/harness/r21-mainline-bind034/packet/fork/src/native_bridge.py",
+      "sha256": "c1d4ab3adb6f79af61dbce9c32ad43a021dbc6660caabb1d9a2170fe2c6b2161",
+      "lines": "327-361"
+    },
+    "origin032": {
+      "path": "/data3/yuantao/astra-roundtrip-work/harness/r21-mainline-return15-032/packet/fork/src/direct_core.py",
+      "sha256": "e966abdaea8f6d7cf1df8b76282fad831d668b0b0fcd8f80d941a54eb9171daf",
+      "lines": "30-39"
+    },
+    "runner032": {
+      "path": "/data3/yuantao/astra-roundtrip-work/harness/r21-mainline-return15-032/packet/fork/src/physics_runner.py",
+      "sha256": "9c7b73d23486fd76d107f1f4a94177af8ad5db4419f394a7929490a18e748cdd",
+      "lines": "184-232,270-329,417-479,524-570"
+    },
+    "cache033": {
+      "path": "/data3/yuantao/astra-roundtrip-work/harness/r21-mainline-direct033/packet/fork/src/direct_core.py",
+      "sha256": "3b11485a2a84011350d8da05af9c3e2374c40be7033e48ef23429a53f6d6aea0",
+      "lines": "31-48"
+    },
+    "prior_equivalence": {
+      "path": "/data3/yuantao/astra-roundtrip-work/harness/r21-mainline-direct033/private/cpu-001/cases/pure-equivalence.json",
+      "sha256": "65d93d4aa66809c50ca62983fe2d1b72a6eeb6cb5db2b8101b4940591ceccc6d",
+      "lines": "1: prior receipt, not rerun"
+    },
+    "prior_test_scope": {
+      "path": "/data3/yuantao/astra-roundtrip-work/harness/r21-mainline-direct033/packet/tests/targeted033.py",
+      "sha256": "88708e4deabd2546a0aa625254d6efe986eb7d9dad22da2f03fcd24328218919",
+      "lines": "39-145: prior source, not executed"
+    },
+    "baseline_comparison": {
+      "path": "/data3/yuantao/astra-roundtrip-work/harness/r21-mainline-direct033/packet/harness/baseline-comparison.json",
+      "sha256": "cc3daae06133a4965c3bc0f707eefa8e82addf6550794aa106eb55d8b2ead2c0",
+      "lines": "whole file: prior summary"
+    },
+    "fork006_manifest": {
+      "path": "/data3/yuantao/astra-roundtrip-work/harness/r21-mainline-return15-032/packet/fork/MANIFEST.json",
+      "sha256": "4ce3b2298da270a628a751efeacb2c55649be71f951310d9aa90157bc925c522",
+      "lines": "whole file: per-file source SHA256 fields"
+    },
+    "SOURCE032": {
+      "path": "/data3/yuantao/astra-roundtrip-work/harness/r21-mainline-return15-032/packet/SOURCE.json",
+      "sha256": "7d19057e821dada5868f8ab8d5c0f75f9e8e3ec469776cc9405b52b7b1822259",
+      "lines": "whole file: per-file hashes"
+    },
+    "SOURCE033": {
+      "path": "/data3/yuantao/astra-roundtrip-work/harness/r21-mainline-direct033/packet/SOURCE.json",
+      "sha256": "00c0d8f18547e056dfac814738a37bc05bac34fcd0306ef9ac5afc12467c0424",
+      "lines": "whole file: per-file hashes"
+    },
+    "SOURCE034": {
+      "path": "/data3/yuantao/astra-roundtrip-work/harness/r21-mainline-bind034/packet/SOURCE.json",
+      "sha256": "c591bdcc5ffdaac599dcc7d4a62250ecad09064b7167ceb02571dbf7529cf423",
+      "lines": "whole file: per-file hashes"
+    },
+    "baseline_candidate_search.py": {
+      "path": "/data4/yuantao/astra-roundtrip-20261009/baseline/candidate_search.py",
+      "sha256": "092ac6ab62b1ab6356c9ce2a6e9b57f60506860ed9b2fafeb18a0045348542df",
+      "lines": "whole file: byte comparison only"
+    },
+    "baseline_separation.py": {
+      "path": "/data4/yuantao/astra-roundtrip-20261009/baseline/separation.py",
+      "sha256": "618bef41090b9531081b42bc9106278106d9e793638e74e0664143e94dcbb4ce",
+      "lines": "whole file: byte comparison only"
+    },
+    "baseline_direct_core.py": {
+      "path": "/data4/yuantao/astra-roundtrip-20261009/baseline/direct_core.py",
+      "sha256": "e966abdaea8f6d7cf1df8b76282fad831d668b0b0fcd8f80d941a54eb9171daf",
+      "lines": "whole file: byte comparison only"
+    },
+    "baseline_astra_planner.py": {
+      "path": "/data4/yuantao/astra-roundtrip-20261009/baseline/astra_planner.py",
+      "sha256": "cf4781e65a46d7ef4684fbe18ea82b04be8b13067d37277692ddc8defc155b01",
+      "lines": "whole file: byte comparison only"
+    },
+    "baseline_mesh_world.py": {
+      "path": "/data4/yuantao/astra-roundtrip-20261009/baseline/mesh_world.py",
+      "sha256": "543c43fb247cb85dd4e8f5d398507da87f39d43804e49d5f06edf1bf5e637a72",
+      "lines": "whole file: byte comparison only"
+    }
+  }
+}

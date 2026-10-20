@@ -1,0 +1,8 @@
+{
+  "schema": "034-video-parent-check/1",
+  "path": "/Users/zhanghan/Downloads/RoboTwin-Astra-034-OUT10-return-failure.mp4",
+  "bytes": 3042535,
+  "sha256": "07dfe9b9bfd68ead6db34b7d3572ee8ad8ad4ce12afec95d1ac2b1ab07b9bb01",
+  "full_decode_exit": 0,
+  "scope": "failed full-roundtrip run; OUT10accepted, strictRETURN0; not a success demo"
+}

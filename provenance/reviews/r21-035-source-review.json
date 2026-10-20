@@ -1,0 +1,16 @@
+{
+  "schema": "035-parent-source-review/1",
+  "observed_unix": 1792504303.5854552,
+  "checked_hashes": [
+    "candidate_search.py",
+    "separation.py",
+    "physics_runner.py",
+    "direct_core.py",
+    "native_bridge.py"
+  ],
+  "delivery": "parent-mainline035-download-1348.json",
+  "status": "read-only diagnosis accepted within supplied snapshot scope; no repair proposed",
+  "confirmed": "Finite inherited search and exact first8release prefix;034 later completes OUT10, so priorOUT8 was not terminal failure/deadloop.",
+  "limitations": "No exact cross-run full-state/hidden-native equivalence proof or component CPU fractions; original035 terminal-pending snapshot retained.",
+  "no_candidate_promotion": true
+}

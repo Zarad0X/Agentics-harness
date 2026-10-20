@@ -1,0 +1,62 @@
+{
+  "schema": "034-parent-independent-terminal-review/1",
+  "observed_unix": 1792504303.584679,
+  "attempt": "r21-mainline-bind034-full-001",
+  "status": "failed full roundtrip; OUT10 independently accepted",
+  "accepted_OUT": 10,
+  "accepted_exact_RETURN": 0,
+  "full_success": false,
+  "raw_returned_ids": [
+    17
+  ],
+  "raw_return_not_acceptance": true,
+  "native_returncode": 2,
+  "native_wall_s": 5818.562558719423,
+  "native_wait4_child_and_reaped_CPU_s": 5812.810589,
+  "CPU_scope": "native child plus descendants it reaped; not orphan exact usage",
+  "sampled_CPU_peak_s": 5832.11,
+  "cpu_upper_bound_field_s": 5818.562558719423,
+  "accounting_limit": "Sampled peak can double-count descendant waited CPU; preserve raw values. Native wait4 scope as stated; no exact all-process/driver accounting or universal upper-bound proof claimed.",
+  "accounting_gaps": [],
+  "all_observed_identities_inactive": true,
+  "budget_spent": true,
+  "budget_cap_s": 7100,
+  "timeout": false,
+  "automatic_retry": false,
+  "source_checked": 64,
+  "source_manifest_sha256": "c591bdcc5ffdaac599dcc7d4a62250ecad09064b7167ceb02571dbf7529cf423",
+  "runtime_source_pins_match": true,
+  "original_verifiers_and_config_unchanged": true,
+  "phase_times": {
+    "OUT": 5401.25844030641,
+    "RETURN": 399.5484914109111,
+    "whole_observed": 5800.806932157371
+  },
+  "phase_steps": {
+    "OUT": 110522,
+    "RETURN": 21809
+  },
+  "failure": "RuntimeError:RuntimeError:forbidden_payload_contact:['216_inner0926_s1c0n17', '211_inner0926_s1c0n12']",
+  "failure_step": 132331,
+  "held_id": 12,
+  "triggering_pair_contact": {
+    "bodies": [
+      "216_inner0926_s1c0n17",
+      "211_inner0926_s1c0n12"
+    ],
+    "separation_min": 9.32557086343877e-05,
+    "impulse_max": 0.003835535142570734
+  },
+  "confirmed": "RETURN12 real execution stopped on pair17/12 impulse above existing .002 guard;17 initially measured near goal then unstable in final window. No timeout. Original OUT10 ability retained on this attempt.",
+  "cause": null,
+  "hypothesis": "RETURN dynamic placement coverage gap: only staging-grasp previews exist before full live transfer/lowering; investigate actual goal/PD/contact trajectory and returned-object disturbance before a minimal RETURN-only fix.",
+  "evidence": [
+    "parent-mainline034-terminal-artifacts-1348.json",
+    "parent-mainline034-artifact-index-1348.json",
+    "parent-mainline034-return-events-1348.json",
+    "parent-mainline034-live-1792504119.json"
+  ],
+  "native_runtime_LLM_calls": 0,
+  "development_usage": "035 shared development only; authoritative completed input725248 cached642048 output9179 reasoning682. Not episode token cost.",
+  "next": "Delegate036 minimal directly evidenced RETURN placement fix plus limited targeted regression; preserve OUT algorithms/source and original guards. No new physical run until reviewed sealed candidate and fresh resource admission."
+}

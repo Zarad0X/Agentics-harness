@@ -1,0 +1,25 @@
+{
+  "018": {
+    "root": "work/astra-roundtrip/sealed-downloads22/r21-thread-clock-018/payload/r21-thread-clock-018",
+    "payload_entries": 265,
+    "source_entries": 65,
+    "manifests_verified": true,
+    "source_sha256": "2515344aeab2d13e53873f7cd56c78808b8f59c9d136e88fe12aafec9bcff0d9"
+  },
+  "019": {
+    "root": "work/astra-roundtrip/sealed-downloads22/r21-entry-env-production-cost-019/payload/r21-entry-env-production-cost-019",
+    "payload_entries": 498,
+    "source_entries": 71,
+    "manifests_verified": true,
+    "source_sha256": "929e492a80efb92edc6b496b90d6aa2eb2b0cd115f1f29337d0bce379d8968a9"
+  },
+  "observed_unix": 1792465984.1447291,
+  "source_delta_src": [
+    "contract.py",
+    "native017.py",
+    "qualification014.py",
+    "residual017.py"
+  ],
+  "physical_success": false,
+  "actual67_qualified": false
+}

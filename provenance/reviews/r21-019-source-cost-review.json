@@ -1,0 +1,79 @@
+{
+  "schema": "parent019-source-cost-review/1",
+  "observed_unix": 1792466209.1571252,
+  "source_manifest_sha256": "929e492a80efb92edc6b496b90d6aa2eb2b0cd115f1f29337d0bce379d8968a9",
+  "archive_sha256": "b19c1918e3f31bd98dfe10b717b34a340841fba6731f5dc03cff6493119afe3f",
+  "byte_review": "parent-r21-018019-byte-source-review-0308.json",
+  "source_delta": [
+    "native017.py: fully construct/admit then delete only RECEIPT/SHA; cache admitted receipt; failed validation leaves keys intact",
+    "contract.py/qualification014.py/residual017.py: protocol and evidence schema names only"
+  ],
+  "unchanged_runtime_src": [
+    "full_child.py",
+    "common.py",
+    "custody.py",
+    "ownclock018.py",
+    "scope_runtime.py",
+    "hot017.c",
+    "parent_driver.py",
+    "metadata_child.py"
+  ],
+  "entry": {
+    "actual_full_child_predicate_retained": true,
+    "original005_builder_sha256": "37793d3f1f157b54a10f1c8c3e034851adf7d5a457ebf90b7ba919551ced1267",
+    "old017_counterexample": "exact sealed get_native AST with current valid artifact schema, not full017 rerun",
+    "cpu_fixture_boundaries": [
+      "ICD hardware observation",
+      "physical child_gate",
+      "check_lock_records",
+      "stop before install_controllers"
+    ],
+    "retained_negatives": [
+      "R21_UNKNOWN019",
+      "UNREVIEWED_ENV019",
+      "R21_NATIVE017_EXTRA",
+      "bad artifact receipt preserves fields"
+    ],
+    "producer_cases_pass": true,
+    "parent_actual67_pending": true,
+    "physical_fix_claimed": false
+  },
+  "cost": {
+    "legacy_guard_s": {
+      "driver": 115,
+      "custodian": 24
+    },
+    "producer_forecast_s": {
+      "driver": 1175.3578183979732,
+      "custodian": 296.5684404499984
+    },
+    "production_validated": false,
+    "driver_whole_metrics_off_s": 0.332378,
+    "driver_exit_tail_s": 0.009216848,
+    "instrumented_whole_driver_s": 0.327413,
+    "different_counts_no_overhead_inference": true,
+    "scan_start_clock_unconditional_production": true,
+    "instrumentation_subtraction_s": 0,
+    "dominant_instrumented_hot_s": {
+      "driver": 957.191656,
+      "custodian": 190.326447
+    },
+    "detached_custody_raw_lifetime": "UNKNOWN; self snapshot plus1s reserve is not raw reap",
+    "all_attempts_retained": true,
+    "batches_spent": 2,
+    "conservative_charge_s": 120
+  },
+  "decision": "019 code admissible for020 fork only; no native promotion; new finite control-core protocol predeclared in020, not retroextension of001",
+  "physical": {
+    "native_active": false,
+    "baseline_OUT": 10,
+    "strict_RETURN": null,
+    "full001": "SPENT/no replay",
+    "GPU3": "UNKNOWN",
+    "exclusive_GPU4": "FAILED"
+  },
+  "account": {
+    "worker": "server22 official ChatGPT gpt-6-astra",
+    "parent_review": "local signed-in account"
+  }
+}

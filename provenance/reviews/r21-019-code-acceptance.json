@@ -1,0 +1,46 @@
+{
+  "schema": "parent019-code-acceptance/1",
+  "observed_unix": 1792466353.5673978,
+  "source_manifest_sha256": "929e492a80efb92edc6b496b90d6aa2eb2b0cd115f1f29337d0bce379d8968a9",
+  "same_host": "server67",
+  "retained_tests": {
+    "frozen011-24.log": 24,
+    "actual016-runtime32.log": 32,
+    "thread018-clock-admission.log": 13,
+    "actual014-guards52.log": 52,
+    "native017-differential-profile.log": 1,
+    "native017-safety-admission.log": 16,
+    "frozen010-54.log": 54,
+    "hotpath016-differential12.log": 12,
+    "adapter015-focused5.log": 5
+  },
+  "retained_total": 209,
+  "new_suites_passed": [
+    "entry019-real-handoff",
+    "production019-differential",
+    "production019-whole-pipeline"
+  ],
+  "compile": "same-host /usr/bin/cc source/recipe/compiler/ABI/binary hash bound inside one exact00730CPU60wall batch",
+  "code_terminal": {
+    "returncode": 0,
+    "reason": null,
+    "accounting_gaps": [],
+    "remaining_session": []
+  },
+  "conservative_charge_s": 60,
+  "wall_s": 17.50660382793285,
+  "wait4_child_and_reaped_descendants_cpu_s": 6.725112,
+  "supervisor_own_cpu_s": 13.201202009000001,
+  "known_inactive_identities": 48,
+  "independent_checks": 2,
+  "raw_orphan_usage": "UNKNOWN",
+  "entry_gate": "unchanged full_child exact whole005env accepts verified two-key cleanup; rejects frozen017 counterexample and all3unknownextra keys; failed-admission keys retained; stops beforecontroller",
+  "scope": "TEST-registry-real-proc, not originalkernelqualification",
+  "cost": "old115/24DENY; localmockforecast794.36/150.92 is diagnostic, metrics-off intentionally has no forecast; producer1175.36/296.57 retained separately, not same host/circumstances",
+  "actual67_kernel_qualified": false,
+  "production_cost_qualified": false,
+  "physical_qualified": false,
+  "baseline_OUT": 10,
+  "strict_RETURN": null,
+  "worker020": "new finite control-core protocol dispatched official22Astra, old001spent; not deployed"
+}

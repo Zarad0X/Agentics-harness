@@ -1,0 +1,136 @@
+{
+  "schema": "reviewed032-runtime-snapshot/1",
+  "observed_unix": 1792487316.8985941,
+  "status": "actualGPUfullOUT+RETURNattemptRUNNING/notaccepted",
+  "host": "15",
+  "source_sha256": "7d19057e821dada5868f8ab8d5c0f75f9e8e3ec469776cc9405b52b7b1822259",
+  "driver": {
+    "pid": 4143505,
+    "start_ticks": 330114932,
+    "expected_start_ticks": 330114932,
+    "same_identity": true,
+    "state": "R",
+    "own_CPU_s": 69.19,
+    "allowed": [
+      109
+    ]
+  },
+  "native": {
+    "pid": 4143531,
+    "start_ticks": 330115108,
+    "expected_start_ticks": 330115108,
+    "same_identity": true,
+    "state": "R",
+    "own_CPU_s": 285.97,
+    "allowed": [
+      110
+    ]
+  },
+  "initial_state": {
+    "kind": "initial_state",
+    "physics_step": 0,
+    "object_ids": [
+      "3",
+      "4",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "17",
+      "18",
+      "19"
+    ],
+    "robot_arms": [
+      "left",
+      "right"
+    ]
+  },
+  "render_device_observations": 7,
+  "latest_event_kinds": [
+    {
+      "kind": "transported",
+      "object_id": 3,
+      "physics_step": 6922
+    },
+    {
+      "kind": "custom_plan",
+      "physics_step": 6922
+    },
+    {
+      "kind": "physical_tracking",
+      "physics_step": 7488
+    },
+    {
+      "kind": "custom_plan",
+      "physics_step": 7738
+    },
+    {
+      "kind": "physical_tracking",
+      "physics_step": 8221
+    },
+    {
+      "kind": "return_plan",
+      "object_id": 3,
+      "physics_step": 8221
+    },
+    {
+      "kind": "released",
+      "object_id": 3,
+      "physics_step": 10329
+    },
+    {
+      "kind": "search_visit",
+      "object_id": 4,
+      "physics_step": 10329
+    },
+    {
+      "kind": "candidate_rejected",
+      "object_id": 4,
+      "physics_step": 10329
+    },
+    {
+      "kind": "candidate_preflight",
+      "object_id": 4,
+      "physics_step": 10329
+    }
+  ],
+  "observed_GPU_profile": "ownnativeGon3/C+Gon4; existingotheruserGPU0jobuntouched",
+  "held_leases": {
+    "gpu-3.lock": true,
+    "gpu-4.lock": true
+  },
+  "recorded_files": {
+    "events.jsonl": {
+      "bytes": 558358,
+      "mtime": 1792487295.3169312
+    },
+    "roundtrip/trajectory.jsonl": {
+      "bytes": 44838029,
+      "mtime": 1792487287.5770302
+    },
+    "episode.mp4": {
+      "bytes": 48,
+      "mtime": 1792487106.2074904
+    }
+  },
+  "actual_preflight": {
+    "raw_status": 0,
+    "returncode": 0,
+    "reason": null,
+    "accounting_gaps": [],
+    "remaining_session": [],
+    "wall_s": 0.8279933389276266,
+    "waited_child_CPU_s": 0.302697,
+    "source": "parent-mainline032-check-transport.json/nativeoriginalreceipts"
+  },
+  "maximum_native_attempts": 1,
+  "native_cpu_wall_caps_s": 7200,
+  "automatic_retry": false,
+  "baseline_OUT": 10,
+  "accepted_OUT": null,
+  "accepted_RETURN": null,
+  "full_success": null,
+  "not_realtime_authority": true,
+  "limits": "source+targetcheck+recordedinitialization+motion only; no acceptedcounts untilbothoriginalverifiersfinish. return_plan is oldOUT armhomeplanning, not proof ofobjectoriginalposeRETURN."
+}

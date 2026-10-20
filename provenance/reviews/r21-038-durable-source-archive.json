@@ -1,0 +1,13 @@
+{
+  "schema": "038-durable-source-archive/1",
+  "observed_unix": 1792518907.697477,
+  "tag": "r21-return-20261020",
+  "archive_name": "r21-038-durable-reviewed-source.tar.gz",
+  "bytes": 4569,
+  "sha256": "f8795a1b8bf6ed2e2dff4018c764013a1a078be58b78f3e3a40c1a8424ba7260",
+  "github_asset_id": 660052467,
+  "github_server_digest_verified": true,
+  "actual_worker_sha256": "2d77c5e52202bdc36a8033104a73bb2cf58b618521e22a9abc2790acf393c720",
+  "scope": "One ownedmodelcontinuation worker/poller/review only; no newplanner/physicscode, prompt/accountpreflight/auth/rawCLI excluded; not genericHarness validation",
+  "physical_validation": false
+}

@@ -1,0 +1,41 @@
+{
+  "schema": "038-parent-durable-continuation-review/1",
+  "observed_unix": 1792518867.3124878,
+  "previous": "parent-mainline038-coding-checkpoint-1718.json",
+  "prior_status": "SSH255/no completion; remote explicitturn_aborted17:27:48.850Z, originalPID/start inactive; taskcwdprocesses absent; candidatefiles0; lastcommands readonly",
+  "cause": "interruption observed; origin and causalrelationship toSSHtimeout unknown",
+  "review_scope": "Necessary ownership/input/output lifetime fix for one actual modelcontinuation; no genericHarness/supervisor/testexpansion",
+  "remote_dir": "/data3/yuantao/astra-roundtrip-work/harness/durable-model/r21-mainline-safeplace038-durable1748",
+  "worker_sha256": "2d77c5e52202bdc36a8033104a73bb2cf58b618521e22a9abc2790acf393c720",
+  "prompt_sha256": "ec64c0b3d47e9bf20e5e2e060e2f51d8c330b5dba505d42cb35a65f3279f9cc3",
+  "local_executed_worker": "work/astra-roundtrip/.local/model038_durable_worker-executed.py",
+  "poll_command": "python3 -B work/astra-roundtrip/.local/poll038_durable1748.py",
+  "account": "server22_chatgpt",
+  "model": "gpt-6-astra",
+  "official_provider_verified": true,
+  "preflight_observed_unix": 1792518630.1723988,
+  "same_session": "01a15a57-81ad-7dc3-8a3b-9b884739ee40",
+  "old_interrupted_token_increment": "unknown, notzero",
+  "data_mount": {
+    "filesystems": [
+      {
+        "target": "/data3",
+        "source": "/dev/sdb1",
+        "fstype": "ext4"
+      }
+    ]
+  },
+  "data_free_bytes_at_launch": 26044764160,
+  "actual_observation": "parent-mainline038-durable-observation-1792518790.json",
+  "verified": "uniqueowned flock/name; prioraborted checkbeforelaunch; promptfile stdin and filtered event/terminal files, start_new_session, SIGHUPignored, freshprovider verified/envkeys removed; bothPID/start and orphanppid1 survive starterSSHexit in independentread; sessionevents advancing",
+  "limits": "Proves reviewedsource and actualinitial independentSSHsurvival/progress, not guaranteed completion or universal supervision/accounting; terminalabsence/pipefailure isnot success. Driver3600s model-onlywall stop, no retry. No tests/native permission added.",
+  "native_authority": false,
+  "original_test_budget": "03760/120spent;038onlyremainingone60CPU/wallbatch, unchanged",
+  "execution_result": "pending",
+  "physical_results": {
+    "OUT": 10,
+    "exact_RETURN": 1,
+    "full_success": false
+  },
+  "next": "Poll exact durableworker/status andsessionterminal, preserve activework. On completed read actualsealedcandidate/rawCPU receipts then independentparentreview/resourceadmission. Do not start attachedduplicate/resume from oldSSH255 status."
+}

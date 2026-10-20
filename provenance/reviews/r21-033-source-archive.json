@@ -1,0 +1,21 @@
+{
+  "schema": "reviewed-source-archive/1",
+  "archive_name": "r21-033-reviewed-source.tar.gz",
+  "bytes": 288229,
+  "sha256": "9ab20aa1ad24979975bf6fbcb7569c711081fb9dec2230d98ab484db977cff7c",
+  "members": 51,
+  "original_packet": {
+    "bytes": 285027,
+    "sha256": "3aa120629d13acfab071391210f89a226cfd23215465a5530979ad247bea5473"
+  },
+  "original_source_files": 49,
+  "source_sha256": "00c0d8f18547e056dfac814738a37bc05bac34fcd0306ef9ac5afc12467c0424",
+  "github_release": "r21-return-20261020",
+  "source_only": true,
+  "raw_logs_excluded": true,
+  "compiled_binaries_excluded": true,
+  "physical_success": false,
+  "validation": "source/raw3batches verified; final12relevantchecks across3attempts, onecorrectedexpectation; no targetGPUrun",
+  "github_asset_id": 659196736,
+  "github_server_digest_verified": true
+}

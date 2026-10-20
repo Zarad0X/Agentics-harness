@@ -1,0 +1,50 @@
+{
+  "schema": "parent-direct033-source-review/1",
+  "observed_unix": 1792497212.9372401,
+  "source_sha256": "00c0d8f18547e056dfac814738a37bc05bac34fcd0306ef9ac5afc12467c0424",
+  "archive_sha256": "3aa120629d13acfab071391210f89a226cfd23215465a5530979ad247bea5473",
+  "verified_payload_files": 49,
+  "verified_final_python_hashes": 25,
+  "verified_final_test_snapshot_python": 25,
+  "parent_review_correction": "initial parent tried asserting final README matches cpu003 pre-final-document snapshot; assertion failed, no runtime source defect; final Python bytes match snapshot; final49payload separately verified",
+  "changed_fork_files": [
+    "fork/src/native_bridge.py",
+    "fork/src/render_device_binding.py",
+    "fork/src/direct_core.py",
+    "fork/src/physics_runner.py"
+  ],
+  "original_verifiers_config_return_math_unchanged": true,
+  "common_and_cleanenv_byteexact": true,
+  "numeric_change": "bounded256cache exact URDF rpy/xyz strings, same arithmetic, immutable cached rows/fresh output; no state/RNG/actions/plans cached",
+  "evidence_change": "early provenance/config, strict audit roundtrip path, unverified partial parsing/status, fragmented MP4",
+  "raw_tests": {
+    "final_full_suite": false,
+    "case_executions": 16,
+    "passed": 15,
+    "failed": 1,
+    "failure": "original accepts xyz4; incorrect test expectation corrected without runtime math change",
+    "CPU_s": 3.006989,
+    "wall_s": 9.481058511999436,
+    "allocated_cap_s": 120
+  },
+  "cost": {
+    "precommit_wall_gaps_recomputed_s": 4877.753262758255,
+    "pure_FK_ratio": 2.3571792511814977,
+    "scope": "local microbenchmark only; episode savings unknown"
+  },
+  "caps": {
+    "native_wall_CPU": 7100,
+    "audits_wall_CPU_each": 120
+  },
+  "physics_runs": 0,
+  "physical_promotion": false,
+  "cleanup_gap_fixed": false,
+  "remaining": [
+    "target imageio integration",
+    "same-condition end-to-end OUT preservation and strict completeRETURN",
+    "fresh available5/6 binding034",
+    "original native rawwait accounting limitation"
+  ],
+  "decision": "reviewed candidate only; original3/4busy, wait034device-only finaltests then actual15check",
+  "next_task": "r21-mainline-bind034"
+}

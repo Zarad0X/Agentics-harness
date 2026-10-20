@@ -1,0 +1,65 @@
+{
+  "schema": "parent067-clock-source-review/1",
+  "observed_unix": 1792463346.022646,
+  "evidence": [
+    {
+      "path": "parent-r21-clock67-calibration-0210.json",
+      "sha256": "f238bfdd7f94453e95e7e2becdc6f42873db2f7d466e1d6a1594231fba517104"
+    },
+    {
+      "path": "parent-r21-clock67-isolated-controls-0210.json",
+      "sha256": "a1fe285411a9ece93ab1a320ad9e67e29053b433612125b841498cf518c8e450"
+    }
+  ],
+  "isolated_control": true,
+  "own_threads": 1,
+  "observed": {
+    "process_ns": {
+      "samples": 400,
+      "zeros": 389,
+      "min_ns": 0,
+      "median_ns": 0.0,
+      "max_ns": 4000930,
+      "sum_ns": 43911848,
+      "whole_process_ns": 43911848,
+      "whole_wall_ns": 46692859
+    },
+    "thread_ns": {
+      "samples": 400,
+      "zeros": 0,
+      "min_ns": 107633,
+      "median_ns": 108728.5,
+      "max_ns": 178996,
+      "sum_ns": 44047459,
+      "whole_process_ns": 47224856,
+      "whole_wall_ns": 44358840
+    },
+    "process_float_ns": {
+      "samples": 400,
+      "zeros": 386,
+      "min_ns": 0,
+      "median_ns": 0.0,
+      "max_ns": 4005090,
+      "sum_ns": 52781104,
+      "whole_process_ns": 52781104,
+      "whole_wall_ns": 52861836
+    }
+  },
+  "confirmed": "On server67, 389 of 400 isolated process_time_ns intervals and 386 of 400 process_time float intervals returned zero, with maxima near 4ms. All 400 thread_time_ns intervals were positive; median 108728.5ns. Aggregate process CPU remained positive. No kernel root cause is claimed.",
+  "interpretation": "Per-operationmaxima fromcoarsegroupCPUaccounting can greatly inflate50Hz extrapolation despitepositive wholeCPU; zero samplesmustnotreceivecheapcredit. Need a suitableownCPUclock verifiedsingle-thread supervisors +wholeCPU/rawreap reconciliation and explicituncertainty, preservingallbudget/physics thresholds.",
+  "next": "After017seal, new018only timer+model measurement repair, fullguardretest. Do noteditspent017orassumeCperformancepasses;17reports195guardtests passbut timingzero testfails andforecastsdeny.",
+  "parent_calibration_budget": {
+    "experiments": 2,
+    "each_cpu_s": 2,
+    "each_wall_s": 3,
+    "noGPU": true,
+    "noSDK": true,
+    "noNative": true
+  },
+  "status": "newmeasurement defect, notphysicalqualification",
+  "native_actions": 0,
+  "clarifies_wording_of": {
+    "path": "parent-r21-clock67-source-review-0210.json",
+    "sha256": "44c4cc0f64723ac908aca9c5a0329a3f30efd02bc1c6ed36aa1012f129b20d1d"
+  }
+}

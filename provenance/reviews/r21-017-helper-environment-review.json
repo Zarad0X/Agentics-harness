@@ -1,0 +1,26 @@
+{
+  "schema": "parent017-helper-environment-review/1",
+  "observed_unix": 1792464297.681267,
+  "candidate": "017; verify018final independently beforeassuminginherited",
+  "source_manifest_sha256": "90d1110c39f2135622f324ef82c1079d5f5d8705e993e0c729cf2cdc189d46b1",
+  "evidence": {
+    "src/scope_runtime.py": "d5ce02134d92b9d3a2483ed0b894f00927417071e79397112d1bdc1772204217",
+    "src/native017.py": "833edf56310d25f54140ac2555ee9fa792e8faee2ec925cc230be8e8731fa37a",
+    "src/full_child.py": "9cec7d99048ca075a64a68834151941ffcee35f7eee6b6f2b29abdd6f98c4ada",
+    "src/parent_driver.py": "e0bd06c40b0a8b821c2b72aaa3146aa960610f0ab602c77f7fa81db0ced99f64"
+  },
+  "environment005_source_sha256": "37793d3f1f157b54a10f1c8c3e034851adf7d5a457ebf90b7ba919551ced1267",
+  "symptom": "Source-level integration conflict: native artifact handoff variables remain in full_child environment butauthoritybinds exact005clean environment",
+  "confirmed_path": [
+    "parent_driver authority.environment is env005.build output; immutable BASE_KEYS+VK_ICD_FILENAMES exclude R21_NATIVE017 keys",
+    "scope_runtime.spawn copies env then adds R21_NATIVE017_RECEIPT and R21_NATIVE017_SHA",
+    "native017.get_native reads but never removes those2keys; get_scope removes only scopeFD/ackFD",
+    "full_child requires dict(os.environ)==authority.environment beforecontrollers/nativephysicsload"
+  ],
+  "not_observed_physical_failure": true,
+  "physics_attempts": 0,
+  "required_fix": "Consume/removeonlyverifiedtransientartifactvariables after admission whilekeepingcachedNativeobject+sealedsource/artifact provenance forlaterchildhandoffs. Preserveexact005 equality, do not whitelisthelpervarsintophysicsenv.",
+  "regression": "Actualsource-boundspawn/childget_scope/artifactadmission thenexact005environment comparison beforeanySDK/controller import; old017counterexamplemustfail, fixedmustpass; guardallotherextraenvkeysstillreject; nofakehashes orphysicalretry.",
+  "next": "Check018final forconflict; ifpresent delegate newnarrow019forkafter018seal, noteditspent017/018. Alsoaudit timer-read validation overhead and repeated loop/reap/sleep cost coverage in018beforecostacceptance.",
+  "status": "source-confirmed017entryblocker, independent018checkpending; notphysicalfailure"
+}

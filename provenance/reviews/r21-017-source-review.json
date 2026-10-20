@@ -1,0 +1,38 @@
+{
+  "schema": "parent017-source-review/1",
+  "observed_unix": 1792463620.58334,
+  "archive_sha256": "0046142cbc9c569fc402f373de4a2bc5628701dc6735d283ec7858886d0dfed5",
+  "source_manifest_sha256": "90d1110c39f2135622f324ef82c1079d5f5d8705e993e0c729cf2cdc189d46b1",
+  "verified_payload_entries": 172,
+  "verified_source_entries": 62,
+  "worker_tests": {
+    "passed": 195,
+    "total": 196,
+    "failed": "timing zero process_time_ns",
+    "batches": 2,
+    "charge_s": 120,
+    "complete_mock_probe_pass": true
+  },
+  "C_review": {
+    "source_sha256": "bd94cd00bde0735a7f4fa35a857264e96b6a458effb3d0cb2f4374b1099f92b4",
+    "code": "read-only fresh open/read/close procstat and scopedPIDtext; bounded opendir/readdir ownTASKthreads; sched_getaffinity; no signals,writes,forks,network,namespace/cgroupmutation",
+    "stat_indices": "state/ppid/session/start/utime/stime/cutime/cstime matcholdLinuxstat fieldindices",
+    "bounds": "72rawmember slots8TASK+64helpers/1024Bmembership;256aggregate threadwork; capacityoverflowDENY newresourceadmission, notparentphysicaltested",
+    "errors": "O_NOFOLLOW, bounded buffers/strtoll overflow, ESRCHthreaddisappear skip, othererrorspropagate; Python retains ownership/pidfd authority",
+    "ABI": "7int64Row fields/size56, r21_abi17056; dynamicartifactreceipt canonicalcompiler/Csource/recipe/fullmanifest/binaryhash,size,ELF64LE; pin FD beforeCDLL; nohostroot defenseclaim"
+  },
+  "strict_UTF8": "017read/receipt usesUTF8text decode, restorevs016; newadmissionregressionspassworker, parentactual67notrun",
+  "limitations": [
+    "195testsdoesnotqualify196failedrevision",
+    "symbolallowlist firstbatch omittedstrlen/__snprintf_chk retained; finalaudit usesjustifiedobservationalimports",
+    "fullcostmodelsusecoarseprocessCPUshortdeltas and timingtestfails; newparent67isolatedclockcontrolsconfirm4msjumps vspositiveaccuratethreadCPU",
+    "no17actual67compile/regress/OSprobe authorizedorrunthisreceipt; parentwilltestsource-bound018finalinstead",
+    "new8TASK/256workcapacitypreserveschecksbelowbound butmayintroduceadditionalaborts; notphysicallyregressedbaseline",
+    "rawCgroup PID duplicates canhit72rawslotcap evenifuniquePIDcountsmaller; failclosedadditionalread-boundadmission, notdataignored"
+  ],
+  "status": "sealedDENY; Csourceadmissiblefor018timing-onlyfork staticreview, no runtimepromotion",
+  "native_actions": 0,
+  "baseline_OUT10_retained": true,
+  "strict_RETURN": null,
+  "next": "018official22guardedthreadCPUclock, preserve17Csource/semantics andalltests, wholeCPUreconciliation; actual67compile+fullregress/performancebeforeanynewnative"
+}

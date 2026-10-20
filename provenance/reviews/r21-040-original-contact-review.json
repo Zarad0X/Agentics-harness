@@ -1,0 +1,71 @@
+{
+  "schema": "parent040-source-review/1",
+  "observed_unix": 1792522723.704602,
+  "source_sha256": "21bb903380e542138447347d18433757fc945cedaf767a79fb3e1e32fcf584b3",
+  "delivery_files_verified": 60,
+  "packet_files_verified": 40,
+  "runtime_fork_unchanged036": true,
+  "tests": {
+    "candidate_control_patch": false,
+    "errors": 0,
+    "failfast": true,
+    "failures": 0,
+    "physics_tests": 0,
+    "planned_tests": 3,
+    "retries": 0,
+    "scope": "real exported raw-pair mathematics and measured endpoint regression only",
+    "skips": 0,
+    "source_sha256": "21bb903380e542138447347d18433757fc945cedaf767a79fb3e1e32fcf584b3",
+    "source_unchanged": true,
+    "tests": 3
+  },
+  "accounting": {
+    "batches": 1,
+    "child_wait4_cpu_s": 1.248566,
+    "cpu_cap_s": 60,
+    "driver_cpu_s": 0.06540100000000001,
+    "total_measured_cpu_s": 1.313967,
+    "wall_cap_s": 60,
+    "wall_s": 2.3714493099832907,
+    "within_cap": true
+  },
+  "resource": {
+    "core": 8,
+    "existing_cooperative_lease": "parent-test-cpu-8.lock",
+    "idle_fraction": 1.0
+  },
+  "candidate_control_patch": false,
+  "native_authority": false,
+  "physical_result": {
+    "OUT": 10,
+    "full": false,
+    "new_physical_runs": 0,
+    "returned_id": 17,
+    "source": "036",
+    "strictRETURN": 1
+  },
+  "conclusion": "GJKoriginzero notexhaustion; SATinconclusive dueinvalidsupportfaces; no runtimepatch, no native. New parentoriginalcontact evidenceaddresses040missingcontactitem;041directreleasework active.",
+  "native_contact_evidence": {
+    "path": "/data4/yuantao/astra-roundtrip-20261009/reference/parent-mainline036-native-original-pair-contact-1818.json",
+    "bytes": 71972,
+    "sha256": "5b7240316cabbcdf6b84927d9b4804fae5d30514c4e4f3bb420375fb7515c3cd",
+    "source_manifest_sha256": "de759fe60bad16a991ca76e4906f4b1e299824040a9dbb75e8ebd8aa21dbb99d",
+    "source_initwindow_sha256": "3b4e914ccc108b2fead1f9a39ca7ffd65e84a21420492d21d1ae1b773101a5c7",
+    "actual_actor_names": [
+      "211_inner0926_s1c0n12",
+      "216_inner0926_s1c0n17"
+    ],
+    "sample_count": 21,
+    "init_steps": [
+      2000,
+      2500
+    ],
+    "measured_goal_separation_min_m": 7.409835234284401e-08,
+    "impulse_max": 0.001081310911104083,
+    "source_scene_rehashed": true,
+    "new_physics": false,
+    "correction": "Earlierwrongplaceholdernames yieldedemptyselection; correctedactualactornames. Do notinterpretoldselection asno contact."
+  },
+  "finding": "Baseline native pair contact is withinoriginalguards but final held-payload planner asks1mm positive clearance; directgoal/control mismatch, not solecause/penetrationdepth/SDKbug proof.",
+  "next": "041from036 boundedrelease-prepose/order coherentfix; unchangedrawgoals/guards/fullpreview; no native beforeparentreview"
+}

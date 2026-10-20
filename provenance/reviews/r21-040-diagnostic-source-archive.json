@@ -1,0 +1,18 @@
+{
+  "schema": "040-diagnostic-source-archive/1",
+  "observed_unix": 1792522760.987602,
+  "tag": "r21-return-20261020",
+  "archive_name": "r21-040-reviewed-diagnostic-source.tar.gz",
+  "bytes": 266375,
+  "sha256": "6580c2a2e5ac71ea1de98713b38a8ed4bc1b736c4b85ec0a8cb2b3c1f567909d",
+  "source_sha256": "21bb903380e542138447347d18433757fc945cedaf767a79fb3e1e32fcf584b3",
+  "files": 59,
+  "excluded": [
+    "cpu-001/child.log",
+    "cpu-001/progress.jsonl"
+  ],
+  "candidate_control_patch": false,
+  "native_authority": false,
+  "github_asset_id": 660199519,
+  "github_server_digest_verified": true
+}

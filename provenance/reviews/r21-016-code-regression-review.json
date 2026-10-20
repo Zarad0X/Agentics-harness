@@ -1,0 +1,44 @@
+{
+  "schema": "parent016-code-regression-review/1",
+  "observed_unix": 1792462729.5529542,
+  "source_manifest_sha256": "2abcbe193a57d4e4d34b3d71fd2401ffa5dcc3a46a5f6451473081c6fee792cd",
+  "source_review": "parent-r21-016-source-review-0210.json",
+  "actual67_regression": {
+    "path": "parent-r21-016-actual67-regression-0210.json",
+    "sha256": "9845e7ccaab46177bc08bdb3abe525756aa39a6f5d4a9395ffe040ae4ff0fc37",
+    "tests": 179,
+    "complete_local_registry_probe": true,
+    "raw_status": 0,
+    "waited_batch_scope_cpu_s": 4.068393,
+    "supervisor_own_cpu_s": 9.196310338,
+    "wall_s": 12.260077059967443,
+    "conservative_charge_s": 60,
+    "accounting_gaps": [],
+    "remaining_session": []
+  },
+  "actual_kernel_probe": {
+    "receipt": "parent-r21-016-actual67-runtime-probe-0210.json",
+    "sha256": "3779bfe39ce2577cf91229cb72f723b99fd3f4866a3fd7defb66235c9df7fb7c",
+    "inheritance_and_mock_roles_pass": true,
+    "driver_projected_cpu_s": 2402.330714092002,
+    "custodian_projected_cpu_s": 352.3655028619998,
+    "guards_s": [
+      115,
+      24
+    ],
+    "physical_actions": 0
+  },
+  "independent_final": {
+    "path": "parent-r21-016-independent-final-check-0210.json",
+    "identities_checked": 28,
+    "twice_inactive": true,
+    "raw_direct_statuses_all_zero": true,
+    "orphan_wait4": "UNKNOWN"
+  },
+  "regression_status": "179existingtests+registryprobe pass, notcompleteguard-preservationcoverage",
+  "source_review_gap": "016json.loads(bytes) broadens BOM/UTF16 acceptance; parentDENYpendingstricttextregressionfix",
+  "qualification": "DENY cost+encoding coverage; notdeployed orstable; 017 boundedCwork ongoing",
+  "cpu_accounting_note": "sample7.95maydoublecountreapedchildren;waited4.068393includesonlydirectbatchandreapeddescendants;detachedproberolesseparate;notwholeorphanexactCPU",
+  "baseline_OUT10_retained": true,
+  "strict_RETURN": null
+}

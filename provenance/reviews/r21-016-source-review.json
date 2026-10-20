@@ -1,0 +1,45 @@
+{
+  "schema": "parent016-source-review/1",
+  "observed_unix": 1792462455.124585,
+  "archive_sha256": "76148eac0951b3ba4913e6a948550dab5eaecf908eeda5bca847e92596ece65f",
+  "source_manifest_sha256": "2abcbe193a57d4e4d34b3d71fd2401ffa5dcc3a46a5f6451473081c6fee792cd",
+  "verified_payload_entries": 141,
+  "verified_source_entries": 56,
+  "worker_terminal": {
+    "completed": true,
+    "wrapper1325103_absent": true,
+    "codex1325110_absent": true
+  },
+  "worker_tests": {
+    "passed": 179,
+    "errors": 0,
+    "conservative_charge_s": 60,
+    "complete_local_probe": "TEST registry; not actualkernel"
+  },
+  "reviewed_changes": [
+    "fresh string tasklist+perthread affinity, no skip newthreads",
+    "same freshPID/start/session/cgroupmembers; exactunownedhelpers currentmembership avoidsredundantcgroupreads",
+    "receiptcache decodesonlyafterfreshpath,size,boundedread,exactbytes; unchangedbytecache notmtime",
+    "componentcost partition andperiodic5HzWatchdoghandler addedscope",
+    "distinctunspent016protocol anddefaultDENY"
+  ],
+  "source_qualification_defect": "sharedjsonreader now json.loads(bytes) broadens BOM/UTF16 acceptance vs original read_text+json.loads(str); no runtime promotion,017restore strict UTF8 +negative cases",
+  "cost_qualification": {
+    "localforecast_driver_s": 1619.973667256,
+    "localforecast_custodian_s": 405.702745894,
+    "passes": false,
+    "actual67_not_yet_run": true,
+    "limits": "registryfixture notcomparable with014actual67; productionthread/processboundsandresidualunproved; cold/hot countmodel requiresparentactualmeasurement"
+  },
+  "probe_review": {
+    "source_sha256": "6456dccfc9569b191ba22c58552f021b2a4f40b6abc343a5633b6e0d19cef7fe",
+    "authority": "one CPU-only actualkernel originalSSH bounded diagnostic; no registryflag ornativepermission",
+    "roles": "metadata32/native128 realthreads, sameOFDtemporarylocks, actualWatchdog.handler, freshownPIDstat/cgroupmembership, rawdirectreaps andknownorphanpidfdonly",
+    "guards": "20soft30hardperrole, custodian55alarm; common8sphase; independentleasecontrol80s; noGPU/SDK; originalpidfdcleanup only",
+    "limitations": "periodic_sleep disarms driver initial40s alarm; phase/common andobserver cleanup have their own bounds; parentindependentcontrol holds lease and exactknownPID checks, no production assertion"
+  },
+  "physics_unchanged": true,
+  "physical_native_actions": 0,
+  "status": "DENY physical; static receiptcache/thread changes accepted for parent bounded diagnostic only",
+  "next_worker": "017C hotpath candidate official22, no67SSH; correctencodingdrift, keep alloriginalguards/budgets/cadences"
+}

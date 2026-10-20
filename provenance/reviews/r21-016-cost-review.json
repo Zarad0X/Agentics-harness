@@ -1,0 +1,141 @@
+{
+  "schema": "parent016-cost-review/1",
+  "observed_unix": 1792462568.4436831,
+  "source_manifest_sha256": "2abcbe193a57d4e4d34b3d71fd2401ffa5dcc3a46a5f6451473081c6fee792cd",
+  "raw_probe": {
+    "path": "parent-r21-016-actual67-runtime-probe-0210.json",
+    "sha256": "3779bfe39ce2577cf91229cb72f723b99fd3f4866a3fd7defb66235c9df7fb7c"
+  },
+  "scope_backend": "original-kernel-cgroup",
+  "original_scope_inheritance": true,
+  "all_mock_roles_complete": true,
+  "original_launcher_exited": true,
+  "errors": [],
+  "unknowns": [],
+  "remaining_active": [],
+  "forecasts": {
+    "custodian": {
+      "projected_cpu_s": 352.3655028619998,
+      "guard_s": 24,
+      "passes": false,
+      "partition": {
+        "cleanup": 0,
+        "cold": 0.04357191999999993,
+        "hot_scans": 0.016203335000000013,
+        "reconciled_cpu_s": 0.202294702,
+        "residual": 0.14251944700000005,
+        "total_cpu_s": 0.202294702,
+        "watchdog": 0
+      }
+    },
+    "driver": {
+      "projected_cpu_s": 2402.330714092002,
+      "guard_s": 115,
+      "passes": false,
+      "partition": {
+        "cleanup": 0.0078114449999999724,
+        "cold": 0.012918030000000039,
+        "hot_scans": 0.065637477,
+        "reconciled_cpu_s": 0.29202300000000003,
+        "residual": 0.1911394540000001,
+        "total_cpu_s": 0.29202300000000003,
+        "watchdog": 0.01451659399999991
+      }
+    }
+  },
+  "component_cost": {
+    "custodian": {
+      "hot_min_s": 0.00017884499999999692,
+      "hot_median_s": 0.001331235000000007,
+      "hot_max_s": 0.008384011999999996,
+      "samples": 6,
+      "cold_by_kind": {
+        "owned_metadata": {
+          "count": 61,
+          "min_s": 0.0,
+          "median_s": 0.0002942790000000084,
+          "max_s": 0.0011257939999999994
+        },
+        "fence": {
+          "count": 30,
+          "min_s": 0.0,
+          "median_s": 0.0001372439999999947,
+          "max_s": 0.004001019999999994
+        }
+      }
+    },
+    "driver": {
+      "hot_min_s": 0.00010908399999999541,
+      "hot_median_s": 0.00030371899999999397,
+      "hot_max_s": 0.0025813169999999996,
+      "samples": 156,
+      "cold_by_kind": {
+        "owned_metadata": {
+          "count": 47,
+          "min_s": 0.0,
+          "median_s": 0.0,
+          "max_s": 0.0013194290000000108
+        },
+        "fence": {
+          "count": 18,
+          "min_s": 0.0,
+          "median_s": 0.0,
+          "max_s": 0.0009638490000000166
+        }
+      },
+      "watchdog": {
+        "count": 15,
+        "min_s": 0.0003673309999999985,
+        "median_s": 0.0009267579999999997,
+        "max_s": 0.0019708300000000067
+      }
+    }
+  },
+  "native_phase_components": {
+    "custodian": {
+      "cleanup_cpu_s": 0.0,
+      "fence_cpu_s": 29.063409279999956,
+      "fence_events": 7264,
+      "hot_calls": 7200,
+      "hot_cpu_s": 60.364886399999975,
+      "name": "native",
+      "owned_metadata_cpu_s": 65.42214092799996,
+      "owned_metadata_events": 58112,
+      "peak_threads": 0,
+      "projected_cpu_s": 310.9859121099998,
+      "reserve_s": 1.0,
+      "residual_cpu_s": 0.14251944700000005,
+      "watchdog_calls": 0,
+      "watchdog_cpu_s": 0.0
+    },
+    "driver": {
+      "cleanup_cpu_s": 0.0078114449999999724,
+      "fence_cpu_s": 7.001399136000121,
+      "fence_events": 7264,
+      "hot_calls": 360000,
+      "hot_cpu_s": 929.2741199999999,
+      "name": "native",
+      "owned_metadata_cpu_s": 76.67465804800062,
+      "owned_metadata_events": 58112,
+      "peak_threads": 128,
+      "projected_cpu_s": 2171.2058994860017,
+      "reserve_s": 3.0,
+      "residual_cpu_s": 0.1911394540000001,
+      "watchdog_calls": 36002,
+      "watchdog_cpu_s": 70.95382166000024
+    }
+  },
+  "comparison": "014/016models andprobe coverage differ; single shortdiagnostics, no apples-to-appleswholepipeline speedupclaim. Bothdenyfixedbudget.",
+  "limits": [
+    "realSDK/GPU/native/sourcepreflightresidualnotmeasured",
+    "128threads/8processbounds are assumptions, no productionproof",
+    "orphanwait4UNKNOWN; otherdirectreaps separatelyretained",
+    "JSONbytesencodingdrift016mustfix beforepromotion",
+    "custodian terminalwrite/exit tailreserved, notobserved"
+  ],
+  "status": "actual67diagnostic inheritance andmockroles pass; COST FAIL; no nativepermission",
+  "next": "017C observation fastpath andstrictencoding repair official22; boundwork capacities declaredasNEWadmission guard, preservealloriginalphysics/safety/cadences/budgets",
+  "physical_native_actions": 0,
+  "baseline_OUT10_retained": true,
+  "exact_RETURN": null
+}

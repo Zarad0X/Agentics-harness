@@ -1,0 +1,28 @@
+{
+  "schema": "parent015-code-acceptance/1",
+  "observed_unix": 1792461383.5703712,
+  "source_manifest_sha256": "152854b045d5a6e34b4d38ec48c9439b7c477060265bfd2ce230dad6b7a6f64a",
+  "source_review": "parent-r21-015-final-source-review-0140.json",
+  "actual67_regression": {
+    "path": "parent-r21-015-actual67-regression-0140.json",
+    "sha256": "a7bc8ccb590f3c697827e4d714408e978e122760560a33151acf04c2f9262e44",
+    "tests": 167,
+    "raw_status": 0,
+    "waited_cpu_s": 3.773134,
+    "supervisor_own_cpu_s": 3.265286791,
+    "wall_s": 4.2047059159958735,
+    "conservative_charge_s": 60,
+    "accounting_gaps": [],
+    "remaining_session": []
+  },
+  "runtime_src_files_identical_to014": 20,
+  "probe_and_physical_config_byte_identical": true,
+  "static_and_actual_code_status": "passed adapter-only fix",
+  "physical_status": "DENY; unchanged014 runtime complete-costforecast fails115/24guards;16optimization active",
+  "native_actions": 0,
+  "baseline_OUT10_retained": true,
+  "exact_RETURN": null,
+  "parent_wrongcause_retracted": true,
+  "supersedes_pending_field_in": "parent-r21-015-final-source-review-0140.json",
+  "sample_peak_cpu_note": "7.41 samplecounter maydoublecountreapeddescendants; rawwait4=3.773134s authoritative waitedbatchscope, notwholeorphanexactCPU"
+}

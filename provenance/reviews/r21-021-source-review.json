@@ -1,0 +1,73 @@
+{
+  "schema": "parent021-source-review/1",
+  "observed_unix": 1792469587.6673641,
+  "source_manifest_sha256": "30add9d0b72e0a5b33358187b899c9cc20d92993bffc1ab78ecac47aae313f32",
+  "payload111verified": true,
+  "source96verified": true,
+  "final_tested_snapshot96verified": true,
+  "evidence_archive668verified": true,
+  "fixture_namespace_symlinks8_metadata_only_never_followed": true,
+  "unchanged_runtime_source": [
+    "common.py",
+    "full_child.py",
+    "hot017.c",
+    "parent_driver.py",
+    "observer_child.py",
+    "observer_control.py",
+    "parent_support.py"
+  ],
+  "status": "CODE-DENY/COST-DENY; no promotion",
+  "collision": {
+    "producer_deterministic_counterexample_and_fixed_fixture_pass": true,
+    "raw_evidence": {
+      "location": "privateRelease source archive parent-r21-021-source-review-0408.json",
+      "original_review_sha256": "c28fc18a766344ea7cc58774b261cf430b5bf1748c6243820f54fe790993e1f9",
+      "summary": "deterministicoldPID30failure/fixedcaller1/10/20/30/31/40/50/60/90/999,73assertionASTpreservation; producerfixtureonly"
+    },
+    "production_pid_normalization": false,
+    "parent_actual67_executed": false
+  },
+  "coverage": {
+    "historical209": true,
+    "historical_implementation": "referencedimmutable019 with021fixtureadapter",
+    "active02148": true,
+    "new_tests11": true,
+    "all209_active_production_obligations_proven": false
+  },
+  "metadata_failure": {
+    "source": "candidate/harness/bookkeeping021.py expected_supervisor_sha256 hashes canonical JSON plus newline, but production common.binding hashes canonicalJSON only",
+    "native_file_hash": "correctly includes newline from common.put; preservefileSHA",
+    "production_binding_unchanged": true,
+    "event_errors": {
+      "driver-success": "RuntimeError:ValueError:supervisor interpreter metadata",
+      "driver-failure": "RuntimeError:ValueError:supervisor interpreter metadata",
+      "driver-observer-failure": "RuntimeError:ValueError:supervisor interpreter metadata"
+    },
+    "observer_failure_false_positive": "broad if anyerror accepts metadatafailure; no observer lifecycle credit",
+    "remaining_coverage": "observer not started, driver success tail unreached"
+  },
+  "producer_final_terminal": {
+    "accounting_gaps": [],
+    "process_children_cpu_s": 12.471390999999999,
+    "reason": null,
+    "remaining_session": [],
+    "returncode": 1,
+    "wall_s": 28.03132725204341
+  },
+  "producer_both_batches_spent": true,
+  "conservative_charge_s": 120,
+  "parent_evaluator_holds": [
+    "retained-total pidfd count not independently capped72",
+    "caller raw interpreter startup/exit lifetime absent",
+    "0.5s placement transition is not whole0.621204handoff exception; actual67 proof required"
+  ],
+  "physical_permission": false,
+  "actual67_executed": false,
+  "baseline_OUT": 10,
+  "strict_RETURN": null,
+  "next": "022 small metadata-object-binding+exact-error-witness/capture/activecoverage/evaluatorbound repairs; keep020envelope andphysicalsource untouched",
+  "dependency_staging": [
+    "parent-r21-020-dependency-staging-0408.json",
+    "parent-r21-021-dependency-staging-0408.json"
+  ]
+}

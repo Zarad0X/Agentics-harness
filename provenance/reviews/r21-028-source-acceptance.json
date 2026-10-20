@@ -1,0 +1,26 @@
+{
+  "schema": "parent028-source-acceptance/1",
+  "observed_unix": 1792480726.412243,
+  "payload354_source162_candidate119_verified": true,
+  "snapshot162_matchesfinal": true,
+  "source_manifest_sha256": "162eb5e1aec76311799e256b595e75cefe754e651c6e2e9c9f08220cc07a14e4",
+  "candidate_source_manifest_sha256": "d48d00d652d9851e9a8f7838df2d3c28e3d2e8f1b42861c3f7da98a8704dfc6b",
+  "candidate_changed_vs027": [
+    "tests/entry027.py"
+  ],
+  "only_two_import_orderswap": true,
+  "original026112_byteexact": true,
+  "production27_C_clock_bootstrap_buildrecipe_evaluator_byteexact027": true,
+  "final47_methods_pass": true,
+  "final11_commands_pass": true,
+  "externalentrynegative_realbuildCLI_evaluatorcleanup_3lifecycleTEST_pass": true,
+  "producer_onebatch_spent60": true,
+  "no_second_batch": true,
+  "exactworker1461047_start40814791_inactive": true,
+  "code_pass": true,
+  "actual67": false,
+  "physical_permission": false,
+  "next": "FreshsamehostCbuild + ONE newcandidate-boundobservationonly67kernel afterpreflight; no old025retry/no strictcallerqualification/physicscredit",
+  "baseline_OUT": 10,
+  "strict_RETURN": null
+}

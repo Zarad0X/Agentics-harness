@@ -1,0 +1,40 @@
+{
+  "schema": "parent028-rawmethod-count-review/1",
+  "observed_unix": 1792480845.3285708,
+  "final_tested_method_count": 47,
+  "suites": [
+    {
+      "suite": "bound-entry",
+      "methods": 5,
+      "rawlog_sha256": "c71d073aa0755cdfe199a49268154f46327e248f4672bf48d99edc03cb4aafc2",
+      "unittest_OK": true
+    },
+    {
+      "suite": "lifetime",
+      "methods": 14,
+      "rawlog_sha256": "30825c9c447c7d4abc48a94c7a96c6af1585b69cc8d6746414c2cba544ed1475",
+      "unittest_OK": true
+    },
+    {
+      "suite": "qualification021",
+      "methods": 16,
+      "rawlog_sha256": "5bd3c382bfd387d038b0116ddf193b4320f18bfc5da5422f1d5f9c679d33457a",
+      "unittest_OK": true
+    },
+    {
+      "suite": "selected-lineage",
+      "methods": 8,
+      "rawlog_sha256": "bf640d527c72b36e3e19be50d6640f4eaab86f6962b618cd1946e2dfdfc7dd34",
+      "unittest_OK": true
+    },
+    {
+      "suite": "adapter-binding",
+      "methods": 4,
+      "rawlog_sha256": "120dc59fce1fc015845e4f6383d3f793e9f63e1b4b379ee41be645fea76c7fd9",
+      "unittest_OK": true
+    }
+  ],
+  "process_commands": 11,
+  "all_raw_unittest_OK": true,
+  "physical_acceptance": false
+}

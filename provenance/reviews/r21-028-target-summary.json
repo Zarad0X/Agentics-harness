@@ -1,0 +1,68 @@
+{
+  "schema": "parent028-target-summary/1",
+  "observed_unix": 1792481550.815847,
+  "producer47_methods11_commands_codepass": true,
+  "parent_source_rawlog_review": true,
+  "samehost_build_raw0": true,
+  "samehost_build60spent": true,
+  "source_sha256": "d48d00d652d9851e9a8f7838df2d3c28e3d2e8f1b42861c3f7da98a8704dfc6b",
+  "first_config001": {
+    "spent_CPU_s": 32.5,
+    "failed_before_evaluator": true,
+    "cause": "localparentforgotcanonicalCPUleasepaths; pathNone; notsourcebug"
+  },
+  "new_config002": {
+    "spent_CPU_s": 32.5,
+    "predeclared_newauthority_output": true,
+    "evaluator_raw_status": 256,
+    "kernel_wall_s": 2.0746440020157024,
+    "adapter_wall_s": 2.1788745869416744,
+    "known_owned_thread_pid": 3924191,
+    "thread_TID": 3924192,
+    "denial_witness": {
+      "argv_error": null,
+      "command": {
+        "argc": 23,
+        "dash_B": true,
+        "entry": "parent_probe.py",
+        "sha256": "9bf9d82ccb38f240e74cdd2bc318789d4eafb27c1e65f52d43601aefc843d78f"
+      },
+      "errno": 2,
+      "error": "FileNotFoundError",
+      "fork_phase": null,
+      "fresh": {
+        "pid": 3924191,
+        "ppid": 3924170,
+        "session": 3924191,
+        "start_ticks": 68385553,
+        "state": "R"
+      },
+      "fresh_read": true,
+      "identity": {
+        "pid": 3924191,
+        "ppid": 3924170,
+        "session": 3924191,
+        "start_ticks": 68385553,
+        "state": "S"
+      },
+      "known": true,
+      "scan_time": 683856.486020904,
+      "scope_match": true,
+      "state_error": null
+    },
+    "error": [
+      "FileNotFoundError:[Errno 2] No such file or directory: '/proc/3924191/task/3924192/stat'"
+    ],
+    "remaining_owned": [],
+    "unclosed_owned_handles": []
+  },
+  "all15recorded_process_IDs_inactive_twice": true,
+  "additional_parent_signals": 0,
+  "precise_exit_interleaving_unknown": true,
+  "actual67_kernel_qualified": false,
+  "production_cost_pass": false,
+  "physics_success": false,
+  "baseline_OUT": 10,
+  "strict_RETURN": null,
+  "next": "029deterministicthread/wholeprocess exitcounterexamples andminimalboundedlifetimechecks; no extra028targetattempt"
+}

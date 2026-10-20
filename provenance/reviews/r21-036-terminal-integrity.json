@@ -1,0 +1,23 @@
+{
+  "schema": "036-parent-terminal-integrity-review/1",
+  "observed_unix": 1792513716.097187,
+  "review": "parent-mainline036-terminal-review-1618.json",
+  "artifact_index": "parent-mainline036-artifact-index-1618.json",
+  "source94verified": true,
+  "all_observed_driver_native_descendant_audit_identities_inactive": true,
+  "all_original_files": 63,
+  "total_original_bytes": 489074933,
+  "all_original_file_hashes_stable": true,
+  "accepted_OUT": 10,
+  "accepted_exact_RETURN": 1,
+  "full_success": false,
+  "bulk_original_data_location": "/data_ft_6/shaojing/robotwin-astra-20261008/mainline-r21-returnfix036/outputs/freshprotocol",
+  "local_transfer_scope": "original terminal reports and303KB exact selected preview motion evidence fetched; fullrawtrace remains remote with actualhashes. FullJSON transfertimeouts retained, no physicalretry; small22SSHjump worked.",
+  "transport_errors": [
+    "35s largeJSON transfer timeout",
+    "index initialSSHkex reset (file absent before one successfulvia22index)",
+    "compressedfullRETURN stdout transfer SSHAlive timeout; no full localcopy"
+  ],
+  "new_model_task": "r21-mainline-safeplace037; freshofficialpreflight owned by dispatch",
+  "verdict": "Parent review now complete for reported OUT10/strictRETURN1 failure. Does not mark036 fullphysicalfix or stableversion."
+}

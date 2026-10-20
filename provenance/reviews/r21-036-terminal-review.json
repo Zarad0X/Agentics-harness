@@ -1,0 +1,62 @@
+{
+  "schema": "036-parent-terminal-report-review/1",
+  "observed_unix": 1792513567.59642,
+  "attempt": "r21-mainline-returnfix036-full-001",
+  "accepted_OUT": 10,
+  "accepted_exact_RETURN": 1,
+  "full_success": false,
+  "object17_final": {
+    "exact_pose": true,
+    "extracted": true,
+    "identity_ok": true,
+    "object_id": "17",
+    "passed": true,
+    "physically_returned": true,
+    "position_error_m": 0.0017009753230463392,
+    "rotation_error_deg": 0.6252076832624213,
+    "speed_m_s": 0.0008089847625060772,
+    "spin_rad_s": 0.01339947748930308,
+    "stable": true,
+    "symmetry_adjusted_error_deg": null
+  },
+  "native_exit": 2,
+  "native_wall_s": 6168.29661659291,
+  "native_waited_child_and_reaped_CPU_s": 6163.452058,
+  "native_wait4_scope": "native child plus descendants it reaped; not orphan exact usage",
+  "accounting_gaps": [],
+  "sampled_CPU_peak_s": 6183.83,
+  "cpu_upper_bound_field_s": 6168.29661659291,
+  "accounting_limit": "raw sample fields retained, not exact aggregate all-process usage or universal upper-bound proof",
+  "timeout": false,
+  "one_attempt_consumed": true,
+  "automatic_retry": false,
+  "failure": "RuntimeError:RuntimeError:return_no_admitted_current_staging_grasp:12",
+  "formal_steps": 121090,
+  "phase_steps": {
+    "OUT": 110522,
+    "RETURN": 10568
+  },
+  "phase_times": {
+    "OUT": 5495.330715157092,
+    "RETURN": 652.539765090216,
+    "whole_observed": 6147.870480817277
+  },
+  "phase_preview_steps": {
+    "OUT": 447916,
+    "RETURN": 88026
+  },
+  "runtime_source_pins_match": true,
+  "original_verifiers_and_config_unchanged": true,
+  "confirmed": "Fullmotion RETURN forecasts reject12 before formalcommit; formalstep remains121090.17 stays stable, independentlypasses original exactpose/identity criterion. OUT10 retained; fullgoal notcomplete.",
+  "cause": "No-admitted-candidate is confirmed stop condition, not a unique physical root cause. Twelve’s preview failures include2pair contacts,3blocked_goal and1blocked_start.",
+  "hypothesis": "Need RETURN-only safe approach/lowering under actual current returned17 state; distinguish geometric corridor/IK-branch detour/PD tracking and returned-pose slack using realforecast failures, not raise caps or waive guards.",
+  "source_integrity_index": "parent-mainline036-artifact-index-1618.json pending independent hash/identity collection",
+  "evidence": [
+    "parent-mainline036-terminal-artifacts-1618.json",
+    "parent-mainline036-preview-summary-1618.json",
+    "parent-mainline036-preview-motion-1618.json",
+    "parent-mainline036-live-1792513122.json"
+  ],
+  "next": "037 narrow evidence-backed safe RETURN12 motion fix, preserve036fullmotionpreview and034OUT10; parentreview+finite targeted regressions then fresh one-attempt protocol",
+  "comparison": "034 same originalseed2/assistance OUT10/strictRETURN0/fullfalse vs036 OUT10/strictRETURN1/fullfalse. Two different candidate fullattempts, no success-rate/stability/speed causal claim."
+}

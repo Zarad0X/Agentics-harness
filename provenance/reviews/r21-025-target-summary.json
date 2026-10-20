@@ -1,0 +1,42 @@
+{
+  "schema": "parent025-target-summary/1",
+  "observed_unix": 1792476966.0607538,
+  "diagnostic_one_spent": true,
+  "conservative_CPU_reserved_s": 32.5,
+  "scope": "NEWobservationonly; originalmodule30CPU unchanged; no physical",
+  "adapter_wall_s": 2.154007970006205,
+  "caller_self_at_return": {
+    "ru_utime": 0.054429,
+    "ru_stime": 0.036854
+  },
+  "direct_child_raw_wait4": {
+    "pid": 3777937,
+    "identity": {
+      "pid": 3777937,
+      "start_ticks": 67952348,
+      "ppid": 3777936,
+      "state": "R"
+    },
+    "raw_status": 256,
+    "ru_utime": 0.594214,
+    "ru_stime": 0.29784499999999997
+  },
+  "kernel_failures": [
+    "ValueError:unreviewed command prefix"
+  ],
+  "remaining_owned": [],
+  "unclosed_owned_handles": [],
+  "kernel_wall_s": 2.0672845949884504,
+  "all7knowninactive_twice": true,
+  "signals_parent_sent": 0,
+  "exact_offendingPID_argv_unobserved": true,
+  "hypotheses": [
+    "owned metadata or other child exited between identity acquisition and cmdline read, empty/zombiecmdline rejected as livecommand",
+    "fork/exec transition commandprefix race notcovered by existing phasewitness"
+  ],
+  "confirmed_cause": "Unreviewed command prefix guard fired; exactsame-event argv/state/role cause unobserved",
+  "strict_caller_guarantee_unproved": true,
+  "physical_permission": false,
+  "source024_unchanged": true,
+  "next": "026minimalexistingevaluatorlifetimecounterexample/repair; no further strictdeadline architecture work"
+}

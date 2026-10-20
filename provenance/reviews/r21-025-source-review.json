@@ -1,0 +1,38 @@
+{
+  "schema": "parent025-review/1",
+  "observed_unix": 1792476623.974849,
+  "payload279_verified": true,
+  "source7_verified": true,
+  "snapshots": [
+    {
+      "batch": "batch001",
+      "source_manifest_sha256": "02010765cf907aaa23d724492a7120214d1d8a21883ab431db6dd211824fd632",
+      "files": 6
+    },
+    {
+      "batch": "batch002",
+      "source_manifest_sha256": "2634e5bbd873878233150d437ad14525b3ef7281ec1e1d3f5c78237e853dfbd8",
+      "files": 7
+    }
+  ],
+  "source_manifest_sha256": "2634e5bbd873878233150d437ad14525b3ef7281ec1e1d3f5c78237e853dfbd8",
+  "adapter_sha256": "8868f18a00c3f657103eed21e2746924a2f564a666c34ec8f99187a448d4fab3",
+  "producer_controls_pass": true,
+  "strict_bound_proven": false,
+  "full_invoke_target_untested": true,
+  "producer120spent": true,
+  "exactworker1428500_start40288249_inactive": true,
+  "production024_unchanged": true,
+  "actual67": false,
+  "physical_permission": false,
+  "decision": "No another strict-deadline rewrite. Parent explicitly considers ONE observation-only two-core diagnostic with unchangedchild30CPU14.5work+.5cleanup/caller.5CPU16wall cutoffs; tail/orphan/scheduleunknowns HOLD. No physicalauthority, success promotion or retroactivebudget extension.",
+  "known_limits": [
+    "caller own exit tail unobserved",
+    "Python timers not universal deadline enforcement",
+    "adapter no orphan adoption/allreap ownership",
+    "two-core startup-exit accounting unknown",
+    "always HOLD classification retained"
+  ],
+  "baseline_OUT": 10,
+  "strict_RETURN": null
+}

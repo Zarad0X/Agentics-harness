@@ -1,0 +1,97 @@
+{
+  "schema": "parent023-source-review/1",
+  "observed_unix": 1792473182.045412,
+  "payload130_verified": true,
+  "source110_verified": true,
+  "source_manifest_sha256": "695dd03edaf75b99e8128d80c885e8c67babadfb53ec055683fc229b88b6442d",
+  "snapshots": [
+    {
+      "archive_sha256": "227904ea2afea11162b68f101a76991dda9894eb11987a259ca7f8c8aad9ee67",
+      "batch": "batch001",
+      "files": 107,
+      "snapshot": "evidence/batch001/tested-source.tar.gz",
+      "source_manifest_sha256": "dc9ccb081fa182a23efeb48c1c1cde551113908e9e3678fb305bdd3821acf3b1",
+      "all_source_hashes_verified": true
+    },
+    {
+      "archive_sha256": "90aa8f34f1aaee57bb5748e5f5019f6a2fc55203015766844347c785e78d2615",
+      "batch": "batch002",
+      "files": 110,
+      "snapshot": "evidence/batch002/tested-source.tar.gz",
+      "source_manifest_sha256": "6f5bd8bc3b78f7c1cb58ebf0ea8197f74d32ce998534ea17fe50e522efa5bf68",
+      "all_source_hashes_verified": true
+    },
+    {
+      "archive_sha256": "64362bee2e0178c00d969eec07f81979f51a641c6909b74a1d5ebb21cca711f9",
+      "batch": "batch002",
+      "files": 110,
+      "snapshot": "evidence/batch002/final-tested-source.tar.gz",
+      "source_manifest_sha256": "695dd03edaf75b99e8128d80c885e8c67babadfb53ec055683fc229b88b6442d",
+      "all_source_hashes_verified": true
+    }
+  ],
+  "production_changed": [
+    "src/scope014.py"
+  ],
+  "unchanged_production_files": 26,
+  "active209_pass_producer_evidence": true,
+  "unique157_repeat52": true,
+  "retained32_new10_pass": true,
+  "final_suite_count": 20,
+  "final_suite_pass": 18,
+  "final_suite_fail": 2,
+  "earlier_revision_counterexample_gate_count": 1,
+  "failed_suites": [
+    "driver-observer-failure",
+    "driver-preobserver-negative"
+  ],
+  "count_reporting_correction": "Producer19/2 counts the successful prechange gate; final source only18/2 across20 suite records.209 final obligations remain passing.",
+  "phase": {
+    "driver-failure": {
+      "error": "RuntimeError:disclosed owned post-completion failure fixture",
+      "failure_receipt": {
+        "error": "RuntimeError:disclosed owned post-completion failure fixture",
+        "native_started": true,
+        "retry_allowed": false
+      },
+      "resources_present": true,
+      "remaining_descendants": [],
+      "lifecycle_credit": true
+    },
+    "driver-observer-failure": {
+      "error": "RuntimeError:ValueError:observer failed",
+      "failure_receipt": null,
+      "resources_present": true,
+      "remaining_descendants": [],
+      "lifecycle_credit": null
+    },
+    "driver-preobserver-negative": {
+      "error": "RuntimeError:ValueError:supervisor interpreter metadata",
+      "failure_receipt": null,
+      "resources_present": true,
+      "remaining_descendants": [],
+      "lifecycle_credit": null
+    },
+    "driver-success": {
+      "error": null,
+      "failure_receipt": null,
+      "resources_present": true,
+      "remaining_descendants": [],
+      "lifecycle_credit": true
+    }
+  },
+  "source_review": {
+    "terminal_read_fix": "Only OSError ENOENT/ESRCH/EACCES for known exact identity; fresh same-start Z/X or disappearance, root fence revalidation, no active cache; semantic mismatch still denies. Parent static review only; real kernel unqualified.",
+    "fixture": "OwnedFixture implements exact session protocol and bounded actual Popen/TID descendant tracking; cooperative fixture not kernel authority. Local005 observation replacement explicit; real005 pins unchanged.",
+    "unwind": "parent_driver except calls watch.fail then persist(driver-failure) while ITIMER_REAL remains armed until finally; Watchdog.handler rearms and may throw RuntimeError when failure latched. Missing receipts/wrapped errors consistent with source; no same-event signal traceback, not yet causal proof."
+  },
+  "producer_two_batches_spent120": true,
+  "exact_worker1392803_start39967315_inactive": true,
+  "code_pass": false,
+  "cost_pass": false,
+  "actual67_on023": false,
+  "physical_permission": false,
+  "baseline_OUT": 10,
+  "strict_RETURN": null,
+  "next": "Minimal deterministic failure-unwind counterexample, preserve first failure evidence and cleanup/independent outer limits; no broadened lifecycle predicates, budget increase or physical change. Fresh22Astra task required, no spent023 rerun."
+}

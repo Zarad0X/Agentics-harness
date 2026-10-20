@@ -1,0 +1,50 @@
+{
+  "schema": "036-bounded-existing-extraction-reference/1",
+  "parent_file": "parent-mainline036-exact-grasp-hulls-1718.json",
+  "bytes": 202283,
+  "sha256": "64ff09bf9eae9bcedf685d3774d32b471965a24f8d60a4b82fde91b1bfc5a03b",
+  "remote_reference": "/data4/yuantao/astra-roundtrip-20261009/reference/parent-mainline036-exact-grasp-hulls-1718.json",
+  "original_sources": [
+    {
+      "path": "/data_ft_6/shaojing/robotwin-astra-20261008/mainline-r21-returnfix036/outputs/freshprotocol/episode/events.jsonl",
+      "bytes": 8532285,
+      "sha256": "4951b0eaa76c597f62e5a921c8aa28ffc663edd425d59fe6e14b059823a57956"
+    },
+    {
+      "path": "/data_ft_6/shaojing/robotwin-astra-20261008/mainline-r21-returnfix036/outputs/freshprotocol/episode/physics-meshes.json",
+      "bytes": 346905,
+      "sha256": "e8056188bdf78fb293f8624c6cfdcc02497a1cf40b19c994b464f66404fc695b"
+    }
+  ],
+  "selector": {
+    "preview_kind": "grasp_preview",
+    "formal_step": 121090,
+    "object_id": 12,
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      6,
+      7
+    ],
+    "trial": 1
+  },
+  "cooked_hull_parts": {
+    "12": 5,
+    "17": 16
+  },
+  "exported_entry_sha256": {
+    "12": "72e484c73c6a37d1217fc6fad9e1deff093c43f4a749a0b35e12c18add19f9e0",
+    "17": "9b70a41be8d4a5efd73e5dc44a5e908665ec4d4d7a8a0a8e427aa625c4f5864f"
+  },
+  "hash_encoding": "UTF8 compact JSON separators comma colon; original decoded values, not raw source substring hash",
+  "scope": "Existing six exactgrasp/toolgoals+allobject/botharmfailurestate and cooked12/17hulls, no new native/forecast/physics; raw extract remains data4, not Git",
+  "absent_fields": [
+    "Dense shadow trajectory/control-target measurements are not separately recorded in formal trajectory; no native reconstruction attempted",
+    "Unrecorded q/qdot/drive targets in selected events remain absent, not inferred"
+  ],
+  "omitted_fields": [
+    "Optional shadow/formal034 timesamples deferred: priority existing exactrelations/pairhulls/fullfailurestates first; no wholetrace transfer"
+  ]
+}

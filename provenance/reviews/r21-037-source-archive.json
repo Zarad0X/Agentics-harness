@@ -1,0 +1,13 @@
+{
+  "schema": "037-reviewed-evidence-source-archive/1",
+  "observed_unix": 1792517083.9050372,
+  "tag": "r21-return-20261020",
+  "archive_name": "r21-037-reviewed-evidence-source.tar.gz",
+  "bytes": 123408,
+  "sha256": "d8f7940cc80150699e848fe2b9e30362318f0e5c4c8187b351dbf088e014a62c",
+  "github_asset_id": 659985072,
+  "github_server_digest_verified": true,
+  "source_manifest_sha256": "85c38b8b09a4b215a98daa1417591964223c797d6a439594a0d0ef0a7086a023",
+  "scope": "evidenceonly source/numericaltests/derivedreports/hashreferences, no newmotionfix/nativeauthority, rawCLI/inputphysics records excluded; immutable036runtimecopy retained",
+  "candidate_ready": false
+}

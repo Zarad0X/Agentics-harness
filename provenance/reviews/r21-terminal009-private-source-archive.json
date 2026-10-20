@@ -1,0 +1,21 @@
+{
+  "schema": "parent-reviewed-private-source-archive/1",
+  "observed_unix": 1792455311.80226,
+  "archive_name": "r21-terminal009-reviewed-source.tar.gz",
+  "archive_bytes": 81310,
+  "archive_sha256": "60801e160f7811b3d112b02f17fc39628da95e7942b1ffb74c30deeb849c572c",
+  "export_entries": 89,
+  "export_manifest_sha256": "06366e795273da28ef9f34c320a10d03378629419e79745ccc08820633d095e5",
+  "omitted_logs_and_locks": [
+    "evidence/cpu/attempt-001/child.log",
+    "evidence/cpu/attempt-002/child.log",
+    "evidence/cpu/cpu-1.lock",
+    "evidence/cpu/task.lock"
+  ],
+  "original_manifest_sha256": "4fecc53723c6c435cffd81ca4cd754af15455dea8bab33e39eddbde21ec0377a",
+  "native_authorized": false,
+  "release": "r21-return-20261020",
+  "release_url": "https://github.com/Zarad0X/robotwin-astra-harness/releases/tag/r21-return-20261020",
+  "github_server_digest_verified": true,
+  "github_asset_id": 657796331
+}

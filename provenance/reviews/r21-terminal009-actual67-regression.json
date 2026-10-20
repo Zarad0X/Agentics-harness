@@ -1,0 +1,64 @@
+{
+  "schema": "parent-full008-actual67-regressions/1",
+  "observed_unix": 1792455216.95727,
+  "packet": "/data_ft_9_10/shaojing/robotwin-astra-20261008/recovery-full008-review-001/r21-full-entry-terminal-handoff-009",
+  "payload_verified": 89,
+  "manifest_sha256": "4fecc53723c6c435cffd81ca4cd754af15455dea8bab33e39eddbde21ec0377a",
+  "source_manifest_sha256": "10adb29ae37583d70f8705b8b4e2c613b7e874b708c376908ed1a718e29981dd",
+  "results": [
+    {
+      "label": "terminal009-43",
+      "terminal": {
+        "wrapper": {
+          "pid": 2811761,
+          "start_ticks": 65801794,
+          "ppid": 2811755,
+          "session": 2811761,
+          "state": "R",
+          "ticks": 7,
+          "own_ticks": 7,
+          "waited_ticks": 0
+        },
+        "child": {
+          "pid": 2811791,
+          "start_ticks": 65801843,
+          "ppid": 2811761,
+          "session": 2811791,
+          "state": "R",
+          "ticks": 0,
+          "own_ticks": 0,
+          "waited_ticks": 0
+        },
+        "returncode": 1,
+        "reason": null,
+        "wall_s": 0.9615732399979606,
+        "cpu_sample_peak_s": 0.7,
+        "process_children_cpu_s": 0.7071509999999999,
+        "remaining_session": [],
+        "binding": null,
+        "cpu_upper_bound_s": 0.9615732399979606,
+        "accounting_gaps": [],
+        "accounting_strategy": "one-core-elapsed-upper-bound+wait4",
+        "wait4_scope": "native child plus descendants it reaped; not orphan exact usage",
+        "observed_processes": [
+          {
+            "pid": 2811791,
+            "start_ticks": 65801843,
+            "ppid": 2811761,
+            "session": 2811791,
+            "state": "Z",
+            "ticks": 70,
+            "own_ticks": 70,
+            "waited_ticks": 0,
+            "peak_ticks": 70
+          }
+        ],
+        "time_unix": 1792455216.9520047
+      },
+      "log_tail": "ipt\n    c.w.handler();self.assertIn('raw reap order',c.w.failure)\n  File \"/usr/lib/python3.10/unittest/case.py\", line 1109, in assertIn\n    if member not in container:\nTypeError: argument of type 'NoneType' is not iterable\n\ntest_stop_does_not_disable_live_guard_or_exit_early (__main__.TerminalIntegration) ... ok\ntest_terminal_process_authority_binding_and_raw_reap_negatives (__main__.TerminalIntegration) ... ok\ntest_unknown_stale_pmon_or_reused_leader_never_handoff (__main__.TerminalIntegration) ... ok\ntest_wrong_or_late_devices_and_missing_coverage (__main__.TerminalIntegration) ... ok\n\n======================================================================\nERROR: test_stale_raw_reap_precedes_current_started_receipt (__main__.TerminalIntegration)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/data_ft_9_10/shaojing/robotwin-astra-20261008/recovery-full008-review-001/r21-full-entry-terminal-handoff-009/tests/run_all.py\", line 166, in test_stale_raw_reap_precedes_current_started_receipt\n    c.w.handler();self.assertIn('raw reap order',c.w.failure)\n  File \"/usr/lib/python3.10/unittest/case.py\", line 1109, in assertIn\n    if member not in container:\nTypeError: argument of type 'NoneType' is not iterable\n\n----------------------------------------------------------------------\nRan 43 tests in 0.626s\n\nFAILED (errors=1)\n"
+    }
+  ],
+  "native_actions": 0,
+  "physical_acceptance": false,
+  "native_permission": false
+}

@@ -1,0 +1,28 @@
+{
+  "schema": "parent-terminal009-source-review/1",
+  "observed_unix": 1792455232.051559,
+  "candidate": "r21-full-entry-terminal-handoff-009",
+  "archive_sha256": "5ac005b86c2911cacd543eed0121c441d8cbfeba35670fb7ef42445e0160b3d1",
+  "payload_entries_verified": 89,
+  "source_entries_verified": 15,
+  "manifest_sha256": "4fecc53723c6c435cffd81ca4cd754af15455dea8bab33e39eddbde21ec0377a",
+  "source_manifest_sha256": "10adb29ae37583d70f8705b8b4e2c613b7e874b708c376908ed1a718e29981dd",
+  "source_sha256": "88b9556aa5a4fef583582f133770e37d22a7a1989a7701d488526c0878046a67",
+  "status": "rejected-pending-freshness-repair",
+  "cause_confirmed": "Handoff validates only nondecreasing started/raw/terminal ctimes. It never binds the live-time started/admission file identity/bytes and raw-reap absence to a completed observation. Equal ctimes allow a rewritten receipt to evade order check. Raw receipt contains PID only, not child start ticks or authority. This is insufficient provenance; original fixture rewrites same-attempt identical bytes so does not itself prove cross-attempt exploitation.",
+  "test_observation": "Parent actual67 independently reproduces same42pass1error,.9615732399979606wall/.707151wait4CPU, no survivors/gaps. Originalfailingassert seesWatch.failureNone. Originalworker009batchesremainfrozen.",
+  "minimal_changed_vs008": [
+    "src/parent_support.py",
+    "src/host.py",
+    "src/observer_child.py",
+    "src/cpu_tests.py",
+    "tests/run_all.py(new)"
+  ],
+  "unchanged": "full_child,parent_driver/common/rawreap,all006controller/physics/config/verifiers untouched; original26 byteexact",
+  "normal_exit_fix": "worker integratedpositive43suite reports normalexit+stale-pmon race passes; source plausibilityreview only until actual67review",
+  "native_authorized": false,
+  "native_attempts": 0,
+  "accepted_baseline": "originalseed2 assistedOUT10, exactRETURNnone; no stablemultilayoutclaim",
+  "next": "One separatelybudgeted server22 surgical010 correction: stable live-attempt witness and deterministic tie/rewrite/stalecases; no009morebatches; no native untilparentactual67review",
+  "actual67_independent_receipt": "parent-r21-terminal009-actual67-tests-0010.json"
+}

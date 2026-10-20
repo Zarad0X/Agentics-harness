@@ -1,0 +1,2464 @@
+{
+  "schema": "reviewed-experience-snapshot/1",
+  "snapshot_utc": "2026-10-20T21:16:56.679074+00:00",
+  "source_store": "work/astra-roundtrip/evolution-ledger",
+  "source_records": 982,
+  "source_head": "3a6c5cc3f5ebb166d13a97177a8406ef9d4239722270ec3f44357c8e7b607792",
+  "source_chain_and_objects_verified": true,
+  "issues": [
+    {
+      "cause": "Run ID mismatch, missing required source-bound gate argv, and original10-stamped regressions differ from requested n15 config.",
+      "confidence": "direct parser/source/config comparison",
+      "domain": "orchestration",
+      "fixes": [],
+      "hypothesis": "Producer used stale pre-integration parent interface snapshot; source algorithm behavior is separate and remains unproved native.",
+      "id": "candidate021022-native-handoff@1",
+      "issue_id": "candidate021022-native-handoff",
+      "kind": "issue",
+      "objects": [
+        "0d0423b62fbf372e183d8bd9cabd524efbd27c121ee6b07b812aebee0d013680",
+        "cfccb9f33a142222cec1c79e6b101d353a784ae91caab3cd82802d304bf3c953"
+      ],
+      "regressions": [],
+      "scope": {
+        "assistance": "unchanged; orchestration-only gap",
+        "code": "6a84326bcd6060322c07c9d89bf8cab88c488c6957737292eb2854deaa341bbb",
+        "conditions": "candidate021022 proposed commands versus integrated Harness002 parent interfaces",
+        "config": "403533dbd7d86892c2aeb72055c990feb640dde7095a3be8ca981bf35e578d82",
+        "model": "gpt-6-astra",
+        "split": "development",
+        "stage": "full-episode"
+      },
+      "status": "unresolved",
+      "symptom": "candidate packet not launchable through current verified controller",
+      "version": 1
+    },
+    {
+      "cause": "Selected retained finger velocity targets are nonzero while the sealed capture guard requires zero; gains and 4N cap match.",
+      "confidence": "confirmed selected admission mismatch only",
+      "domain": "physical",
+      "fixes": [
+        {
+          "assessment": "e1d58bd2e10001b0ebb8efb9d484f79fbcfba6e9cc0940d319ca7774cec6f3c7",
+          "config": "cd08a30d2174db6c0cbaec6ce68f45536a9e920a081654ea390677e67682ace1",
+          "source": "c5b746e081d6b393571d74001739e50d8e242beeb4a4f95dd46cb403f7b2e078"
+        },
+        {
+          "assessment": "f0b5b3e9b132b994b22f6ae1a2e6bfdabc760439848d610e6483db63e3dc8731",
+          "config": "cd08a30d2174db6c0cbaec6ce68f45536a9e920a081654ea390677e67682ace1",
+          "source": "144f79b32aba541316c9fab3d714ae71d7c4f286afa9cae6f6c1076708561eee"
+        }
+      ],
+      "hypothesis": "Upstream lifecycle left velocity targets behind; all-failure attribution and native repair effect remain unproved.",
+      "id": "capture-drive-contract@4",
+      "issue_id": "capture-drive-contract",
+      "kind": "issue",
+      "objects": [
+        "1886414321cee337dbf2ca900ae16c69fcbe0d91e8813440abc5756f6a96539b",
+        "3f45d5322b71e19e293288b3bbea112f2b214ce819c55f1b50a8b501192ec760",
+        "471a2b48ad4fbecdfae5d7191f5c082f2c9664c438c06bba17c5f3264f02388c",
+        "590c5cd02cc4c05f4d5a046ee77380f7c672206d6fdb3152476c494f6ff515b2",
+        "aed8595aa3bbcb900af6201cd6fb68e21a398cf3e720f9547c1b3d672f7f50ee",
+        "e1d58bd2e10001b0ebb8efb9d484f79fbcfba6e9cc0940d319ca7774cec6f3c7",
+        "f0b5b3e9b132b994b22f6ae1a2e6bfdabc760439848d610e6483db63e3dc8731"
+      ],
+      "regressions": [
+        "capture-drive-contract/2"
+      ],
+      "scope": {
+        "assistance": "SAPIEN/PD/limited magnet unchanged",
+        "code": "sealed018/capture_feedback.py:127",
+        "conditions": "original10 selected object4/left preview",
+        "config": null,
+        "model": "gpt-6-astra (task provenance; run development tokens unavailable)",
+        "split": "development",
+        "stage": "capture"
+      },
+      "status": "fixed-in-tests",
+      "symptom": "capture_drive_contract",
+      "version": 4
+    },
+    {
+      "cause": "Final018 original10 audit rejects capture_audit_actuator_contract; two raw OUT events are not accepted counts.",
+      "confidence": "source-bound observation; physical causal remedy unverified",
+      "domain": "physical",
+      "fixes": [],
+      "hypothesis": "Compare exact actuator snapshot/handoff/auditor semantics in019; CPU correction does not demonstrate valid native receipts.",
+      "id": "capture018-audit-actuator@1",
+      "issue_id": "capture018-audit-actuator",
+      "kind": "issue",
+      "objects": [
+        "b2465a421a6ee8b3683d56dae1e28cb76f56bc588870f1b6615cf3cc0e6c838c",
+        "db3831c69816028c8ebb6e97133a4ae2c8ddbb07f1b6ff25a630bfd0753a940c"
+      ],
+      "regressions": [],
+      "scope": {
+        "assistance": "SAPIEN/PD/limited magnet unchanged",
+        "code": "sealed018",
+        "conditions": "018 development layouts only",
+        "config": null,
+        "model": "gpt-6-astra",
+        "split": "development",
+        "stage": "capture"
+      },
+      "status": "unresolved",
+      "symptom": "Original10 raw extraction events do not pass independent functional audit",
+      "version": 1
+    },
+    {
+      "cause": "Both exact-bound full n15/s101 attempts stop at existing feedback guard200 before any OUT/RETURN. Candidate021 has no completed-task improvement in this pair; endpoint evidence alone does not establish relief activation or a physical root cause.",
+      "confidence": "source-bound observation; physical causal remedy unverified",
+      "domain": "physical",
+      "fixes": [
+        {
+          "aggregate_child_cpu_s": 52.447644,
+          "candidate_versions": [
+            "021",
+            "022"
+          ],
+          "evidence": "bd96905a7e90eebf35d3cb7b409c04dfabf87e55206668349b3cd9ec8404df19",
+          "jobs": 10,
+          "status": "parent source and CPU tests passed; native benefit unverified"
+        }
+      ],
+      "hypothesis": "Need source-bound capture commands/contact observations to establish whether021 branch activated, emitted a distinct target, or was masked by geometry/slew. Historical018 speed-only details cannot be relabeled019/021.",
+      "id": "capture018-n15-feedback@4",
+      "issue_id": "capture018-n15-feedback",
+      "kind": "issue",
+      "latest_matched_result": {
+        "OUT": [
+          0,
+          0
+        ],
+        "all_attempts": 2,
+        "causal_claim": false,
+        "config": "403533dbd7d86892c2aeb72055c990feb640dde7095a3be8ca981bf35e578d82",
+        "evidence": "0ba8295a68e07070d54a346db387c05d6220820209edfb7e1036b67a5b2d667e",
+        "exact_RETURN": [
+          0,
+          0
+        ],
+        "formal_steps": [
+          4166,
+          4166
+        ],
+        "postmortem_owner": "auto-audit-n15-feedbackpair-001",
+        "versions": [
+          "019",
+          "021"
+        ],
+        "whole_success": [
+          false,
+          false
+        ]
+      },
+      "native_regression_gap": "Full capture streams remain missing on22. Two bounded read-only acquisitions stopped at combined then per-run8MiB compressed bounds; both failures preserved, no third retry under that plan. Need separately reviewed chunked transport or remote reduction; no physical rerun.",
+      "objects": [
+        "08bfc3223d83a2322267129fac8b25992f2ae20a2c81862bb4ba1a8be6393f46",
+        "0aa9d1ef6c27856c25b1c1e62738762fe73705c2c191ff61c99a184a06afd0bb",
+        "0ba8295a68e07070d54a346db387c05d6220820209edfb7e1036b67a5b2d667e",
+        "255f9ac72ebb7373ee754ce82f58d325128cf6147633ecb248824296735ee869",
+        "286c8385e405e8b4c8b5285f16be239361db7600d383aa411a29a54dbc9eedd6",
+        "356a0c63cd87258900e7bb0b3c34cf16a0926457555bc1e282332aa506e5d25c",
+        "5540ccc1f6ccd85fa941ff80871465509d64c527a9c3a40b0d0dd13056d41bc2",
+        "5cfc9f6016af346726c5de78ac062b37c8b2a6bfb589a48ed88334ab37d8a6ad",
+        "6bfe1fd81a6701ff1f61f524e8433d6b5c2bc6567cece279ea7c5d1a2731a14b",
+        "84ef8201a246c873c5c376ae8c71a8b2529b259284a116a5e26a4c666ced9f21",
+        "b0295a828b3a2fe4bffe0eec69f17b352781d0bf36288c17ede781f971098e39",
+        "bc31b005507ff5acd5702ebab89462bb40a11b8d3b47ca6bf880ca1c1c6f17d5",
+        "bd96905a7e90eebf35d3cb7b409c04dfabf87e55206668349b3cd9ec8404df19"
+      ],
+      "regressions": [],
+      "scope": {
+        "assistance": "SAPIEN/PD/limited magnet80raw;friction3.0/2.4;release_velocity_reset unchanged",
+        "code": [
+          "c5b746e081d6b393571d74001739e50d8e242beeb4a4f95dd46cb403f7b2e078",
+          "be79e32052b14c0dc25032842a09e874a7495829001353c4e0ded1b30679ff31"
+        ],
+        "conditions": "full generated15 development seed101 final019/021; earlier018 evidence retained in prior revisions",
+        "config": "403533dbd7d86892c2aeb72055c990feb640dde7095a3be8ca981bf35e578d82",
+        "model": "gpt-6-astra",
+        "split": "development",
+        "stage": "capture"
+      },
+      "status": "unresolved",
+      "symptom": "capture_feedback_budget after 200 feedback ticks",
+      "version": 4
+    },
+    {
+      "cause": "Full closure_source state and interleaved settling events are absent at first settle535/510; exact code cannot finish either accepted preview.",
+      "confidence": "confirmed scoped observation/mechanism; no native repair attribution",
+      "domain": "software-evidence",
+      "fixes": [],
+      "hypothesis": "Bounded original-row extraction may resolve replay coverage; native geometry qualification still requires world/assets.",
+      "id": "capture019-contact-loss-diagnosis-001-preview-replay-input-gap@1",
+      "issue_id": "capture019-contact-loss-diagnosis-001-preview-replay-input-gap",
+      "kind": "issue",
+      "objects": [
+        "129e5049d3a46d915e3689f615fc3da57d7796c1cb110c914f4132f9f27162ba",
+        "175ce7658f5a76eb03545bd1d9c75ca730df60a34b7c1c55ea4f2e883d786857",
+        "33ca91a83a8873dad1f046a852e4bcf03889c88b7846d3ff9114abbcb5944fec",
+        "53845e347e8dc5e73fd738640e3d3c34a946773ed3bdadfea45dfd7088d2bd11",
+        "548032c072cec50f955c648884be779eb53554962aa32e6bd58f5402982f59a8",
+        "63961db2e858cf94c3306a3307d417257883102fa46c4f2dcfe645a4833defe9",
+        "96f5bfec07c113da5496ba8eaff8fa205bef66766992010d12ed9ab21559c97a",
+        "b2129dd430eb349d02b1be6d364a1b502a8666cb72c862251e35f376b5451bac",
+        "e2a3d986dac85f9ca651c1bdcb9baf2e100c27b73c3c0291da5338e46addd7b5",
+        "e4e64fe1ac412f59c7719eda2c3b53215eddbac8cb984e1b094c9bfe6dbac698",
+        "e948e33dc65538b7f8d9954f7710287d22e06829d6abf478ef47938a97f9c763"
+      ],
+      "origin": "capture019-contact-loss-diagnosis-001",
+      "proposed_regression_gaps_object": "53845e347e8dc5e73fd738640e3d3c34a946773ed3bdadfea45dfd7088d2bd11",
+      "regressions": [],
+      "related_issue": "postmortem019020-capture019-contact-recovery@1",
+      "scope": {
+        "assistance": "SAPIEN/PD/limited magnet unchanged",
+        "code": "c5b746e081d6b393571d74001739e50d8e242beeb4a4f95dd46cb403f7b2e078",
+        "conditions": "original10 development seed2 final019, selected target4/left candidate5e2cb7396bb47034380b1256713548fc0a98b7e5d531dbe1c006a9bf605c71bf",
+        "config": "cd08a30d2174db6c0cbaec6ce68f45536a9e920a081654ea390677e67682ace1",
+        "model": "gpt-6-astra task provenance; development tokens unknown",
+        "split": "development",
+        "stage": "capture"
+      },
+      "status": "unresolved",
+      "symptom": "preview-replay-input-gap",
+      "version": 1
+    },
+    {
+      "cause": "prepare_task invokes brief withoutdomain, defaultphysical filters orchestration. Signature ranking is exact entire substring (not token matching); unmatched ties sortissue_id lexical, notrecency. Rows omittedwhole ifJSONoverbudget; no requiredID compactrepresentation. Current008manuallysuppliedlatestissues; automaticcoverage notfixed.",
+      "confidence": "directsource and three readonly sameledger query controls",
+      "domain": "orchestration",
+      "fixes": [],
+      "hypothesis": "Separateengineeringcandidate afterfullentry mainline; explicitrequired-ID/domainbudgetfallback without changing runningpinnedobserver/dispatch source",
+      "id": "capture019-preview-replay-002-required-experience-retrieval-coverage@3",
+      "issue_id": "capture019-preview-replay-002-required-experience-retrieval-coverage",
+      "kind": "issue",
+      "objects": [
+        "7e070ba0a32df567f4dd3f1c40ab84016820250971f99f4f07a7f6e5313fad4b",
+        "f6eb7a802794a144410a0989a12b540e5b3b2e50bf283183add60490ae04c6cd"
+      ],
+      "origin": "capture019-preview-replay-002",
+      "proposed_next": "Parent review required-ID coverage diagnostics and explicit-ID export fallback separately. Do not change pinned dispatch/evolution/observer source in this task.",
+      "regressions": [],
+      "scope": {
+        "assistance": "not applicable; experience selection and delivery only",
+        "code": "9faf274cfd961f31b7461ce297d90e21c60c58d54dffcc1e466b36da7ab1a26f",
+        "conditions": "r21 GPUresourcegate/futurefullentry008",
+        "config": "600physicaldefault /1000orchestration/final1200exactsignature controls",
+        "model": "gpt-6-astra",
+        "split": "development",
+        "stage": "experience-retrieval"
+      },
+      "status": "unresolved",
+      "symptom": "008automaticstartup brief empty; explicitorchestration1000 query returnsoldclosure/typeguard insteadcurrentGPUissue. Wholeexactsignature1200 control retained. Explicitmanualfallback notautomaticrepair.",
+      "version": 3
+    },
+    {
+      "cause": "Parent supplied original remotely serialized audit files instead of byte-exact parent audit representations that collector pins. Entire parsed audit canonical hashes match; byte hashes differ by JSON formatting. No actual audit content/source discrepancy.",
+      "confidence": "Whole parsed-canonical equality plus exact byte-hash mismatch and source gate",
+      "domain": "orchestration",
+      "fixes": [
+        {
+          "evidence": "ea0dc3602f58b33dc318f6f1e5323b40e5ad343cab5df29b334a7bc215c822dd",
+          "status": "Data-only separately staged exact parent audit copies verified against original expected hashes; newbounded collection002 started. Actual originalstream result pending."
+        }
+      ],
+      "hypothesis": "Same JSON-representation pitfall recurred in parent audit007 review: reconstructing parsed terminal JSON with indent2 mismatched original compact/sorted bytes. No acceptance or audit was repeated; exact raw9 receipt bytes fetched with observed SHA and semantic equality verified, parent accepted after raw binding. Future integrations must compare actual bytes or explicitly separate canonical semantic and raw-file hashes.",
+      "id": "collector002-audit-representation-input@2",
+      "issue_id": "collector002-audit-representation-input",
+      "kind": "issue",
+      "objects": [
+        "114cb3a1f70a0609bc1cc72fea2e5d1e811295b3b5ce47c5757c818ad1c4fef2",
+        "2e1db8071072734538f6946b1517835bdc1c531ac2f7c70cd6d277c21b86e9ee",
+        "6dd6ee725f2e50a0afc467550f954ab7a48059c271f8f596969f56ae7ebab697",
+        "8e371811053ba3071cd99ca1a05983195a3e669763d8567535aa92a75347cca5",
+        "9f524e203f7d71bcdf1217ec6d6b9a8fada6541009f0852cbc1d4f6d29b87374",
+        "b80c2a79c208d5a0488a191233a8a65176a264afe421ebe0e870f9d5f7e4e7eb",
+        "ca5dfd63a9fe88042e626ad3e875e4b21fded6b738b6ddda300912eee6956c21",
+        "e6f54bc4e8ec7d39cbc10789e67ae5f3cd70e357a9c2575b8a3f530dd61471fe",
+        "e9c5e875bfd669da3eb7c2b85e37423569819f26cdbcf8922cc70137dbed8f72",
+        "ea0dc3602f58b33dc318f6f1e5323b40e5ad343cab5df29b334a7bc215c822dd"
+      ],
+      "regressions": [],
+      "scope": {
+        "assistance": "none; evidence collection only",
+        "code": "f2c2f2ffedd029329a0495aae9323e192dd51648ad52be1e6cecbe3d8365bf2b",
+        "conditions": "Closed original10-023024 collection001: exact reviewed parent audit pins vs remote original JSON serialization",
+        "config": "original10 seed2 cd08a30d2174db6c0cbaec6ce68f45536a9e920a081654ea390677e67682ace1",
+        "model": "gpt-6-astra server22 authored; local parent input preparation/review",
+        "split": "development",
+        "stage": "evidence"
+      },
+      "status": "unresolved",
+      "symptom": "Both one-shot children refuse audit_hash before originalstreams; actual34 Linux syntheticcases passed, Mac33 plus1 Linux-only fixture incompatibility retained",
+      "version": 2
+    },
+    {
+      "cause": "Generic event reader materializes every event and rejects any line over8MiB. Actual inventory measures2 lines~29MB on023 and4~27-29MB on024; whole event hashes equal original audited inputs.",
+      "confidence": "Actual stream limits, independent chunked byte/line inventory and exact whole hashes; oversized event semantic kind not yet independently decoded",
+      "domain": "engineering",
+      "fixes": [],
+      "hypothesis": "Separate source-bound loaded partial results from event status, then bounded streaming skip/extraction of irrelevant oversized embedded preview payloads with full raw hash/offset preservation. No memory/line/selection/physics threshold relaxation or actual collection retry before code review. Secondary to r21audit006.",
+      "id": "collector002-oversized-preview-event-line@1",
+      "issue_id": "collector002-oversized-preview-event-line",
+      "kind": "issue",
+      "objects": [
+        "0a1ebdb848b7a2f0e5a9e2eaa367fa27905ad6acf5b6164eb357c4ffc1cd46f8",
+        "0bcd42480de88328fce77cf501199c49df881cd4c8e6a09a6a7db312e70bc5a1",
+        "92dde56e65cb1205b750403bf0c9d6b1d2fc34956169fe86f64d036afe254b41"
+      ],
+      "regressions": [],
+      "scope": {
+        "assistance": "none; no simulation/audit",
+        "code": "f2c2f2ffedd029329a0495aae9323e192dd51648ad52be1e6cecbe3d8365bf2b",
+        "conditions": "Closed023024 collector002 collection2, both full loadedstreams hash/bytes/rows pass; events have28-29MB lines",
+        "config": "events8MiB line bound,200MiB total, selectedrows20/output2MiB unchanged",
+        "model": "gpt-6-astra server22; local parent actualcollection/inventory",
+        "split": "development",
+        "stage": "evidence"
+      },
+      "status": "unresolved",
+      "symptom": "Whole extraction remains unknown on line_size_limit after successfully verifying loaded stream; already verified firsthold facts not exported",
+      "version": 1
+    },
+    {
+      "cause": null,
+      "confidence": "stub only",
+      "domain": "transport",
+      "fixes": [],
+      "hypothesis": "Synthetic boundary test; no real network call",
+      "id": "demo-transport@1",
+      "issue_id": "demo-transport",
+      "kind": "issue",
+      "objects": [
+        "2831426b3cbd63f03ca598f85e600b3c3b92bf67945eff6fbd36c06fdd5c3df6"
+      ],
+      "regressions": [],
+      "scope": {
+        "assistance": "SAPIEN/PD/limited magnet unchanged",
+        "code": "orchestration-stub",
+        "conditions": "selected development native receipts",
+        "config": null,
+        "model": "gpt-6-astra (task provenance; run development tokens unavailable)",
+        "split": "development",
+        "stage": "capture"
+      },
+      "status": "unresolved",
+      "symptom": "transport_timeout",
+      "version": 1
+    },
+    {
+      "cause": "Terminal exit124 and independent audit lacks final result/state; accepted OUT/RETURN counts remain unknown.",
+      "confidence": "source-bound observation; physical causal remedy unverified",
+      "domain": "physical",
+      "fixes": [],
+      "hypothesis": "Repeated invalid previews and geometry cost may dominate; compare complete matched019/020 preview counts and wall/CPU before attributing cause.",
+      "id": "episode018-timeout@1",
+      "issue_id": "episode018-timeout",
+      "kind": "issue",
+      "objects": [
+        "5b18873d2bf04bbd0aa9f4d8be5d7cdd22bfde244655220b19b94413087967eb",
+        "8eeff51edca498443273c03feb652bc42209188088e21a7372c854bce69f2bdb"
+      ],
+      "regressions": [],
+      "scope": {
+        "assistance": "SAPIEN/PD/limited magnet unchanged",
+        "code": "sealed018",
+        "conditions": "018 development layouts only",
+        "config": null,
+        "model": "gpt-6-astra",
+        "split": "development",
+        "stage": "full-episode"
+      },
+      "status": "unresolved",
+      "symptom": "n20 ended at wall timeout without final receipts",
+      "version": 1
+    },
+    {
+      "cause": "Warmed pairs were 2.15% and 2.59% slower; replaced mesh_world.np raises in baseline but candidate returns True.",
+      "confidence": "confirmed sealed offline measurements only",
+      "domain": "engineering",
+      "fixes": [],
+      "hypothesis": null,
+      "id": "geometry-optimization@2",
+      "issue_id": "geometry-optimization",
+      "kind": "issue",
+      "objects": [
+        "1a4b1d8c45c3954a29d01dd102945f03b612d0291684ce30fba07c5cad39381f",
+        "6fa9ddb8ab2b53609743e7be249a8a96fa4c89473ec9524023259044a7140cea",
+        "8d98eb5e8f2c265a787cfad2a6e230ca11502833d14ab7115199270f310c0b0e",
+        "aed8595aa3bbcb900af6201cd6fb68e21a398cf3e720f9547c1b3d672f7f50ee",
+        "f1b42c808cd6c216566554e0d5b2b01f3c451bb1174f713d13dd7d0c24aa2125"
+      ],
+      "regressions": [
+        "geometry-dispatch/2"
+      ],
+      "scope": {
+        "assistance": "SAPIEN/PD/limited magnet unchanged",
+        "code": "rejected capture-geometry-opt-001",
+        "conditions": "selected development native receipts",
+        "config": null,
+        "model": "gpt-6-astra (task provenance; run development tokens unavailable)",
+        "split": "development",
+        "stage": "geometry"
+      },
+      "status": "unresolved",
+      "symptom": "warmed benchmark slower; module-global dispatch mismatch",
+      "version": 2
+    },
+    {
+      "cause": "001 selected same-strength outcomes by content hash; dispatch post-completion accounting shared the generic exception path.",
+      "confidence": "source-confirmed defect; writer lost-update risk not an identified historical loss",
+      "domain": "engineering",
+      "fixes": [
+        {
+          "candidate": "evolution-harness-002",
+          "status": "local-tests-pending-parent-review"
+        }
+      ],
+      "hypothesis": null,
+      "id": "harness-completion-state@1",
+      "issue_id": "harness-completion-state",
+      "kind": "issue",
+      "objects": [
+        "03612402b01a2802d474e1116dc65d10962dc594a4b53c44435ee72ef966f928",
+        "4d717903dbb1cd9726961e9e99203e5d12ac6bf4137d0f635c11e1068628db4f",
+        "7a493299b1e979acf759fb93b51ea4de974d9df2c57fe0180f3eb9e89e82c058",
+        "aed8595aa3bbcb900af6201cd6fb68e21a398cf3e720f9547c1b3d672f7f50ee"
+      ],
+      "regressions": [
+        "tests/test_revision.py:test_completion_monotonic_and_accounting_failure_separate",
+        "tests/test_revision.py:test_dispatch_post_completion_accounting_unknown_not_model_failed"
+      ],
+      "scope": {
+        "assistance": "none",
+        "code": "4d717903dbb1cd9726961e9e99203e5d12ac6bf4137d0f635c11e1068628db4f",
+        "conditions": "parent integration review/local boundary reproduction",
+        "config": null,
+        "model": "gpt-6-astra",
+        "split": "development",
+        "stage": "harness"
+      },
+      "status": "unresolved",
+      "symptom": "Accounting or transport failure could obscure a known completion",
+      "version": 1
+    },
+    {
+      "cause": "001 assess hardcoded old reject/new accept for every registry entry, conflating safety preservation with correction.",
+      "confidence": "source-confirmed defect; writer lost-update risk not an identified historical loss",
+      "domain": "engineering",
+      "fixes": [
+        {
+          "candidate": "evolution-harness-002",
+          "status": "local-tests-pending-parent-review"
+        }
+      ],
+      "hypothesis": null,
+      "id": "harness-regression-intent@1",
+      "issue_id": "harness-regression-intent",
+      "kind": "issue",
+      "objects": [
+        "20913fbeaac35e5ed43d5c062b295c6a67429d997edec5b007f384d932ffcc75",
+        "4d717903dbb1cd9726961e9e99203e5d12ac6bf4137d0f635c11e1068628db4f",
+        "aed8595aa3bbcb900af6201cd6fb68e21a398cf3e720f9547c1b3d672f7f50ee"
+      ],
+      "regressions": [
+        "tests/test_revision.py:test_preservation_reject_reject_stays_unresolved",
+        "tests/test_revision.py:test_weakened_negative_needs_reviewed_registry_revision"
+      ],
+      "scope": {
+        "assistance": "none",
+        "code": "4d717903dbb1cd9726961e9e99203e5d12ac6bf4137d0f635c11e1068628db4f",
+        "conditions": "parent integration review/local boundary reproduction",
+        "config": null,
+        "model": "gpt-6-astra",
+        "split": "development",
+        "stage": "harness"
+      },
+      "status": "unresolved",
+      "symptom": "Every old rejection was required to become acceptance",
+      "version": 1
+    },
+    {
+      "cause": "001 dispatch forwarded 10185518 cumulative input; authority delta is5217731, with4967787 already counted.",
+      "confidence": "source-confirmed defect; writer lost-update risk not an identified historical loss",
+      "domain": "engineering",
+      "fixes": [
+        {
+          "candidate": "evolution-harness-002",
+          "status": "local-tests-pending-parent-review"
+        }
+      ],
+      "hypothesis": null,
+      "id": "harness-resumed-usage@1",
+      "issue_id": "harness-resumed-usage",
+      "kind": "issue",
+      "objects": [
+        "7a493299b1e979acf759fb93b51ea4de974d9df2c57fe0180f3eb9e89e82c058",
+        "7e8eec57f001628d06136caf9cbdc27af7ae99467afe3f7af7dfff541591321e",
+        "ab9344ea840183b9169528d7208e3f62f4b4134fa139824e83500c248f891351",
+        "aed8595aa3bbcb900af6201cd6fb68e21a398cf3e720f9547c1b3d672f7f50ee"
+      ],
+      "regressions": [
+        "tests/test_revision.py:test_authoritative_actual_resumed_increment",
+        "tests/test_revision.py:test_corrected_dispatch_actual_wrappers_with_stubs"
+      ],
+      "scope": {
+        "assistance": "none",
+        "code": "4d717903dbb1cd9726961e9e99203e5d12ac6bf4137d0f635c11e1068628db4f",
+        "conditions": "parent integration review/local boundary reproduction",
+        "config": null,
+        "model": "gpt-6-astra",
+        "split": "development",
+        "stage": "harness"
+      },
+      "status": "unresolved",
+      "symptom": "Session cumulative usage was counted as task input",
+      "version": 1
+    },
+    {
+      "cause": "Literal prefix matching rejected the harmless scanner marker inside001 source; the retained002 migration attempt failed before that import.",
+      "confidence": "source-confirmed defect; writer lost-update risk not an identified historical loss",
+      "domain": "engineering",
+      "fixes": [
+        {
+          "candidate": "evolution-harness-002",
+          "status": "local-tests-pending-parent-review"
+        }
+      ],
+      "hypothesis": null,
+      "id": "harness-source-scanner@1",
+      "issue_id": "harness-source-scanner",
+      "kind": "issue",
+      "objects": [
+        "4d717903dbb1cd9726961e9e99203e5d12ac6bf4137d0f635c11e1068628db4f",
+        "bfb1e848a556dcc5f6ee9cd70c755d2b6ec2b4d672fa3bf80a7e7d36c05f8314"
+      ],
+      "regressions": [
+        "tests/test_revision.py:test_scanner_source_literal_is_data_real_key_header_refused"
+      ],
+      "scope": {
+        "assistance": "none",
+        "code": "4d717903dbb1cd9726961e9e99203e5d12ac6bf4137d0f635c11e1068628db4f",
+        "conditions": "parent integration review/local boundary reproduction",
+        "config": null,
+        "model": "gpt-6-astra",
+        "split": "development",
+        "stage": "harness"
+      },
+      "status": "unresolved",
+      "symptom": "Credential scanner rejected its own reviewed source",
+      "version": 1
+    },
+    {
+      "cause": "Original helper reads JSON before resolution and overwrites with write_text; concurrent readers can replace each other’s appended rows.",
+      "confidence": "source-confirmed defect; writer lost-update risk not an identified historical loss",
+      "domain": "engineering",
+      "fixes": [
+        {
+          "candidate": "evolution-harness-002",
+          "status": "local-tests-pending-parent-review"
+        }
+      ],
+      "hypothesis": null,
+      "id": "harness-usage-write-race@1",
+      "issue_id": "harness-usage-write-race",
+      "kind": "issue",
+      "objects": [
+        "843ce0b5b1404e4425c3935e9556b05201474d3233e38fdbd5c2c2566af2724b",
+        "d1b752f4a9508c40618548e49b0d9f41c34b043cab25f7910b7de0b54b835664"
+      ],
+      "regressions": [
+        "tests/test_revision.py:test_concurrent_updates_duplicates_preserve_rows",
+        "tests/test_revision.py:test_atomic_failure_preserves_authority"
+      ],
+      "scope": {
+        "assistance": "none",
+        "code": "4d717903dbb1cd9726961e9e99203e5d12ac6bf4137d0f635c11e1068628db4f",
+        "conditions": "parent integration review/local boundary reproduction",
+        "config": null,
+        "model": "gpt-6-astra",
+        "split": "development",
+        "stage": "harness"
+      },
+      "status": "unresolved",
+      "symptom": "Shared usage ledger update had no serialization or atomic replacement",
+      "version": 1
+    },
+    {
+      "cause": "Import-time rand_create_cluttered_actor.py calls get_all_cluttered_objects even with cluttered_table false; missing objaverse/list.json in isolated data closure",
+      "confidence": "Exact metadata hashes, fresh245file closure and actual pure-data countercontrol; not full native/scene proof",
+      "domain": "orchestration",
+      "fixes": [
+        {
+          "closure_sha256": "e2f781eb39f2b02e62a687f277f224bed86c51deac0902089b65b095f0243180",
+          "evidence": "000b35ede7d89b750f54cda3fd18a3432d58a8da855f1b5dc832609555acc785",
+          "status": "Exact two JSON data extras prepared in new closure004; actual original metadata-function oldcounterexample rejects and newcontrol passes; 19 focused actual67 tests pass. Full native import pending independent probe null-device fix; physics unverified."
+        }
+      ],
+      "hypothesis": "Source-bound metadata omission repaired in data-read regression. Current native diagnostic failure is the separate probe-null-device-guard issue; do not re-copy already-correct extras or infer physics benefit.",
+      "id": "historical-r21-import-data-closure-gap@2",
+      "issue_id": "historical-r21-import-data-closure-gap",
+      "kind": "issue",
+      "objects": [
+        "000b35ede7d89b750f54cda3fd18a3432d58a8da855f1b5dc832609555acc785",
+        "2ea3a1044deffe01ef37b390b8131522b59ddb677e4b64d73536aafcda75e6f1",
+        "625089ed84ab93f6fdac56cf1c84652ed5b5f3d130112e63af92a6e58e50190e",
+        "7c4e687fdbc1a83e17424e9ec2f9c1e392a13c9b4f875f427b7f5ff310f36bf7"
+      ],
+      "regressions": [],
+      "scope": {
+        "assistance": "original rawmagnet80 friction3.0/2.4 unchanged",
+        "code": "1480383319105f9ca992828de3aa195fb849d96a8db90da7c5e74aa8c3b00a43",
+        "conditions": "Exactr21 originalseed2 isolated data closure003 baselineattempt001",
+        "config": "originalseed2 full10 unchanged",
+        "model": "gpt-6-astra; local parent review",
+        "split": "development",
+        "stage": "startup"
+      },
+      "status": "unresolved",
+      "symptom": "Native baseline startup FileNotFoundError objaverse/list.json before scene setup",
+      "version": 2
+    },
+    {
+      "cause": "fixtures/convex-meshes.json and fixtures/robot-vertices.json differ; restoring algorithm source alone does not restore full baseline input identity.",
+      "confidence": "Direct freshSHA256 comparison of10 files",
+      "domain": "orchestration",
+      "fixes": [],
+      "hypothesis": "Using mutable fixtures in a reproduction could change geometry/planning; no current-run causal attribution established.",
+      "id": "historical-r21-mutable-fixture-drift@1",
+      "issue_id": "historical-r21-mutable-fixture-drift",
+      "kind": "issue",
+      "objects": [
+        "c63340e0b8850d5d142a6af9126aad81770dbf754943b8bde1ebe981b01f31b1",
+        "ecb73317699d230a8e669abca6d246a9621b1931c040de6c8231fe3cfcf53d15"
+      ],
+      "regressions": [],
+      "scope": {
+        "assistance": "unchanged historical rawmagnet80 friction3.0/2.4",
+        "code": "ten-r21 eleven algorithms preserved; external fixture identity also required",
+        "conditions": "Immutable67 ten-r21 fixtures versus current mutable local astra-direct fixtures",
+        "config": null,
+        "model": "gpt-6-astra",
+        "split": "development",
+        "stage": "full-episode"
+      },
+      "status": "unresolved",
+      "symptom": "Two current loose geometry fixture hashes differ from sealedr21",
+      "version": 1
+    },
+    {
+      "cause": "Existing constructor guard installs a Python function under sapien.Entity and other type names; evaluating Actor | sapien.Entity | sapien.Pose in Base_Task method annotation now raises TypeError. This latent003 guard design issue was reached after004 null-device fix; no new data/algorithm error established.",
+      "confidence": "exact actual67 traceback and source; this is diagnostic instrumentation, not robot/data/physical cause",
+      "domain": "orchestration",
+      "fixes": [],
+      "hypothesis": "Use nonconstructible type/class sentinel preserving annotation compatibility and all constructor/profile/AST/network/write guards; no native subclass/scene is needed",
+      "id": "historical-r21-probe-constructor-type-guard@1",
+      "issue_id": "historical-r21-probe-constructor-type-guard",
+      "kind": "issue",
+      "objects": [
+        "5789f7f9ba9d8be8197e0bb059b8ddcea68c28b8cc1634586266e1d2a73b4deb",
+        "dda241b188bc4ff9b07ff0dc5494d45db29df9356cc65cabe6bc6007a797d6da"
+      ],
+      "regressions": [],
+      "scope": {
+        "assistance": "none; no scene execution",
+        "code": "f472366cd3b672505ecdbe667e68b9afdecbe5ab5bc9ad5108602428e46ff043",
+        "conditions": "Native diagnostic004 class Base_Task annotation before scene; data closure004",
+        "config": "import-only30CPU60wall",
+        "model": "gpt-6-astra server22; local parent review",
+        "split": "development",
+        "stage": "startup"
+      },
+      "status": "unresolved",
+      "symptom": "Probe constructor guard replaces native Entity type with function and breaks PEP604 annotation union",
+      "version": 1
+    },
+    {
+      "cause": "Diagnostic audit hook denies actual /dev/null O_RDWR during Open3D -> ctypes.find_library -> subprocess.Popen(ldconfig -p). This is a probe compatibility defect, not data/model failure; original nativeattempt reached later rand_cluttered import, proving unguarded Open3D import already worked.",
+      "confidence": "Exact actual67 traceback and source predicate; no physical causal attribution",
+      "domain": "orchestration",
+      "fixes": [
+        {
+          "evidence": "18c4a22a238da9121d7c884a44bb631f75a05485be038c05aef6c92ecd8b17f7",
+          "status": "26 actual67 tests pass; exact /dev/null/DEVNULL control passes and actual native import progresses beyond Open3D/null point to separate constructor-type failure. Full import/physics unverified."
+        }
+      ],
+      "hypothesis": "Do not broaden write policy further for the new type-annotation defect; fix constructor type category separately.",
+      "id": "historical-r21-probe-null-device-guard@2",
+      "issue_id": "historical-r21-probe-null-device-guard",
+      "kind": "issue",
+      "objects": [
+        "1015e5b41db5a800b6876f7988d3f61b6e219914d005bef7d59e4dddcf337563",
+        "18c4a22a238da9121d7c884a44bb631f75a05485be038c05aef6c92ecd8b17f7",
+        "62d9f49718745934fb3a3cc87d14697342d3b34d0a9765efd81016ba713fd1ed",
+        "c5efc969240eb7ce5e998ec116a870226558c6b5ed0ce6e4471a3313f21bf33d"
+      ],
+      "regressions": [],
+      "scope": {
+        "assistance": "none; no scene or robotics execution",
+        "code": "69b8f3a199e8e30f8f8e0b5b7658089d182bb4afcfbd8fac17478c557b81975b",
+        "conditions": "Exact native Open3D guarded import against closure004, diagnostic003 before scene",
+        "config": "import-only30CPU60wall;noGPUvisibility",
+        "model": "gpt-6-astra server22; local parent review",
+        "split": "development",
+        "stage": "startup"
+      },
+      "status": "unresolved",
+      "symptom": "Diagnostic false-positive blocks os.open(/dev/null,O_RDWR) during Open3D ctypes library discovery",
+      "version": 2
+    },
+    {
+      "cause": "run_scope accepts only rt-v36-combined run ID regex; actual valid r21 replica ID raises unrecognized run identity. Raw references and separate all-attempt index are retained, but unified normalized scorecard missing.",
+      "confidence": "direct source predicate/public API counterexample; no physical cause claim",
+      "domain": "orchestration",
+      "fixes": [],
+      "hypothesis": "Add scoped tested legacy-baseline ingestion and distinct historical one-way/strictRETURN contracts after active pinned helper ownership permits; no current helper/schema edits or threshold relaxation.",
+      "id": "historical-r21-scorecard-namespace-coverage@1",
+      "issue_id": "historical-r21-scorecard-namespace-coverage",
+      "kind": "issue",
+      "objects": [
+        "d34b515633e3687fa5bdf75c12088efe634cf2dfbcaae890b4b912abb734b2c1",
+        "d8861d5fcf6933539a528dbd7dff3f27a8446404a970b684d3e18e29169a9029",
+        "d975c746fd03223349f650f18b9412a0a74b9480d68200debe045158f2b6f31c"
+      ],
+      "regressions": [],
+      "scope": {
+        "assistance": "historical assisted one-way versus strictRETURN remain separate",
+        "code": "9faf274cfd961f31b7461ce297d90e21c60c58d54dffcc1e466b36da7ab1a26f",
+        "conditions": "Legacy r21 replica001startup failure and002active native vs core rt-v36-only parser",
+        "config": null,
+        "model": "local parent review; server22 main coding",
+        "split": "development",
+        "stage": "full-episode"
+      },
+      "status": "unresolved",
+      "symptom": "Core standardized attempt/scorecard parser does not recognize new r21 baseline namespace",
+      "version": 1
+    },
+    {
+      "cause": null,
+      "confidence": "Measured own/child CPU and source loop behavior; unique profile attribution unproved",
+      "domain": "orchestration",
+      "fixes": [],
+      "hypothesis": "Source scans every /proc process repeatedly at~50Hz. Measure/profile in isolated follow-up and test bounded accounting/cleanup before considering an optimized newversion; never mutate active002 source/common/driver or claim matched throughput benefit without comparison.",
+      "id": "historical-r21-supervisor-cpu-overhead@1",
+      "issue_id": "historical-r21-supervisor-cpu-overhead",
+      "kind": "issue",
+      "objects": [
+        "375f020195d2f9d93f515967a69bc5b231f208d2b7f511925f58bd1c080d150a",
+        "e3f5a2ca6cb8fa1f1b591f4893eca1d5dd6d54c81182654f15fdedd8fbbe1486"
+      ],
+      "regressions": [],
+      "scope": {
+        "assistance": "unchanged physical conditions; supervisor engineering only",
+        "code": "439fdf442352d763078040c14198cce331364479fe3a2ae8a311244939ce50b0",
+        "conditions": "Active baseline002 wrapper own239.39CPU versus child309.46CPU over~320wall",
+        "config": "onecore child; source supervisor20msloop",
+        "model": "local parent observation, maincoding server22",
+        "split": "development",
+        "stage": "harness-performance"
+      },
+      "status": "unresolved",
+      "symptom": "Supervisor itself consumes substantial CPU outside reported native child budget",
+      "version": 1
+    },
+    {
+      "cause": "Final recovery.py simultaneously requires native interpreter hash equality and pidfd support, but historical Conda lacks pidfd; system Python supports pidfd. Also bwrap absent and cgroup leaf not writable.",
+      "confidence": "final sealed source plus actual67 read-only probes",
+      "domain": "orchestration",
+      "fixes": [],
+      "hypothesis": "Separate system supervisor and exact native child; use tested feasible unprivileged resource supervision; preserve robotics bytes and physical acceptance.",
+      "id": "historical-r21-working-supervisor-python-conflict@2",
+      "issue_id": "historical-r21-working-supervisor-python-conflict",
+      "kind": "issue",
+      "objects": [
+        "499d80520e2800aaeab5a66fc34519466e9bbef0968d9f3e570a28d4e7f2553f",
+        "ce6e10944d9d67e991a6501e4b6b135206b6bb765cdb29f45b96e2d1eb14880c"
+      ],
+      "regressions": [],
+      "scope": {
+        "assistance": "not applicable; parent launcher only",
+        "code": "0c5bf3016dac2762f8b7ad96b62ef4af4644438d3deea3d6aaceab2da888440c",
+        "conditions": "working recovery adapter snapshot1792424553 and actual67 supervisor/native Python capabilities",
+        "config": null,
+        "model": "gpt-6-astra",
+        "split": "development",
+        "stage": "full-episode"
+      },
+      "status": "unresolved",
+      "symptom": "Sealed001 final launcher fails actual67 capability requirements before native execution",
+      "version": 2
+    },
+    {
+      "cause": "No demonstrated mandatory matched end-to-end historical baseline reproduction gate in addition to source preservation/component regression gates.",
+      "confidence": "Source and evidence-scope comparison, not causal physical ablation",
+      "domain": "orchestration",
+      "fixes": [
+        {
+          "protocol": "parent-r21-baseline002-protocol-001.json",
+          "review_sha256": "8569da9effc7ebb2f1f32dc133b3d0a954f8dd34eb8723b1dde33f9d78df4406",
+          "status": "Controlled unchanged baseline002 physically running; original243 inputs preserved plus2 importmetadata JSON. Initial-state parity independently reviewed; full original10 terminal/originalverifier still pending. No stable or strictRETURN promotion."
+        },
+        {
+          "complete_recursive_input": "parent-r21-audit007-recursive-artifacts-1840.json",
+          "read_only_failure": "parent-r21-audit006-readonly-actual-preflight-001.json",
+          "source_review": "parent-r21-audit006-final-source-review-001.json",
+          "status": "Completed physical runner and fullrecordedtrace equality retained; independent originalverifier pending audit plumbing and exact recursive artifact input completeness. No new physics retry."
+        }
+      ],
+      "hypothesis": "Exact-source rebaseline002 completed native10 and502-event parity; original unchanged expected-count10 verifier now passed on existing episode via one audit007 continuation. Parent accepted assisted one-way OUT10. No physical rerun for audit, no exact originalposeRETURN or stable multilayout rate. Next minimal RETURN fork must preserve parent OUT prefix and independently verify same-condition full episode; later strict branches are not automatically adopted.",
+      "id": "historical10-end-to-end-baseline-gate@4",
+      "issue_id": "historical10-end-to-end-baseline-gate",
+      "kind": "issue",
+      "objects": [
+        "049e9e8525f024d962d626f11aaae052e7156a17fd0d6cfafa96cf5b1c40dc65",
+        "0fc6a0d80795407488684fabeba5d92d2e348316fb887cb39b5bbd43df4c4c28",
+        "1b57eb91dfd9c00bb144af1bf421865fde643547866509814ab3d09dae98edce",
+        "39341f3fd6e56d404e2476c2669b52863ddada5597ad4b4f11a43e64ccef3703",
+        "b2bc5141e6b67a01967a64a405d57fd0ff255be5752c260bc8e402d28bf8e877",
+        "eeac49bdd3801de46d18f5af4d0eddce491acf176dbee7700a54543e665165c9"
+      ],
+      "regressions": [],
+      "scope": {
+        "assistance": "rawmagnet80;friction3.0/2.4;release_velocity_reset",
+        "code": "immutableten-r21 versus bound019/020/023",
+        "conditions": "ten-r21 single originalseed2 assisted one-way10 versus later strict original10 diagnostic branches",
+        "config": null,
+        "model": "gpt-6-astra",
+        "split": "development",
+        "stage": "full-episode"
+      },
+      "status": "unresolved",
+      "symptom": "Historical OUT10/10 exists but current original10 OUT0/1; experimental candidate progress mistaken for maintained task capability",
+      "version": 4
+    },
+    {
+      "cause": "Original scoped_contacts selects weak target pairs by roundtrip_ID name, but result is used for loaded tick/terminal logs. Original native contact_guard independently reads scene contacts and actual env.objects[target].actor name. This confirms an observability omission, not evidence that this selector bypasses the native contact guard.",
+      "confidence": "source and recorded-state CPU replay independently verified; native causality unresolved",
+      "fixes": [],
+      "hypothesis": "Historical weak target contacts are not recoverable from omitted logs; identity-based additional telemetry is a candidate, not yet integrated/native-validated.",
+      "id": "original10-target-contact-scope@2",
+      "issue_id": "original10-target-contact-scope",
+      "kind": "issue",
+      "objects": [
+        "027737c203e7b371b1f06797b1f506da3f6dd45a7e004391d8479c0f9a43b902",
+        "25db365f8927505514f7238eb20f96070188428c894ae092bdfc05efd91561cd",
+        "4d637230cf6c6e21dd843c3120e5f2c568ef7c31d7de98b5b2e1d4cb123df788",
+        "99d36c5af376a9764cc5253286b09f1cbf2e6709ba66d5e37d3f769cc82419c1",
+        "9bfcf1b441a93bf4fa2a223b016c865c4b6bea529e58264051dfe06362f0c6bf",
+        "b97ba116d1b915c1d13ab7aa3f629816bdeb910257f39366facad29ad2329496"
+      ],
+      "regressions": [],
+      "scope": {
+        "assistance": "unchanged SAPIEN/PD/magnet80/finger1000-200-4",
+        "code": "sealed020 slip_supervisor/loaded_tracking/live_clearance",
+        "conditions": "original10 seed2 object3 left lowering; recorded020; candidate not native validated",
+        "config": "cd08a30d2174db6c0cbaec6ce68f45536a9e920a081654ea390677e67682ace1",
+        "model": "gpt-6-astra server22; parent local review",
+        "split": "development",
+        "stage": "loaded-transport"
+      },
+      "status": "unresolved",
+      "symptom": "Original10 target actor name differs from hard-coded roundtrip_ID weak-contact selector",
+      "version": 2
+    },
+    {
+      "cause": "Parentfixturepreparation copied beyondSOURCE-MANIFEST into runtime receipts, following their links. Sourcecandidate/testcode unchanged and originalmaster/source/evidence untouched.",
+      "confidence": "parentfailureandcorrectedlayoutobserved",
+      "domain": "orchestration",
+      "fixes": [],
+      "hypothesis": "Usecanonical manifest-onlyregularfilecopies, rejectsymlinksourceentries/pathescapes and verifyallhashes; nevercopytestreceiptworkingtrees. Actualcorrectedlayout passes19 tests, no separateautomatedscopecounterexampletestyet.",
+      "id": "parent-canonical-source-fixture-copy-scope@1",
+      "issue_id": "parent-canonical-source-fixture-copy-scope",
+      "kind": "issue",
+      "objects": [
+        "b9c2d86a3a38a5ecb624e18b5ca6ca6ec660a92a41208593e5856f0c8b001c55",
+        "bb66f13c889834944e311fae54a39fa0788d35735017202ef7d850683dcaf1ab",
+        "da2ffe3081cc560b2d7e0411e46163e51f05cb9f17088f87ff62e68782775e62"
+      ],
+      "regressions": [],
+      "scope": {
+        "assistance": "none",
+        "code": "parent_renderer005_actual67/retestcanonical preparationhelpers",
+        "conditions": "Parentactual67renderer005 canonical007dependencylayout",
+        "config": "source-onlyfixture19CPUtests, no nativeinthefailedprep",
+        "model": "localcoordination; server22candidatecode",
+        "split": "development",
+        "stage": "harness"
+      },
+      "status": "unresolved",
+      "symptom": "Generated007symlink rejectedcanonicalpathchecks. Wholeworktreecopy followeduntrackedreceiptlinks andfailedpermissions; unneeded22MB732filepartialremoved, failuremetadata preserved. Correctedmanifest-only28entries+004reference19pass.",
+      "version": 1
+    },
+    {
+      "cause": "Parent metadata/closure script imported sealed modules without-B or sys.dont_write_bytecode. Four .pyc files were then included by recursive source_test_manifest. Source files themselves stayed unchanged.",
+      "confidence": "Direct before12/after8 inventories and retained cache hashes; new clean closure/env prepared",
+      "domain": "orchestration",
+      "fixes": [
+        {
+          "evidence": "4913c93babec53c2fdf218156f23095d800b8da498a9f6892dcb405c0d3dd715",
+          "status": "parent invocation corrected; generated caches retained separately; clean source8 new closure003/env002 reviewed; no physics success implied"
+        }
+      ],
+      "hypothesis": "Always invoke controlled parent Python with-B and set sys.dont_write_bytecode before imports; verify exact sealed source8 set before preparation and launch. Do not silently exclude unexpected files or rewrite old closure receipts.",
+      "id": "parent-python-bytecode-source-binding@1",
+      "issue_id": "parent-python-bytecode-source-binding",
+      "kind": "issue",
+      "objects": [
+        "175d30b54104c93b0f9a09f2a7d9d4cb2b6be0dffa9e30f03e0ae12e99bce51a",
+        "4913c93babec53c2fdf218156f23095d800b8da498a9f6892dcb405c0d3dd715"
+      ],
+      "regressions": [],
+      "scope": {
+        "assistance": "not applicable; no physics yet",
+        "code": "parent preparation invocation, sealed002 adapters unchanged",
+        "conditions": "Actual67 parent preparation importing sealed002 source without-B; source/test inventory unexpectedly12 versus8",
+        "config": null,
+        "model": "local parent coordination account",
+        "split": "development",
+        "stage": "preparation"
+      },
+      "status": "unresolved",
+      "symptom": "Parent-generated source pycache contaminated preparation/source-test provenance bindings",
+      "version": 1
+    },
+    {
+      "cause": "OFF023 stops9985 loaded reserve; ON024 object3 lowering completes11355 and recordsOUT1, then capture guard rejects40048; neither RETURNs.",
+      "confidence": "confirmed scoped output/source observation; physical mechanism unresolved",
+      "domain": "physical",
+      "fixes": [],
+      "hypothesis": "Physical causal effect, first actual hold and reproducibility unresolved without native chronological pair evidence.",
+      "id": "postmortem-earlyholdpair-001-pair-outcome@1",
+      "issue_id": "postmortem-earlyholdpair-001-pair-outcome",
+      "kind": "issue",
+      "objects": [
+        "03dee22b9e7554a0975e1000e4ba334f4dd54c55ef081568aa32e11b2e1d7f7c",
+        "0e98d894363aad06cd48ef338cf97e5be0d121b5fb74adcee7a61532d97aa838",
+        "2087bc168b2392c8a60b6625c8a1c59b53105da9930ca75f20e20725bad0487b",
+        "3d87dd0c9032643a17b24a9f7ced3d6dc86625aee73a9b7b73cfb1ea98167e88",
+        "4dfe464fd617aecd9f41b873f0c616bec7f9c38fda8e3f01b12511bbe37c4b43",
+        "6564bbf1fda423af3f264a979a1d220a567736f7284306d1684c24cac2cdc095",
+        "6e6c6e30d90c4d25254fee70d7da70b2201393f9a5bdcb67e6dded720c8c8cca",
+        "dd7f176cdc6bf00fe68419b9476333861263d13604c8515ec02b5e016bb36f90",
+        "f1bdd97b80a0b88a65c1b40b9953e1375251d931a9bf187947eb6b6b6af427ae",
+        "ff2cb4b4aad6f65967287344d62dc33455c9bd8124d5e438348b54eeb6edf8d4"
+      ],
+      "regressions": [],
+      "scope": {
+        "assistance": "SAPIEN/PD/limited magnet unchanged",
+        "code": [
+          "594b9b10bd0ebcbc2e265940eea884962608440908ea9d27f7bfdd81dd0cd430",
+          "5ce0ee7263cc7957644214c216eab813e04d79d950375985e04a216df952aac2"
+        ],
+        "conditions": "final023 OFF /024 ON exact020 capture, original10 seed2",
+        "config": "cd08a30d2174db6c0cbaec6ce68f45536a9e920a081654ea390677e67682ace1",
+        "model": "gpt-6-astra (task provenance, development usage unknown)",
+        "split": "development",
+        "stage": "postmortem"
+      },
+      "status": "unresolved",
+      "symptom": "earlyhold_pair_partial_progress_then_failure",
+      "version": 1
+    },
+    {
+      "cause": "Auditor verifies but does not export first earlyhold decision history; capture report reduced to valid flag. Native source streams absent locally.",
+      "confidence": "confirmed scoped output/source observation; physical mechanism unresolved",
+      "domain": "engineering",
+      "fixes": [],
+      "hypothesis": "Audit-only propagation is a review candidate; does not establish event timing or physical safety.",
+      "id": "postmortem-earlyholdpair-001-report-observability@1",
+      "issue_id": "postmortem-earlyholdpair-001-report-observability",
+      "kind": "issue",
+      "objects": [
+        "0e98d894363aad06cd48ef338cf97e5be0d121b5fb74adcee7a61532d97aa838",
+        "2087bc168b2392c8a60b6625c8a1c59b53105da9930ca75f20e20725bad0487b",
+        "3d87dd0c9032643a17b24a9f7ced3d6dc86625aee73a9b7b73cfb1ea98167e88",
+        "4dfe464fd617aecd9f41b873f0c616bec7f9c38fda8e3f01b12511bbe37c4b43",
+        "6564bbf1fda423af3f264a979a1d220a567736f7284306d1684c24cac2cdc095",
+        "6e6c6e30d90c4d25254fee70d7da70b2201393f9a5bdcb67e6dded720c8c8cca",
+        "c1e308da8e24a6cbdf23cc0fc9a15241c5c2eff9a5f10a9e226849d74a869481",
+        "dd7f176cdc6bf00fe68419b9476333861263d13604c8515ec02b5e016bb36f90",
+        "f1bdd97b80a0b88a65c1b40b9953e1375251d931a9bf187947eb6b6b6af427ae",
+        "ff2cb4b4aad6f65967287344d62dc33455c9bd8124d5e438348b54eeb6edf8d4"
+      ],
+      "regressions": [],
+      "scope": {
+        "assistance": "SAPIEN/PD/limited magnet unchanged",
+        "code": [
+          "594b9b10bd0ebcbc2e265940eea884962608440908ea9d27f7bfdd81dd0cd430",
+          "5ce0ee7263cc7957644214c216eab813e04d79d950375985e04a216df952aac2"
+        ],
+        "conditions": "final023 OFF /024 ON exact020 capture, original10 seed2",
+        "config": "cd08a30d2174db6c0cbaec6ce68f45536a9e920a081654ea390677e67682ace1",
+        "model": "gpt-6-astra (task provenance, development usage unknown)",
+        "split": "development",
+        "stage": "postmortem"
+      },
+      "status": "unresolved",
+      "symptom": "first_hold_decline_cleanup_not_retained_in_final_projection",
+      "version": 1
+    },
+    {
+      "cause": "continuous_audit_v36 stores only verify_capture(...)[valid], discarding the returned top-level terminal ticks/status and qualification flags.",
+      "confidence": "confirmed scoped observation; physical mechanisms unresolved",
+      "domain": "engineering",
+      "fixes": [],
+      "hypothesis": "Retaining this existing report improves observability only; nested preview summaries and per-tick chains still require separate extraction.",
+      "id": "postmortem-n15-feedbackpair-capture-summary-loss@1",
+      "issue_id": "postmortem-n15-feedbackpair-capture-summary-loss",
+      "kind": "issue",
+      "objects": [
+        "2158c8484138a2bafb848c95fefe7a8098258ab3e0ba7d63a9f9b3b032e39f64",
+        "63a15e2848683dff34b227640cdb678a1f8a73d975da35b358bb02b5cd7dfc7c",
+        "725767c1bf46c213be1d26b1d08e27d42accb180ef5ce8c78a23a39500536a4b",
+        "c5abb4937e1754164b860c209ba5e2e781c931676bfcf0d94afacf52f48c2968",
+        "e753193429b122d064147fa4b4a52135a765b0738090719990e6f284599beb4e",
+        "fbff3d7ca88a742cc45b533dd370f5bc88796a2af00611e50ab2b93216fca351",
+        "ff621186c22eb15c0da629ddc1b959f208e90e4e7fcd3ad78879fb7dba554439"
+      ],
+      "proposed_regression_gaps_object": "16fc1b01d228e19cbf77f3f2af9f5acc8e2bb9efb9f62c0e1ecb44eb69fd03a6",
+      "regressions": [],
+      "scope": {
+        "assistance": "SAPIEN/PD/limited magnet unchanged",
+        "code": [
+          "c5b746e081d6b393571d74001739e50d8e242beeb4a4f95dd46cb403f7b2e078",
+          "be79e32052b14c0dc25032842a09e874a7495829001353c4e0ded1b30679ff31"
+        ],
+        "conditions": "full n15 development seed101 final019 and021",
+        "config": "403533dbd7d86892c2aeb72055c990feb640dde7095a3be8ca981bf35e578d82",
+        "model": "gpt-6-astra (task provenance; development tokens unknown)",
+        "split": "development",
+        "stage": "audit"
+      },
+      "status": "unresolved",
+      "symptom": "capture_audit_summary_not_exported",
+      "version": 1
+    },
+    {
+      "cause": "Both valid final receipts fail episode completion; empty downstream stage receipts and exact-pose final states do not prove physical return.",
+      "confidence": "confirmed scoped observation; physical mechanisms unresolved",
+      "domain": "physical",
+      "fixes": [],
+      "hypothesis": "No causal hypothesis needed for this acceptance distinction.",
+      "id": "postmortem-n15-feedbackpair-receipt-coverage@1",
+      "issue_id": "postmortem-n15-feedbackpair-receipt-coverage",
+      "kind": "issue",
+      "objects": [
+        "2158c8484138a2bafb848c95fefe7a8098258ab3e0ba7d63a9f9b3b032e39f64",
+        "63a15e2848683dff34b227640cdb678a1f8a73d975da35b358bb02b5cd7dfc7c",
+        "725767c1bf46c213be1d26b1d08e27d42accb180ef5ce8c78a23a39500536a4b",
+        "959153c3a307952f5607f9a2eedd1038250020c6cd387ffab5780677134fc1d9",
+        "c5abb4937e1754164b860c209ba5e2e781c931676bfcf0d94afacf52f48c2968",
+        "e753193429b122d064147fa4b4a52135a765b0738090719990e6f284599beb4e",
+        "ff621186c22eb15c0da629ddc1b959f208e90e4e7fcd3ad78879fb7dba554439"
+      ],
+      "proposed_regression_gaps_object": "16fc1b01d228e19cbf77f3f2af9f5acc8e2bb9efb9f62c0e1ecb44eb69fd03a6",
+      "regressions": [],
+      "scope": {
+        "assistance": "SAPIEN/PD/limited magnet unchanged",
+        "code": [
+          "c5b746e081d6b393571d74001739e50d8e242beeb4a4f95dd46cb403f7b2e078",
+          "be79e32052b14c0dc25032842a09e874a7495829001353c4e0ded1b30679ff31"
+        ],
+        "conditions": "full n15 development seed101 final019 and021",
+        "config": "403533dbd7d86892c2aeb72055c990feb640dde7095a3be8ca981bf35e578d82",
+        "model": "gpt-6-astra (task provenance; development tokens unknown)",
+        "split": "development",
+        "stage": "acceptance"
+      },
+      "status": "unresolved",
+      "symptom": "valid_receipts_without_completion",
+      "version": 1
+    },
+    {
+      "cause": "Only acquired finger0 support disappears at490 while finger1 never qualifies; unchanged recover(0) correctly stops before issuing recovery. The failure label does not prove simultaneous loss of two previously acquired contacts.",
+      "confidence": "parent source/contact recount and16group conditional recorded-API replay verified; no native repair or unique physical attribution",
+      "domain": "physical",
+      "fixes": [],
+      "hypothesis": "Entry-state/contact geometry or native impulse/solver transient remains unconfirmed. Exact full preview controller replay awaits interleaved closure events; extractions do not identify hidden dynamics.",
+      "id": "postmortem019020-capture019-contact-recovery@3",
+      "issue_id": "postmortem019020-capture019-contact-recovery",
+      "kind": "issue",
+      "objects": [
+        "1fdfbb1a91f5304887bd6bdce3e200e549ca59e64d4871c066800c4dfc202320",
+        "47164e10f6f8b54195911718f6363c17226088ae3fc71506f6612292ba27b4fc",
+        "4b2f7ae7efc31915b8f1685df6d344013e8f511f07ffa2390298a7fc55d90ab6",
+        "4de9e6e1a7263484a17b9aa3c955d0c71a2eee08436726c9d6c29b36bf7bc39b",
+        "675f6c9d0af9d1318c9fc61cf92464e92cda15634112beb186b734724dfca860",
+        "7ec8107825e85f82d62f036900ff74ce199496b5b9f2dcddd6a5ea06a84ee535",
+        "8a41440c4e52c9cccb41cd3878c0b68dcb8e607027b5739c4d23a875ad9e7b02",
+        "8b6f81bc069e1d8a812574fb931715f0dd05aec7a544227bce7423576802c6f3",
+        "b87b5e486f73895a858e3c4d5b5c990ad9bf2b7aff8f7fd8f0f47a954188f587"
+      ],
+      "proposed_regression_gaps_object": "17f0482c7416f8280941e866783820b6a2d833e781759699864a03e93dc1f17a",
+      "regressions": [],
+      "scope": {
+        "assistance": "SAPIEN/PD/limited magnet unchanged",
+        "code": "c5b746e081d6b393571d74001739e50d8e242beeb4a4f95dd46cb403f7b2e078",
+        "conditions": "original10 development seed2 final019",
+        "config": "cd08a30d2174db6c0cbaec6ce68f45536a9e920a081654ea390677e67682ace1",
+        "model": "gpt-6-astra (task provenance; development tokens unknown)",
+        "split": "development",
+        "stage": "capture"
+      },
+      "status": "unresolved",
+      "symptom": "capture_both_contacts_lost",
+      "version": 3
+    },
+    {
+      "cause": "Parent terminal inventory used direct iterdir() files only, omitting two GL cache files and one matplotlib fontlist under native run/cache. Adapter correctly compares recursive inventory against incomplete six-name input; no claim/verifier was launched.",
+      "confidence": "Direct source predicate, actual recursive hashes and recorded readonly rejection",
+      "domain": "orchestration",
+      "fixes": [],
+      "hypothesis": "Preserve006 and every original artifact; source-bind exact full recursive9 with explicit cache classification and parent hashes in a new007 packet. Keep strict extra/missing/tampered-file controls and all original physical/provenance checks; no glob exclusions or deleting caches.",
+      "id": "r21-audit006-incomplete-recursive-artifact-input@1",
+      "issue_id": "r21-audit006-incomplete-recursive-artifact-input",
+      "kind": "issue",
+      "objects": [
+        "306fc45ecd71c3b00553095316c5a350c437bc97121c4c5e99d2ab79148a804f",
+        "64aa4b57fbf4a2cdad00c43e9935d8cd49aed0a124efb85aa2f085a2702a49cc",
+        "9ac773bf81f83953ae8a094a35ef7224348e79223732293df00d88ad9dd64c83",
+        "ef240cac1df448b9ebef6bd52403d5eb5b5d95fa3990ae9e80997f857941fd4d"
+      ],
+      "regressions": [],
+      "scope": {
+        "assistance": "unchanged rawmagnet80 friction3/2.4",
+        "code": "continuation006/source-manifest47a098899988e4b1c6da2ddc463a226f0a6df16365398a933c7a5e47c13890e1",
+        "conditions": "Native002 unchanged;00651 actual67 tests passed; readonly validate_original before claim rejects original artifact set",
+        "config": "historical one-way expected10; admission source21 vs original8 separate",
+        "model": "gpt-6-astra server22; local parent actual preflight",
+        "split": "development",
+        "stage": "terminal-audit"
+      },
+      "status": "unresolved",
+      "symptom": "original artifact set rejects nine recursive files because supplied failure input listed only six top-level files",
+      "version": 1
+    },
+    {
+      "cause": "Source calls scan before wait4 and if reap reports exit treats any stale active entry as descendants_after_native_exit. This can include the just-reaped leader. Actual metadata receipt records only that leader, return0, empty gaps/remains, native.json exact launch identity.",
+      "confidence": "Direct source predicate and actual receipt; exact interleaving awaits controlled regression",
+      "domain": "orchestration",
+      "fixes": [
+        {
+          "source_review": "parent-r21-audit006-final-source-review-001.json",
+          "status": "Engineering regression confirmed; actual67 51tests rc0 no gaps/remains, but not admitted to real audit because subsequent artifact-input completeness gate fails beforeclaim.",
+          "tests": "parent-r21-audit006-actual67-tests-001.json"
+        }
+      ],
+      "hypothesis": "006 minimal5-line post-reap rescan/exclusion passes deterministic old-fails/new-passes and real survivingchild rejection. All51 unchanged/source-bound actual67 tests pass. Real readonly preflight then refuses incomplete recursive artifact input;007 completeness repair needed before any originalverifier. No unique production timing assertion or physical rerun.",
+      "id": "r21-audit006-stale-active-after-reap@2",
+      "issue_id": "r21-audit006-stale-active-after-reap",
+      "kind": "issue",
+      "objects": [
+        "16b20b71b1b667e157ed618ec64e61ba3009e3b73a1ed2b44ebb5f483e74c2c4",
+        "3f810dc4a7b467d18b01a613211dfe5a512e1a964ffd384da3c240e4adda78fc",
+        "4cbaee44ad799deb6bf2ed542a58ce776dde7451b152b5ea62b38ade7695f4fa",
+        "82405b9ea6a0a46e0f8a610a2f0b367cc5d4554302d2342cc10bfef869e43895",
+        "bfe0d54bf3d37d3ef923e7e04baba9d5bb301824c9532f3bb4ca282e582367ff"
+      ],
+      "regressions": [],
+      "scope": {
+        "assistance": "original rawmagnet80 friction3/2.4 unchanged",
+        "code": "common.py439fdf442352d763078040c14198cce331364479fe3a2ae8a311244939ce50b0",
+        "conditions": "Completed originalr21 baseline002 rc0, metadata childrc0 no gaps/remains but stale leader snapshot rejected",
+        "config": "75wall45CPU metadata audit; exact expectedcount10 originalverifier has not run",
+        "model": "gpt-6-astra server22 repair; local parent diagnosis",
+        "split": "development",
+        "stage": "terminal-audit"
+      },
+      "status": "unresolved",
+      "symptom": "Owned terminal audit rejects bounded native metadata collection, originalverifier not invoked although episode native rc0 and raw runner10 IDs complete",
+      "version": 2
+    },
+    {
+      "cause": null,
+      "confidence": "livepmonconfirmscontextplacement; origin/resourceimpactunconfirmed",
+      "disposition": "record actual resource coverage gap; preserve existing bounded physics, no otherprocess signals or causal speedup/exclusivity claims",
+      "domain": "orchestration",
+      "fixes": [],
+      "hypothesis": "SDK/driver implicit global graphics context may choose3 independently of explicit device6; inspect only after currentrun or independentreadonly sourcework, no speculative restart",
+      "id": "r21-auxiliary-default-graphics-context@1",
+      "issue_id": "r21-auxiliary-default-graphics-context",
+      "kind": "issue",
+      "mainline_gate": false,
+      "objects": [
+        "03729876dd154a49be4786830e02012d92673234e4a0f908f80b9896924067c9",
+        "05b422b8c7c2012a60166be1680d9c9b1b3dd5d024d65244f8d62ada67092a26",
+        "06c162af6005458885db8c66dd3d3b1ccc8c13576e24cfd9d246a7901ab521a6",
+        "96686c702ac9491bda530e4f776ddad0660444dbd1fa749c8556fbf88118f27e",
+        "9d67556086ab34b2596be3f92899733564e862f6d4c6943d7c9a703d6cd98f2d",
+        "a9b48cc071405cd7f0a13318adbc37d69608e47333a34cd2986adef8596a5b8b",
+        "bfc5fca4b11a56e1d318e0ba13b57af39c1165d19250a99d02098dfc578ca5d6",
+        "c925e30ff15e816d81b4eb83a4639d99791101c52346f059acd43a9b1f75ade4",
+        "f1dacbeba35e0470f78359e26f07fb58e5f968e0634818d4e26c65bcaaf89cc3",
+        "f438d0ab884eaaf37ff40805af5388fb6809e0fdfd668ee012a56037cff7f40d"
+      ],
+      "regressions": [],
+      "scope": {
+        "assistance": "unchanged",
+        "code": "c591bdcc5ffdaac599dcc7d4a62250ecad09064b7167ceb02571dbf7529cf423",
+        "conditions": "034 selects physicalGPU6 and leases5/6; pmon ownGon3 plusCGon6 whileexternalCUDA3continues",
+        "config": "GPU6pciC1,physicsunchanged",
+        "model": "official22Astra/localparentlivecheck",
+        "split": "development",
+        "stage": "resource"
+      },
+      "status": "unresolved",
+      "symptom": "seven explicit renderer bindings match6, but auxiliarygraphicscontext staysGPU3 and leased5 unused; notexclusive5/6 runtime",
+      "version": 1
+    },
+    {
+      "cause": "Kernel returned ENOENT for enumeratedTIDstat. ExactaftererrorPIDstate notrecorded, threadexitvswholeexit unresolved.",
+      "confidence": "actualTIDreadfault/witness confirmed; preciseexitinterleaving needsdeterministiccounterexample",
+      "disposition": "deferredperexplicituser2026-10-20; retainnegativeevidence/notfixed",
+      "domain": "orchestration",
+      "fixes": [
+        "030unpromoted failedOSvalidation;029030budget120SPENT/0remaining"
+      ],
+      "hypothesis": "Peripheral026031diagnosticqualificationbranch paused byexplicituser. Notmainlinephysicalgate. Resumeoriginalvalidatedr21+existing006RETURN onavailable15 withsmallactualstartup/cleanup/bindingchecks; diagnoseonlydirectruntimefailures. 030readablestate/finalowner/witness14synthetics PASS plus47inherited; all4OSmethods failedfinal. Join0/readabletask plus512preconditionexhaustion; preciseOSrootunknown.031focusedfixturediagnosis before conditionalfullregression, no evaluator/productionchanges bydefault.",
+      "id": "r21-evaluator-TID-lifetime-race@4",
+      "issue_id": "r21-evaluator-TID-lifetime-race",
+      "kind": "issue",
+      "mainline_gate": false,
+      "objects": [
+        "19c6056beeeaba36744c12eed07385eab0a2df3b91ee1684c92c8a7968d3f6a5",
+        "1c24bd267926a89f2dcafedcd14fed0bb837e37ee49e853027faf96c5eae0ca1",
+        "2386487a5be586f67193a3f8c6161a7758fe071507f8150b1bd86390eea3e028",
+        "2ff1a7a4d5cb609d8f573e83dd931c979b75635ddf433f0f4052fca045ace222",
+        "31602517b873b090b49b323fa20132cddf8265e06ca3e4482dbcc826da07660e",
+        "48ef47b42d95c2825b74fad07ddbb69658a14fb3a613919e8d6059dbba4019ca",
+        "5187f9c9f4d9aaa56cc5c4778c8a4def0b0b623e243a9415126c17d9eb166ec0",
+        "617e9f16dcdb995688026c46ec8769800282857f09c28fcd805013b381e9b17b",
+        "8ee0f88daad05f3ecf7f1bbb4c100039f1b417a7eac7ed17b582702b9c8d620c",
+        "b2f87e3138c6398eb8fc4c4223b368a06a49785407b9bcec1247e44b125b187d",
+        "b914a1d7b06d86ee5df33448d9f463fd548c852d7cc7c31094a6c9895d564a82",
+        "c2fa532ab803e1abd6d713cbf55f195a3dc2dcd39bd18f3bff3e23b0f9db908f",
+        "cafe16167139598020b5e0d5a132134615f5e48817b584627081dda7ee219ad1",
+        "d53968af0bbc311700144adc8052842d5946db432689ad665ba010deb6acb7b6",
+        "f2a42224f2dade794a22138c40cfe2aa0b4dfe56f08309bc5e6b0c03fccac8e9",
+        "f7421ba215f197421b678cb8e14c506d5d0759d121ee2273395be98e7f3ca3b1",
+        "fdfddfca24df4cb6d258362642d36a1e2874180c657076a2b7117de04b90ff05"
+      ],
+      "regressions": [],
+      "scope": {
+        "assistance": "unchanged",
+        "code": "d48d00d652d9851e9a8f7838df2d3c28e3d2e8f1b42861c3f7da98a8704dfc6b",
+        "conditions": "028actual67kernelcfg002noSDK afterproducer47methods11commands",
+        "config": "fixed020envelope/new32.5observationcfg",
+        "model": "official22Astra/localparentreview",
+        "split": "development",
+        "stage": "runtime"
+      },
+      "status": "unresolved",
+      "symptom": "knownPID3924191/start68385553 freshR/reviewedargv/scopeOK then TID3924192statENOENT, ownedcleanup/nohandles.",
+      "validated_layers": [
+        "030all525payload149source121candidate and both148149snapshots parentverified",
+        "03047inherited+14newsynthetic methods codepass/12of13commands; OS0of4final/NOTcandidatecodepass"
+      ],
+      "version": 4
+    },
+    {
+      "cause": "Unreviewed command prefix guard fired; exactsame-event argv/state/role cause unobserved",
+      "confidence": "actualguardfailureconfirmed; lifetimecausehypothesis",
+      "disposition": "deferredperexplicituser2026-10-20; retainnegativeevidence/notfixed",
+      "domain": "orchestration",
+      "fixes": [],
+      "hypothesis": "Peripheral026031diagnosticqualificationbranch paused byexplicituser. Notmainlinephysicalgate. Resumeoriginalvalidatedr21+existing006RETURN onavailable15 withsmallactualstartup/cleanup/bindingchecks; diagnoseonlydirectruntimefailures. owned metadata or other child exited between identity acquisition and cmdline read, empty/zombiecmdline rejected as livecommand; fork/exec transition commandprefix race notcovered by existing phasewitness",
+      "id": "r21-evaluator-command-lifetime-race@2",
+      "issue_id": "r21-evaluator-command-lifetime-race",
+      "kind": "issue",
+      "mainline_gate": false,
+      "objects": [
+        "10d9f68c75b1d93e6c3bbf912bdb1d9a58faeff21c251767aca4a1ebdf1818f6",
+        "1c24bd267926a89f2dcafedcd14fed0bb837e37ee49e853027faf96c5eae0ca1",
+        "1d6f2e08d32e4961a89efe8774456cf21b6e3476b099c11a6251f88c2c104f83",
+        "4ab69e99fcfc3bae99eac4c5e6b5af67d70872d4a3be12100f152fd4449ba887",
+        "5f06313db80fd81bfc1a14fd164c1a1ff5312f59aa5796341ae49375687679b3",
+        "a3e678f8d0afa1093d9dd98d37cebc63b4df646c7ecb568a3342dc57aa4b70aa",
+        "a6cc74e4fb508f7768f8ae27382eeeff86a1872e7d51ff3c2511d6b712d5da17",
+        "f6eaa06dfbf80b165eeb5e720c56435d1a7c3336a0d4c0aacfff110bc69ebbcf"
+      ],
+      "regressions": [],
+      "scope": {
+        "assistance": "unchanged",
+        "code": "793a822a41cb7c54f0b4ee8ffbea08569c6e232d29eb3017cbe76ad4d8a64637",
+        "conditions": "025ONEactual67originalkernel2core observation, noSDK",
+        "config": "unchanged020envelope/observationonly32.5newreservation",
+        "model": "official22Astra/localparentreview",
+        "split": "development",
+        "stage": "runtime"
+      },
+      "status": "unresolved",
+      "symptom": "evaluator check_roles -> role_of argv unreviewed command prefix, then ownedcleanup/raw9; exact offendingPID/argv not logged",
+      "version": 2
+    },
+    {
+      "cause": "Deterministic oldactualhandler counterexample confirmed; failure-only unwind fix passed source +actual67CPUfixtures.",
+      "confidence": "sourceandindependenttargetCPUvalidated, fullproductionnotyet",
+      "domain": "orchestration",
+      "fixes": [],
+      "hypothesis": "Code-layer remediation validated; realkernel/fullruntime stillgate, no missingreceiptwaiver orphysicalcredit.",
+      "id": "r21-failure-unwind-timer-reentrancy@3",
+      "issue_id": "r21-failure-unwind-timer-reentrancy",
+      "kind": "issue",
+      "objects": [
+        "0422fa1ff54556a4a3ef594c394773610d682ac8117b8c6eea438a4ff862e868",
+        "47eff6f689ac1bcec6829b5ad258adb2ff7cd38f4890d7470100d1c3b218d780",
+        "5ab6151b1fcc9d142adcbe4a7d18801438fbd190e86fad0f7021f0688c78cfee",
+        "6e8b7eae024966fa9595dad565562a1c42abe34a582381c839b85939264e0a22",
+        "e17059aabb51359498d89475d067e88a2772a8a69b7664d525755eab10b74482"
+      ],
+      "regressions": [],
+      "scope": {
+        "assistance": "unchanged",
+        "code": "793a822a41cb7c54f0b4ee8ffbea08569c6e232d29eb3017cbe76ad4d8a64637",
+        "conditions": "024independentactual67codefixtures and4exactphase traces",
+        "config": "fixed020envelope",
+        "model": "official22Astra/localparentreview",
+        "split": "development",
+        "stage": "runtime"
+      },
+      "status": "unresolved",
+      "symptom": "024independenttarget preserves firstfailure receipts in4phasepredicates/5signals, all209and26suitespass. Preobserverreject retains zero lifecycle credit.",
+      "validated_layers": [
+        "source_review",
+        "producer_CPU",
+        "parent_actual67_CPU"
+      ],
+      "version": 3
+    },
+    {
+      "cause": "Per-module virtual OS facade retained; active73assertionAST anddynamiccaller controls execute onfinal024. Earlier021coverage caveat superseded for this exactsource.",
+      "confidence": "independenttargetcodeverified; kernel/cost/physicsunqualified",
+      "domain": "orchestration",
+      "fixes": [],
+      "hypothesis": "Code-layer regression validated; preserve exactsource binding in futurebranches, no physicalcredit.",
+      "id": "r21-fixture-real-pid-collision@3",
+      "issue_id": "r21-fixture-real-pid-collision",
+      "kind": "issue",
+      "objects": [
+        "56b8ffd1cd85a8e378d772924501691719a6df7c707abe3a771a6c01216d08e8",
+        "5ab6151b1fcc9d142adcbe4a7d18801438fbd190e86fad0f7021f0688c78cfee"
+      ],
+      "regressions": [],
+      "scope": {
+        "assistance": "unchangedmagnet80friction3/2.4",
+        "code": "793a822a41cb7c54f0b4ee8ffbea08569c6e232d29eb3017cbe76ad4d8a64637",
+        "conditions": "024independentactual67CPUfixture sourcequalification",
+        "config": "fixed020controlCPU1/nativeCPU0 envelope",
+        "model": "official22Astra/localparentreview",
+        "split": "development",
+        "stage": "runtime"
+      },
+      "status": "unresolved",
+      "symptom": "024all209includingruntime32/collision16 independentlypasson67; no new PID30collision observed.",
+      "validated_layers": [
+        "producer_CPU",
+        "parent_actual67_CPU"
+      ],
+      "version": 3
+    },
+    {
+      "cause": "ActualSDK hasadditionalGPU3context despite Vulkanenumerationfilter; exactinternalcauseunproven. 036known3/5/6profile nowallfree avoidsisolationwork.",
+      "confidence": "observedcurrentGPUcontexts; internalcauseunconfirmed",
+      "domain": "orchestration",
+      "fixes": [],
+      "hypothesis": "Restore036knownbinding andrun043sameRETURNcandidate withaux3+5/6leases; no6-onlyclaim/no thresholdchange",
+      "id": "r21-free-gpu6-binding-042@2",
+      "issue_id": "r21-free-gpu6-binding-042",
+      "kind": "issue",
+      "objects": [
+        "2ca6bf9ecc12b8b83a537666ac0d6de69ba123142c30e00c4221c880f30fef54",
+        "3e7c61c647748a4483510ee70902366f9ac708e86348424676d21715f988b60e",
+        "72b2e1c86c7296c6abb93cd375a32d6082ba81aa9b974ca1c6696a82bed34da8"
+      ],
+      "regressions": [],
+      "scope": {
+        "assistance": "unchanged80/friction3/2.4 and guards",
+        "code": "c17b91ddfbb5cd8eadff2640096d66e946ba3272601d6f935d3131514351527f",
+        "conditions": "15CPU121idle, GPU6/7idle, 3/5others;67zeroidleCPU. Preserve existing jobs.",
+        "config": "327627ce4d3e12d842c33d25d648353abcde25f832371c12b30438516dbed355",
+        "model": "official22Astra; localparent review",
+        "split": "development",
+        "stage": "startup"
+      },
+      "status": "unresolved",
+      "symptom": "042actual30probe Vulkanphysicalenumerationsole6/pinnedMesa active but ownedSDKPIDpmon[3,6]; failed, spent/no retry; no physicalepisode",
+      "version": 2
+    },
+    {
+      "cause": "predeclared wall timeout confirmed and missing root scene-manifest confirmed; source-level time cause not yet established",
+      "confidence": "direct terminal/status/files evidence; performance cause unknown",
+      "domain": "physical",
+      "fixes": [],
+      "hypothesis": "identify redundant computation/clone/observer overhead with existing evidence, preserve formal OUT/RNG and guards; publish interrupted artifacts/video without redefining acceptance",
+      "id": "r21-full-return-time-and-interrupt-evidence@1",
+      "issue_id": "r21-full-return-time-and-interrupt-evidence",
+      "kind": "issue",
+      "objects": [
+        "014615e9cbf4ba2c8ce70a6816548c4cad498a1d30df456a9acc4f28fd2ba378",
+        "10580c3c84a0f35ca0a1a48b7340d3a394146f22a42667487e426cc09f00f826",
+        "31a8067fb924ed29e5a4eeb87c655b5cf96e9924c8af5670275f575a646b6287",
+        "422b3e9d293d9303b11bd22bdefbc983b7332aa9add995fd837f47322cc3696a",
+        "607f09eb04557da536ae21b6c26cb5cd46ae3cce5a2d418dfe6cbb9ad6c29b1d",
+        "afca69771dffeaec269c0542a30bb3d33a2210ebba32af1b5eafb7c9ed0acd4c",
+        "ce2132620efcdf30e2943ae0095ebbe3d25795085fc802ad009f11bc0ad35ba0",
+        "e29d259455a2b658949c4f0251b61987a8a12db036e0c8b6f779c366e6a79d8a"
+      ],
+      "regressions": [],
+      "scope": {
+        "assistance": "unchanged magnet80/friction3/2.4 and original safety/pose bounds",
+        "code": "7d19057e821dada5868f8ab8d5c0f75f9e8e3ec469776cc9405b52b7b1822259",
+        "conditions": "032seed2 original10 OUT then exact raw-quaternion RETURN,7200wall/CPU,15data6",
+        "config": "327627ce4d3e12d842c33d25d648353abcde25f832371c12b30438516dbed355",
+        "model": "official22gpt-6-astra; localparentreview",
+        "split": "development",
+        "stage": "return"
+      },
+      "status": "unresolved",
+      "symptom": "OUT10 accepted but last release at~6894s leaves too little wall; raw returned17 then interrupted RETURN12, missing final root evidence and unplayable MP4",
+      "version": 1
+    },
+    {
+      "cause": "Oldfull001 supervisionCPUfailure retained; fixed020 controlCPU1/nativeCPU0 protocol unqualified. InstrumentedTEST numbers omit hardware/fullresidual, metricsNone no actualscanforecast.",
+      "confidence": "independenttargetcodeverified; kernel/cost/physicsunqualified",
+      "domain": "orchestration",
+      "fixes": [],
+      "hypothesis": "025existingcaller startup/exit bound then separately reserved originalkernel2core+realresidual qualification; no oldreplay/budgetincrease or crosshostimprovementclaim.",
+      "id": "r21-full006-supervision-cost-budget@8",
+      "issue_id": "r21-full006-supervision-cost-budget",
+      "kind": "issue",
+      "objects": [
+        "5ab6151b1fcc9d142adcbe4a7d18801438fbd190e86fad0f7021f0688c78cfee",
+        "ea45e7d21125c571aaddea0730b5b2cd5f5d2e87075688f64d7f7608caf31ef0"
+      ],
+      "regressions": [],
+      "scope": {
+        "assistance": "unchangedmagnet80friction3/2.4",
+        "code": "793a822a41cb7c54f0b4ee8ffbea08569c6e232d29eb3017cbe76ad4d8a64637",
+        "conditions": "024independentactual67CPUfixture sourcequalification",
+        "config": "fixed020controlCPU1/nativeCPU0 envelope",
+        "model": "official22Astra/localparentreview",
+        "split": "development",
+        "stage": "runtime"
+      },
+      "status": "unresolved",
+      "symptom": "024target TEST model1049.944764driver/131.887749custody below fixed1800/450; all26 source suitespass.",
+      "validated_layers": [
+        "producer_CPU",
+        "parent_actual67_CPU"
+      ],
+      "version": 8
+    },
+    {
+      "cause": "Watch.handler reads liveleader then snapshotspansnativeexit; unconditionally replaces snapshotprocesses[leader] with post-queryidentityNone. Guard.profile marksleadermissing andpersistsfalsemonitor-failure despiteboundexit0terminalavailable. Existing26components omitthisintegrationtiming.",
+      "confidence": "Finalsource315d29... and injectedcounterexample independently reproducedlocal+actual67; not physicsclaim",
+      "domain": "orchestration",
+      "fixes": [],
+      "hypothesis": "Bounded exactterminalhandoff withrawreap/source/authority/childidentity/7SDKrecords/maxgap checks; no swallowing liveleader queryerrors, unboundterminal or PIDreuse.009candidate underfreshreview before native.",
+      "id": "r21-full008-terminal-observation-race@1",
+      "issue_id": "r21-full008-terminal-observation-race",
+      "kind": "issue",
+      "objects": [
+        "0125a87f0b1626c4fea99c94733445fa7462d1535c920ae4b8e4944d6e0fbab0",
+        "287be3aafa4aa3eb23370127c427a025e6f108353868e73d9f7bcc16df4a85cb",
+        "63208a70c0651d7adc1d071ef6a89d8a205323a68356e8d96cd14f693cfba041",
+        "c47c5648727a50516667f4aabad522364164589dcfbc271dc8b34816750e8bff",
+        "eae65e67923a2c92732286831c9600976b7f955023cc2f9b990792e98da48855"
+      ],
+      "regressions": [],
+      "scope": {
+        "assistance": "none inregression; originalphysicalassistance unchanged",
+        "code": "parent_support.py315d29f8dd3b3e0518b8c6da23ad5c1a1629a291b6bd3cd6d4a3db0eb3f25c04",
+        "conditions": "full008 siblingobserver queryspans ownednative normaltermination; syntheticPID/start-boundterminalexists",
+        "config": "futuredual3G/4CGfullprofile; 26component tests pass; no nativeattempt",
+        "model": "gpt-6-astra server22; localparentreview",
+        "split": "development",
+        "stage": "termination"
+      },
+      "status": "unresolved",
+      "symptom": "Successful native endingduringGPUquery iswrongly recordedasValueError:leader missing/reused",
+      "version": 1
+    },
+    {
+      "cause": "Strict bytes.decode UTF8 before json.loads restores intendedtext semantics. Parent67 019safety suite includesUTF16/UTF32/BOMnegativecases plusvalidUTF8; nophysical inference.",
+      "confidence": "actual67code-tests in019 andsourcepropagation, notphysicalproof",
+      "domain": "orchestration",
+      "fixes": [],
+      "hypothesis": "Retain active-source safety tests for allnoncanonicalencodings/duplicate/nonfinite andcacheaftervalidUTF8 rewrite. Statusremainsunresolvedforcurrentbranch until reviewedactive-regression binding, not an oldunfixedsourcebug.",
+      "id": "r21-json-receipt-encoding-drift@2",
+      "issue_id": "r21-json-receipt-encoding-drift",
+      "kind": "issue",
+      "objects": [
+        "2a223aaa19b0716ef58460d22896d1e52efbfe72bf309efb8afd758ff5a3c34d",
+        "9ab0eaff8700a88ad8186c5734604554cb674512e69abb0a7a74d5621e9dc5e5",
+        "b90a710174d284b9f0445a3883b8f2704dc789a60f17094a560813bd72fd3972",
+        "c28fc18a766344ea7cc58774b261cf430b5bf1748c6243820f54fe790993e1f9"
+      ],
+      "regressions": [],
+      "remaining_layers": [
+        "022activecoveragebinding",
+        "actualkernel/topology/cost",
+        "physicalacceptance"
+      ],
+      "scope": {
+        "assistance": "unchangedmagnet80friction3/2.4",
+        "code": "30add9d0b72e0a5b33358187b899c9cc20d92993bffc1ab78ecac47aae313f32",
+        "conditions": "019parentactual67codeacceptance;021producerCPU plusbytes propagation;022notyetfinal",
+        "config": "unchanged005env/020engineeringenvelope",
+        "model": "official22Astra coding; localparentreview",
+        "split": "development",
+        "stage": "runtime"
+      },
+      "status": "unresolved",
+      "symptom": "UTF8 encoding drift code corrected in017 and propagated unchanged to019/020/021; actual67 019safety cases passed, current022active obligations pending.",
+      "validated_layers": [
+        "019samehostcode-tests",
+        "021source-byte-propagation"
+      ],
+      "version": 2
+    },
+    {
+      "cause": null,
+      "confidence": "observed preview labels/cursors only; final outcome and physical cause unconfirmed",
+      "domain": "physical",
+      "hypothesis": "source-state/layout/numeric divergence vs inherited separation limitation vs computation cost;035 read-only diagnosis requested, no causality established",
+      "id": "r21-last-pair-preview-separation-034@1",
+      "issue_id": "r21-last-pair-preview-separation-034",
+      "kind": "issue",
+      "objects": [
+        "04087525121855c76538f6aa7598a932b2e2b1c6fe5957c6522cea1648316479",
+        "a221fa7b7e3a83e5e071f313afb46b3d60310ffd435727a3d36de0d72eb91a5f"
+      ],
+      "regressions": [],
+      "scope": {
+        "assistance": "unchanged magnet80/friction3/2.4 and original pose/contact/safety bounds",
+        "code": "c591bdcc5ffdaac599dcc7d4a62250ecad09064b7167ceb02571dbf7529cf423",
+        "conditions": "034 seed2 original10 OUT then exactRETURN,7100wall/CPU,15data6; run ongoing",
+        "config": "327627ce4d3e12d842c33d25d648353abcde25f832371c12b30438516dbed355",
+        "model": "official22 gpt-6-astra; parentlocal",
+        "split": "development",
+        "stage": "grasp"
+      },
+      "status": "unresolved",
+      "symptom": "Formal trajectory last advanced about9minutes before live observation; later candidate/preview events and native CPU continue. Candidate cursors advance: no demonstrated deadloop. Five recent17 grasp previews rejected for no_short_separating_motion; nested17/12 payload-contact rejections. No terminal failure yet.",
+      "version": 1
+    },
+    {
+      "cause": "019 fully admits artifact then consumes exactlyRECEIPT/SHA; cachedhandoff regenerated. Parent67codeacceptance replaces older parentpending note. Same full_child/005/C/source preserved through021.",
+      "confidence": "actual67code-tests in019 andsourcepropagation, notphysicalproof",
+      "domain": "orchestration",
+      "fixes": [],
+      "hypothesis": "Keep fixed-env code and all negative cases in022active suite; kernel/role/cost andphysical qualification remain separate, never waiveexactenv gate.",
+      "id": "r21-native-artifact-environment-spill@3",
+      "issue_id": "r21-native-artifact-environment-spill",
+      "kind": "issue",
+      "objects": [
+        "2a223aaa19b0716ef58460d22896d1e52efbfe72bf309efb8afd758ff5a3c34d",
+        "949aa4be043fd0d9978981c16049177708cb6ed8b429a7a42b203e2cc5bbb5bb",
+        "9ab0eaff8700a88ad8186c5734604554cb674512e69abb0a7a74d5621e9dc5e5",
+        "c28fc18a766344ea7cc58774b261cf430b5bf1748c6243820f54fe790993e1f9"
+      ],
+      "regressions": [],
+      "remaining_layers": [
+        "022activecoveragebinding",
+        "actualkernel/topology/cost",
+        "physicalacceptance"
+      ],
+      "scope": {
+        "assistance": "unchangedmagnet80friction3/2.4",
+        "code": "30add9d0b72e0a5b33358187b899c9cc20d92993bffc1ab78ecac47aae313f32",
+        "conditions": "019parentactual67codeacceptance;021producerCPU plusbytes propagation;022notyetfinal",
+        "config": "unchanged005env/020engineeringenvelope",
+        "model": "official22Astra coding; localparentreview",
+        "split": "development",
+        "stage": "runtime"
+      },
+      "status": "unresolved",
+      "symptom": "019 actual67 samehost code regressions passed including real sealed handoff/exactenv predicate andbadextra/admission cases;021producer entry also passed. New22completequalification pending.",
+      "validated_layers": [
+        "019samehostcode-tests",
+        "021source-byte-propagation"
+      ],
+      "version": 3
+    },
+    {
+      "cause": "OwnchildOScontrol SAMEpid/start liveNSreadOK then WNOWAITZ stateNSread EACCES13, raw0; sourcecheck_owned onlyskips cachedterminalstate soexitbetweenstatandNS read is possible. Historicalcause unconfirmed.",
+      "confidence": "fixturecause sourceconfirmed; historicalNSracehypothesis withindependentOSmechanism",
+      "domain": "orchestration",
+      "fixes": [],
+      "hypothesis": "023 deterministicoldsourcecounterexample thenfreshsamePID/startterminalstate revalidation on onlyconsistentOSError, no liveEACCES/PIDreuse/unknown/semanticmismatchpermissionbypass; boundedevidence andall209regression.",
+      "id": "r21-owned-terminal-namespace-read-race@1",
+      "issue_id": "r21-owned-terminal-namespace-read-race",
+      "kind": "issue",
+      "objects": [
+        "3c789403df29e1bfda7ab160232c0005a29769c7f2c69124118633dd87d941c9",
+        "44b34f78c3b58acf30d4dc0900a01dbdb75651cdedd71856a641df9bf8fcfb18",
+        "7fef2a747e36acacac3ca42931e5a04bd9f2995a34190cc4e43aae99b78e1183",
+        "a8a93b02ad9bdd0e993c0f50567419f10d4ae0c109c05ede4e466e67b4fd679a",
+        "d22504561ea3a005a111f2a8318b9392b573605c5dd697b5296f9d1ee4ef699c",
+        "dcc5ea08f372f7984df7abe6622adefbe0e238ea57d19b5a04fd287fcfb815b8"
+      ],
+      "regressions": [],
+      "scope": {
+        "assistance": "unchangedmagnet80friction3/2.4",
+        "code": "59e3b147611239ae0be45c40ea4144e6ddcd87cf0569bd7ee056ff83b9185653",
+        "conditions": "022actual67activeCPUfixtures andseparateownchildOSNSdiagnostic; noSDK",
+        "config": "fixed020controlCPU1/nativeCPU0envelope",
+        "model": "official22Astra coding; localparentreview",
+        "split": "development",
+        "stage": "runtime"
+      },
+      "status": "unresolved",
+      "symptom": "Actual67metricsNoneTESTpipeline fails EACCES/proc3541985/ns thencustodianFDloss; instrumentedTESTpasses",
+      "version": 1
+    },
+    {
+      "cause": "Forkchild has no unconditional exceptioncontainment/os._exit path. Iterationcap can endreadinesspredicate beforewallbudget; actualpostjoinTIDstate/durations missing, kernelcauseunknown.",
+      "confidence": "sourceandrawlogs confirmedchildcontrolflow/earlyiterationcap; underlyingteardown mechanism unproven",
+      "disposition": "deferredperexplicituser2026-10-20; retainnegativeevidence/notfixed",
+      "domain": "orchestration",
+      "fixes": [],
+      "hypothesis": "Peripheral026031diagnosticqualificationbranch paused byexplicituser. Notmainlinephysicalgate. Resumeoriginalvalidatedr21+existing006RETURN onavailable15 withsmallactualstartup/cleanup/bindingchecks; diagnoseonlydirectruntimefailures. A boundedblockingpredicate could letkernelteardownfinish without enlargingdeadline, but mustmeasureidentity/state/elapsed andproveactualabsence, notsleepalone. Namespace/ctypesABI mustbesanitychecked.",
+      "id": "r21-real-thread-readiness-fixture@2",
+      "issue_id": "r21-real-thread-readiness-fixture",
+      "kind": "issue",
+      "mainline_gate": false,
+      "objects": [
+        "1c24bd267926a89f2dcafedcd14fed0bb837e37ee49e853027faf96c5eae0ca1",
+        "338529cddf1bb59d317f4af3efd1e3fd7377b4565863c550fd0b6e89114776b3",
+        "b914a1d7b06d86ee5df33448d9f463fd548c852d7cc7c31094a6c9895d564a82",
+        "e75b90cfc0c30cf9ede941d571f52d8d9ef74df7e91a1e4b396e4e7459e6acb5"
+      ],
+      "regressions": [],
+      "scope": {
+        "assistance": "unchanged",
+        "code": "f881d2a3778a8bba10a4041ffc543751089515d129692d410dca17fc1fed2afb",
+        "conditions": "030original007realOSfixtures/bothfailedbatches",
+        "config": "CPU1/30CPU60wall/childjoinabsencepredicate.25sec512iterations",
+        "model": "official22Astra/localparentreview",
+        "split": "development",
+        "stage": "runtime"
+      },
+      "status": "unresolved",
+      "symptom": "9of10absencebarriers capped512withTIDpresent; entire17methodcommand .184615s shorterthanone.25secdeadline. Forkchildbarrierexception returnsinto unittest andrawexit256 not1792.",
+      "version": 2
+    },
+    {
+      "cause": "ExtraGPU3graphicscontext causeUNKNOWN. SevenSDKrequested/engineDevicegetters report4 but do not independently read lowerVkPhysicalDevice. Upstream versioned lowercontextfactory mayreuseexistingcontext withoutdevicecheck; runtimeprecondition/buildcorrespondence unproved. InstalledinternalrendererAPIhasnoPCI/UUIDphysicaldevicegetter.",
+      "confidence": "Independent source branch and exactinstalledstub/ELF read; no runtimecausalproof",
+      "domain": "orchestration",
+      "fixes": [],
+      "hypothesis": "No justified material/denoiser prevention. Preserveexclusive4failure and propose new explicit3+4 resourceprofile withsource-boundfullentry andongoing observedadmission; no native untilparentreview/test. Rawphysicalacceptance unchanged.",
+      "id": "r21-renderer-gpu-binding@3",
+      "issue_id": "r21-renderer-gpu-binding",
+      "kind": "issue",
+      "objects": [
+        "1fca00f3e7e09920c34ddbc74a8379dab87e5053be71b4b7c9a31ea7ca0f6525",
+        "546f7d0ef0983d087a596002a7032b943ac88488979d45ae84ac6dea9d6a6918",
+        "8cd929eac82236ba485e2e64c2c28a7d65f483221d058ba3ebb2669bf8b27758",
+        "9341ddbcb3380221815e3304e0510a313302b6fea03adb78344d85eb71d87209",
+        "948552e5503669551760b1cc4b39bb9eaa88d92f2515a4589f8f5b749a0eeaf0",
+        "d959ad4d5ed9163cab71f453d85f084640b724cec7db307b5ca1ab26b265ad8f"
+      ],
+      "regressions": [],
+      "scope": {
+        "assistance": "historicalrawmagnet80/friction3/2.4 unchanged, noOUT/RETURN",
+        "code": "unchanged006/002/004/005/007supervisor; analysis-onlyresidual007",
+        "conditions": "0067 SDKgetters4; ownPID3G+4C+G; exactinstalledinternalrenderer.pyi noidentitygetter; read-onlycurrentGPU3/4snapshot idle butNOTlease",
+        "config": "Futureonefullnative≤7200wall/CPU, candidateonly; alloldinitializers spent",
+        "model": "gpt-6-astra",
+        "split": "development",
+        "stage": "startup"
+      },
+      "status": "unresolved",
+      "symptom": "006 explicit PCI binding: selected Device and both RenderSystem.device/Scene.render_system.device on formal, grasp_preview, separation_preview all GPU4 PCI0000:81:00.0 (7 receipts); exact owned PID2568944/start65261066 still GPU3G+GPU4C+G in pmon. ExclusiveGPU4 gate not satisfied.",
+      "version": 3
+    },
+    {
+      "cause": "FixtureSimpleNamespace supportsrows only whileactualcommon.session_members calls sessions; driverfinallyraisesAttributeError. Earliermetadatafixisverified, nooldgateblame.",
+      "confidence": "fixturecause sourceconfirmed; historicalNSracehypothesis withindependentOSmechanism",
+      "domain": "orchestration",
+      "fixes": [],
+      "hypothesis": "023completeboundedownedfixturecleanup protocol, exactphase/rawreap/finally proof; localICDonlydisclosedstub, productionICD/FDguards unchanged",
+      "id": "r21-residual-metadata-binding-and-phase-credit@2",
+      "issue_id": "r21-residual-metadata-binding-and-phase-credit",
+      "kind": "issue",
+      "objects": [
+        "3c789403df29e1bfda7ab160232c0005a29769c7f2c69124118633dd87d941c9",
+        "7fef2a747e36acacac3ca42931e5a04bd9f2995a34190cc4e43aae99b78e1183",
+        "a4c7b521ea174d41d03a6bc99f3032a0d10376d1068b634ecea98b55a020971e",
+        "a8a93b02ad9bdd0e993c0f50567419f10d4ae0c109c05ede4e466e67b4fd679a",
+        "d22504561ea3a005a111f2a8318b9392b573605c5dd697b5296f9d1ee4ef699c",
+        "dcc5ea08f372f7984df7abe6622adefbe0e238ea57d19b5a04fd287fcfb815b8"
+      ],
+      "regressions": [],
+      "scope": {
+        "assistance": "unchangedmagnet80friction3/2.4",
+        "code": "59e3b147611239ae0be45c40ea4144e6ddcd87cf0569bd7ee056ff83b9185653",
+        "conditions": "022actual67activeCPUfixtures andseparateownchildOSNSdiagnostic; noSDK",
+        "config": "fixed020controlCPU1/nativeCPU0envelope",
+        "model": "official22Astra coding; localparentreview",
+        "split": "development",
+        "stage": "runtime"
+      },
+      "status": "unresolved",
+      "symptom": "022metadataobjectbinding andearlyphasenocredit tests pass;actual67ICDpasses,observerreached,butall3capturesfailmissing scope.sessions",
+      "version": 2
+    },
+    {
+      "cause": null,
+      "confidence": "Observed empty return physical brief; no claimed historic return lesson reuse",
+      "domain": "orchestration",
+      "fixes": [],
+      "hypothesis": "Exact named stage/domain filtering misses relevant baseline/orchestration/capture lessons; inject explicit latest issue payloads and baseline acceptance facts, and require worker report any missing experience coverage.",
+      "id": "r21-return-experience-stage-coverage@1",
+      "issue_id": "r21-return-experience-stage-coverage",
+      "kind": "issue",
+      "objects": [
+        "049e9e8525f024d962d626f11aaae052e7156a17fd0d6cfafa96cf5b1c40dc65",
+        "0fc6a0d80795407488684fabeba5d92d2e348316fb887cb39b5bbd43df4c4c28",
+        "2cb32b5ebd8e623a64caff7073f6d770b8985cae40261d749df5e4fc84980ded",
+        "39341f3fd6e56d404e2476c2669b52863ddada5597ad4b4f11a43e64ccef3703",
+        "b2bc5141e6b67a01967a64a405d57fd0ff255be5752c260bc8e402d28bf8e877",
+        "eeac49bdd3801de46d18f5af4d0eddce491acf176dbee7700a54543e665165c9"
+      ],
+      "regressions": [],
+      "scope": {
+        "assistance": "unchanged historical assisted rawmagnet80 friction3/2.4 releasevelocityreset",
+        "code": "verified-ten-r21",
+        "conditions": "r21 seed2 exact originalID/position/rawQuaternion return fork",
+        "config": null,
+        "model": "gpt-6-astra",
+        "split": "development",
+        "stage": "return"
+      },
+      "status": "unresolved",
+      "symptom": "Fresh return-stage physical brief returns no issues; legacy baseline has no object-return stage, its return_plan means robot-home only.",
+      "version": 1
+    },
+    {
+      "cause": "Confirmed source semantics: append-on-attach historical ID list, detach disables actual drive without removing history.",
+      "confidence": "Parent exact source read; no current002native code or physics proof",
+      "domain": "orchestration",
+      "fixes": [],
+      "hypothesis": "Track real formalscene attach/disable handle identities separately with leak/release failure negative tests; do not erase history or set active flags from counts.",
+      "id": "r21-return-history-vs-active-drive@1",
+      "issue_id": "r21-return-history-vs-active-drive",
+      "kind": "issue",
+      "objects": [
+        "29f3ab325a037b62e7497c7fbf42c747619d96d11e44644c5657b523cc1e5851",
+        "aa683203178df1e0a9d71dfb1d0cad365b373cbecf5a96dee7f71eba76c855ae"
+      ],
+      "regressions": [],
+      "scope": {
+        "assistance": "unchanged",
+        "code": "7783fd120095c46a295912f014ad02897305397e97733a28f09a677dbd202a0d",
+        "conditions": "r21 physical assistance release and strict active_magnetic_ids telemetry",
+        "config": "historical rawmagnet80 releasevelocityreset unchanged",
+        "model": "gpt-6-astra",
+        "split": "development",
+        "stage": "return"
+      },
+      "status": "unresolved",
+      "symptom": "Legacy _magnetic_assisted_ids records previous attachments and is not cleared by drive.disable/release; treating it as active drive status would falsely report remaining assistance.",
+      "version": 1
+    },
+    {
+      "cause": null,
+      "confidence": "precise terminal contact metric and stage confirmed; triggering motion/design cause pending source+trajectory analysis",
+      "domain": "physical",
+      "hypothesis": "RETURN dynamic placement coverage gap: only staging-grasp previews exist before full live transfer/lowering; investigate actual goal/PD/contact trajectory and returned-object disturbance before a minimal RETURN-only fix.",
+      "id": "r21-return-placement-contact-034@1",
+      "issue_id": "r21-return-placement-contact-034",
+      "kind": "issue",
+      "objects": [
+        "b522f971d72954c40e9e5b1e3c80b8a8622c7143920eab3aa453c1d761defc22",
+        "f6333e6891663f35628fbfca531a824338bb5ed080dc7632554d6392bdd22324"
+      ],
+      "regressions": [],
+      "scope": {
+        "assistance": "magnet80 friction3/2.4 original guards and precise pose bounds unchanged",
+        "code": "c591bdcc5ffdaac599dcc7d4a62250ecad09064b7167ceb02571dbf7529cf423",
+        "conditions": "034 originalseed2 10objects assisted allOUT10 accepted; RETURN17 then held12 stopped step132331; no timeout",
+        "config": "327627ce4d3e12d842c33d25d648353abcde25f832371c12b30438516dbed355",
+        "model": "official22gpt-6-astra and parentlocalreview",
+        "split": "development",
+        "stage": "return"
+      },
+      "status": "unresolved",
+      "symptom": "RETURN12 real execution stopped on pair17/12 impulse above existing .002 guard;17 initially measured near goal then unstable in final window. No timeout. Original OUT10 ability retained on this attempt.",
+      "version": 1
+    },
+    {
+      "cause": "Confirmedoriginalgoalpairintentionalbaselinecontact underunchangednativeguards vs defaultpositiveplannerpayloadmargin; exactcontactgoal cannot satisfy1mm clearance. Not solecause (038palmaccess also real); no signedpenetration or wrongSDKframe proof.",
+      "confidence": "actualGPUfull-motion12previews17879/17877steps, formalbeforepackcontrols/RNGunchanged; completedRETURNand17notverified",
+      "domain": "physical",
+      "fixes": [],
+      "hypothesis": "Keepactive043originalbudget andguards. Verify12formal then17fixed4mmactualpreviews; do notredesign/retrywhilephysicalprogresses.",
+      "id": "r21-return-safe-placement-036@6",
+      "issue_id": "r21-return-safe-placement-036",
+      "kind": "issue",
+      "objects": [
+        "143858022f84281db83f4f5461084c472efabf9d6a56c0e5359c761e1e1da12a",
+        "36f3fdb372ef85d0b7bdb7e4df74d72a75c4fd6cae2c607b0ea31dde83f8ad75",
+        "424683af8625203d63751ce736c984cf20b4ffe82e1ed92e13ca9779fd300906",
+        "4a85e154e21045805e3fa9ebf61eca8ffc2b4c8e8f1f4f1a65e292238cc921dd",
+        "5b7240316cabbcdf6b84927d9b4804fae5d30514c4e4f3bb420375fb7515c3cd",
+        "a52f66e44ebbef72cc810a9554ce4da27303cc33a97ab72a4e6e2a882948b916",
+        "abf119c3c283c8d3cab0959d591768cf13489fa4c8c8144eb0e9fb74f37ac398",
+        "f77454d96d0acfff9b7dae118f35c6d178e3ba5e69b8cb01cead328f942bc5be"
+      ],
+      "regressions": [],
+      "scope": {
+        "assistance": "magnet80 friction3/2.4 sameguards/rawpose/stability/safety",
+        "code": "b08b5533a0627a1992af3c5380c19392232bbda996884856889a33e3937e8ea5",
+        "conditions": "043liveoriginalseed2 assisted10, OUT10eventbarrier110522;12first2fullnativepreviewspass/formalongoing; independentterminalauditpending",
+        "config": "327627ce4d3e12d842c33d25d648353abcde25f832371c12b30438516dbed355",
+        "model": "official22gpt-6-astra; parentlocalreview",
+        "split": "development",
+        "stage": "return"
+      },
+      "status": "unresolved",
+      "symptom": "03612all6fullforecastsrejected after17;04312-firstcandidate0twoactualfullphysics forecastsaccepted, formal12inprogress",
+      "version": 6
+    },
+    {
+      "cause": "Supplied bounded001 references omitted actual closure task/robot/asset identity producer and exact physical fixtures; code explicitly leaves live bridge unwired. Tests validate synthetic computations and contract negatives only.",
+      "confidence": "Parent source inspection and actual67 CPU execution; no physical cause claim",
+      "domain": "orchestration",
+      "fixes": [],
+      "hypothesis": "Supply exact verified245 closure text/fixtures +all binary asset hashes and read-only strict measurement pattern inputs, then implement in separate002 without changing OUT or claims from synthetic states.",
+      "id": "r21-return001-native-bridge-gap@1",
+      "issue_id": "r21-return001-native-bridge-gap",
+      "kind": "issue",
+      "objects": [
+        "0f02c547e619ed920f6381827b32eb9491f7d9a8c908d5240231641d105b13c4",
+        "29e62d6e64ea2d6bcc8c4d943043f9acf069fa30bc22f197bf3749ab59dc91ab",
+        "30de36662b82e199767867ce7ba6fe62eb1b25d59019eee1a9ea06c59b55f8ce",
+        "c1dcb61f79b0e9f4a32a4a290a134a59833f78de8713ecbb461af43f25e592f9"
+      ],
+      "regressions": [],
+      "scope": {
+        "assistance": "historical rawmagnet80 friction3/2.4 releasevelocityreset",
+        "code": "r21-exact-return-001 c1478cad41add09d1363363db5124640c94d58340652655026801177b582ca22",
+        "conditions": "continuous originalseed2 all10 OUT then originalposeRETURN",
+        "config": "existing strict original10 acceptance thresholds unchanged",
+        "model": "gpt-6-astra",
+        "split": "development",
+        "stage": "return"
+      },
+      "status": "unresolved",
+      "symptom": "41 actual67 CPU regressions pass but entrypoint unconditionally refuses; actual observer/identity/layout/continuous telemetry/native closure binding absent.",
+      "version": 1
+    },
+    {
+      "cause": "ChangingonlyICDenumeration allowedcompletedinitialization underunchangedstrictguard. Internalnativecaller/Mesa topology remainsunconfirmed; singlefinitepreventioncontrolnot stable/nativephysicsfix.",
+      "confidence": "exactconstructorinterval observed; nativecallrootcauseunconfirmed",
+      "domain": "orchestration",
+      "fixes": [
+        {
+          "environment_diff": {
+            "VK_ICD_FILENAMES": "/usr/share/vulkan/icd.d/nvidia_icd.json"
+          },
+          "evidence": "72aecd63a6f976537ecee237883fa49d5e17edd5eefe39caac7d90bc24ed4823",
+          "status": "one finite initialization-only preventioncontrolpassed; no formalpreservation/fulltaskacceptance",
+          "wait4scope_cpu_s": 24.595105,
+          "wall_s": 25.976094871060923
+        }
+      ],
+      "hypothesis": "RetainNVIDIAonlycandidate for nextdevicebindingreview; do not infercausalityfromCPUthreadname. GPU3GplusGPU4C+Gcontextsobserved is separateblockingresourceissue.",
+      "id": "r21-return002-native-thread-affinity@4",
+      "issue_id": "r21-return002-native-thread-affinity",
+      "kind": "issue",
+      "objects": [
+        "1697a37e64f95090d68ceef8481d4f91cc1342310a6ddab2d131d3676374db38",
+        "475cb0f492de47000b4cd87bcf851aebdbb0133c462f5d48eb2fbb054fd35514",
+        "645bca8eccb8f87788eec81e8e144e043c517a6dc180533feb978a2924e33eb6",
+        "72aecd63a6f976537ecee237883fa49d5e17edd5eefe39caac7d90bc24ed4823",
+        "d4071f86ff68b8cbb23afecb0feead637133596e53fb4f50b401af5f33ad63ac",
+        "e1d40031ef130574cef0a56d033d1fbec5f7a60200ab379a9fedefeda9d1b388"
+      ],
+      "regressions": [],
+      "scope": {
+        "assistance": "historical unchanged; no action evidence yet",
+        "code": "frozen002manifest020938d2...;004manifestc67a01634b28812f49802f9b9252a33cccd8791b8c009bbddcfd5f0aa132f25a",
+        "conditions": "actual67 one instrumented004-001 initonly, original002/245closure/source-boundbasehashb1f3... GPU4core0",
+        "config": "300wall/240childCPU, exactsame002init args; diagnostic hooks only",
+        "model": "gpt-6-astra",
+        "split": "development",
+        "stage": "startup"
+      },
+      "status": "unresolved",
+      "symptom": "Previous thread_affinity_expanded_or_changed withinSapienRendererconstructor. Env005-001 exactsingleVK_ICD_FILENAMES NVIDIAonlycontrol reachesintentionalinitializationstop with48setupmasks0, supervisornoaffinitygaps; fulltasknotattempted.",
+      "version": 4
+    },
+    {
+      "cause": null,
+      "confidence": "Final source/evidence and parent actual67 review; cause attribution remains producer report, exact008 usage permanently unknown",
+      "domain": "orchestration",
+      "fixes": [],
+      "hypothesis": "Producer attributes008 loss to argparse a shadowed by identity dict after wait4; final helper uses separate names and persists reap before formatting. No source-bound fault-injection regression establishing complete helper fix; parent avoids deploying this helper and reuses reviewed007 supervisor.",
+      "id": "r21-return002-supervisor-terminal-receipt-gap@2",
+      "issue_id": "r21-return002-supervisor-terminal-receipt-gap",
+      "kind": "issue",
+      "objects": [
+        "606dc0c28b9795d9e211ec7d935188aedf3d8c5396b3f57a3dd110fb457ef60a",
+        "c147534d7e2d712a193583c127de6766bd5865ddcabe0183aa0f78224816d456",
+        "f02fdb3a613c923a4057840d87188c408e6c99bd9c7a7faaad03bf09f2c5ff61",
+        "f46708ed1484d953242837fd72d6340d4d114d32518f2a67a3b13f5307753053"
+      ],
+      "regressions": [],
+      "scope": {
+        "assistance": "none CPU-only",
+        "code": "unsealed r21-exact-return-native-bridge-002 harness/cpu_regress.py",
+        "conditions": "002 CPU test child final resource/accounting persistence before seal",
+        "config": "eachchild30CPU/60wall, aggregate180",
+        "model": "gpt-6-astra",
+        "split": "development",
+        "stage": "harness"
+      },
+      "status": "unresolved",
+      "symptom": "Sealed002 retained attempt008 missing exact CPU/wall/terminal and full60s conservative charge.009/010 complete. Parent all115files and66 actual67 tests pass using existing007 supervisor; no exact recovered interval invented.",
+      "version": 2
+    },
+    {
+      "cause": "ParentisolatedCPUclockcontrols:389/400process_ns and386/400process_float delta0, versus0/400thread_ns zeros and~108.7usmedian; allsameone-threadonecorework. Kernelcauseunknown, directobservationonly.",
+      "confidence": "actual67boundedcontrols; repairpending018",
+      "domain": "orchestration",
+      "fixes": [],
+      "hypothesis": "Use highresolutionthreadCPU onlyafterowned supervisor-single-thread source/admission guards, measureallnonoverlappingcomponents andwholeCPU/rawreapexit reconcile; calibrationcounterexamples beforecostforecast; no zero-credit/thresholdrelaxation.",
+      "id": "r21-short-interval-process-clock@1",
+      "issue_id": "r21-short-interval-process-clock",
+      "kind": "issue",
+      "objects": [
+        "44c4cc0f64723ac908aca9c5a0329a3f30efd02bc1c6ed36aa1012f129b20d1d",
+        "89b4f4861d6b33c9b0db4834a2e89b970837de8a4d4d7be9b72e3be66083af46",
+        "a1fe285411a9ece93ab1a320ad9e67e29053b433612125b841498cf518c8e450",
+        "f238bfdd7f94453e95e7e2becdc6f42873db2f7d466e1d6a1594231fba517104"
+      ],
+      "regressions": [],
+      "scope": {
+        "assistance": "baselineunchanged",
+        "code": "016costmodelprocess_time float;017reportsprocess_time_nszeros",
+        "conditions": "67single-thread isolated400calls; groupCPUtime zeros and4msjumps despite1ns advertisedAPIres; threadCPUcontinuous",
+        "config": "unchanged115/24/7200budgets",
+        "model": "official22Astraimplementation; localparentcoordination/OSchecks",
+        "split": "development",
+        "stage": "runtime"
+      },
+      "status": "unresolved",
+      "symptom": "Short-interval processCPUcounter zeros/maxjumps undermineper-operationmax forecast and timingtest",
+      "version": 1
+    },
+    {
+      "cause": "027twoimportorder swapped;026outside-main corrected withlegitimateboundentries/CLI. Guards andassertions unchanged.",
+      "confidence": "parentrawlog47OK/11process0; actual67buildentrysuccessful",
+      "domain": "orchestration",
+      "fixes": [],
+      "hypothesis": "Entryintegration code-layer corrected for028exacthash; retain discipline fornewtests, no needrepeatthisfix. Currenttargetfailure isdistinctTIDlifetimeissue. Globalfixedtransition stillnotclaimed withoutassessedregistryflow.",
+      "id": "r21-source-bound-test-entry-integration@3",
+      "issue_id": "r21-source-bound-test-entry-integration",
+      "kind": "issue",
+      "objects": [
+        "346f2c17482e7323581c1dcec5a5dc3d598ea9efa8763c81e973ced19f6d14ee",
+        "b61de4832636977fb1c39b28c1daff2025ac934defa5a1fde90fc7b4a9389012"
+      ],
+      "regressions": [],
+      "scope": {
+        "assistance": "unchanged",
+        "code": "d48d00d652d9851e9a8f7838df2d3c28e3d2e8f1b42861c3f7da98a8704dfc6b",
+        "conditions": "028all47methods11commands pass+parentverifiedrawlogs andsamehost67build entrypass",
+        "config": "fixed020envelope",
+        "model": "official22Astra/localparentreview",
+        "split": "development",
+        "stage": "runtime"
+      },
+      "status": "unresolved",
+      "symptom": "028corrected actualCLI/boundentry/importloaderfirst, all5entrymethods andentire47/11planpassed. TargetnewCbuildraw0, no entry/preloadfailure.",
+      "validated_layers": [
+        "producer_final_CPU_codepass",
+        "parent_source_and_rawlog_review",
+        "actual67_build_entrypass"
+      ],
+      "version": 3
+    },
+    {
+      "cause": "Handoff validates only nondecreasing started/raw/terminal ctimes. It never binds the live-time started/admission file identity/bytes and raw-reap absence to a completed observation. Equal ctimes allow a rewritten receipt to evade order check. Raw receipt contains PID only, not child start ticks or authority. This is insufficient provenance; original fixture rewrites same-attempt identical bytes so does not itself prove cross-attempt exploitation.",
+      "confidence": "Sourceandactual67 54testreview; notphysical",
+      "domain": "orchestration",
+      "fixes": [
+        {
+          "evidence": "b37f789f831f8ef9855d9d7f651e83499918a4a868343e6244fe3afa99b43d5d",
+          "status": "code regression passed actual67, no physicalverification"
+        }
+      ],
+      "hypothesis": "010source+actual67teststage qualifiesfinitefulltrial; onlynativewillvalidateendtoend",
+      "id": "r21-terminal009-stale-raw-reap-ordering@3",
+      "issue_id": "r21-terminal009-stale-raw-reap-ordering",
+      "kind": "issue",
+      "objects": [
+        "4c38a19dc1fdb62c21dc4ad0be406e7a1cd96ed927e7dbae37d2bcffa0300d62",
+        "9d760d4ce90b2c68fd04c938fd5967986a9e93c23fee81f45d188c8e0c24ee7a",
+        "b37f789f831f8ef9855d9d7f651e83499918a4a868343e6244fe3afa99b43d5d"
+      ],
+      "regressions": [],
+      "scope": {
+        "assistance": "none inCPUtests",
+        "code": "88b9556aa5a4fef583582f133770e37d22a7a1989a7701d488526c0878046a67",
+        "conditions": "sealed009 ctimeonly boundary, 89payload15sources verified; samebytefixture not crossattemptproof",
+        "config": "new2batches120CPUconservative budget reportedlyspent; native0",
+        "model": "server22officialChatGPTgpt-6-astra",
+        "split": "development",
+        "stage": "termination"
+      },
+      "status": "unresolved",
+      "symptom": "stale raw-reap ordering negative expected rejection but validator accepted",
+      "version": 3
+    },
+    {
+      "cause": "Receipt identity containsobject/index but lacks trial. Write-once refusal correctly retained originalresult, no completecandidatepass.",
+      "confidence": "parentactualfinalsource3pass receipts, code-levelfix verified only",
+      "domain": "orchestration",
+      "fixes": [
+        "042code-regression-verified, no physicalsuccess orglobalpromotion"
+      ],
+      "hypothesis": "No furtherreceiptfix/testneeded for043mainline: actual042code regression passed; fullphysicalRETURN remainsseparateunverified. Formalframeworkassessedstatus notclaimed.",
+      "id": "r21-test-receipt-trial-identity-041@2",
+      "issue_id": "r21-test-receipt-trial-identity-041",
+      "kind": "issue",
+      "objects": [
+        "3e7c61c647748a4483510ee70902366f9ac708e86348424676d21715f988b60e",
+        "ef421a486ec546dd0ad15696845f21765e9a3fdb7de21fffab79551ce3940dd6"
+      ],
+      "regressions": [],
+      "scope": {
+        "assistance": "unchanged80/friction3/2.4 and guards",
+        "code": "f9f7a38334086a3543973db5460a530e2de9dda161616ee70ab15b319b4e467c",
+        "conditions": "042single60CPUspent2.019505CPU/3.035251wall; no samebudgetretry",
+        "config": "327627ce4d3e12d842c33d25d648353abcde25f832371c12b30438516dbed355",
+        "model": "official22Astra; localparent review",
+        "split": "development",
+        "stage": "return"
+      },
+      "status": "unresolved",
+      "symptom": "041historicaltrialfilenameerror preserved;042finalcorrectedhelper uniqueobject/index/trial now actual3-casebatchpassed, both17trials/all6 12endpoints andguardcases retained",
+      "version": 2
+    },
+    {
+      "cause": "Direct byte verification confirms only RESOURCES.json changed: expected77dfde5e... actual7841d0e5...; all runtime files unchanged and sealed archive manifest verified551 entries.",
+      "confidence": "byte mismatch confirmed; specific write ordering still to be reviewed in next isolated task",
+      "domain": "evidence",
+      "fixes": [],
+      "hypothesis": "Final packaging/verification child appended its resource row outside the snapshot used to seal DELIVERY; final resource attestation should remain detached from immutable content.",
+      "id": "sealed-postseal-resource-mutation@1",
+      "issue_id": "sealed-postseal-resource-mutation",
+      "kind": "issue",
+      "objects": [
+        "4e8b4d28121b5d4b8c8488519880edc4aa0e9d308e0d437044547057a66dc7c0",
+        "c931687b89dd54fdf1a7426d32e81514a1a96c675beb2cdbfa2b7ee32c76c887"
+      ],
+      "regressions": [],
+      "scope": {
+        "assistance": "no native execution",
+        "code": "slip020-earlyhold-candidate-002/run_child.py packaging boundary",
+        "conditions": "earlyhold002 producer directory versus sealed archive",
+        "config": null,
+        "model": "server22 official ChatGPT gpt-6-astra; local parent review",
+        "split": "development",
+        "stage": "evidence"
+      },
+      "status": "unresolved",
+      "symptom": "Producer RESOURCES.json no longer matches DELIVERY after archive was sealed; parent directory verification fails before tests. Exact archive content remains valid.",
+      "version": 1
+    },
+    {
+      "cause": "Recorded relative rotation 0.006006523234956806 exceeds unchanged 0.006 rad component guard; independent recorded-state replay agrees.",
+      "confidence": "confirmed limit crossing; cause hypothesis only",
+      "domain": "physical",
+      "fixes": [],
+      "hypothesis": "Compliance/creep or dynamic loading may explain growth; latent physical cause unconfirmed.",
+      "id": "slip014-guard@3",
+      "issue_id": "slip014-guard",
+      "kind": "issue",
+      "objects": [
+        "0e2a4ba3fd13f71074fd6c300f843905a5040f4d37995dfecb8a44cf010bdf5e",
+        "29674a199256d1505c760b869a96638c28e1b9c9e4945ade348e5cfb171cf96a",
+        "4c7348959e99bad2974cc291d05b2a494e34d83a9d5291750a3dfbeceae42387",
+        "4d717903dbb1cd9726961e9e99203e5d12ac6bf4137d0f635c11e1068628db4f",
+        "5c0813a5bb84d69d9c85d95180f6edaee89bfb96b0a1038fd7241630f9347be3",
+        "6d20ee2bae9f2ac2ce991522ad8ca7c0521c3e93b1c91ef4285f03088e3e4211",
+        "8b6f7ca11663ef7d3bbe1ff05630f92f1dab03990978817a7d34f5906f25aa62",
+        "a22c73daef85bbdd16028cffb8a89ed83bd9320705dd039cb4ffc9f707317985",
+        "aed8595aa3bbcb900af6201cd6fb68e21a398cf3e720f9547c1b3d672f7f50ee",
+        "d0cb360549dd157020e1a93464b7eff93257236b157ac9b90d2c7b562c6a905b",
+        "dd62a8abd0f16517915f7248f9def6183e3ee5172d91d2f00b67d6568f1b8dc9",
+        "e50b82c5d7de7707cca334a83e38950c249a65b5e7aa718ae37f93b24390e3bd"
+      ],
+      "regressions": [
+        "slip014-guard/3"
+      ],
+      "revision_reason": "Explicit label-only regression scope; physical slip cause and native effectiveness unresolved",
+      "scope": {
+        "assistance": "SAPIEN/PD/limited magnet unchanged",
+        "code": "sealed014/018",
+        "conditions": "n20 seed101 object1018 selected loaded ticks",
+        "config": null,
+        "model": "gpt-6-astra (task provenance; run development tokens unavailable)",
+        "split": "development",
+        "stage": "loaded-transport"
+      },
+      "status": "unresolved",
+      "symptom": "empirical_bound_violation:slip_rotation_rad",
+      "version": 3
+    },
+    {
+      "cause": "All1561 actual Supervisor calls and independent arithmetic reproduce: reserve1.626405mm>headroom1.378018mm. Full020 audit valid receipts but OUT0/RETURN0, full task failed. New isolated earlyhold CPU candidate independently qualifies first causal trigger221 from full actual commands0..220; guarded zero reference advancement passes84 overlapping groups. No native successor or braking benefit established.",
+      "confidence": "source and recorded-state CPU replay independently verified; native causality unresolved",
+      "fixes": [],
+      "hypothesis": "Earlier bounded hold may arrest slip before later reacceleration; actual physical stabilization and final native integration remain unproved.",
+      "id": "slip020-braking-reserve@4",
+      "issue_id": "slip020-braking-reserve",
+      "kind": "issue",
+      "objects": [
+        "25db365f8927505514f7238eb20f96070188428c894ae092bdfc05efd91561cd",
+        "2953c71fe2766d5f74282664f79d6535912a118ff0e1e2020b5fd5a7a53e99c8",
+        "37506669b69d8cec4a885aa2eebdae4e96807ad4cff04ba4baf793b9c72ed204",
+        "4d637230cf6c6e21dd843c3120e5f2c568ef7c31d7de98b5b2e1d4cb123df788",
+        "a9f68271c3977040ead64b972d1cc9b11aba92f1d33cc881e76ac3b28a624d60",
+        "b97ba116d1b915c1d13ab7aa3f629816bdeb910257f39366facad29ad2329496",
+        "c33208ab61f7138074b9ad4066e0071372ccaaaa30c1d836495f595a2a671513"
+      ],
+      "regressions": [],
+      "scope": {
+        "assistance": "unchanged SAPIEN/PD/magnet80/finger1000-200-4",
+        "code": "sealed020 slip_supervisor/loaded_tracking/live_clearance",
+        "conditions": "original10 seed2 object3 left lowering; recorded020; candidate not native validated",
+        "config": "cd08a30d2174db6c0cbaec6ce68f45536a9e920a081654ea390677e67682ace1",
+        "model": "gpt-6-astra server22; parent local review",
+        "split": "development",
+        "stage": "loaded-transport"
+      },
+      "status": "unresolved",
+      "symptom": "First warning1560 rejects translation reserve before first hold",
+      "version": 4
+    },
+    {
+      "cause": "Source-bound actual Tracking replay matches63 decisions; recorded reference acceleration reaches12.185693rad/s2. Governor does not bound inter-command reference acceleration by nominal.4 timing parameter.",
+      "confidence": "source and recorded-state CPU replay independently verified; native causality unresolved",
+      "fixes": [],
+      "hypothesis": "Transition may contribute to transient slip; native causal mechanism and effect of earlier hold remain unvalidated.",
+      "id": "slip020-factor-transition@1",
+      "issue_id": "slip020-factor-transition",
+      "kind": "issue",
+      "objects": [
+        "1d5e82896ab517bc59acc7e7ec12a7b61e8ebdb56dde678386d464c95a0e078a",
+        "25db365f8927505514f7238eb20f96070188428c894ae092bdfc05efd91561cd",
+        "4d637230cf6c6e21dd843c3120e5f2c568ef7c31d7de98b5b2e1d4cb123df788",
+        "b97ba116d1b915c1d13ab7aa3f629816bdeb910257f39366facad29ad2329496"
+      ],
+      "regressions": [],
+      "scope": {
+        "assistance": "unchanged SAPIEN/PD/magnet80/finger1000-200-4",
+        "code": "sealed020 slip_supervisor/loaded_tracking/live_clearance",
+        "conditions": "original10 seed2 object3 left lowering; recorded020; candidate not native validated",
+        "config": "cd08a30d2174db6c0cbaec6ce68f45536a9e920a081654ea390677e67682ace1",
+        "model": "gpt-6-astra server22; parent local review",
+        "split": "development",
+        "stage": "loaded-transport"
+      },
+      "status": "unresolved",
+      "symptom": "Last issued factor.25->.5 precedes largest measured slip-rate jump",
+      "version": 1
+    }
+  ],
+  "active_regressions": [
+    {
+      "baseline_source_sha256": "cf44c7546e0441f7c3054af657b24cb577762e7da22e1da7707ee8f36a573c23",
+      "control_checks": [
+        "valid-zero-velocity-left",
+        "valid-zero-velocity-right"
+      ],
+      "counterexamples": [
+        "3f45d5322b71e19e293288b3bbea112f2b214ce819c55f1b50a8b501192ec760"
+      ],
+      "id": "capture-drive-contract/1",
+      "kind": "regression",
+      "negative_checks": [
+        "wrong-arm",
+        "nonfinite",
+        "changed-gain",
+        "changed-force",
+        "nonzero-velocity",
+        "collision"
+      ],
+      "objects": [
+        "3f45d5322b71e19e293288b3bbea112f2b214ce819c55f1b50a8b501192ec760",
+        "77d85c8385b213d6b41abc9ae904de8a1a426b4524bb93157dc4e53f8d817a52",
+        "cf44c7546e0441f7c3054af657b24cb577762e7da22e1da7707ee8f36a573c23"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "baseline_source_sha256": "29674a199256d1505c760b869a96638c28e1b9c9e4945ade348e5cfb171cf96a",
+      "control_checks": [
+        "below-bound",
+        "quaternion-sign"
+      ],
+      "counterexamples": [
+        "4c7348959e99bad2974cc291d05b2a494e34d83a9d5291750a3dfbeceae42387"
+      ],
+      "id": "slip014-guard/1",
+      "kind": "regression",
+      "negative_checks": [
+        "stale-input",
+        "nonfinite",
+        "slip-over-limit",
+        "changed-magnet"
+      ],
+      "objects": [
+        "29674a199256d1505c760b869a96638c28e1b9c9e4945ade348e5cfb171cf96a",
+        "4c7348959e99bad2974cc291d05b2a494e34d83a9d5291750a3dfbeceae42387",
+        "dd62a8abd0f16517915f7248f9def6183e3ee5172d91d2f00b67d6568f1b8dc9"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "baseline_source_sha256": "6fa9ddb8ab2b53609743e7be249a8a96fa4c89473ec9524023259044a7140cea",
+      "control_checks": [
+        "frozen-certificate",
+        "warmed-cost"
+      ],
+      "counterexamples": [
+        "1a4b1d8c45c3954a29d01dd102945f03b612d0291684ce30fba07c5cad39381f"
+      ],
+      "id": "geometry-dispatch/1",
+      "kind": "regression",
+      "negative_checks": [
+        "module-global-override",
+        "collision"
+      ],
+      "objects": [
+        "1a4b1d8c45c3954a29d01dd102945f03b612d0291684ce30fba07c5cad39381f",
+        "6fa9ddb8ab2b53609743e7be249a8a96fa4c89473ec9524023259044a7140cea",
+        "dbbe23310f2c72000dd9f2df9db30c9f2f20c8dc90e2a87559593bdbf075720f"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "baseline_source_sha256": "cf44c7546e0441f7c3054af657b24cb577762e7da22e1da7707ee8f36a573c23",
+      "behavior_schema": "regression-behavior/2",
+      "behaviors": {
+        "corrective": {
+          "candidate-counterexample": "accept",
+          "changed-force": "reject",
+          "changed-gain": "reject",
+          "collision": "reject",
+          "nonfinite": "reject",
+          "nonzero-velocity": "reject",
+          "old-counterexample": "reject",
+          "valid-zero-velocity-left": "accept",
+          "valid-zero-velocity-right": "accept",
+          "wrong-arm": "reject"
+        },
+        "preservation": {
+          "candidate-counterexample": "reject",
+          "changed-force": "reject",
+          "changed-gain": "reject",
+          "collision": "reject",
+          "nonfinite": "reject",
+          "nonzero-velocity": "reject",
+          "old-counterexample": "reject",
+          "valid-zero-velocity-left": "accept",
+          "valid-zero-velocity-right": "accept",
+          "wrong-arm": "reject"
+        }
+      },
+      "control_checks": [
+        "valid-zero-velocity-left",
+        "valid-zero-velocity-right"
+      ],
+      "counterexamples": [
+        "3f45d5322b71e19e293288b3bbea112f2b214ce819c55f1b50a8b501192ec760"
+      ],
+      "id": "capture-drive-contract/2",
+      "intent_scope": "Capture correction or preservation; slip terminal/geometry unsafe cases retain rejection. New corrective domains require reviewed revisions.",
+      "kind": "regression",
+      "negative_checks": [
+        "wrong-arm",
+        "nonfinite",
+        "changed-gain",
+        "changed-force",
+        "nonzero-velocity",
+        "collision"
+      ],
+      "objects": [
+        "3f45d5322b71e19e293288b3bbea112f2b214ce819c55f1b50a8b501192ec760",
+        "4d717903dbb1cd9726961e9e99203e5d12ac6bf4137d0f635c11e1068628db4f",
+        "77d85c8385b213d6b41abc9ae904de8a1a426b4524bb93157dc4e53f8d817a52",
+        "aed8595aa3bbcb900af6201cd6fb68e21a398cf3e720f9547c1b3d672f7f50ee",
+        "cf44c7546e0441f7c3054af657b24cb577762e7da22e1da7707ee8f36a573c23",
+        "f87124cd20393b9cdcbe6524f9078d8726816f7c215bddf521069ee53c68b2cc"
+      ],
+      "revision": 2,
+      "revision_evidence": [
+        "aed8595aa3bbcb900af6201cd6fb68e21a398cf3e720f9547c1b3d672f7f50ee",
+        "4d717903dbb1cd9726961e9e99203e5d12ac6bf4137d0f635c11e1068628db4f"
+      ],
+      "status": "unresolved",
+      "supersedes": "capture-drive-contract/1"
+    },
+    {
+      "baseline_source_sha256": "29674a199256d1505c760b869a96638c28e1b9c9e4945ade348e5cfb171cf96a",
+      "behavior_schema": "regression-behavior/2",
+      "behaviors": {
+        "preservation": {
+          "below-bound": "accept",
+          "candidate-counterexample": "reject",
+          "changed-magnet": "reject",
+          "nonfinite": "reject",
+          "old-counterexample": "reject",
+          "quaternion-sign": "accept",
+          "slip-over-limit": "reject",
+          "stale-input": "reject"
+        }
+      },
+      "control_checks": [
+        "below-bound",
+        "quaternion-sign"
+      ],
+      "counterexamples": [
+        "4c7348959e99bad2974cc291d05b2a494e34d83a9d5291750a3dfbeceae42387"
+      ],
+      "id": "slip014-guard/2",
+      "intent_scope": "Capture correction or preservation; slip terminal/geometry unsafe cases retain rejection. New corrective domains require reviewed revisions.",
+      "kind": "regression",
+      "negative_checks": [
+        "stale-input",
+        "nonfinite",
+        "slip-over-limit",
+        "changed-magnet"
+      ],
+      "objects": [
+        "29674a199256d1505c760b869a96638c28e1b9c9e4945ade348e5cfb171cf96a",
+        "4c7348959e99bad2974cc291d05b2a494e34d83a9d5291750a3dfbeceae42387",
+        "4d717903dbb1cd9726961e9e99203e5d12ac6bf4137d0f635c11e1068628db4f",
+        "8b6f7ca11663ef7d3bbe1ff05630f92f1dab03990978817a7d34f5906f25aa62",
+        "aed8595aa3bbcb900af6201cd6fb68e21a398cf3e720f9547c1b3d672f7f50ee",
+        "dd62a8abd0f16517915f7248f9def6183e3ee5172d91d2f00b67d6568f1b8dc9"
+      ],
+      "revision": 2,
+      "revision_evidence": [
+        "aed8595aa3bbcb900af6201cd6fb68e21a398cf3e720f9547c1b3d672f7f50ee",
+        "4d717903dbb1cd9726961e9e99203e5d12ac6bf4137d0f635c11e1068628db4f"
+      ],
+      "status": "unresolved",
+      "supersedes": "slip014-guard/1"
+    },
+    {
+      "baseline_source_sha256": "6fa9ddb8ab2b53609743e7be249a8a96fa4c89473ec9524023259044a7140cea",
+      "behavior_schema": "regression-behavior/2",
+      "behaviors": {
+        "preservation": {
+          "candidate-counterexample": "reject",
+          "collision": "reject",
+          "frozen-certificate": "accept",
+          "module-global-override": "reject",
+          "old-counterexample": "reject",
+          "warmed-cost": "accept"
+        }
+      },
+      "control_checks": [
+        "frozen-certificate",
+        "warmed-cost"
+      ],
+      "counterexamples": [
+        "1a4b1d8c45c3954a29d01dd102945f03b612d0291684ce30fba07c5cad39381f"
+      ],
+      "id": "geometry-dispatch/2",
+      "intent_scope": "Capture correction or preservation; slip terminal/geometry unsafe cases retain rejection. New corrective domains require reviewed revisions.",
+      "kind": "regression",
+      "negative_checks": [
+        "module-global-override",
+        "collision"
+      ],
+      "objects": [
+        "1a4b1d8c45c3954a29d01dd102945f03b612d0291684ce30fba07c5cad39381f",
+        "2df6e424430990d828301b1ecc4cd6d50a9ba5b71ba9496e7f519b4e48d70e84",
+        "4d717903dbb1cd9726961e9e99203e5d12ac6bf4137d0f635c11e1068628db4f",
+        "6fa9ddb8ab2b53609743e7be249a8a96fa4c89473ec9524023259044a7140cea",
+        "aed8595aa3bbcb900af6201cd6fb68e21a398cf3e720f9547c1b3d672f7f50ee",
+        "dbbe23310f2c72000dd9f2df9db30c9f2f20c8dc90e2a87559593bdbf075720f"
+      ],
+      "revision": 2,
+      "revision_evidence": [
+        "aed8595aa3bbcb900af6201cd6fb68e21a398cf3e720f9547c1b3d672f7f50ee",
+        "4d717903dbb1cd9726961e9e99203e5d12ac6bf4137d0f635c11e1068628db4f"
+      ],
+      "status": "unresolved",
+      "supersedes": "geometry-dispatch/1"
+    },
+    {
+      "baseline_source_sha256": "29674a199256d1505c760b869a96638c28e1b9c9e4945ade348e5cfb171cf96a",
+      "behavior_schema": "regression-behavior/2",
+      "behaviors": {
+        "preservation": {
+          "below-bound": "accept",
+          "candidate-counterexample": "reject",
+          "changed-magnet-label": "reject",
+          "nonfinite": "reject",
+          "old-counterexample": "reject",
+          "quaternion-sign": "accept",
+          "slip-over-limit": "reject",
+          "stale-input": "reject"
+        }
+      },
+      "case_semantics_sha256": "a22c73daef85bbdd16028cffb8a89ed83bd9320705dd039cb4ffc9f707317985",
+      "control_checks": [
+        "below-bound",
+        "quaternion-sign"
+      ],
+      "counterexamples": [
+        "4c7348959e99bad2974cc291d05b2a494e34d83a9d5291750a3dfbeceae42387"
+      ],
+      "id": "slip014-guard/3",
+      "intent_scope": "Capture correction or preservation; slip terminal/geometry unsafe cases retain rejection. New corrective domains require reviewed revisions.",
+      "kind": "regression",
+      "negative_checks": [
+        "stale-input",
+        "nonfinite",
+        "slip-over-limit",
+        "changed-magnet-label"
+      ],
+      "objects": [
+        "29674a199256d1505c760b869a96638c28e1b9c9e4945ade348e5cfb171cf96a",
+        "4c7348959e99bad2974cc291d05b2a494e34d83a9d5291750a3dfbeceae42387",
+        "4d717903dbb1cd9726961e9e99203e5d12ac6bf4137d0f635c11e1068628db4f",
+        "8b6f7ca11663ef7d3bbe1ff05630f92f1dab03990978817a7d34f5906f25aa62",
+        "a22c73daef85bbdd16028cffb8a89ed83bd9320705dd039cb4ffc9f707317985",
+        "aed8595aa3bbcb900af6201cd6fb68e21a398cf3e720f9547c1b3d672f7f50ee",
+        "dd62a8abd0f16517915f7248f9def6183e3ee5172d91d2f00b67d6568f1b8dc9",
+        "e50b82c5d7de7707cca334a83e38950c249a65b5e7aa718ae37f93b24390e3bd"
+      ],
+      "revision": 3,
+      "revision_evidence": [
+        "aed8595aa3bbcb900af6201cd6fb68e21a398cf3e720f9547c1b3d672f7f50ee",
+        "4d717903dbb1cd9726961e9e99203e5d12ac6bf4137d0f635c11e1068628db4f",
+        "a22c73daef85bbdd16028cffb8a89ed83bd9320705dd039cb4ffc9f707317985"
+      ],
+      "revision_reason": "Clarify recorded magnet-label check; neither Monitor nor this fixture measures magnetic force.",
+      "status": "unresolved",
+      "supersedes": "slip014-guard/2"
+    }
+  ],
+  "limitations": [
+    "043realGPUall10extracted andextractionbarrier110522observed; all10identity/order/completionsteps and59OUTpreviewoutcomesmatch036. Not independentOUTacceptance yet.",
+    "12-firstRETURNcandidate0 twoactualfullphysics17879/17877step previewsaccepted with coveragegrasp/transport/lower/release/retreat; formal scene pack/controls/RNG restoredunchanged. Formal12startedandlifted, no returnedreceiptatobservation.",
+    "32actualproductionfilescheckedunchanged, config/goals/physicsassistance/guards/verifiersretained. No newphysicalrun/CPUtest/remoteAIbatch. Localparentreviewnotserver22inference.",
+    "Original0437100nativeCPU/wall and120eachoriginalaudits retained; elapsed5769.348s, remaining1330.652s atobservation. Do notextend/retryexistingprotocol orduplicateentryaudits.",
+    "17bounded4mmreleaseactualnativevalidationpending;12previewpass doesnotprovecompleted12acceptance, wholeRETURNsuccess, stable10/10, orisolatedcausalablation.",
+    "Bestcompletedindependentlyauditedphysical036OUT10/strictRETURN1/fullfalse remains; frozenhistoricalten-r21oneway10/10 separate.",
+    "RawCLI/auth/nativebulk/states/videos notcommitted. Gitonlyhistoricalsnapshot; exactlivePID/start andremoteevidence authoritative."
+  ]
+}

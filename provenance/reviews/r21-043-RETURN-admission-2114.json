@@ -1,0 +1,151 @@
+{
+  "schema": "043-RETURN-phase-admission-assessment/1",
+  "observed_unix": 1792530900.1730506,
+  "raw_evidence": {
+    "path": "parent-mainline043-RETURN-start-2114.json",
+    "bytes": 1433278,
+    "sha256": "ee9662a5e807f38c33240f4483859fd3bf62f0e25b53413c1e676f7cf7a5c466"
+  },
+  "source_sha256": "b08b5533a0627a1992af3c5380c19392232bbda996884856889a33e3937e8ea5",
+  "config_sha256": "327627ce4d3e12d842c33d25d648353abcde25f832371c12b30438516dbed355",
+  "source_files_checked": 32,
+  "changed_source_files": [],
+  "OUT_events": 10,
+  "OUT_ids": [
+    3,
+    4,
+    19,
+    18,
+    11,
+    8,
+    10,
+    9,
+    12,
+    17
+  ],
+  "all10_OUT_milestone_steps_equal036": true,
+  "OUT_previews_equal036": {
+    "count": 59,
+    "baseline_count": 59,
+    "equal": true
+  },
+  "extraction_barrier_step": 110522,
+  "first_RETURN_object": 12,
+  "RETURN_previews": [
+    {
+      "object_id": 12,
+      "index": 0,
+      "trial": 1,
+      "accepted": true,
+      "independent_scene": true,
+      "coverage": "grasp_transport_lower_release_retreat",
+      "placement_measurements": {
+        "12": {
+          "position_error_m": 0.00463942731417219,
+          "rotation_error_deg": 6.94648133129197,
+          "speed_m_s": 0.0008424081124255271,
+          "spin_rad_s": 0.037787594763509194
+        }
+      }
+    },
+    {
+      "object_id": 12,
+      "index": 0,
+      "trial": 2,
+      "accepted": true,
+      "independent_scene": true,
+      "coverage": "grasp_transport_lower_release_retreat",
+      "placement_measurements": {
+        "12": {
+          "position_error_m": 0.004667283113932331,
+          "rotation_error_deg": 6.946092225291141,
+          "speed_m_s": 0.0008279595275936937,
+          "spin_rad_s": 0.037121640981697214
+        }
+      }
+    }
+  ],
+  "preview_terminal": [
+    {
+      "trial": 1,
+      "trial_steps": 17879,
+      "formal_unchanged": true,
+      "failure": null
+    },
+    {
+      "trial": 2,
+      "trial_steps": 17877,
+      "formal_unchanged": true,
+      "failure": null
+    }
+  ],
+  "RETURN_12_release_offset_m": [
+    0,
+    0,
+    0
+  ],
+  "RETURN_12_formal_status": "startedandlifted, no returnedreceipt atobservation",
+  "returned_events": 0,
+  "independent_acceptance": null,
+  "whole_success": null,
+  "out_boundary_files": {
+    "final-state.json": {
+      "bytes": 5804,
+      "sha256": "a0f780c023e23af831a313013ce1da513bd7a5098796f6908a549bed46a7b364"
+    },
+    "result.json": {
+      "bytes": 2441,
+      "sha256": "8bf3203fc2c4e3af91025e03b9be15e455cac3063a781c578b6e164c0a62650a"
+    },
+    "physics-meshes.json": {
+      "bytes": 346905,
+      "sha256": "e8056188bdf78fb293f8624c6cfdcc02497a1cf40b19c994b464f66404fc695b"
+    },
+    "events.jsonl": {
+      "bytes": 6046397,
+      "sha256": "f67361d834478f0118504f5315b1f57acadaa0748b7296832511c18789a7bd8f"
+    },
+    "phase-receipt.json": {
+      "bytes": 441,
+      "sha256": "6a695542627a044b9d13cc6c410b263dd6f1d88368f4f99a0c37ce627f149509"
+    }
+  },
+  "elapsed_wall_s": 5769.348228216171,
+  "remaining_native_wall_cap_s": 1330.6517717838287,
+  "native_CPU_wall_cap_s": 7100,
+  "native": {
+    "expected": {
+      "pid": 160797,
+      "start_ticks": 333925830
+    },
+    "active": true,
+    "current": {
+      "pid": 160797,
+      "start_ticks": 333925830,
+      "state": "R",
+      "own_CPU_s": 5743.08,
+      "waited_CPU_s": 4.55
+    }
+  },
+  "driver": {
+    "expected": {
+      "pid": 160786,
+      "start_ticks": 333925651
+    },
+    "active": true,
+    "current": {
+      "pid": 160786,
+      "start_ticks": 333925651,
+      "state": "S",
+      "own_CPU_s": 1324.44,
+      "waited_CPU_s": 0.74
+    }
+  },
+  "symptom": "03612all6fullforecastsrejected after17;04312-firstcandidate0twoactualfullphysics forecastsaccepted, formal12inprogress",
+  "causal_limit": "this observes candidatepackageprogress, notisolatedcausalablation, completed12acceptance or17releasevalidation",
+  "action": "preserveactive043; existingentryoriginalindependentauditsonlyafterterminal; no tests/fixes/nativeextraattempts/budgetextension",
+  "next": "monitor12formalresult then17bounded4mmrelease actualforecasts/formalguards; collectafterownerterminalaudits anddemo",
+  "parent_account": "localcoordinationandindependentreview; no new22AIbatch",
+  "metadata_not_realtime_authority": true,
+  "physical_output_root": "/data_ft_6/shaojing/robotwin-astra-20261008/mainline-r21-bind043/outputs/freshprotocol/episode"
+}

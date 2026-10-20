@@ -1,0 +1,55 @@
+{
+  "schema": "parent020-source-review/1",
+  "observed_unix": 1792467640.324287,
+  "source_manifest_sha256": "09a8f2b699295908ae0fec69669ca04f27b110fd25213db4f807096e4f9432de",
+  "payload_manifest_sha256": "ed4c8c95c85efe6e0d4dd4b56ee22a9debe3342f0fa5e4d5b249cc0cca869d37",
+  "verified_payload": 803,
+  "active_source": 80,
+  "legacy019_source": 71,
+  "legacy019_source_byte_preserved": true,
+  "common_fullchild_C_unchanged": true,
+  "producer_status": "CODE-DENY/COST-DENY",
+  "actual67_executed": false,
+  "physical_permission": false,
+  "pretest_envelope_sha256": "c18bf2b586866afb97bd3a3e2e9968b4742ff7b37cdf30ce712b05db0d615916",
+  "producer_model_fit_only": {
+    "driver_s": 1363.6406872619984,
+    "custody_s": 298.8591820659995,
+    "guard_s": [
+      1800,
+      450
+    ],
+    "complete_production_qualification": false
+  },
+  "raw_reaper": {
+    "new020_fixture_custody_orphan_wait4_captured": true,
+    "orphan_status9_is_owned_cleanup_not_normal_exit": true,
+    "new_ancestor_requires_actual67_proof": true
+  },
+  "confirmed_fixture_failure": {
+    "failed_test": "test_capacity_accounting_gap_through_original_cleanup",
+    "passed15_failed1_notrun193": true,
+    "source": "legacy019/tests/test_runtime.py:simulate lookup maps real os.getpid to fake20; fakechild always30",
+    "collision": "If real worker PID30, known fakechild30 resolves fake20 duringcleanup. Producer002realPID30, batch001realPID27 passes.",
+    "causality": "Source-confirmed collision path plus retained failing output; no repaired regression yet",
+    "not_physical_failure": true
+  },
+  "parent_interface_gaps": [
+    "parent_cpu020 kernel accepts subset {0,1} rather than exact helperCPU1 and is not production role proof",
+    "descendant evaluator follows main-thread children only; task-thread child acquisition coverage must be reviewed",
+    "outer raw reaper extra ancestor plus parent evaluator finite30CPU/14.5wall needs realqualification",
+    "real residual explicitly lacks observer lifecycle and complete driver bookkeeping"
+  ],
+  "non_defects_clarified": [
+    "parent_support.Watch.handler135 is legacy base; actual Watchdog.handler override has1800; do not call uninvoked base code a confirmed active bug",
+    "driver temporarily retains7200hard so native child can inherit7200 then Watchdog after native started lowers driver only to2100; verify transition rather than blindly lowering before nativefork"
+  ],
+  "next": "021 isolated fixture repair and parentqualification interfaces/whole-event residual coverage; no third020batch or oldphysicalreplay",
+  "packaging": {
+    "archive_bytes": 978819,
+    "source_evidence_aggregate3159934": true,
+    "preferred2MiB_aggregate_exceeded": true,
+    "archive_below2MiB": true,
+    "exception_disclosed": true
+  }
+}

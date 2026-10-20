@@ -1,0 +1,41 @@
+{
+  "schema": "parent-binding034-source-review/1",
+  "observed_unix": 1792497551.266739,
+  "source_sha256": "c591bdcc5ffdaac599dcc7d4a62250ecad09064b7167ceb02571dbf7529cf423",
+  "payload_files": 64,
+  "final_python_tested_hashes": 25,
+  "raw12tests_verified": true,
+  "actual_test_reservation": {
+    "batches": 1,
+    "child_wait4_cpu_s": 2.4958449999999996,
+    "cpu_cap_s": 60,
+    "driver_cpu_s": 0.09877700000000002,
+    "total_measured_cpu_s": 2.5946219999999998,
+    "wall_cap_s": 60,
+    "wall_s": 9.42189082200639,
+    "within_cap": true
+  },
+  "test_core": 0,
+  "raw_status": 0,
+  "fork_delta": [
+    "fork/src/render_device_binding.py",
+    "fork/src/physics_runner.py"
+  ],
+  "physics_runner_delta": "provenance schema tag033to034 only",
+  "render_delta": "selected physicalGPU6 UUID/PCI, CUDA6, fresh034namespace, companionGPU5 admission/leases",
+  "all033physics_math_guards_cache_config_verifiers_unchanged": true,
+  "common_and_cleanenv_byteexact": true,
+  "inputs": "explicit read-only original032 data6 inputs, no symlink or copy",
+  "preserved_033_parent_review": "parent-mainline033-source-review-1148.json",
+  "physical_runs": 0,
+  "physical_promotion": false,
+  "review_scope": "source+realCPU only, fresh actual15 startup/device/imageio still required",
+  "native_cap_s": 7100,
+  "audit_caps_each_s": 120,
+  "maximum_physical_attempts": 1,
+  "automatic_retry": false,
+  "cleanup_fix_claimed": false,
+  "original_OUT_verifier_sha256": "2877efe5d7adf40a9357ebedd3fbe62e5be930b7d285bbc2ac1c8af5d15d5244",
+  "original_RETURN_verifier_sha256": "e73fbc33ea8e470ec7d91e6716152b401288ebd3f71e68af307aebed37b88d7f",
+  "config_sha256": "327627ce4d3e12d842c33d25d648353abcde25f832371c12b30438516dbed355"
+}

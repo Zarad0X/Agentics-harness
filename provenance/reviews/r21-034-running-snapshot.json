@@ -1,0 +1,155 @@
+{
+  "schema": "parent034-running-checkpoint/1",
+  "observed_unix": 1792497971.106677,
+  "attempt": "r21-mainline-bind034-full-001",
+  "host": "15",
+  "target": "/data_ft_6/shaojing/robotwin-astra-20261008/mainline-r21-bind034",
+  "output": "/data_ft_6/shaojing/robotwin-astra-20261008/mainline-r21-bind034/outputs/freshprotocol/episode",
+  "phase": "OUT: first object3 approach, formalphysics3290; exactRETURN notstarted",
+  "driver": {
+    "pid": 4158942,
+    "start_ticks": 331196573,
+    "expected_start_ticks": 331196573,
+    "same_identity": true,
+    "state": "R",
+    "own_CPU_s": 31.09,
+    "allowed": [
+      107
+    ]
+  },
+  "native": {
+    "pid": 4158953,
+    "start_ticks": 331196723,
+    "expected_start_ticks": 331196723,
+    "same_identity": true,
+    "state": "R",
+    "own_CPU_s": 126.62,
+    "allowed": [
+      108
+    ]
+  },
+  "source_sha256": "c591bdcc5ffdaac599dcc7d4a62250ecad09064b7167ceb02571dbf7529cf423",
+  "review_sha256": "c94401f11d9b25c09bf1c01c320b94928bb0effa4ce81006dac5bf953dce4294",
+  "native_start_unix": 1792497839.7515454,
+  "initial10_objects_and_botharms_recorded": true,
+  "render_observations": [
+    {
+      "name": "render-device-000.json",
+      "stage": "selected_before_renderer",
+      "role": null,
+      "actual": {
+        "can_render": true,
+        "cuda_id": 0,
+        "is_cpu": false,
+        "is_cuda": true,
+        "name": "NVIDIA RTX A6000",
+        "pci_string": "0000:c1:00.0"
+      }
+    },
+    {
+      "name": "render-device-001.json",
+      "stage": "render_system_before_scene",
+      "role": "formal",
+      "actual": {
+        "can_render": true,
+        "cuda_id": 0,
+        "is_cpu": false,
+        "is_cuda": true,
+        "name": "NVIDIA RTX A6000",
+        "pci_string": "0000:c1:00.0"
+      }
+    },
+    {
+      "name": "render-device-002.json",
+      "stage": "scene_before_timestep_ground_assets",
+      "role": "formal",
+      "actual": {
+        "can_render": true,
+        "cuda_id": 0,
+        "is_cpu": false,
+        "is_cuda": true,
+        "name": "NVIDIA RTX A6000",
+        "pci_string": "0000:c1:00.0"
+      }
+    },
+    {
+      "name": "render-device-003.json",
+      "stage": "render_system_before_scene",
+      "role": "grasp_preview",
+      "actual": {
+        "can_render": true,
+        "cuda_id": 0,
+        "is_cpu": false,
+        "is_cuda": true,
+        "name": "NVIDIA RTX A6000",
+        "pci_string": "0000:c1:00.0"
+      }
+    },
+    {
+      "name": "render-device-004.json",
+      "stage": "scene_before_timestep_ground_assets",
+      "role": "grasp_preview",
+      "actual": {
+        "can_render": true,
+        "cuda_id": 0,
+        "is_cpu": false,
+        "is_cuda": true,
+        "name": "NVIDIA RTX A6000",
+        "pci_string": "0000:c1:00.0"
+      }
+    },
+    {
+      "name": "render-device-005.json",
+      "stage": "render_system_before_scene",
+      "role": "separation_preview",
+      "actual": {
+        "can_render": true,
+        "cuda_id": 0,
+        "is_cpu": false,
+        "is_cuda": true,
+        "name": "NVIDIA RTX A6000",
+        "pci_string": "0000:c1:00.0"
+      }
+    },
+    {
+      "name": "render-device-006.json",
+      "stage": "scene_before_timestep_ground_assets",
+      "role": "separation_preview",
+      "actual": {
+        "can_render": true,
+        "cuda_id": 0,
+        "is_cpu": false,
+        "is_cuda": true,
+        "name": "NVIDIA RTX A6000",
+        "pci_string": "0000:c1:00.0"
+      }
+    }
+  ],
+  "GPU_profile": "actual selectedGPU6 C+G; auxiliarygraphicsGPU3 also observed, reservedGPU5 has no process; externalCUDA3job retained",
+  "resource_deviation": "The assumption defaultcompanion moves3to5 was contradicted by livepmon; no nativeCUDAcompute observed on3. Main seven renderer/device records bind6. Auxiliary graphics context cause/impact unknown, no exclusiveGPU5/6claim. Preserve running experiment and do not signal others.",
+  "CPU": {
+    "native": 108,
+    "driver": 107,
+    "legacy_and_new_entry_cooperative_leases_held": true
+  },
+  "maximum_attempts": 1,
+  "automatic_retry": false,
+  "native_CPU_wall_caps_s": 7100,
+  "accepted_OUT": null,
+  "accepted_RETURN": null,
+  "full_success": null,
+  "terminal_audit_owner": "034durableentry4158942/start331196573 calls both original verifiers once after native; OUT/out-boundary, strictRETURN/roundtrip, each120caps. Await independent-terminal.json/FINAL.json; no duplicate audit/physics",
+  "retained_preflight_failures": [
+    "check001 resource gate no native/physics, CPU109110; preserved",
+    "check002 remote raw0 recovered from durable receipts after localfilename collision, no rerun"
+  ],
+  "actual_target_checks": {
+    "check002_native_raw0": true,
+    "native_wall_s": 0.8431161870248616,
+    "native_wait4_CPU_s": 0.306736,
+    "imageio40frames_full_decode0": true,
+    "imageio_wall_s": 0.6787219326943159
+  },
+  "not_realtime_authority": true,
+  "limits": "runtime snapshot only; native active, no formal OUT/RETURN count, no stable promotion. AuxiliaryGPU3context recorded despiteexplicit6 identity, no exclusive5/6claim."
+}

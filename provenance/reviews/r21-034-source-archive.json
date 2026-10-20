@@ -1,0 +1,21 @@
+{
+  "schema": "reviewed-source-archive/1",
+  "archive_name": "r21-034-reviewed-source.tar.gz",
+  "bytes": 316982,
+  "sha256": "df71499a1a0a70a1f9e255333ffcdc23efdb8f5a6434f6d9ec99c894aa8663e3",
+  "members": 68,
+  "original_packet": {
+    "bytes": 313430,
+    "sha256": "aa0962b036d459f56b907dc15cdb72c2bff52710e4995a6873c446326a7916d2"
+  },
+  "original_source_files": 64,
+  "source_sha256": "c591bdcc5ffdaac599dcc7d4a62250ecad09064b7167ceb02571dbf7529cf423",
+  "github_release": "r21-return-20261020",
+  "source_only": true,
+  "raw_logs_excluded": true,
+  "compiled_binaries_excluded": true,
+  "physical_success": false,
+  "validation": "all64 source/final25Python+raw12checks verified; actual15check002 raw0/native imageio40frames decode0; newGPUepisode running, not accepted",
+  "github_asset_id": 659223278,
+  "github_server_digest_verified": true
+}

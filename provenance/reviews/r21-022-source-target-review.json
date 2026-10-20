@@ -1,0 +1,77 @@
+{
+  "schema": "parent022-source-target-review/1",
+  "observed_unix": 1792471872.675173,
+  "source_manifest_sha256": "59e3b147611239ae0be45c40ea4144e6ddcd87cf0569bd7ee056ff83b9185653",
+  "payload121_verified": true,
+  "source104_verified": true,
+  "both_tested104_snapshots_verified": true,
+  "all27_production_src_byte_identical021": true,
+  "producer_status": "CODE-DENY/COST-DENY",
+  "actual67_code": {
+    "active209_pass": true,
+    "unique157_repeated52": true,
+    "additional_new16_topology16_pass": true,
+    "same_host_Cbuild": true,
+    "parent_two_batches_spent": true,
+    "conservative_CPU_charge_s": 120,
+    "batch1_worker_returncode": 0,
+    "batch2_worker_returncode": 1,
+    "original007_reasons_gaps_survivors_empty": true,
+    "all60known_inactive_twice": true,
+    "full_kernel_qualification": false
+  },
+  "icd": {
+    "server22": "wrongfor00546cee75...",
+    "server67": "pinned0058bf904abc1c5d6428a1f27cc5d4a3c9783d15231f17ce1ef8d25e9cab1f60d1c matches; no005targetchange",
+    "target_captures_advanced_beyond_ICD": true
+  },
+  "fixture": {
+    "confirmed_root": "bookkeeping get_scope stub has rows only; common.session_members calls scope.sessions; missing sessions causes AttributeError, aborts driverfinally",
+    "actualobserver_success": "2samples/terminalNone/raw0",
+    "actualobserver_failure": "intended RuntimeErrordisclosedobserverfailure/raw256 reached",
+    "all3_capture_validation_failed": true,
+    "scope_stub_admission_not_kernelproof": true,
+    "secondary_parent_FD_permission_error": "ownedfailure observer readparentFD afterdriver prematurelyexited; do not loosenFD checks"
+  },
+  "target_production_TEST_pipeline": {
+    "failed": true,
+    "primary": "ownedmetadata PermissionError13 reading/proc3541985/ns",
+    "known_pid": {
+      "pid": 3541985,
+      "start_ticks": 67419083,
+      "ppid": 3541782,
+      "session": 3541985,
+      "earlier_state": "S"
+    },
+    "rootcause": "hypothesis: exit/zombie race; exacterrorinstantpoststat notcaptured",
+    "secondary": "custodianexited then driverlostcustodianFD /proc3541751/fd4",
+    "deterministic_OS_control": {
+      "same_pid_start": true,
+      "live_namespace_read_ok": true,
+      "zombie_state": "Z",
+      "zombie_error": "PermissionError",
+      "errno": 13,
+      "raw_status": 0,
+      "wall_s": 0.0031836359994485974,
+      "conservative_CPU_charge_s": 4,
+      "historical_causality_not_proved": true,
+      "raw_receipt_sha256": "d22504561ea3a005a111f2a8318b9392b573605c5dd697b5296f9d1ee4ef699c"
+    }
+  },
+  "instrumented_TEST_model_s": {
+    "server22_driver": 2021.831594888,
+    "server22_custody": 236.13479293,
+    "server67_driver": 961.5786784520161,
+    "server67_custody": 153.01490037400023,
+    "guards": {
+      "driver": 1800,
+      "custodian": 450
+    },
+    "different_hosts_counts_not_algorithm_improvement": true,
+    "complete_production_cost_pass": false
+  },
+  "next": "023 minimalfixture sessions/explicitlocalICD and source-owned terminal-read-race onlyifdeterministicold/newproof; no permissionweakening orphysicschange",
+  "physical_permission": false,
+  "baseline_OUT": 10,
+  "strict_RETURN": null
+}

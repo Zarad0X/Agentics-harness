@@ -1,0 +1,25 @@
+{
+  "schema": "parent-full-candidate-final-source-review/1",
+  "observed_unix": 1792456964.8159401,
+  "candidate": "r21-full-entry-receipt-binding-010",
+  "manifest_sha256": "b4afc787c8152ab82f0618bb71d829892b780ab25ca68138d2a11725ed70ecec",
+  "source_manifest_sha256": "1de8649c005293564ca9512ea2bcb3f3a3b2c48ea3d20fa3b6c89e5e5257a3ae",
+  "payload_entries": 40,
+  "source_entries": 17,
+  "actual67_regression_receipt": "parent-r21-010-actual67-tests-0040.json",
+  "actual67_regression_sha256": "4c38a19dc1fdb62c21dc4ad0be406e7a1cd96ed927e7dbae37d2bcffa0300d62",
+  "tests": 54,
+  "test_wall_s": 1.4805398299358785,
+  "test_wait4_cpu_s": 1.191246,
+  "preservation": [
+    "src/cpu_tests.py",
+    "src/parent_support.py"
+  ],
+  "review": "010 Watch live started/admission/authority file witness and absence bracket tied to completed audit; immutablewitness, terminal revalidation. All43inherited tests preserved plus11deterministiccases. Oldnormalexit andfreshnessnegatives corrected in source+actual67, notphysical.",
+  "qualified_for_parent_controlled_single_full_trial": true,
+  "physical_success": false,
+  "stable_version": false,
+  "native_attempts_started": 0,
+  "remaining": "Freshphysicaldata9/resource+lockcustodyadmission andindependentnativeOUT/strictRETURN needed",
+  "prior_failures_retained": "009 actual42/43 andalloldbatches retained;011 initialparenttestunsupportedargv failed before24suite, originalsourceunchanged andcorrectedinvocation24passed"
+}

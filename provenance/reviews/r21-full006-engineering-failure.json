@@ -1,0 +1,45 @@
+{
+  "schema": "parent-full006-first-trial-engineering-failure/1",
+  "observed_unix": 1792457219.3240619,
+  "attempt": "r21-renderer006-full-roundtrip-001",
+  "protocol_spent": true,
+  "initial_live": "parent-r21-full006-live-1792457028.json",
+  "last_live": "parent-r21-full006-live-1792457116.json",
+  "cost_measurement": "parent-r21-full006-supervision-cost-0040.json",
+  "confirmed": "Custodian hitsownCPUreserve25.504946s underfixed30s ownCPUcap; flagsfixeddeadline/signal/selfCPU, killsowneddriver/native/observer thenSTOPquarantine. Driverrawreap−9, nativewait4unavailable, rawterminal/finaldriver/observercleanupmissing retained. All7SDKdevice records andinitialevents exist; firstN3magnetlogged but no completedOUTorRETURNaudit.",
+  "mechanism": "Source011active scansall/proc once plus exact007session_members onceperroot(4roots); driverexact007supervise scansall/proc everyloop(.02s sleep). Measuredsingle1454process read-onlystat+uidscan costs.063779CPU/.064074wall. Only5ownUIDprocesses aftercleanup. Main driverandnativebothboundcore0, observeddriverCPU.419s/wallsecond/native.467, custodian.257.",
+  "causal_limit": "CPUbudgettrigger verified; scanmechanism source+costconsistent, notfunction-levelprofile. No manipulationcontrollerfailure established.",
+  "physical_success": false,
+  "OUT": null,
+  "exact_RETURN": null,
+  "whole_success": false,
+  "native_wait4_cpu_s": null,
+  "custodian_own_cpu_s": 25.504946,
+  "driver_wait4": {
+    "child": {
+      "own_ticks": 0,
+      "pid": 2891424,
+      "ppid": 2891423,
+      "session": 2891424,
+      "start_ticks": 65980514,
+      "state": "R",
+      "ticks": 0,
+      "waited_ticks": 0
+    },
+    "pid": 2891424,
+    "raw_status": 9,
+    "returncode": -9,
+    "ru_stime": 20.514737,
+    "ru_utime": 19.169813,
+    "scope": "waited driver and descendants it reaped; excludes custodian own CPU"
+  },
+  "single_procscan": {
+    "processes": 1454,
+    "own_uid_processes": 5,
+    "wall_s": 0.06407429394312203,
+    "own_cpu_s": 0.06377899999999999,
+    "cpu_cap_s": 2,
+    "mutations": 0
+  },
+  "remaining": "Parentindependentaudit/releasekeeper, separateboundedsourceoptimization preservingbudgets/safety/coverage; noautomaticretryornative001replay"
+}

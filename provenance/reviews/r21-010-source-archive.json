@@ -1,0 +1,22 @@
+{
+  "schema": "parent-reviewed-private-source-archive/1",
+  "observed_unix": 1792457333.202722,
+  "archive_name": "r21-010-reviewed-source.tar.gz",
+  "archive_bytes": 61826,
+  "archive_sha256": "83cc7a4494517c6314758478605598e875ca0d8314c5c94f132b2239a695cf16",
+  "export_entries": 40,
+  "export_manifest_sha256": "d7b003dfa0b046dce61c5e78b9d77ea4f48bbbe0a87824797a7cf026a24df7e0",
+  "original_manifest_sha256": "b4afc787c8152ab82f0618bb71d829892b780ab25ca68138d2a11725ed70ecec",
+  "omitted_logs_and_locks": [
+    "evidence/cpu/attempt-001/child.log",
+    "evidence/cpu/cpu-0.lock",
+    "evidence/cpu/task.lock"
+  ],
+  "release": "r21-return-20261020",
+  "release_url": "https://github.com/Zarad0X/robotwin-astra-harness/releases/tag/r21-return-20261020",
+  "source_component_qualified": true,
+  "stable_version": false,
+  "full_physical_success": false,
+  "github_server_digest_verified": true,
+  "github_asset_id": 657856717
+}

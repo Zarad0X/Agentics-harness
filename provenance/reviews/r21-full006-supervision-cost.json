@@ -1,0 +1,42 @@
+{
+  "schema": "parent-full006-supervision-cost-observation/1",
+  "observed_unix": 1792457115.910527,
+  "sources": [
+    "parent-r21-full006-live-1792457028.json",
+    "parent-r21-full006-live-1792457066.json"
+  ],
+  "rates": [
+    {
+      "pid": 2891423,
+      "start_ticks": 65980508,
+      "cpu_delta_s": 9.86,
+      "interval_wall_s": 38.298826932907104,
+      "ratio": 0.2574491385146863
+    },
+    {
+      "pid": 2891424,
+      "start_ticks": 65980514,
+      "cpu_delta_s": 16.049999999999997,
+      "interval_wall_s": 38.298826932907104,
+      "ratio": 0.41907288774449436
+    },
+    {
+      "pid": 2891611,
+      "start_ticks": 65980909,
+      "cpu_delta_s": 0.12000000000000001,
+      "interval_wall_s": 38.298826932907104,
+      "ratio": 0.003133255235472856
+    },
+    {
+      "pid": 2891613,
+      "start_ticks": 65980909,
+      "cpu_delta_s": 17.869999999999997,
+      "interval_wall_s": 38.298826932907104,
+      "ratio": 0.4665939254824994
+    }
+  ],
+  "confirmed": "Actualfullnative admitted andall7SDKrecords present; custodian+driver ownCPU rising fast duringstartup. This is measuredoverhead, noOUT/RETURNresultyet.",
+  "hypothesis": "Repeated /proc scans in011Custody.active andexact007supervise.scan plusparent/native samecore0 may exhaustwrapper own30/driver135CPU before7200trial; source suggests mechanism but nohostprofileyet.",
+  "budget_unchanged": true,
+  "automatic_retry": false
+}

@@ -1,0 +1,22 @@
+{
+  "schema": "parent-full-candidate-final-source-review/1",
+  "observed_unix": 1792456964.8166919,
+  "candidate": "r21-full-lock-custodian-011",
+  "manifest_sha256": "48bfd749ca63404a296c5227b26da4b8ebca1150ead5d6a9f7ae867c7687305d",
+  "source_manifest_sha256": "64544f44635469c3eb6625c907f7e7741715da5dca2c566d05cbb0fc2882ede5",
+  "payload_entries": 18,
+  "source_entries": 10,
+  "actual67_regression_receipt": "parent-r21-011-actual67-corrected-tests-0040.json",
+  "actual67_regression_sha256": "47ab704ce125ac285a1b2f9c424a8cf8246c0e0298e83bdee22835b0a7e99d6a",
+  "tests": 24,
+  "test_wall_s": 0.5241383319953457,
+  "test_wait4_cpu_s": 0.212558,
+  "preservation": "010 frozen driver/host/common/bootstrap/contract/pins allmatch; existing lockacquisition+sameFDadoption preserved",
+  "review": "Minimal directparent acquires SAME3OFDlocks; exact qualifiedentry+planSHA/defaultDENY; spawnsONEdriver before loweringownCPU to30; exact007PID/start/session/pidfdchecks; retainsreparentedowned+rawreaps; boundedcleanup; stoppedcustodian retainsFDsonunknown; cannot guaranteeSIGKILL/hostfailure. No globalexclusivity.",
+  "qualified_for_parent_controlled_single_full_trial": true,
+  "physical_success": false,
+  "stable_version": false,
+  "native_attempts_started": 0,
+  "remaining": "Freshphysicaldata9/resource+lockcustodyadmission andindependentnativeOUT/strictRETURN needed",
+  "prior_failures_retained": "009 actual42/43 andalloldbatches retained;011 initialparenttestunsupportedargv failed before24suite, originalsourceunchanged andcorrectedinvocation24passed"
+}

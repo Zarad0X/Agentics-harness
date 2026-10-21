@@ -1,0 +1,108 @@
+{
+  "schema": "047-parent-rejected-final-source-review/1",
+  "observed_unix": 1792543641.079062,
+  "verdict": "REJECT no deployment/physicaltrial",
+  "source_sha256": "ba54d65fea7a3b86ac8679abbb71880d7fdac709d661adfe08198ad772b7709b",
+  "parent045_source_sha256": "73abe6636326368e6d86c84a823b8c5685f1e6e1b2fedbbb7b5fa98138e30bbf",
+  "artifact_hashes_verified": 128,
+  "source_hashes_verified": 45,
+  "slot2_testtime_files_equal": 46,
+  "actual_fixture_identical_verified046": [
+    "actual045.json",
+    "final-state.json",
+    "physics-meshes.json",
+    "measured-initial-goals.json",
+    "INPUTS.json",
+    "matched-events.jsonl",
+    "matched-lines.json"
+  ],
+  "provenance_reused": "parent-mainline046-provenance-review-0014.json verifies52originalnewlineevents/3inputhashes andfixture.state==raw045state; no duplicate rawbulk scan",
+  "changed_production_files": [
+    "fork/src/inherited_return.py"
+  ],
+  "hypothesis_tested": "one fixed45deg outward-forward physical mesh section frame; RETURN9 only",
+  "regression": {
+    "status": "no_admitted_current_staging_grasp",
+    "geometry_admitted_index": null,
+    "candidates_evaluated": 24,
+    "geometry_pass": false,
+    "source_sha256": "ba54d65fea7a3b86ac8679abbb71880d7fdac709d661adfe08198ad772b7709b",
+    "failures": [
+      "at least one complete original geometric preflight to forecast gate"
+    ],
+    "source_unchanged": true,
+    "original_negative_count": 17,
+    "elapsed_s": 11.662186581990682,
+    "physical_runs": 0,
+    "physical_success": false,
+    "forecast_runs": 0
+  },
+  "slots": [
+    {
+      "accounting_gaps": [],
+      "child_wait4_cpu_s": 11.310257,
+      "cpu_cap_s": 30,
+      "driver_cpu_s": 0.07482899999999998,
+      "reason": null,
+      "remaining_session": [],
+      "retries": 0,
+      "returncode": 1,
+      "slot": "1",
+      "total_measured_cpu_s": 11.385086,
+      "wall_cap_s": 30,
+      "wall_s": 12.388718520989642,
+      "within_cap": true,
+      "core": 10,
+      "sampled_idle_fraction": 1.0,
+      "pid": 3,
+      "start_ticks": 46994522,
+      "spent": true
+    },
+    {
+      "accounting_gaps": [],
+      "child_wait4_cpu_s": 11.792139,
+      "cpu_cap_s": 30,
+      "driver_cpu_s": 0.076131,
+      "reason": null,
+      "remaining_session": [],
+      "retries": 0,
+      "returncode": 1,
+      "slot": "2",
+      "total_measured_cpu_s": 11.86827,
+      "wall_cap_s": 30,
+      "wall_s": 12.778187370975502,
+      "within_cap": true,
+      "core": 9,
+      "sampled_idle_fraction": 1.0,
+      "pid": 3,
+      "start_ticks": 46997836,
+      "spent": true
+    }
+  ],
+  "total_measured_CPU_s": 23.253356,
+  "summed_execution_wall_s": 25.166905891965143,
+  "rejection_stages": {
+    "pregrasp_ik": 4,
+    "pregrasp_collision": 2,
+    "grasp_collision": 18
+  },
+  "first_collision_counts": {
+    "pregrasp:rightfinger/object9": 2,
+    "grasp:leftfinger/object9": 7,
+    "grasp:hand/object9": 8,
+    "grasp:hand/table": 2,
+    "grasp:hand/object3": 1
+  },
+  "confirmed_scope": "fixed45degreephysicalmeshsection failsactualfullworld; cannot infer allangles/arms impossible or allpriorcollisionscleared from firstcollision",
+  "preservation": "31/32productionunchanged045, non9sourceexactrestorable;original17qnegativepreserved; no newphysicalpreservationcredit",
+  "limitations": [
+    "original5pregraspq/liveRETURN9RNGgapsremain",
+    "CPUcounterfactualseed20261021",
+    "cooperativeleases/namespacePIDscope, notglobalexclusivity",
+    "0endpointpairs/0lift/path/forecast/native",
+    "bothsame-sourcefailedslots spent, no retry"
+  ],
+  "next": "from045successfulOUT9measureddeposit/release/retreat evidence, reconstruct actualbaseline-supportedapproach orminimum blocker-awareRETURNorder; no morefreeangleheuristics. Stopafterfirstcorefailure, donotrepeatsamefailedsecondslot.",
+  "parent_account": "localcoordination/source/resultreview",
+  "metadata_not_realtime_authority": true
+}

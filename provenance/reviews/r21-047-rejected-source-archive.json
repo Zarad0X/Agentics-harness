@@ -1,0 +1,245 @@
+{
+  "schema": "047-rejected-source-archive/1",
+  "observed_unix": 1792543771.492915,
+  "tag": "r21-return-20261020",
+  "archive_name": "r21-047-rejected-grasp9-source.tar.gz",
+  "bytes": 154161,
+  "sha256": "fed2c83d9a7eb5fd5105fbb9ede66faf15fe7c60823eb7fa5b54140f46246909",
+  "source047_sha256": "ba54d65fea7a3b86ac8679abbb71880d7fdac709d661adfe08198ad772b7709b",
+  "verdict": "rejected_candidate,no deployment",
+  "files": {
+    "production047/PARENT-REVIEW-TEMPLATE.json": {
+      "bytes": 2972,
+      "sha256": "f4a1738f874665712b9c7fcc95da67d9f1c46ea8da85670faee1b04ca0364849"
+    },
+    "production047/fork/MANIFEST.json": {
+      "bytes": 3813,
+      "sha256": "4ce3b2298da270a628a751efeacb2c55649be71f951310d9aa90157bc925c522"
+    },
+    "production047/fork/evidence/closure245.json": {
+      "bytes": 82551,
+      "sha256": "15fecdc74536e719d30edc27fd0b1956f7eecfa55e79c82079307073f1b79404"
+    },
+    "production047/fork/harness/acceptance-config.json": {
+      "bytes": 543,
+      "sha256": "327627ce4d3e12d842c33d25d648353abcde25f832371c12b30438516dbed355"
+    },
+    "production047/fork/src/astra_planner.py": {
+      "bytes": 18947,
+      "sha256": "cf4781e65a46d7ef4684fbe18ea82b04be8b13067d37277692ddc8defc155b01"
+    },
+    "production047/fork/src/candidate_search.py": {
+      "bytes": 2319,
+      "sha256": "092ac6ab62b1ab6356c9ce2a6e9b57f60506860ed9b2fafeb18a0045348542df"
+    },
+    "production047/fork/src/collision_world.py": {
+      "bytes": 5995,
+      "sha256": "43ab2bdc97f17a3596472a5a3adf7bf62aa7704ef611ef3df71c7947ce3a51a0"
+    },
+    "production047/fork/src/convex_geometry.py": {
+      "bytes": 1942,
+      "sha256": "e7a7049ece53824b9aabc4fbeaa488140731a43e1af83ea9d738b4d9d8bf74f1"
+    },
+    "production047/fork/src/direct_core.py": {
+      "bytes": 8271,
+      "sha256": "3b11485a2a84011350d8da05af9c3e2374c40be7033e48ef23429a53f6d6aea0"
+    },
+    "production047/fork/src/evidence_contract.py": {
+      "bytes": 5462,
+      "sha256": "b2f53e6156c2e90ba198590c3b0361d439797feac505cba87136aef38b6b8a6f"
+    },
+    "production047/fork/src/fixtures/collision-boxes.json": {
+      "bytes": 17410,
+      "sha256": "5241d30b4aa8e0b36c857cd97bdc134bb0bdc04321af1dbc56db5cb8d4deb992"
+    },
+    "production047/fork/src/fixtures/panda.urdf": {
+      "bytes": 8664,
+      "sha256": "be80276223ca90363197d4316230173815b5ea45b1733ac514eb572ff1db786f"
+    },
+    "production047/fork/src/fixtures/render-sdk-pins.json": {
+      "bytes": 932,
+      "sha256": "b0d441eff4b59c8057382e4de0e740d9cde04a516393de336b62099a9db24c7d"
+    },
+    "production047/fork/src/fixtures/robot-vertices.json": {
+      "bytes": 46962,
+      "sha256": "bcf9947b3776e0650e723124861a6a6d4fa3b07788a24a1b200c9032db845eec"
+    },
+    "production047/fork/src/gripper_control.py": {
+      "bytes": 1198,
+      "sha256": "3fbdb17499cb2c7afe6a99be662e90f8c1294ce17b2d5c69a4d5343168efc49a"
+    },
+    "production047/fork/src/inherited_return.py": {
+      "bytes": 8531,
+      "sha256": "f9e7e8885da17a30f7bca91c3fa47ce17adc91aef627a1c5a8d867f53c47dd60"
+    },
+    "production047/fork/src/mesh_world.py": {
+      "bytes": 5352,
+      "sha256": "543c43fb247cb85dd4e8f5d398507da87f39d43804e49d5f06edf1bf5e637a72"
+    },
+    "production047/fork/src/native_bridge.py": {
+      "bytes": 26017,
+      "sha256": "c1d4ab3adb6f79af61dbce9c32ad43a021dbc6660caabb1d9a2170fe2c6b2161"
+    },
+    "production047/fork/src/out_boundary.py": {
+      "bytes": 1370,
+      "sha256": "99353bae9de1ac2b037e4fcac877345e18ae3a23b2ac6c3d5d9e1a7fb10cf551"
+    },
+    "production047/fork/src/physics_geometry.py": {
+      "bytes": 1485,
+      "sha256": "20ef0d9aafc2f5a9d6c6fd7365059178ab391232ae6a90dfb6e594b57809bdf7"
+    },
+    "production047/fork/src/physics_runner.py": {
+      "bytes": 56189,
+      "sha256": "03a891fb6078b6d10c65c99bf498026317231b845969bdf6d0001776e3bf8fb4"
+    },
+    "production047/fork/src/render_device_binding.py": {
+      "bytes": 12467,
+      "sha256": "d6d95ae0c0969b01d0a0792d6f75ab14089f4733938ece6b029a7d7cc42d09ef"
+    },
+    "production047/fork/src/return_protocol.py": {
+      "bytes": 5087,
+      "sha256": "c00b5e11a568e528ff6d7b7c5ec838d5d90e4da922cd0aa841ecb055290de16b"
+    },
+    "production047/fork/src/return_release.py": {
+      "bytes": 4992,
+      "sha256": "43816afb34be810e1c4330eb327c4933c7f00ae8788c96349819ae4474618c14"
+    },
+    "production047/fork/src/separation.py": {
+      "bytes": 3964,
+      "sha256": "618bef41090b9531081b42bc9106278106d9e793638e74e0664143e94dcbb4ce"
+    },
+    "production047/fork/src/surface_grasps.py": {
+      "bytes": 2357,
+      "sha256": "ca93c5e9726b90597c3df6d9424ee2087e7ed560030198fd25e1811d3639e158"
+    },
+    "production047/fork/src/verify_episode.py": {
+      "bytes": 3890,
+      "sha256": "2877efe5d7adf40a9357ebedd3fbe62e5be930b7d285bbc2ac1c8af5d15d5244"
+    },
+    "production047/fork/src/verify_roundtrip.py": {
+      "bytes": 15539,
+      "sha256": "e73fbc33ea8e470ec7d91e6716152b401288ebd3f71e68af307aebed37b88d7f"
+    },
+    "production047/harness/clean_environment.py": {
+      "bytes": 1146,
+      "sha256": "66caf5f41ad27c6b2cca9b833dd26c43f10bb0feef6aa7f77e1777cf2718ab91"
+    },
+    "production047/harness/common.py": {
+      "bytes": 11907,
+      "sha256": "17213be2b9eac9cd058f84c61938868c33055f2beab0b320f0c0bf1332f8a2e2"
+    },
+    "production047/harness/parent-mainline-native15-032.json": {
+      "bytes": 3394,
+      "sha256": "59a83751620ad5591f47d4fc643ee3e4bcab3b8e1fb5960655f86786f28307cc"
+    },
+    "production047/harness/parent_entry.py": {
+      "bytes": 18745,
+      "sha256": "ed11d654785b9ca65b72492bd0be51645fb807c64f33a785f3d518a7e805aa7a"
+    },
+    "reviewed047/CAUSE.md": {
+      "bytes": 6890,
+      "sha256": "c28a33524e689fc46d8bf5c957038be3213f0993e38b50a6fed6edd372aeee9a"
+    },
+    "reviewed047/HANDOFF.md": {
+      "bytes": 3685,
+      "sha256": "2646a07fbfd29ab30e3e507e7e6a9f578676af491d3b62a3b1983c5940a13ff9"
+    },
+    "reviewed047/minimal-diff.patch": {
+      "bytes": 2028,
+      "sha256": "77c6b38dd41360d831014004852e7ec55f69a52d4148ede80b054127cb5faa39"
+    },
+    "reviewed047/BUDGET.json": {
+      "bytes": 1363,
+      "sha256": "7e0f8ff92cc1252a51dbb43278f6338b2e8adf04209dce1171e0d6cffc57f4df"
+    },
+    "reviewed047/DELIVERY.json": {
+      "bytes": 20273,
+      "sha256": "b0ebf9ae7e3e8e5cdee9a052c2a32c75a5fb521956647bb75ce2859af1429f13"
+    },
+    "reviewed047/packet/SOURCE.json": {
+      "bytes": 4878,
+      "sha256": "ba54d65fea7a3b86ac8679abbb71880d7fdac709d661adfe08198ad772b7709b"
+    },
+    "reviewed047/packet/tests/diagnose.py": {
+      "bytes": 6112,
+      "sha256": "3056d5aa4b66e3a6d5f44c58482b069ee13a9ba14e8fa354c14145d49ba01191"
+    },
+    "reviewed047/packet/tests/regress.py": {
+      "bytes": 3743,
+      "sha256": "5623ca3c7e21af2c4e00429da0a386bfac17ac88c4e892f19e1031fe8e78ed5f"
+    },
+    "reviewed047/packet/tests/fixture.py": {
+      "bytes": 1811,
+      "sha256": "81fb231f98fd42bdb39a243a08da39521ee5db013935a70e77c6d6e691b2589f"
+    },
+    "reviewed047/packet/harness/invoke_cpu_slot.py": {
+      "bytes": 3695,
+      "sha256": "2a8aeb50f9a9e7de47ed77ae0653d55138368e3fdf5b2f40538cc3eb4f8c3257"
+    },
+    "reviewed047/packet/evidence/INPUTS.json": {
+      "bytes": 1011,
+      "sha256": "3332a53b86da28bc543b7775a93bd0b6ad5f5aa9d29b3f84801e99382f74d9be"
+    },
+    "reviewed047/packet/evidence/matched-lines.json": {
+      "bytes": 10912,
+      "sha256": "1af67f40513723b0456f9b34fff78c2a4d23eedd0eef5561098c785638adde1b"
+    },
+    "reviewed047/receipts/slot1/reservation.json": {
+      "bytes": 5125,
+      "sha256": "2183aa62cf630c3c233dd7e8fe53ec5da967e501373c451401404de5a1a57567"
+    },
+    "reviewed047/receipts/slot1/terminal.json": {
+      "bytes": 914,
+      "sha256": "9231dc12b9a558e93642862c317688df7975029041c06ce275b6bf24e47690c5"
+    },
+    "reviewed047/receipts/slot1/raw-wait4.json": {
+      "bytes": 105,
+      "sha256": "f77f93cd21e93fa27d9f1dd5ca80c06cdb87b820368b15b526c8f92ec8f80bfd"
+    },
+    "reviewed047/receipts/slot1/reservation-result.json": {
+      "bytes": 273,
+      "sha256": "16c4bcdb710f294a5be496b14ae93fa2696a5f9ae087dfb5fab5716735d1e3dc"
+    },
+    "reviewed047/receipts/slot1/cases/summary.json": {
+      "bytes": 364,
+      "sha256": "227d8630859a497716870890af381a0d52892828d47bc43667f5c549268e0389"
+    },
+    "reviewed047/receipts/slot2/reservation.json": {
+      "bytes": 5123,
+      "sha256": "30d8eaad28ad72b338a1d6f721e67fcca022c5e5dcf8c5a5369e9e70bb8cef6c"
+    },
+    "reviewed047/receipts/slot2/terminal.json": {
+      "bytes": 903,
+      "sha256": "f2d2c68f26bc57e28f888482e8f5a088cc7e747d283226272425b9b082ab44c2"
+    },
+    "reviewed047/receipts/slot2/raw-wait4.json": {
+      "bytes": 93,
+      "sha256": "bf1dd97465a8e16715b39236ac6fd3042b7b6bd32f3aec4b647f4af954906878"
+    },
+    "reviewed047/receipts/slot2/reservation-result.json": {
+      "bytes": 261,
+      "sha256": "377e2f820f013e76cfa3ac28bfcce0d9dd8aa33e5611c39682056ac11bd88840"
+    },
+    "reviewed047/receipts/slot2/cases/summary.json": {
+      "bytes": 493,
+      "sha256": "d0dc9e2fd72a048c38ce59e4d816bcfb41947c596b486c3c4ea07a7a03530f70"
+    },
+    "parent-reviews/parent-mainline047-source-review-0044.json": {
+      "bytes": 3846,
+      "sha256": "b1bf67e7f83d56151f8e281b403921e6669f5c4db29eb71bbc3bf097d5761a8d"
+    },
+    "parent-reviews/parent-mainline046-provenance-review-0014.json": {
+      "bytes": 698,
+      "sha256": "3a6ac3725d9774b1da18083b663bb9f181f5054548adbf5e4a89879a2e477cc0"
+    },
+    "parent-reviews/parent-mainline047-usage-0044.json": {
+      "bytes": 755,
+      "sha256": "5721946b95beb0908148986c8c84b844739fcbddc4660204ca32c9b1e532e57a"
+    }
+  },
+  "filter": "32productionfiles+testcode/manifests/structuredCPUreceipts/inputreferences; no rawCLI/physicalstates/events/video",
+  "scope": "filtered review archive notdeployablepacket or self-containedCPUexecution; fetchrawfixture fromexactdata3reference",
+  "full_original_data3": "/data3/yuantao/astra-roundtrip-work/harness/r21-mainline-grasp9-047",
+  "github_asset_id": 660933387,
+  "github_server_digest_verified": true
+}

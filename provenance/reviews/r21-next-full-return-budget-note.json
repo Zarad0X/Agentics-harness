@@ -1,0 +1,13 @@
+{
+  "schema": "next-fresh-roundtrip-budget-review-note/1",
+  "observed_unix": 1792543797.3742359,
+  "authority": "parentreview ofactual045phasecost; no running/spentbudget modified",
+  "evidence": "parent-mainline045-independent-terminal-review-2344.json",
+  "OUT_wall_s": 5442.875435369089,
+  "RETURN_two_wall_s": 698.9176885308698,
+  "linear_ten_proxy_s": 8937.463878023438,
+  "limitation": "roughplanningproxyfromonly2returns, otherobjects unknown;notruntimeguarantee or optimizationclaim",
+  "next": "After048safegeometrycandidatepasses, predeclare a fresh singleattemptfinite budget sized for all10RETURN plus requiredreserve. Do notblindlyreuse7100 ifnotadequate; anynewcapdifferentfrom043/045must beexplicit andno samebudgetefficiencyclaim. Noextension/retryofoldruns.",
+  "physical_permission": false,
+  "metadata_not_realtime_authority": true
+}

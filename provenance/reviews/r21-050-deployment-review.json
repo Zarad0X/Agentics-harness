@@ -1,0 +1,56 @@
+{
+  "schema": "050-parent-budgetbinding-review/1",
+  "observed_unix": 1792545661.059935,
+  "source_sha256": "c50c5e6bd17db8100644cb5ca9b54dfcdbd09b80cc4cfa333554abf4aae4b688",
+  "tested048_source_sha256": "c4c227fc974f817f3bf4060004e7a8a40a94be26144dc97dde97681e1f036cdc",
+  "physical_parent045_source_sha256": "73abe6636326368e6d86c84a823b8c5685f1e6e1b2fedbbb7b5fa98138e30bbf",
+  "failed049_source_sha256": "b625cee12455f8b2b872553bc6efecd2e7bfb638123bcbba9b22af0bc4470a34",
+  "control_bytes_exact_tested048": true,
+  "source_files": 32,
+  "changed_from049": [
+    "PARENT-REVIEW-TEMPLATE.json",
+    "harness/common.py",
+    "harness/parent_entry.py"
+  ],
+  "common_only_change": "finite validation upperlimit7200to12000 forCPUandwall; supervisory identity/custody/wait4/stopping code byteexact",
+  "native_cap_CPU_s": 12000,
+  "native_cap_wall_s": 12000,
+  "retries": false,
+  "budget_predicate_cases": [
+    [
+      12000,
+      12000,
+      true
+    ],
+    [
+      30,
+      60,
+      true
+    ],
+    [
+      12001,
+      12000,
+      false
+    ],
+    [
+      12000,
+      12001,
+      false
+    ],
+    [
+      0,
+      12000,
+      false
+    ],
+    [
+      30,
+      0,
+      false
+    ]
+  ],
+  "physical_runs": 0,
+  "next": "actual15 supervision /usr/bin/true with12000 limits once external60wall; exact050check thenonefreshphysicalattempt",
+  "failure049": "entry SPENT but common validation rejected before native spawn,0events/no native started; spentnotreused",
+  "local_account_scope": "local parentdeployment/source/review; main robotcontrol developed/testedofficial22Astra",
+  "metadata_not_realtime_authority": true
+}

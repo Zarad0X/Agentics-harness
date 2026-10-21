@@ -1,0 +1,78 @@
+{
+  "observed_unix": 1792545701.2237928,
+  "status": "actual production supervise accepts12000CPU/wall and trueexits0",
+  "core": 108,
+  "idle": 1.0,
+  "external_alarm_s": 20,
+  "terminal": {
+    "wrapper": {
+      "pid": 352542,
+      "start_ticks": 335982758,
+      "ppid": 352541,
+      "session": 352542,
+      "state": "R",
+      "ticks": 3,
+      "own_ticks": 3,
+      "waited_ticks": 0
+    },
+    "child": {
+      "pid": 352550,
+      "start_ticks": 335982833,
+      "ppid": 352542,
+      "session": 352550,
+      "state": "R",
+      "ticks": 0,
+      "own_ticks": 0,
+      "waited_ticks": 0
+    },
+    "returncode": 0,
+    "reason": null,
+    "wall_s": 0.315819407813251,
+    "raw_wait4": {
+      "pid": 352550,
+      "status": 0,
+      "rusage": [
+        0.0,
+        0.0034869999999999996,
+        9312,
+        0,
+        0,
+        0,
+        245,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "poll_interval_s": 0.2,
+    "cpu_sample_peak_s": 0.0,
+    "process_children_cpu_s": 0.0034869999999999996,
+    "remaining_session": [],
+    "binding": null,
+    "cpu_upper_bound_s": 0.315819407813251,
+    "accounting_gaps": [],
+    "accounting_strategy": "one-core-elapsed-upper-bound+wait4",
+    "wait4_scope": "native child plus descendants it reaped; not orphan exact usage",
+    "observed_processes": [
+      {
+        "pid": 352550,
+        "start_ticks": 335982833,
+        "ppid": 352542,
+        "session": 352550,
+        "state": "Z",
+        "ticks": 0,
+        "own_ticks": 0,
+        "waited_ticks": 0,
+        "peak_ticks": 0
+      }
+    ],
+    "time_unix": 1792545701.2223086
+  },
+  "metadata_not_realtime_authority": true
+}

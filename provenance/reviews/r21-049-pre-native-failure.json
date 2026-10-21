@@ -1,0 +1,15 @@
+{
+  "schema": "049-pre-native-budget-binding-failure/1",
+  "observed_unix": 1792545661.060823,
+  "evidence": "parent-mainline049-physical-observation-1792545603.json",
+  "driver_pid": 350846,
+  "start_ticks": 335970946,
+  "active": false,
+  "native_started": false,
+  "events": 0,
+  "budget_spent": true,
+  "confirmed_cause": "parent raisedentrycaps12000 but originalcommon upperlimit7200 rejects before nativecreation",
+  "parent_review_gap": "entry-only cap review omitted supervisor validation; include effectivecap chain in futurebindings without newgeneralharness",
+  "next": "new050budgetbinding, old049frozenno retry;12000predeclaredunchanged",
+  "metadata_not_realtime_authority": true
+}

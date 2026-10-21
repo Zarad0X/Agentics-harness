@@ -1,0 +1,30 @@
+{
+  "schema": "049-parent-deployment-review/1",
+  "observed_unix": 1792545506.838072,
+  "source_sha256": "b625cee12455f8b2b872553bc6efecd2e7bfb638123bcbba9b22af0bc4470a34",
+  "tested048_source_sha256": "c4c227fc974f817f3bf4060004e7a8a40a94be26144dc97dde97681e1f036cdc",
+  "physical_parent045_source_sha256": "73abe6636326368e6d86c84a823b8c5685f1e6e1b2fedbbb7b5fa98138e30bbf",
+  "files": 32,
+  "changed_from045": [
+    "PARENT-REVIEW-TEMPLATE.json",
+    "fork/src/inherited_return.py",
+    "harness/parent_entry.py"
+  ],
+  "control_bytes_exact_tested048": true,
+  "entry_change": "namespace045to049 and two fixednative caps7100to12000; no retry/control/physics change",
+  "config_sha256": "327627ce4d3e12d842c33d25d648353abcde25f832371c12b30438516dbed355",
+  "review048": "parent-mainline048-source-review-0114.json",
+  "budget": {
+    "native_attempts": 1,
+    "native_CPU_s": 12000,
+    "native_wall_s": 12000,
+    "reason": "045OUT5442.875435 +10/2*RETURN2 698.917689 =8937.46388 seconds proxy; reserve3062.53612. Planning estimate not success guarantee; larger cap than old7100, not samebudget speedclaim; no extension/retries",
+    "original_candidate_forecast_limits": "24/6/2 unchanged",
+    "old_budgets": "all retained spent"
+  },
+  "limitations": [
+    "49wholepacket is not48 testtime identical; controlbytes identical and49 actual15 static check required",
+    "source preservation only; physical endtoend/audit required before promotion"
+  ],
+  "metadata_not_realtime_authority": true
+}

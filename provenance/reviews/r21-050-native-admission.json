@@ -1,0 +1,26 @@
+{
+  "schema": "050-exact-native-admission/1",
+  "observed_unix": 1792545848.103584,
+  "source_sha256": "c50c5e6bd17db8100644cb5ca9b54dfcdbd09b80cc4cfa333554abf4aae4b688",
+  "driver_pid": 353364,
+  "driver_start_ticks": 335986914,
+  "native_pid": 353381,
+  "native_start_ticks": 335987092,
+  "native_started_unix": 1792545743.4489455,
+  "native_CPU_limit_s": 12000,
+  "native_wall_limit_s": 12000,
+  "native_latest_deadline_unix": 1792557743.4489455,
+  "external_observation": "parent-mainline050-physical-observation-1792545790.json",
+  "renderer_actual_GPU_index": 6,
+  "renderer_actual_PCI": "0000:c1:00.0",
+  "native_core": 108,
+  "driver_core": 107,
+  "cooperative_GPU_lease_indices": [
+    3,
+    5,
+    6
+  ],
+  "physical_acceptance": "unverified; current nativeactivity is not success",
+  "startup049": "spent pre-native, notrerun",
+  "metadata_not_realtime_authority": true
+}

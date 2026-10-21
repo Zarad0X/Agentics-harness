@@ -1,0 +1,394 @@
+{
+  "schema": "048-admitted-source-archive/1",
+  "observed_unix": 1792545723.9174662,
+  "tag": "r21-return-20261020",
+  "archive_name": "r21-048-admitted-out9-and050-source.tar.gz",
+  "bytes": 287490,
+  "sha256": "58ec035b8b42025b79d7ce9fe5eb2a4e35d01ea26eed401dd1009cf66e6d552e",
+  "source048_sha256": "c4c227fc974f817f3bf4060004e7a8a40a94be26144dc97dde97681e1f036cdc",
+  "verdict": "CPUgeometrypass;049pre-nativebudgetfailure retained;050budgetbinding reviewed, nativepending;notphysicalsuccess",
+  "files": {
+    "production048/PARENT-REVIEW-TEMPLATE.json": {
+      "bytes": 2972,
+      "sha256": "f4a1738f874665712b9c7fcc95da67d9f1c46ea8da85670faee1b04ca0364849"
+    },
+    "production048/fork/MANIFEST.json": {
+      "bytes": 3813,
+      "sha256": "4ce3b2298da270a628a751efeacb2c55649be71f951310d9aa90157bc925c522"
+    },
+    "production048/fork/evidence/closure245.json": {
+      "bytes": 82551,
+      "sha256": "15fecdc74536e719d30edc27fd0b1956f7eecfa55e79c82079307073f1b79404"
+    },
+    "production048/fork/harness/acceptance-config.json": {
+      "bytes": 543,
+      "sha256": "327627ce4d3e12d842c33d25d648353abcde25f832371c12b30438516dbed355"
+    },
+    "production048/fork/src/astra_planner.py": {
+      "bytes": 18947,
+      "sha256": "cf4781e65a46d7ef4684fbe18ea82b04be8b13067d37277692ddc8defc155b01"
+    },
+    "production048/fork/src/candidate_search.py": {
+      "bytes": 2319,
+      "sha256": "092ac6ab62b1ab6356c9ce2a6e9b57f60506860ed9b2fafeb18a0045348542df"
+    },
+    "production048/fork/src/collision_world.py": {
+      "bytes": 5995,
+      "sha256": "43ab2bdc97f17a3596472a5a3adf7bf62aa7704ef611ef3df71c7947ce3a51a0"
+    },
+    "production048/fork/src/convex_geometry.py": {
+      "bytes": 1942,
+      "sha256": "e7a7049ece53824b9aabc4fbeaa488140731a43e1af83ea9d738b4d9d8bf74f1"
+    },
+    "production048/fork/src/direct_core.py": {
+      "bytes": 8271,
+      "sha256": "3b11485a2a84011350d8da05af9c3e2374c40be7033e48ef23429a53f6d6aea0"
+    },
+    "production048/fork/src/evidence_contract.py": {
+      "bytes": 5462,
+      "sha256": "b2f53e6156c2e90ba198590c3b0361d439797feac505cba87136aef38b6b8a6f"
+    },
+    "production048/fork/src/fixtures/collision-boxes.json": {
+      "bytes": 17410,
+      "sha256": "5241d30b4aa8e0b36c857cd97bdc134bb0bdc04321af1dbc56db5cb8d4deb992"
+    },
+    "production048/fork/src/fixtures/panda.urdf": {
+      "bytes": 8664,
+      "sha256": "be80276223ca90363197d4316230173815b5ea45b1733ac514eb572ff1db786f"
+    },
+    "production048/fork/src/fixtures/render-sdk-pins.json": {
+      "bytes": 932,
+      "sha256": "b0d441eff4b59c8057382e4de0e740d9cde04a516393de336b62099a9db24c7d"
+    },
+    "production048/fork/src/fixtures/robot-vertices.json": {
+      "bytes": 46962,
+      "sha256": "bcf9947b3776e0650e723124861a6a6d4fa3b07788a24a1b200c9032db845eec"
+    },
+    "production048/fork/src/gripper_control.py": {
+      "bytes": 1198,
+      "sha256": "3fbdb17499cb2c7afe6a99be662e90f8c1294ce17b2d5c69a4d5343168efc49a"
+    },
+    "production048/fork/src/inherited_return.py": {
+      "bytes": 11111,
+      "sha256": "639b5726220f12108aa1676e3173bae77b3dc3d09ec04d8b73f0ff7a4a93518b"
+    },
+    "production048/fork/src/mesh_world.py": {
+      "bytes": 5352,
+      "sha256": "543c43fb247cb85dd4e8f5d398507da87f39d43804e49d5f06edf1bf5e637a72"
+    },
+    "production048/fork/src/native_bridge.py": {
+      "bytes": 26017,
+      "sha256": "c1d4ab3adb6f79af61dbce9c32ad43a021dbc6660caabb1d9a2170fe2c6b2161"
+    },
+    "production048/fork/src/out_boundary.py": {
+      "bytes": 1370,
+      "sha256": "99353bae9de1ac2b037e4fcac877345e18ae3a23b2ac6c3d5d9e1a7fb10cf551"
+    },
+    "production048/fork/src/physics_geometry.py": {
+      "bytes": 1485,
+      "sha256": "20ef0d9aafc2f5a9d6c6fd7365059178ab391232ae6a90dfb6e594b57809bdf7"
+    },
+    "production048/fork/src/physics_runner.py": {
+      "bytes": 56189,
+      "sha256": "03a891fb6078b6d10c65c99bf498026317231b845969bdf6d0001776e3bf8fb4"
+    },
+    "production048/fork/src/render_device_binding.py": {
+      "bytes": 12467,
+      "sha256": "d6d95ae0c0969b01d0a0792d6f75ab14089f4733938ece6b029a7d7cc42d09ef"
+    },
+    "production048/fork/src/return_protocol.py": {
+      "bytes": 5087,
+      "sha256": "c00b5e11a568e528ff6d7b7c5ec838d5d90e4da922cd0aa841ecb055290de16b"
+    },
+    "production048/fork/src/return_release.py": {
+      "bytes": 4992,
+      "sha256": "43816afb34be810e1c4330eb327c4933c7f00ae8788c96349819ae4474618c14"
+    },
+    "production048/fork/src/separation.py": {
+      "bytes": 3964,
+      "sha256": "618bef41090b9531081b42bc9106278106d9e793638e74e0664143e94dcbb4ce"
+    },
+    "production048/fork/src/surface_grasps.py": {
+      "bytes": 2357,
+      "sha256": "ca93c5e9726b90597c3df6d9424ee2087e7ed560030198fd25e1811d3639e158"
+    },
+    "production048/fork/src/verify_episode.py": {
+      "bytes": 3890,
+      "sha256": "2877efe5d7adf40a9357ebedd3fbe62e5be930b7d285bbc2ac1c8af5d15d5244"
+    },
+    "production048/fork/src/verify_roundtrip.py": {
+      "bytes": 15539,
+      "sha256": "e73fbc33ea8e470ec7d91e6716152b401288ebd3f71e68af307aebed37b88d7f"
+    },
+    "production048/harness/clean_environment.py": {
+      "bytes": 1146,
+      "sha256": "66caf5f41ad27c6b2cca9b833dd26c43f10bb0feef6aa7f77e1777cf2718ab91"
+    },
+    "production048/harness/common.py": {
+      "bytes": 11907,
+      "sha256": "17213be2b9eac9cd058f84c61938868c33055f2beab0b320f0c0bf1332f8a2e2"
+    },
+    "production048/harness/parent-mainline-native15-032.json": {
+      "bytes": 3394,
+      "sha256": "59a83751620ad5591f47d4fc643ee3e4bcab3b8e1fb5960655f86786f28307cc"
+    },
+    "production048/harness/parent_entry.py": {
+      "bytes": 18745,
+      "sha256": "ed11d654785b9ca65b72492bd0be51645fb807c64f33a785f3d518a7e805aa7a"
+    },
+    "reviewed048/CAUSE.md": {
+      "bytes": 7406,
+      "sha256": "554b62ae4891a9eee57b9bf1ec8b947c0b70d1717f2de60b26aa8d279edc489d"
+    },
+    "reviewed048/HANDOFF.md": {
+      "bytes": 6729,
+      "sha256": "eeb4a2e825b0bbee9704bde1da86935d999ca66a1a4f57eb7daa647422c48fe2"
+    },
+    "reviewed048/minimal-diff.patch": {
+      "bytes": 6295,
+      "sha256": "6ec034b90a1a6ca7d3d66f9d98a321d084aa5a4c53a8eae248cc07a90acb0ab8"
+    },
+    "reviewed048/BUDGET.json": {
+      "bytes": 4195,
+      "sha256": "19cd11b246f1c7a83bce20ff8bdea82d26ec7e190fbf0d8913d991aadea605b6"
+    },
+    "reviewed048/DELIVERY.json": {
+      "bytes": 10700,
+      "sha256": "bf4246aa8a1dbf542affcff6eb2374d8b41c8f2b6f22decfdeae5113922e1454"
+    },
+    "reviewed048/packet/SOURCE.json": {
+      "bytes": 5422,
+      "sha256": "c4c227fc974f817f3bf4060004e7a8a40a94be26144dc97dde97681e1f036cdc"
+    },
+    "reviewed048/packet/tests/diagnose.py": {
+      "bytes": 6985,
+      "sha256": "8fea46bc6c41324e3530e2ff942713a88c154dabee22e5816279e6b018a5f45f"
+    },
+    "reviewed048/packet/tests/regress.py": {
+      "bytes": 7975,
+      "sha256": "f1002a63a943214bcf80c3bb6809e028ef2d62df25408f3f13520df3417e233e"
+    },
+    "reviewed048/packet/tests/fixture.py": {
+      "bytes": 1811,
+      "sha256": "81fb231f98fd42bdb39a243a08da39521ee5db013935a70e77c6d6e691b2589f"
+    },
+    "reviewed048/packet/harness/invoke_cpu_slot.py": {
+      "bytes": 3695,
+      "sha256": "2a8aeb50f9a9e7de47ed77ae0653d55138368e3fdf5b2f40538cc3eb4f8c3257"
+    },
+    "reviewed048/packet/evidence/INPUTS.json": {
+      "bytes": 1011,
+      "sha256": "3332a53b86da28bc543b7775a93bd0b6ad5f5aa9d29b3f84801e99382f74d9be"
+    },
+    "reviewed048/packet/evidence/matched-lines.json": {
+      "bytes": 10912,
+      "sha256": "1af67f40513723b0456f9b34fff78c2a4d23eedd0eef5561098c785638adde1b"
+    },
+    "reviewed048/packet/evidence/out9-line-bindings.json": {
+      "bytes": 13345,
+      "sha256": "b3f42a9d5c43602bd2020caaefa99ca577cc59522a8a3f7a233df6e6061d0c3b"
+    },
+    "reviewed048/receipts/slot1/reservation.json": {
+      "bytes": 5276,
+      "sha256": "41f1ff33d961ea4d1d39645b7c19ad510a96636a8e3d3c8b7bf8674da7fa3576"
+    },
+    "reviewed048/receipts/slot1/terminal.json": {
+      "bytes": 891,
+      "sha256": "a7b9501998c67df33d7c35f07b147f311d94a14d28f99944f201416d12504f1b"
+    },
+    "reviewed048/receipts/slot1/raw-wait4.json": {
+      "bytes": 89,
+      "sha256": "a179f92024291eaacb6f9934a9e076c77d9aa0c215d3eabcd83b63d92b117f9b"
+    },
+    "reviewed048/receipts/slot1/reservation-result.json": {
+      "bytes": 259,
+      "sha256": "a78606cb0cbb7a7d094536e245a4952ec478b32960fb498accd89703306bb495"
+    },
+    "reviewed048/receipts/slot1/cases/summary.json": {
+      "bytes": 354,
+      "sha256": "f5c15c3b865daaa73e9e687f9b94f8c5e0213ef31f74b07f00acd451ab40a712"
+    },
+    "reviewed048/receipts/slot2/reservation.json": {
+      "bytes": 5626,
+      "sha256": "7605cc30ea4e7dd31374c626a14e2cec968a76ed5e3e0454dedd89a4238d24e9"
+    },
+    "reviewed048/receipts/slot2/terminal.json": {
+      "bytes": 913,
+      "sha256": "c03f64bfcfc3cc89bc30181a44863d8118e0bc56fa82d32f43a88ef5eb5115a4"
+    },
+    "reviewed048/receipts/slot2/raw-wait4.json": {
+      "bytes": 101,
+      "sha256": "d20f9266edef60d90327e643322baaaeab8d0948d91c876ae65e42a8ee00abe0"
+    },
+    "reviewed048/receipts/slot2/reservation-result.json": {
+      "bytes": 279,
+      "sha256": "dbfadbbe411aae97af0e0a114692752f19f161ec36eade33522c98af5771944a"
+    },
+    "reviewed048/receipts/slot2/cases/summary.json": {
+      "bytes": 505,
+      "sha256": "3998b7f53facafc45e3bfb0e04f20a7a4ac79edafc76e1c1579fde996788b8f4"
+    },
+    "parent-reviews/parent-mainline048-source-review-0114.json": {
+      "bytes": 5753,
+      "sha256": "4fb64e97068fca174816dbdef60194d23bc5cecc5bf7c376c3ed3e22440f5b26"
+    },
+    "parent-reviews/parent-mainline049-source-review-0114.json": {
+      "bytes": 1456,
+      "sha256": "afb48345687a16b117d0a116d5c73a91603d1da3b338fccd49455a733ce73bd9"
+    },
+    "parent-reviews/parent-mainline049-startup-failure-0114.json": {
+      "bytes": 653,
+      "sha256": "9c63b07e95250b765a93db6fc3c04a323b435b6f129eb0da63e707f98240cd40"
+    },
+    "parent-reviews/parent-mainline050-source-review-0114.json": {
+      "bytes": 1589,
+      "sha256": "3d0d3244c6e19d0090efa5e2225fc988c0667168dcff2a6f579883f1806aa11b"
+    },
+    "parent-reviews/parent-mainline050-budget-probe-0114.json": {
+      "bytes": 1675,
+      "sha256": "67746ef0d283ff2e6bb5d6be016b375119c480ac9e114f5fbb49c4b61551fecc"
+    },
+    "parent-reviews/parent-mainline048-usage-0114.json": {
+      "bytes": 640,
+      "sha256": "4c102381dea9ea08b505ae48a58d0a39396f3ffa9949540cc351d783b489a52a"
+    },
+    "deployment050/SOURCE.json": {
+      "bytes": 3673,
+      "sha256": "c50c5e6bd17db8100644cb5ca9b54dfcdbd09b80cc4cfa333554abf4aae4b688"
+    },
+    "deployment050/PARENT-REVIEW-TEMPLATE.json": {
+      "bytes": 2972,
+      "sha256": "7c3d19322923f9ce485a244b5d182bfa685efa626d394ac1a9899baf6e10b866"
+    },
+    "deployment050/fork/MANIFEST.json": {
+      "bytes": 3813,
+      "sha256": "4ce3b2298da270a628a751efeacb2c55649be71f951310d9aa90157bc925c522"
+    },
+    "deployment050/fork/evidence/closure245.json": {
+      "bytes": 82551,
+      "sha256": "15fecdc74536e719d30edc27fd0b1956f7eecfa55e79c82079307073f1b79404"
+    },
+    "deployment050/fork/harness/acceptance-config.json": {
+      "bytes": 543,
+      "sha256": "327627ce4d3e12d842c33d25d648353abcde25f832371c12b30438516dbed355"
+    },
+    "deployment050/fork/src/verify_episode.py": {
+      "bytes": 3890,
+      "sha256": "2877efe5d7adf40a9357ebedd3fbe62e5be930b7d285bbc2ac1c8af5d15d5244"
+    },
+    "deployment050/fork/src/separation.py": {
+      "bytes": 3964,
+      "sha256": "618bef41090b9531081b42bc9106278106d9e793638e74e0664143e94dcbb4ce"
+    },
+    "deployment050/fork/src/return_protocol.py": {
+      "bytes": 5087,
+      "sha256": "c00b5e11a568e528ff6d7b7c5ec838d5d90e4da922cd0aa841ecb055290de16b"
+    },
+    "deployment050/fork/src/candidate_search.py": {
+      "bytes": 2319,
+      "sha256": "092ac6ab62b1ab6356c9ce2a6e9b57f60506860ed9b2fafeb18a0045348542df"
+    },
+    "deployment050/fork/src/convex_geometry.py": {
+      "bytes": 1942,
+      "sha256": "e7a7049ece53824b9aabc4fbeaa488140731a43e1af83ea9d738b4d9d8bf74f1"
+    },
+    "deployment050/fork/src/native_bridge.py": {
+      "bytes": 26017,
+      "sha256": "c1d4ab3adb6f79af61dbce9c32ad43a021dbc6660caabb1d9a2170fe2c6b2161"
+    },
+    "deployment050/fork/src/render_device_binding.py": {
+      "bytes": 12467,
+      "sha256": "d6d95ae0c0969b01d0a0792d6f75ab14089f4733938ece6b029a7d7cc42d09ef"
+    },
+    "deployment050/fork/src/mesh_world.py": {
+      "bytes": 5352,
+      "sha256": "543c43fb247cb85dd4e8f5d398507da87f39d43804e49d5f06edf1bf5e637a72"
+    },
+    "deployment050/fork/src/collision_world.py": {
+      "bytes": 5995,
+      "sha256": "43ab2bdc97f17a3596472a5a3adf7bf62aa7704ef611ef3df71c7947ce3a51a0"
+    },
+    "deployment050/fork/src/direct_core.py": {
+      "bytes": 8271,
+      "sha256": "3b11485a2a84011350d8da05af9c3e2374c40be7033e48ef23429a53f6d6aea0"
+    },
+    "deployment050/fork/src/verify_roundtrip.py": {
+      "bytes": 15539,
+      "sha256": "e73fbc33ea8e470ec7d91e6716152b401288ebd3f71e68af307aebed37b88d7f"
+    },
+    "deployment050/fork/src/out_boundary.py": {
+      "bytes": 1370,
+      "sha256": "99353bae9de1ac2b037e4fcac877345e18ae3a23b2ac6c3d5d9e1a7fb10cf551"
+    },
+    "deployment050/fork/src/physics_geometry.py": {
+      "bytes": 1485,
+      "sha256": "20ef0d9aafc2f5a9d6c6fd7365059178ab391232ae6a90dfb6e594b57809bdf7"
+    },
+    "deployment050/fork/src/astra_planner.py": {
+      "bytes": 18947,
+      "sha256": "cf4781e65a46d7ef4684fbe18ea82b04be8b13067d37277692ddc8defc155b01"
+    },
+    "deployment050/fork/src/evidence_contract.py": {
+      "bytes": 5462,
+      "sha256": "b2f53e6156c2e90ba198590c3b0361d439797feac505cba87136aef38b6b8a6f"
+    },
+    "deployment050/fork/src/return_release.py": {
+      "bytes": 4992,
+      "sha256": "43816afb34be810e1c4330eb327c4933c7f00ae8788c96349819ae4474618c14"
+    },
+    "deployment050/fork/src/physics_runner.py": {
+      "bytes": 56189,
+      "sha256": "03a891fb6078b6d10c65c99bf498026317231b845969bdf6d0001776e3bf8fb4"
+    },
+    "deployment050/fork/src/inherited_return.py": {
+      "bytes": 11111,
+      "sha256": "639b5726220f12108aa1676e3173bae77b3dc3d09ec04d8b73f0ff7a4a93518b"
+    },
+    "deployment050/fork/src/gripper_control.py": {
+      "bytes": 1198,
+      "sha256": "3fbdb17499cb2c7afe6a99be662e90f8c1294ce17b2d5c69a4d5343168efc49a"
+    },
+    "deployment050/fork/src/surface_grasps.py": {
+      "bytes": 2357,
+      "sha256": "ca93c5e9726b90597c3df6d9424ee2087e7ed560030198fd25e1811d3639e158"
+    },
+    "deployment050/fork/src/fixtures/collision-boxes.json": {
+      "bytes": 17410,
+      "sha256": "5241d30b4aa8e0b36c857cd97bdc134bb0bdc04321af1dbc56db5cb8d4deb992"
+    },
+    "deployment050/fork/src/fixtures/render-sdk-pins.json": {
+      "bytes": 932,
+      "sha256": "b0d441eff4b59c8057382e4de0e740d9cde04a516393de336b62099a9db24c7d"
+    },
+    "deployment050/fork/src/fixtures/robot-vertices.json": {
+      "bytes": 46962,
+      "sha256": "bcf9947b3776e0650e723124861a6a6d4fa3b07788a24a1b200c9032db845eec"
+    },
+    "deployment050/fork/src/fixtures/panda.urdf": {
+      "bytes": 8664,
+      "sha256": "be80276223ca90363197d4316230173815b5ea45b1733ac514eb572ff1db786f"
+    },
+    "deployment050/harness/parent_entry.py": {
+      "bytes": 18747,
+      "sha256": "8e89966dab9ba3d0a2595b169fce8841ec0698f550ceafd23c6d487677c8c925"
+    },
+    "deployment050/harness/parent-mainline-native15-032.json": {
+      "bytes": 3394,
+      "sha256": "59a83751620ad5591f47d4fc643ee3e4bcab3b8e1fb5960655f86786f28307cc"
+    },
+    "deployment050/harness/common.py": {
+      "bytes": 11909,
+      "sha256": "14d0c879540fbb0e78730f222aa5ba4544a5b60c54c275dce0dabbb36830aaaa"
+    },
+    "deployment050/harness/clean_environment.py": {
+      "bytes": 1146,
+      "sha256": "66caf5f41ad27c6b2cca9b833dd26c43f10bb0feef6aa7f77e1777cf2718ab91"
+    }
+  },
+  "filter": "32productionfiles+testcode/manifests/structuredCPUreceipts/inputreferences; no rawCLI/physicalstates/events/video",
+  "scope": "filtered review archive notdeployablepacket or self-containedCPUexecution; fetchrawfixture fromexactdata3reference",
+  "full_original_data3": "/data3/yuantao/astra-roundtrip-work/harness/r21-mainline-baseline9-048",
+  "github_asset_id": 660997619,
+  "github_server_digest_verified": true,
+  "archive_state_note": "048+049firstarchive reflects preparation intent,049actuallyfailedpre-native;050supersedingarchive includesfailureandminimalcapfix;neitherarchiveprovesphysicalsuccess"
+}

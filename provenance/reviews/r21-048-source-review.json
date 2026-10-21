@@ -1,0 +1,197 @@
+{
+  "schema": "048-parent-source-review/1",
+  "observed_unix": 1792545477.6932201,
+  "verdict": "CPU geometric candidate approved for new single physical attempt, no physical success",
+  "source_sha256": "c4c227fc974f817f3bf4060004e7a8a40a94be26144dc97dde97681e1f036cdc",
+  "parent045_source_sha256": "73abe6636326368e6d86c84a823b8c5685f1e6e1b2fedbbb7b5fa98138e30bbf",
+  "delivery_hashes_verified": 94,
+  "source_hashes_verified": 50,
+  "slot2_testtime_hashes_verified": 51,
+  "changed_production_files": [
+    "fork/src/inherited_return.py"
+  ],
+  "unchanged_production_files": 31,
+  "original_small_fixture_exact046": true,
+  "original_OUT9_provenance": {
+    "lines_verified": 32,
+    "raw_sha256": "5eff314f2c8f1dae359054c4af8d0bd6d9b2a957b0fdd37eead157f0a48b9326",
+    "scope": "selected raw original045 lines only; fullfile trust inherited parent inventory"
+  },
+  "regression": {
+    "status": "complete_original_geometry_to_forecast_gate",
+    "geometry_pass": true,
+    "slot1_endpoint_equal": true,
+    "candidates": 1,
+    "source_sha256": "c4c227fc974f817f3bf4060004e7a8a40a94be26144dc97dde97681e1f036cdc",
+    "source_unchanged": true,
+    "original_negative_counts": {
+      "mesh_collision": 17,
+      "recorded_ik_failure": 2,
+      "recorded_pregrasp_collision_exact_q_missing": 5
+    },
+    "elapsed_s": 7.621551194053609,
+    "physical_runs": 0,
+    "forecast_runs": 0,
+    "physical_success": false
+  },
+  "slots": [
+    {
+      "accounting_gaps": [],
+      "accounting_strategy": "one-core-elapsed-upper-bound+wait4",
+      "binding": null,
+      "child": {
+        "own_ticks": 0,
+        "pid": 4,
+        "ppid": 2,
+        "session": 4,
+        "start_ticks": 47179607,
+        "state": "R",
+        "ticks": 0,
+        "waited_ticks": 0
+      },
+      "cpu_sample_peak_s": 7.63,
+      "cpu_upper_bound_s": 7.697839364001993,
+      "observed_processes": [
+        {
+          "own_ticks": 763,
+          "peak_ticks": 763,
+          "pid": 4,
+          "ppid": 2,
+          "session": 4,
+          "start_ticks": 47179607,
+          "state": "Z",
+          "ticks": 763,
+          "waited_ticks": 0
+        }
+      ],
+      "poll_interval_s": 0.2,
+      "process_children_cpu_s": 7.640554,
+      "raw_wait4": {
+        "pid": 4,
+        "rusage": [
+          7.624562,
+          0.015992,
+          43064,
+          0,
+          0,
+          0,
+          7672,
+          0,
+          0,
+          0,
+          296,
+          0,
+          0,
+          0,
+          1,
+          807
+        ],
+        "status": 0
+      },
+      "reason": null,
+      "remaining_session": [],
+      "returncode": 0,
+      "time_unix": 1792543924.654817,
+      "wait4_scope": "native child plus descendants it reaped; not orphan exact usage",
+      "wall_s": 7.697839364001993,
+      "wrapper": {
+        "own_ticks": 14,
+        "pid": 2,
+        "ppid": 1,
+        "session": 1,
+        "start_ticks": 47179508,
+        "state": "R",
+        "ticks": 16,
+        "waited_ticks": 2
+      }
+    },
+    {
+      "accounting_gaps": [],
+      "accounting_strategy": "one-core-elapsed-upper-bound+wait4",
+      "binding": null,
+      "child": {
+        "own_ticks": 0,
+        "pid": 3,
+        "ppid": 2,
+        "session": 3,
+        "start_ticks": 47197818,
+        "state": "R",
+        "ticks": 0,
+        "waited_ticks": 0
+      },
+      "cpu_sample_peak_s": 7.75,
+      "cpu_upper_bound_s": 7.891917143948376,
+      "observed_processes": [
+        {
+          "own_ticks": 775,
+          "peak_ticks": 775,
+          "pid": 3,
+          "ppid": 2,
+          "session": 3,
+          "start_ticks": 47197818,
+          "state": "Z",
+          "ticks": 775,
+          "waited_ticks": 0
+        }
+      ],
+      "poll_interval_s": 0.2,
+      "process_children_cpu_s": 7.757677999999999,
+      "raw_wait4": {
+        "pid": 3,
+        "rusage": [
+          7.737608,
+          0.020069999999999998,
+          43852,
+          0,
+          0,
+          0,
+          7700,
+          0,
+          0,
+          0,
+          312,
+          0,
+          0,
+          0,
+          1,
+          830
+        ],
+        "status": 0
+      },
+      "reason": null,
+      "remaining_session": [],
+      "returncode": 0,
+      "time_unix": 1792544106.9682996,
+      "wait4_scope": "native child plus descendants it reaped; not orphan exact usage",
+      "wall_s": 7.891917143948376,
+      "wrapper": {
+        "own_ticks": 13,
+        "pid": 2,
+        "ppid": 1,
+        "session": 1,
+        "start_ticks": 47197726,
+        "state": "R",
+        "ticks": 13,
+        "waited_ticks": 0
+      }
+    }
+  ],
+  "guard_review": "full original world.free, lift and path guards reached before forecast gate; no faked preview return; original 17collision negatives retain rejection",
+  "production_integration": "observer events close-write+flush on every event; read current run OUT9 deposit/retreat, bounded16MiB; no archived constants; retarget measured object relative tool; original 2independent forecasts/new measured grasp still required",
+  "limits": [
+    "CPU sampled geometry only, not loaded physics",
+    "new livepath RNG may differ",
+    "5originalq/liveRNG missing retained",
+    "no physical promotion of parent until native E2E/audit preserves OUT and12/17"
+  ],
+  "budget_plan": {
+    "native_attempts": 1,
+    "native_CPU_s": 12000,
+    "native_wall_s": 12000,
+    "reason": "045OUT5442.875435 +10/2*RETURN2 698.917689 =8937.46388 seconds proxy; reserve3062.53612. Planning estimate not success guarantee; larger cap than old7100, not samebudget speedclaim; no extension/retries",
+    "original_candidate_forecast_limits": "24/6/2 unchanged",
+    "old_budgets": "all retained spent"
+  },
+  "parent_account": "local coordination/source/resultreview",
+  "metadata_not_realtime_authority": true
+}

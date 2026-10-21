@@ -1,0 +1,44 @@
+{
+  "schema": "047-dispatch-checkpoint/1",
+  "observed_unix": 1792541904.333699,
+  "task": "r21-mainline-grasp9-047",
+  "status": "active official22 freshsession; different9graspafter046rejected, no nativeauthority",
+  "account": "server22_ownChatGPT",
+  "model": "gpt-6-astra",
+  "official_provider_verified": true,
+  "fresh_login_and_limits_verified": true,
+  "session": "01a15bd2-2acb-78b1-a715-9a7ab1a54008",
+  "worker": {
+    "pid": 2513737,
+    "start_ticks": 46974103,
+    "ppid": 1,
+    "session": 2513737
+  },
+  "model_identity": {
+    "pid": 2513745,
+    "start_ticks": 46974136,
+    "ppid": 2513737,
+    "session": 2513745
+  },
+  "parent045": "73abe6636326368e6d86c84a823b8c5685f1e6e1b2fedbbb7b5fa98138e30bbf",
+  "rejected046": "26179180e41d5d44064d47feabe08b975c85f52ce62d137c472d147e5847e983",
+  "CPU_budget": "twoonce30CPU/30executionwall slots; no046retry;differentgeometricplanhypothesis, no native/GPU/SDK/deploy",
+  "native_authority": false,
+  "automatic_retry": false,
+  "physical_result": {
+    "OUT": 10,
+    "exact_RETURN": 2,
+    "ids": [
+      12,
+      17
+    ],
+    "whole": false
+  },
+  "data_device": "/dev/sdb1",
+  "free_bytes": 24757403648,
+  "latest_observation": "parent-mainline047-observation-1792541875.json",
+  "poll_command": "python3 -B work/astra-roundtrip/.local/poll047_durable.py",
+  "next": "receive047realgeometrypath/negativepreservation/finalsourceandtwoslotreceipts; parentreviewbeforeanynewphysicalprotocol",
+  "parent_account": "localcoordination/source/resultreview; primaryAIofficial22",
+  "metadata_not_realtime_authority": true
+}

@@ -1,0 +1,23 @@
+{
+  "schema": "046-authoritative-incremental-usage/1",
+  "observed_unix": 1792541787.263791,
+  "account": "officialserver22ownChatGPT",
+  "model": "gpt-6-astra",
+  "session": "01a15bb7-67bb-7e81-b010-20adbbd11ff4",
+  "usage": {
+    "input_tokens": 1072591,
+    "cached_input_tokens": 999552,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 16211,
+    "reasoning_output_tokens": 3616
+  },
+  "completed_event_sha256": "e9eae13b72dc339f3f2d250af29498bd77a7881a0e8eefa568833c1f68e49dc9",
+  "fresh_session_increment": true,
+  "cached_reasoning_subsets_not_added": true,
+  "model_wall_s": 420.2446721189772,
+  "model_exit": 0,
+  "model_completed": true,
+  "fix_regression": "failedexit1, notsameasmodelcompletion",
+  "local_parent_usage": "separate/unmeasured",
+  "metadata_not_realtime_authority": true
+}

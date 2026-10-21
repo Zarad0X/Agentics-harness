@@ -1,0 +1,125 @@
+{
+  "schema": "046-parent-rejected-final-source-review/1",
+  "observed_unix": 1792541787.26042,
+  "verdict": "REJECT no deployment/physicaltrial",
+  "source_sha256": "26179180e41d5d44064d47feabe08b975c85f52ce62d137c472d147e5847e983",
+  "parent045_source_sha256": "73abe6636326368e6d86c84a823b8c5685f1e6e1b2fedbbb7b5fa98138e30bbf",
+  "delivery_hashes_verified": 146,
+  "final_source_hashes_verified": 44,
+  "slot2_testtime_files_equal": 45,
+  "changed_production_files": [
+    "fork/src/inherited_return.py"
+  ],
+  "confirmed": "17recordedgraspIKsuccesses alloriginalfullMeshWorldreject:5link5/object3,10link6/object3,2hand/object19.2recordedpregraspIKfailures.5pregraspcollisionqmissing;sourceq/RNGgapsnotfabricated.",
+  "rejected_hypotheses": [
+    "24shallowcounterfactuals at .008/.004/.001m (8each) allfailedendpoints",
+    "paired2IKstarts on24originalcandidates:48attempts,0admitted, nofullpreflight orforecast"
+  ],
+  "regression": {
+    "source_sha256": "26179180e41d5d44064d47feabe08b975c85f52ce62d137c472d147e5847e983",
+    "failures": [
+      "at least one complete geometric preflight to forecast gate"
+    ],
+    "candidates_evaluated": 24,
+    "geometry_admitted_index": null,
+    "source_unchanged": true,
+    "elapsed_s": 17.542061318003107,
+    "physical_runs": 0,
+    "physical_success": false,
+    "forecast_runs": 0,
+    "rng_seed": 20261021,
+    "rng_scope": "counterfactual RETURN RNG; actual9 RNG unrecorded",
+    "original_negative_count": 17
+  },
+  "slots": [
+    {
+      "accounting_gaps": [],
+      "child_wait4_cpu_s": 10.095483999999999,
+      "cpu_cap_s": 30,
+      "driver_cpu_s": 0.069129,
+      "reason": null,
+      "remaining_session": [],
+      "retries": 0,
+      "returncode": 0,
+      "slot": "1",
+      "total_measured_cpu_s": 10.164613,
+      "wall_cap_s": 30,
+      "wall_s": 11.178931550006382,
+      "within_cap": true
+    },
+    {
+      "accounting_gaps": [],
+      "child_wait4_cpu_s": 17.654964,
+      "cpu_cap_s": 30,
+      "driver_cpu_s": 0.088778,
+      "reason": null,
+      "remaining_session": [],
+      "retries": 0,
+      "returncode": 1,
+      "slot": "2",
+      "total_measured_cpu_s": 17.743742,
+      "wall_cap_s": 30,
+      "wall_s": 18.791649905964732,
+      "within_cap": true
+    }
+  ],
+  "total_measured_CPU_s": 27.908355,
+  "summed_execution_wall_s": 29.970581455971114,
+  "no_retries": true,
+  "all_slots_spent": true,
+  "provenance": {
+    "observed_unix": 1792541746.5969129,
+    "input_hashes_verified": 3,
+    "event_lines_verified": 52,
+    "fixture_top": [
+      "state",
+      "physics_step",
+      "held_id",
+      "returned_ids",
+      "candidates",
+      "gaps",
+      "physical_runs"
+    ],
+    "raw_final_top": [
+      "active_magnetic_ids",
+      "completed_ids",
+      "contacts",
+      "drive_active",
+      "formal_mutations",
+      "held_id",
+      "identity_preserved",
+      "physics_step",
+      "returned_ids",
+      "scene_manifest_sha256",
+      "state",
+      "trajectory_samples",
+      "trajectory_sha256"
+    ],
+    "fixture_state_keys": [
+      "objects",
+      "robots"
+    ],
+    "raw_state_equal": false,
+    "raw_substate_equal": true,
+    "actualstate_step": 137853
+  },
+  "preservation": "31/32productionfilesidentical045;non9branchreconstructedexact;12/17release/offsetguards exact, onlyimplementationpreservation notnewphysics",
+  "old_physical_result": {
+    "OUT": 10,
+    "exact_RETURN": 2,
+    "ids": [
+      12,
+      17
+    ],
+    "full": false
+  },
+  "limits": [
+    "seededCPUcounterfactualnotactualliveRNG",
+    "5originalpregraspqmissing",
+    "firstcollisionnotexhaustivepairs",
+    "noSDK/GPU/native/physical/deploy"
+  ],
+  "next": "rollbackworkingparent045; distinctevidencebasedminimalRETURN9grasp/armapproach withinunchanged24/6/2; newboundedtask, do notretry046slots",
+  "parent_account": "localcoordination/source/resultsreview",
+  "metadata_not_realtime_authority": true
+}

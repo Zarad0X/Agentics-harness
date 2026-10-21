@@ -1,0 +1,37 @@
+{
+  "observed_unix": 1792541746.5969129,
+  "input_hashes_verified": 3,
+  "event_lines_verified": 52,
+  "fixture_top": [
+    "state",
+    "physics_step",
+    "held_id",
+    "returned_ids",
+    "candidates",
+    "gaps",
+    "physical_runs"
+  ],
+  "raw_final_top": [
+    "active_magnetic_ids",
+    "completed_ids",
+    "contacts",
+    "drive_active",
+    "formal_mutations",
+    "held_id",
+    "identity_preserved",
+    "physics_step",
+    "returned_ids",
+    "scene_manifest_sha256",
+    "state",
+    "trajectory_samples",
+    "trajectory_sha256"
+  ],
+  "fixture_state_keys": [
+    "objects",
+    "robots"
+  ],
+  "raw_state_equal": false,
+  "raw_substate_equal": true,
+  "actualstate_step": 137853,
+  "metadata_not_realtime_authority": true
+}

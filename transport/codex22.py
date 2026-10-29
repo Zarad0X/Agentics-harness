@@ -68,6 +68,21 @@ def proxy_listening():
         return False
 
 
+def ssh_ready(direct):
+    """Confirm the selected transport reaches this server with our SSH key."""
+    try:
+        result = subprocess.run(
+            ssh_base(direct=direct) + ["true"],
+            stdin=subprocess.DEVNULL,
+            capture_output=True,
+            text=True,
+            timeout=15,
+        )
+    except subprocess.TimeoutExpired:
+        return False
+    return result.returncode == 0
+
+
 def stop_proxy_group(process, grace_s=5):
     """Stop our newly created session even if its shell exits before VPN children."""
     try:
@@ -92,22 +107,34 @@ def stop_proxy_group(process, grace_s=5):
 def ensure_proxy():
     global _DIRECT_SSH
     # Reuse the user's existing split tunnel. A second VPN login can interfere
-    # with it; a failed direct SSH check must not trigger a duplicate login.
-    if split_route_present(HOST):
-        probe = subprocess.run(
-            ssh_base(direct=True) + ["true"], capture_output=True, text=True, timeout=15
-        )
-        if probe.returncode:
-            fail("已有服务器分流 VPN，但直连 22 号机 SSH 检查失败；未启动重复 VPN。")
-        _DIRECT_SSH = True
-        return
+    # with it. A route or a listening port alone does not prove a usable tunnel.
     _DIRECT_SSH = False
+    if split_route_present(HOST):
+        if ssh_ready(direct=True):
+            _DIRECT_SSH = True
+            return
+        if proxy_listening() and ssh_ready(direct=False):
+            print(
+                "分流直连暂不可用，已改用经 SSH 验证的现有专用通道。",
+                file=sys.stderr,
+                flush=True,
+            )
+            return
+        fail(
+            "服务器 VPN 路由仍存在，但直连和现有专用通道均无法完成 SSH 握手。"
+            "请重连现有三台服务器 VPN；未启动重复 VPN。"
+        )
     PROXY_LOCK.parent.mkdir(parents=True, exist_ok=True)
     fd = os.open(PROXY_LOCK, os.O_RDWR | os.O_CREAT, 0o600)
     try:
         fcntl.flock(fd, fcntl.LOCK_EX)
         if proxy_listening():
-            return
+            if ssh_ready(direct=False):
+                return
+            fail(
+                "本机专用通道端口仍在监听，但无法完成服务器 SSH 握手。"
+                "请恢复现有 VPN 通道；未启动重复 VPN。"
+            )
         if LOCAL_PORT != 19062:
             fail("指定的独立 TCP VPN 通道未监听；不改动或重启其他通道。")
         if not PROXY_SCRIPT.is_file():
@@ -133,13 +160,16 @@ def ensure_proxy():
         deadline = time.monotonic() + 30
         while time.monotonic() < deadline:
             if proxy_listening():
-                return
+                break
             if process.poll() is not None:
                 stop_proxy_group(process)
                 fail(f"用户态 VPN 未启动；查看 {PROXY_LOG}。")
             time.sleep(0.25)
         if proxy_listening():
-            return
+            if ssh_ready(direct=False):
+                return
+            stop_proxy_group(process)
+            fail("新专用通道未能完成服务器 SSH 握手；已停止本次创建的通道。")
         # Only this invocation's fresh process group is eligible for cleanup.
         # A timed-out startup must not accumulate another reconnecting VPN.
         stop_proxy_group(process)
@@ -172,6 +202,12 @@ def ssh_base(direct=None):
         "ConnectionAttempts=1",
         "-o",
         "ClearAllForwardings=yes",
+        "-o",
+        "ServerAliveInterval=30",
+        "-o",
+        "ServerAliveCountMax=3",
+        "-o",
+        "TCPKeepAlive=yes",
         "-o",
         f"HostKeyAlias=[{HOST}]:{PORT}",
         "-o",
@@ -253,6 +289,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     sub = parser.add_subparsers(dest="command", required=True)
     sub.add_parser("check", help="检查免密码 SSH 和远端 Codex 登录")
+    sub.add_parser("connect", help="供 SSH ProxyCommand 使用的已验证原始连接")
     run = sub.add_parser("run", help="发起一个新的远端 Codex 会话，指令从 stdin 读取")
     run.add_argument("--cwd", default="/home/yuantao", help="远端工作目录")
     run.add_argument("--write", action="store_true", help="允许 Codex 写入指定工作目录")
@@ -261,6 +298,12 @@ def main():
     resume.add_argument("session_id", help="远端 Codex 会话 UUID")
     args = parser.parse_args()
     ensure_proxy()
+    if args.command == "connect":
+        endpoint = HOST if _DIRECT_SSH else "127.0.0.1"
+        port = PORT if _DIRECT_SSH else str(LOCAL_PORT)
+        # Do not add nc -w: its idle timeout would terminate interactive SSH.
+        os.execv("/usr/bin/nc", ["nc", endpoint, port])
+        return
     if args.command == "check":
         result = subprocess.run(
             ssh_base() + [remote_command([REMOTE_CODEX, "login", "status"])],

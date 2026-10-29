@@ -114,12 +114,13 @@
       "transformation": "Ruff format only; all executable AST and non-docstring string constants preserved; archived originals unchanged"
     },
     "transport/codex22.py": {
-      "bytes": 11256,
-      "sha256": "91dfc9a426ea0b7b8844e3a5937d09453be379a4f14eb930f77f55d6308d8e30",
+      "bytes": 12866,
+      "sha256": "dac0fcb41687184f5f792b59d8f454f3bb20ad61702b4d2d81cd5a8d43c8a1ce",
       "source_path": "outputs/codex22.py",
       "role": "existing-authless-transport-source; external SSH/VPN provisioning required",
-      "source_sha256": "68a8642621f1ac715c91275744fb01a9af2b9a6c8eedaf188087d8869584c7b4",
-      "transformation": "Ruff format only; all executable AST and non-docstring string constants preserved; archived originals unchanged"
+      "source_sha256": "f26bfbe92023286aced7033eefca0905e362fa5b34157d96ab145d29d1e785a2",
+      "transformation": "Behavior fix: authenticated direct/forward selection, reject stale listener, fixed stdio ProxyCommand and SSH keepalive; unrelated function AST preserved",
+      "review": "provenance/reviews/20261029-codex22-transport.json"
     },
     "transport/remote15.py": {
       "bytes": 1273,

@@ -1,0 +1,25 @@
+{
+  "schema": "transport-source-review/1",
+  "date": "2026-10-29",
+  "source": "outputs/codex22.py",
+  "maintained": "transport/codex22.py",
+  "previous_sha256": "91dfc9a426ea0b7b8844e3a5937d09453be379a4f14eb930f77f55d6308d8e30",
+  "current_sha256": "dac0fcb41687184f5f792b59d8f454f3bb20ad61702b4d2d81cd5a8d43c8a1ce",
+  "runtime_source_sha256": "f26bfbe92023286aced7033eefca0905e362fa5b34157d96ab145d29d1e785a2",
+  "changed_functions": [
+    "ensure_proxy",
+    "ssh_base",
+    "main"
+  ],
+  "new_functions": [
+    "ssh_ready"
+  ],
+  "unrelated_function_ast_preserved": true,
+  "targeted_regressions": 8,
+  "live_evidence": "Authenticated 22-codex SSH returned G4000A100/yuantao, ChatGPT login status, task-context path; second SSH survived 35s idle and returned success",
+  "vpn_restart_performed_by_this_repair": false,
+  "quota_or_model_request": false,
+  "simulation_or_gpu_run": false,
+  "existing_untracked_files_untouched": true,
+  "changed_function_ast_matches_runtime": true
+}

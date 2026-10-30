@@ -1,0 +1,31 @@
+{
+  "schema": "transport-source-review/2",
+  "date": "2026-10-30",
+  "source": "outputs/codex22.py",
+  "maintained": "transport/codex22.py",
+  "runtime_source_sha256": "3cd8a2accecbb3b86e937ee13ac56b41dfb8fd305882f8cfd3431b67b6bae54b",
+  "current_sha256": "a8dc6803508a5422c38123c66b8203911d39d36fe9bd76aaac5e78ef09789df9",
+  "previous_commit": "81ae923",
+  "changed_functions": [
+    "ensure_proxy",
+    "main"
+  ],
+  "new_functions": [
+    "vpn_process_present",
+    "orphan_proxy_snapshot",
+    "recover_orphan_proxy"
+  ],
+  "targeted_regressions": 17,
+  "live_ssh": "G4000A100/yuantao; idle35s success",
+  "scope": "Transport only; no remote model batch/GPU/simulation",
+  "failed_check_retained": "First maintained-copy regression run failed because fixture used a runtime-only provisioning path. Fixture now supplies its own dummy script; both suites passed afterward. No production provisioning added to repository.",
+  "issue_id": "transport22-orphan-proxy-20261030",
+  "limitations": [
+    "Original VPN disconnect cause remains unknown",
+    "35s idle is not long-term availability proof",
+    "No quota or Codex model request tested",
+    "Engineering-only repair; no robotics success claim",
+    "Transport experience brief initially had no engineering issues; new issue recorded explicitly"
+  ],
+  "all_runtime_function_asts_match_maintained": true
+}

@@ -114,13 +114,13 @@
       "transformation": "Ruff format only; all executable AST and non-docstring string constants preserved; archived originals unchanged"
     },
     "transport/codex22.py": {
-      "bytes": 12866,
-      "sha256": "dac0fcb41687184f5f792b59d8f454f3bb20ad61702b4d2d81cd5a8d43c8a1ce",
+      "bytes": 15075,
+      "sha256": "a8dc6803508a5422c38123c66b8203911d39d36fe9bd76aaac5e78ef09789df9",
       "source_path": "outputs/codex22.py",
       "role": "existing-authless-transport-source; external SSH/VPN provisioning required",
-      "source_sha256": "f26bfbe92023286aced7033eefca0905e362fa5b34157d96ab145d29d1e785a2",
-      "transformation": "Behavior fix: authenticated direct/forward selection, reject stale listener, fixed stdio ProxyCommand and SSH keepalive; unrelated function AST preserved",
-      "review": "provenance/reviews/20261029-codex22-transport.json"
+      "source_sha256": "3cd8a2accecbb3b86e937ee13ac56b41dfb8fd305882f8cfd3431b67b6bae54b",
+      "transformation": "Recover only revalidated current-user orphan proxy with no active VPN; authenticate direct without route gating; prepare before interactive SSH",
+      "review": "provenance/reviews/20261030-codex22-orphan-recovery.json"
     },
     "transport/remote15.py": {
       "bytes": 1273,
@@ -584,6 +584,33 @@
       "source_sha256": "dc445aec05cdeb171ea8e8d7a51809a4dd605f136089221558c57bfa50c27ead",
       "bytes": 139941,
       "sha256": "2b5ddd25c623c4901d1581dd50fb651c5eeee89df32c539cad8765bb7d435198"
+    },
+    "transport/launchers/直接打开22号机GPT-6-Astra.command": {
+      "bytes": 508,
+      "sha256": "0ae551aed15f5a7bc8c9eef0b0550c71054b080617d7e3e14261966678933d8e",
+      "source_path": "outputs/直接打开22号机GPT-6-Astra.command",
+      "source_sha256": "0ae551aed15f5a7bc8c9eef0b0550c71054b080617d7e3e14261966678933d8e",
+      "role": "interactive launcher; requires external SSH/VPN provisioning",
+      "transformation": "Exact copy; prepare transport before SSH; not executed by repository checks",
+      "review": "provenance/reviews/20261030-codex22-orphan-recovery.json"
+    },
+    "transport/launchers/继续22号机Astra-物体抓放任务.command": {
+      "bytes": 615,
+      "sha256": "c9210e234ed3f5ee30252fc7e3b339830198dfb6020bc9f83baebef4e6868e5e",
+      "source_path": "outputs/继续22号机Astra-物体抓放任务.command",
+      "source_sha256": "c9210e234ed3f5ee30252fc7e3b339830198dfb6020bc9f83baebef4e6868e5e",
+      "role": "interactive launcher; requires external SSH/VPN provisioning",
+      "transformation": "Exact copy; prepare transport before SSH; not executed by repository checks",
+      "review": "provenance/reviews/20261030-codex22-orphan-recovery.json"
+    },
+    "transport/launchers/连接22服务器Codex.command": {
+      "bytes": 442,
+      "sha256": "7a70f0496fd40b8651d14da36f32bbc2f185c2e5e9562cfb760eb44c9ba71f10",
+      "source_path": "outputs/连接22服务器Codex.command",
+      "source_sha256": "7a70f0496fd40b8651d14da36f32bbc2f185c2e5e9562cfb760eb44c9ba71f10",
+      "role": "interactive launcher; requires external SSH/VPN provisioning",
+      "transformation": "Exact copy; prepare transport before SSH; not executed by repository checks",
+      "review": "provenance/reviews/20261030-codex22-orphan-recovery.json"
     }
   },
   "archive": "archive/index.json",

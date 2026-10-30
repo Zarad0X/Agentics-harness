@@ -83,6 +83,59 @@ def ssh_ready(direct):
     return result.returncode == 0
 
 
+def vpn_process_present():
+    """Fail closed when process inspection is unavailable."""
+    try:
+        result = subprocess.run(
+            ["/usr/bin/pgrep", "-x", "openconnect"],
+            capture_output=True, timeout=3,
+        )
+    except (OSError, subprocess.TimeoutExpired):
+        return True
+    return result.returncode != 1
+
+
+def orphan_proxy_snapshot():
+    """Identify only our exact detached, fixed-target ocproxy process."""
+    result = subprocess.run(
+        ["/bin/ps", "-axo", "pid=,ppid=,uid=,lstart=,command="],
+        capture_output=True, text=True, timeout=3,
+    )
+    if result.returncode:
+        return None
+    expected = f"/opt/homebrew/bin/ocproxy -L {LOCAL_PORT}:{HOST}:{PORT}"
+    matches = []
+    for line in result.stdout.splitlines():
+        fields = line.split(None, 8)
+        if (len(fields) == 9 and fields[0].isdigit() and fields[1] == "1"
+                and fields[2] == str(os.getuid()) and fields[8] == expected):
+            matches.append((int(fields[0]), " ".join(fields[3:8]), fields[8]))
+    return matches[0] if len(matches) == 1 else None
+
+
+def recover_orphan_proxy():
+    """Reap a proven dead orphan only; never stop a live VPN or unknown owner."""
+    if LOCAL_PORT != 19062 or vpn_process_present():
+        return False
+    try:
+        snapshot = orphan_proxy_snapshot()
+        if snapshot is None or vpn_process_present():
+            return False
+        if orphan_proxy_snapshot() != snapshot:
+            return False
+        os.kill(snapshot[0], signal.SIGTERM)
+    except (OSError, subprocess.TimeoutExpired):
+        return False
+    deadline = time.monotonic() + 3
+    while time.monotonic() < deadline:
+        if not proxy_listening():
+            print("已清理失去 VPN 父进程的本用户专用代理，正在恢复连接。",
+                  file=sys.stderr, flush=True)
+            return True
+        time.sleep(0.1)
+    return False
+
+
 def stop_proxy_group(process, grace_s=5):
     """Stop our newly created session even if its shell exits before VPN children."""
     try:
@@ -109,21 +162,16 @@ def ensure_proxy():
     # Reuse the user's existing split tunnel. A second VPN login can interfere
     # with it. A route or a listening port alone does not prove a usable tunnel.
     _DIRECT_SSH = False
+    if ssh_ready(direct=True):
+        _DIRECT_SSH = True
+        return
     if split_route_present(HOST):
-        if ssh_ready(direct=True):
-            _DIRECT_SSH = True
-            return
         if proxy_listening() and ssh_ready(direct=False):
-            print(
-                "分流直连暂不可用，已改用经 SSH 验证的现有专用通道。",
-                file=sys.stderr,
-                flush=True,
-            )
+            print("分流直连暂不可用，已改用经 SSH 验证的现有专用通道。",
+                  file=sys.stderr, flush=True)
             return
-        fail(
-            "服务器 VPN 路由仍存在，但直连和现有专用通道均无法完成 SSH 握手。"
-            "请重连现有三台服务器 VPN；未启动重复 VPN。"
-        )
+        fail("服务器 VPN 路由仍存在，但直连和现有专用通道均无法完成 SSH 握手。"
+             "请重连现有三台服务器 VPN；未启动重复 VPN。")
     PROXY_LOCK.parent.mkdir(parents=True, exist_ok=True)
     fd = os.open(PROXY_LOCK, os.O_RDWR | os.O_CREAT, 0o600)
     try:
@@ -131,10 +179,15 @@ def ensure_proxy():
         if proxy_listening():
             if ssh_ready(direct=False):
                 return
-            fail(
-                "本机专用通道端口仍在监听，但无法完成服务器 SSH 握手。"
-                "请恢复现有 VPN 通道；未启动重复 VPN。"
-            )
+            if not recover_orphan_proxy():
+                fail("本机专用通道端口仍在监听，但无法完成服务器 SSH 握手。"
+                     "无法确认它可安全清理，请重连现有 VPN；未启动重复 VPN。")
+        # Another launcher may have connected while we waited for this lock.
+        if split_route_present(HOST) or vpn_process_present():
+            if ssh_ready(direct=True):
+                _DIRECT_SSH = True
+                return
+            fail("检测到已有 VPN 正在运行或恢复，SSH 尚未就绪；未启动重复 VPN。")
         if LOCAL_PORT != 19062:
             fail("指定的独立 TCP VPN 通道未监听；不改动或重启其他通道。")
         if not PROXY_SCRIPT.is_file():
@@ -290,6 +343,7 @@ def main():
     sub = parser.add_subparsers(dest="command", required=True)
     sub.add_parser("check", help="检查免密码 SSH 和远端 Codex 登录")
     sub.add_parser("connect", help="供 SSH ProxyCommand 使用的已验证原始连接")
+    sub.add_parser("prepare", help="在交互 SSH 启动前恢复并验证通道，不运行模型")
     run = sub.add_parser("run", help="发起一个新的远端 Codex 会话，指令从 stdin 读取")
     run.add_argument("--cwd", default="/home/yuantao", help="远端工作目录")
     run.add_argument("--write", action="store_true", help="允许 Codex 写入指定工作目录")
@@ -298,6 +352,8 @@ def main():
     resume.add_argument("session_id", help="远端 Codex 会话 UUID")
     args = parser.parse_args()
     ensure_proxy()
+    if args.command == "prepare":
+        return
     if args.command == "connect":
         endpoint = HOST if _DIRECT_SSH else "127.0.0.1"
         port = PORT if _DIRECT_SSH else str(LOCAL_PORT)
@@ -321,14 +377,8 @@ def main():
             fail("写入任务请指定具体项目目录，避免对整个远端主目录开放写入。")
         sandbox = "workspace-write" if args.write else "read-only"
         remote_args = [
-            REMOTE_CODEX,
-            "exec",
-            "--json",
-            "--skip-git-repo-check",
-            "--sandbox",
-            sandbox,
-            "-C",
-            args.cwd,
+            REMOTE_CODEX, "exec", "--json", "--skip-git-repo-check",
+            "--sandbox", sandbox, "-C", args.cwd,
         ]
         if args.model:
             remote_args += ["--model", args.model]
@@ -348,17 +398,8 @@ def main():
         if info is None:
             fail("该会话不是由本脚本建立；停止以避免续接其他人的任务。")
         remote_args = [
-            REMOTE_CODEX,
-            "exec",
-            "-C",
-            info["cwd"],
-            "resume",
-            "--json",
-            "--skip-git-repo-check",
-            "-c",
-            f'sandbox_mode="{info["sandbox"]}"',
-            args.session_id,
-            "-",
+            REMOTE_CODEX, "exec", "-C", info["cwd"], "resume", "--json", "--skip-git-repo-check",
+            "-c", f'sandbox_mode="{info["sandbox"]}"', args.session_id, "-",
         ]
         if info.get("model"):
             remote_args[5:5] = ["--model", info["model"]]
